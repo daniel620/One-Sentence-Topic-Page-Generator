@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026 FIFA World Cup · Topic page</title>
+    <style>
+      :root {
+        --bg: #f5f2eb;
+        --paper: rgba(255,255,255,0.72);
+        --ink: #14213d;
+        --muted: #5c6474;
+        --accent: #d97706;
+        --line: rgba(20,33,61,0.12);
+        --shadow: 0 24px 80px rgba(20,33,61,0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #fff8e8 0, #f5f2eb 52%, #efeae0 100%);
+        color: var(--ink);
+      }
+      a { color: inherit; }
+      .shell {
+        width: min(1200px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 32px 0 56px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: linear-gradient(140deg, rgba(255,255,255,0.88), rgba(255,248,232,0.8));
+        box-shadow: var(--shadow);
+      }
+      .eyebrow, .status-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .status-pill {
+        margin-top: 16px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(217,119,6,0.12);
+        color: #9a3412;
+      }
+      h1 {
+        margin: 14px 0 12px;
+        font-size: clamp(2.4rem, 4vw, 4.8rem);
+        line-height: 0.96;
+        max-width: 14ch;
+      }
+      .summary, .prose p, details p, .mini-card p, .entity-list p, .timeline p, .source-list span {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .hero-side {
+        display: grid;
+        gap: 16px;
+        align-content: start;
+      }
+      .card {
+        padding: 20px;
+        border-radius: 22px;
+        background: var(--paper);
+        border: 1px solid rgba(20,33,61,0.08);
+        backdrop-filter: blur(14px);
+      }
+      dl { margin: 0; display: grid; gap: 14px; }
+      .fact dt {
+        font-size: 0.76rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      .fact dd {
+        margin: 0;
+        font-size: 1.08rem;
+        font-weight: 700;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 24px;
+        margin-top: 24px;
+      }
+      .stack { display: grid; gap: 24px; }
+      .section-title {
+        margin: 0 0 18px;
+        font-size: 1.3rem;
+      }
+      .timeline {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 18px;
+      }
+      .timeline li {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 14px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+      .timeline li:first-child { padding-top: 0; border-top: 0; }
+      .timeline span, .entity-list span {
+        display: block;
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .mini-card {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.74);
+        border: 1px solid var(--line);
+      }
+      .mini-card h3 { margin: 0 0 10px; font-size: 1rem; }
+      .entity-list, .source-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 14px;
+      }
+      .entity-list li, .source-list li {
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+      }
+      .entity-list li:first-child, .source-list li:first-child { border-top: 0; padding-top: 0; }
+      details {
+        border-top: 1px solid var(--line);
+        padding: 16px 0;
+      }
+      details:first-of-type { padding-top: 0; border-top: 0; }
+      summary {
+        cursor: pointer;
+        font-weight: 700;
+      }
+      .footer-note {
+        margin-top: 24px;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+      @media (max-width: 900px) {
+        .hero, .grid, .timeline li { grid-template-columns: 1fr; }
+        .mini-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Tournament snapshot · Tournament runway</div>
+          <h1>2026 FIFA World Cup</h1>
+          <p class="summary">The men's World Cup returns with a bigger field, three host countries, and the political as well as sporting complexity that comes with a month-long event spread across North America. This page is designed to track venue milestones, qualification context, and the shape of the tournament before the opening whistle.</p>
+          <div class="status-pill">Countdown to kickoff · June 11, 2026</div>
+        </div>
+        <aside class="hero-side">
+          <section class="card">
+            <h2 class="section-title">Key facts</h2>
+            <dl><div class="fact"><dt>Opening venue</dt><dd>Estadio Azteca, Mexico City</dd></div><div class="fact"><dt>Host countries</dt><dd>Canada, Mexico, and the United States</dd></div><div class="fact"><dt>Teams</dt><dd>48 national teams</dd></div><div class="fact"><dt>Tournament format</dt><dd>Expanded field with more matches than previous editions</dd></div></dl>
+          </section>
+          <section class="card prose">
+            <h2 class="section-title">Why this page exists</h2>
+            <p>With an opening venue and date locked in, the World Cup story moves from abstract anticipation to operational countdown: schedules, stadium readiness, host-city planning, and contenders all become concrete coverage threads.</p>
+            <p>This is not just the biggest event in football. It is also an infrastructure story, a travel story, a sponsorship story, and a soft-power story playing out across Mexico, the United States, and Canada.</p>
+          </section>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <div class="stack">
+          <section class="card">
+            <h2 class="section-title">Live timeline</h2>
+            <ol class="timeline"><li><span>2018</span><div><strong>The joint North American bid wins hosting rights</strong><p>FIFA awards the tournament to the Canada-Mexico-United States bid, locking in a geographically sprawling World Cup with heavy logistical demands.</p></div></li><li><span>2023–2025</span><div><strong>Host-city and scheduling details sharpen</strong><p>As stadium plans and calendar decisions solidify, the story broadens from bid politics to transport, security, and local economic expectations.</p></div></li><li><span>June 11, 2026</span><div><strong>Opening match at Estadio Azteca</strong><p>The tournament begins in one of football's most symbolic stadiums, immediately centering the event in World Cup history as well as present-day competition.</p></div></li></ol>
+          </section>
+          <section class="card">
+            <h2 class="section-title">Coverage angles</h2>
+            <div class="mini-grid"><article class="mini-card"><h3>A bigger World Cup changes the product</h3><p>The expansion is not cosmetic; it changes the volume of games, the distribution of attention, and the commercial scale of the event.</p></article><article class="mini-card"><h3>North America as a football stage</h3><p>This tournament is also a test of how the sport presents itself in markets with different fan cultures and transport habits.</p></article><article class="mini-card"><h3>The venue story matters</h3><p>Stadium renovations, fan access, and local readiness offer concrete reporting opportunities well before the first round ends.</p></article><article class="mini-card"><h3>History versus present performance</h3><p>Coverage can balance the nostalgia of iconic venues and prior World Cups with a more grounded assessment of who can actually win in 2026.</p></article></div>
+          </section>
+        </div>
+        <div class="stack">
+          <section class="card">
+            <h2 class="section-title">What to watch before kickoff</h2>
+            <div class="mini-grid"><article class="mini-card"><h3>How the 48-team format feels in practice</h3><p>The expansion changes everything from match volume to rest windows and could alter which kinds of national teams gain momentum.</p></article><article class="mini-card"><h3>Stadium and transit readiness</h3><p>A multi-country event lives or dies on movement: airports, host-city transport, crowd control, and venue operations are editorially important.</p></article><article class="mini-card"><h3>North American hosting politics</h3><p>Cross-border policy, security posture, and visa realities can become as central to coverage as the football itself.</p></article><article class="mini-card"><h3>Contender shape</h3><p>As qualifiers end and squads form, the page should shift toward favorites, dark horses, and injury-driven volatility.</p></article></div>
+          </section>
+          <section class="card">
+            <h2 class="section-title">Key players</h2>
+            <ul class="entity-list"><li><strong>FIFA</strong><span>Tournament organizer</span><p>Owns the competition format, commercial structure, and final decisions on scheduling and operational standards.</p></li><li><strong>Estadio Azteca</strong><span>Opening venue</span><p>A stadium with deep World Cup symbolism that makes the opening match feel historically loaded before a ball is kicked.</p></li><li><strong>Host-city organizers</strong><span>Operational backbone</span><p>Local committees are responsible for the practical experience on the ground, from fan travel to venue readiness.</p></li></ul>
+          </section>
+          <section class="card">
+            <h2 class="section-title">FAQ</h2>
+            <details><summary>Why lead with the opening venue?</summary><p>Because locking the site of the first match turns a diffuse mega-event into a more tangible story with a symbolic center and a calendar clock.</p></details><details><summary>What makes this page different from a standings page?</summary><p>A topic page packages logistics, narrative, and editorial framing alongside sports information, making it useful before the full match schedule dominates.</p></details><details><summary>How should the page evolve once the tournament starts?</summary><p>It should pivot from pre-event readiness and qualification context to live results, bracket state, breakout players, and knockout-stage stakes.</p></details>
+          </section>
+          <section class="card">
+            <h2 class="section-title">Sources</h2>
+            <ul class="source-list"><li><a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026">FIFA World Cup 2026 tournament hub</a><span>Official source for tournament format, host-country framing, and venue announcements.</span></li><li><a href="https://www.fifa.com/">FIFA host city and stadium materials</a><span>Official source for operational details and scheduling updates.</span></li><li><a href="https://www.estadioazteca.com.mx/">Estadio Azteca venue information</a><span>Venue-level context for the opening match location.</span></li></ul>
+            <p class="footer-note">Research snapshot updated 2026-05-15. The renderer is deterministic; source gathering and structured synthesis happen before this HTML is produced.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

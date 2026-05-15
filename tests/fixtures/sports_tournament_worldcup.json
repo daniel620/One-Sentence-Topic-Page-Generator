@@ -1,0 +1,221 @@
+{
+  "input_sentence": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+  "today": "2026-05-15",
+  "event_context": {
+    "event_type": "sports_tournament",
+    "status": "upcoming",
+    "confidence": "high",
+    "primary_entity": "FIFA World Cup 2026",
+    "event_sentence": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+    "search_queries": [
+      "FIFA World Cup 2026 opening match Estadio Azteca June 11",
+      "FIFA World Cup 2026 format host cities USA Canada Mexico",
+      "World Cup 2026 key dates draw groups knockout schedule",
+      "World Cup 2026 stadium list and teams to watch"
+    ],
+    "layout_style": "hero_focus",
+    "planned_components": [
+      "timeline",
+      "action_list",
+      "stat_grid",
+      "comparison_table"
+    ]
+  },
+  "raw_research": {
+    "event_type": "sports_tournament",
+    "status": "upcoming",
+    "collected_at": "2026-05-15T04:20:00Z",
+    "results": [
+      {
+        "query": "FIFA World Cup 2026 opening match Estadio Azteca June 11",
+        "title": "FIFA confirms 2026 World Cup opening match at Estadio Azteca",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/opening-match-estadio-azteca",
+        "content": "FIFA announced the opening match venue and date for the 2026 tournament kickoff in Mexico City.",
+        "source_name": "FIFA",
+        "published_date": "2026-02-04",
+        "score": 0.96
+      },
+      {
+        "query": "FIFA World Cup 2026 format host cities USA Canada Mexico",
+        "title": "World Cup 2026 format and host cities explained",
+        "url": "https://www.espn.com/soccer/story/_/id/2026-world-cup-format-host-cities",
+        "content": "Overview of the expanded format, host nation spread, and city-level match allocation across North America.",
+        "source_name": "ESPN",
+        "published_date": "2026-03-18",
+        "score": 0.85
+      },
+      {
+        "query": "World Cup 2026 key dates draw groups knockout schedule",
+        "title": "FIFA World Cup 2026 schedule tracker",
+        "url": "https://www.reuters.com/worldcup/2026/schedule/",
+        "content": "Tracking page for major tournament milestones, match windows, and knockout rounds.",
+        "source_name": "Reuters",
+        "published_date": "2026-05-10",
+        "score": 0.82
+      }
+    ]
+  },
+  "topic_page": {
+    "event_type": "sports_tournament",
+    "status": "upcoming",
+    "confidence": "high",
+    "headline": "World Cup 2026 Opens at Estadio Azteca",
+    "summary": "The 2026 FIFA World Cup starts on June 11 at Estadio Azteca in Mexico City. This edition expands scale and geography with matches distributed across the United States, Mexico, and Canada. Pre-tournament coverage is focused on format changes, host-city logistics, and contender readiness.",
+    "urgency_label": "Kickoff approaching",
+    "key_entities": [
+      {
+        "name": "FIFA",
+        "role": "Tournament organizer and schedule authority."
+      },
+      {
+        "name": "Estadio Azteca",
+        "role": "Opening match venue in Mexico City."
+      },
+      {
+        "name": "Host nations",
+        "role": "United States, Mexico, and Canada as co-hosts."
+      }
+    ],
+    "timeline": [
+      {
+        "date_label": "June 11, 2026",
+        "title": "Opening match",
+        "detail": "Tournament begins at Estadio Azteca."
+      },
+      {
+        "date_label": "June 2026",
+        "title": "Group stage window",
+        "detail": "Early tournament matches distributed across host regions."
+      },
+      {
+        "date_label": "July 2026",
+        "title": "Knockout rounds and final",
+        "detail": "Elimination stage determines the champion."
+      }
+    ],
+    "sources": [
+      {
+        "title": "FIFA confirms 2026 World Cup opening match at Estadio Azteca",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/opening-match-estadio-azteca",
+        "publisher": "FIFA",
+        "published_at": "2026-02-04",
+        "snippet": "Official confirmation of opening venue and date."
+      },
+      {
+        "title": "World Cup 2026 format and host cities explained",
+        "url": "https://www.espn.com/soccer/story/_/id/2026-world-cup-format-host-cities",
+        "publisher": "ESPN",
+        "published_at": "2026-03-18",
+        "snippet": "Breakdown of expanded format and logistics."
+      },
+      {
+        "title": "FIFA World Cup 2026 schedule tracker",
+        "url": "https://www.reuters.com/worldcup/2026/schedule/",
+        "publisher": "Reuters",
+        "published_at": "2026-05-10",
+        "snippet": "Rolling schedule and milestone tracker."
+      }
+    ],
+    "evidence_points": [
+      {
+        "claim": "Opening match location confirmed by FIFA",
+        "value": "Estadio Azteca, June 11, 2026",
+        "source_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/opening-match-estadio-azteca",
+        "source_title": "FIFA confirms 2026 World Cup opening match at Estadio Azteca",
+        "snippet": "FIFA announced the opening match venue and date for the 2026 tournament kickoff in Mexico City."
+      },
+      {
+        "claim": "Tournament format and host-city distribution expanded",
+        "source_url": "https://www.espn.com/soccer/story/_/id/2026-world-cup-format-host-cities",
+        "source_title": "World Cup 2026 format and host cities explained",
+        "snippet": "Overview of the expanded format, host nation spread, and city-level match allocation across North America."
+      },
+      {
+        "claim": "Milestone tracker publishes key match windows",
+        "source_url": "https://www.reuters.com/worldcup/2026/schedule/",
+        "source_title": "FIFA World Cup 2026 schedule tracker",
+        "snippet": "Tracking page for major tournament milestones, match windows, and knockout rounds."
+      }
+    ],
+    "layout_style": "hero_focus",
+    "sections": [
+      {
+        "component_type": "stat_grid",
+        "title": "At-a-glance tournament status",
+        "columns": 3,
+        "items": [
+          {
+            "label": "Opening match",
+            "value": "Mexico City, Estadio Azteca"
+          },
+          {
+            "label": "Kickoff date",
+            "value": "June 11, 2026"
+          },
+          {
+            "label": "Host nations",
+            "value": "United States, Mexico, Canada"
+          }
+        ]
+      },
+      {
+        "component_type": "timeline",
+        "title": "Tournament checkpoints",
+        "items": [
+          {
+            "label": "June 11, 2026",
+            "value": "Opening match at Estadio Azteca"
+          },
+          {
+            "label": "June 2026",
+            "value": "Group stage schedule expands across host cities"
+          },
+          {
+            "label": "July 2026",
+            "value": "Knockout rounds and final"
+          }
+        ]
+      },
+      {
+        "component_type": "action_list",
+        "title": "How to follow",
+        "items": [
+          {
+            "label": "Track official schedule",
+            "value": "Use FIFA and trusted trackers for match windows.",
+            "link_label": "Schedule tracker",
+            "link_url": "https://www.reuters.com/worldcup/2026/schedule/"
+          },
+          {
+            "label": "Plan viewing logistics",
+            "value": "Set reminders for key group-stage and knockout dates."
+          },
+          {
+            "label": "Understand format changes",
+            "value": "Review expanded structure before group stage begins.",
+            "link_label": "Format explainer",
+            "link_url": "https://www.espn.com/soccer/story/_/id/2026-world-cup-format-host-cities"
+          }
+        ]
+      },
+      {
+        "component_type": "comparison_table",
+        "title": "Why this edition is different",
+        "items": [
+          {
+            "label": "Geographic spread",
+            "value": "Three host nations coordinate tournament operations."
+          },
+          {
+            "label": "Coverage complexity",
+            "value": "Multiple regions and windows require stronger navigation."
+          },
+          {
+            "label": "Fan workflow",
+            "value": "Schedule + bracket tracking matter more than background history."
+          }
+        ]
+      }
+    ]
+  }
+}

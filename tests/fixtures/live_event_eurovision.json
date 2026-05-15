@@ -1,0 +1,223 @@
+{
+  "input_sentence": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+  "today": "2026-05-15",
+  "event_context": {
+    "event_type": "live_event",
+    "status": "live",
+    "confidence": "high",
+    "primary_entity": "Eurovision Song Contest 2026",
+    "event_sentence": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+    "search_queries": [
+      "Eurovision 2026 Vienna schedule semi final grand final dates",
+      "Eurovision 2026 participants and running order",
+      "Eurovision 2026 live coverage and broadcaster information",
+      "Eurovision 2026 favorites betting and analyst reactions"
+    ],
+    "layout_style": "timeline_first",
+    "planned_components": [
+      "live_tracker",
+      "timeline",
+      "action_list",
+      "entity_list"
+    ]
+  },
+  "raw_research": {
+    "event_type": "live_event",
+    "status": "live",
+    "collected_at": "2026-05-15T04:10:00Z",
+    "results": [
+      {
+        "query": "Eurovision 2026 Vienna schedule semi final grand final dates",
+        "title": "Eurovision Song Contest 2026 in Vienna: official schedule",
+        "url": "https://eurovision.tv/story/eurovision-2026-vienna-schedule",
+        "content": "The 2026 contest runs in Vienna from May 12 to May 16 with two semi-finals and the Grand Final.",
+        "source_name": "eurovision.tv",
+        "published_date": "2026-04-28",
+        "score": 0.95
+      },
+      {
+        "query": "Eurovision 2026 participants and running order",
+        "title": "Eurovision 2026 participating countries and running order",
+        "url": "https://eurovisionworld.com/eurovision/2026",
+        "content": "Fan-facing tracker covering participating countries, qualification outcomes, and final running order updates.",
+        "source_name": "EurovisionWorld",
+        "published_date": "2026-05-14",
+        "score": 0.87
+      },
+      {
+        "query": "Eurovision 2026 live coverage and broadcaster information",
+        "title": "How to watch Eurovision 2026 live from Vienna",
+        "url": "https://www.bbc.com/mediacentre/articles/2026/05/how-to-watch-eurovision-2026",
+        "content": "Broadcaster guide to viewing windows, digital streams, and recap segments for audiences in the UK and abroad.",
+        "source_name": "BBC",
+        "published_date": "2026-05-13",
+        "score": 0.82
+      }
+    ]
+  },
+  "topic_page": {
+    "event_type": "live_event",
+    "status": "live",
+    "confidence": "high",
+    "headline": "Eurovision 2026 Final Week Peaks in Vienna",
+    "summary": "Eurovision 2026 is live in Vienna, running from May 12 to May 16. With semi-finals completed, attention has shifted to the Grand Final lineup and final running order. Audience focus is now on performance momentum, qualification surprises, and where to follow live broadcasts.",
+    "urgency_label": "Live this week",
+    "key_entities": [
+      {
+        "name": "Eurovision Song Contest",
+        "role": "Pan-European live music competition and event organizer."
+      },
+      {
+        "name": "Vienna",
+        "role": "Host city for the 2026 edition."
+      },
+      {
+        "name": "Participating delegations",
+        "role": "National entries competing through semis and Grand Final."
+      }
+    ],
+    "timeline": [
+      {
+        "date_label": "May 12, 2026",
+        "title": "Semi-final 1",
+        "detail": "First set of qualifiers advanced to the Grand Final."
+      },
+      {
+        "date_label": "May 14, 2026",
+        "title": "Semi-final 2",
+        "detail": "Final qualifying lineup and show order were clarified."
+      },
+      {
+        "date_label": "May 16, 2026",
+        "title": "Grand Final",
+        "detail": "Title winner determined by jury and televote."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Eurovision Song Contest 2026 in Vienna: official schedule",
+        "url": "https://eurovision.tv/story/eurovision-2026-vienna-schedule",
+        "publisher": "eurovision.tv",
+        "published_at": "2026-04-28",
+        "snippet": "Official contest timeline including show dates."
+      },
+      {
+        "title": "Eurovision 2026 participating countries and running order",
+        "url": "https://eurovisionworld.com/eurovision/2026",
+        "publisher": "EurovisionWorld",
+        "published_at": "2026-05-14",
+        "snippet": "Consolidated participant and running order updates."
+      },
+      {
+        "title": "How to watch Eurovision 2026 live from Vienna",
+        "url": "https://www.bbc.com/mediacentre/articles/2026/05/how-to-watch-eurovision-2026",
+        "publisher": "BBC",
+        "published_at": "2026-05-13",
+        "snippet": "Broadcast and stream guidance for live coverage."
+      }
+    ],
+    "evidence_points": [
+      {
+        "claim": "Eurovision 2026 runs in Vienna from May 12 to May 16",
+        "source_url": "https://eurovision.tv/story/eurovision-2026-vienna-schedule",
+        "source_title": "Eurovision Song Contest 2026 in Vienna: official schedule",
+        "snippet": "The 2026 contest runs in Vienna from May 12 to May 16 with two semi-finals and the Grand Final."
+      },
+      {
+        "claim": "Running order updates were published during event week",
+        "source_url": "https://eurovisionworld.com/eurovision/2026",
+        "source_title": "Eurovision 2026 participating countries and running order",
+        "snippet": "Fan-facing tracker covering participating countries, qualification outcomes, and final running order updates."
+      },
+      {
+        "claim": "Broadcaster guidance exists for live watching",
+        "source_url": "https://www.bbc.com/mediacentre/articles/2026/05/how-to-watch-eurovision-2026",
+        "source_title": "How to watch Eurovision 2026 live from Vienna",
+        "snippet": "Broadcaster guide to viewing windows, digital streams, and recap segments for audiences in the UK and abroad."
+      }
+    ],
+    "layout_style": "timeline_first",
+    "sections": [
+      {
+        "component_type": "live_tracker",
+        "title": "Now / Next",
+        "columns": 3,
+        "items": [
+          {
+            "label": "Now",
+            "value": "Contest in final live phase",
+            "detail": "Semi-finals complete, final broadcast next."
+          },
+          {
+            "label": "Next",
+            "value": "Grand Final on May 16"
+          },
+          {
+            "label": "Where",
+            "value": "Vienna, Austria"
+          }
+        ]
+      },
+      {
+        "component_type": "timeline",
+        "title": "Immediate checkpoints",
+        "items": [
+          {
+            "label": "May 12, 2026",
+            "value": "Semi-final 1"
+          },
+          {
+            "label": "May 14, 2026",
+            "value": "Semi-final 2"
+          },
+          {
+            "label": "May 16, 2026",
+            "value": "Grand Final"
+          }
+        ]
+      },
+      {
+        "component_type": "action_list",
+        "title": "How to follow right now",
+        "items": [
+          {
+            "label": "Watch live",
+            "value": "Use official Eurovision and regional broadcaster streams.",
+            "link_label": "Coverage guide",
+            "link_url": "https://www.bbc.com/mediacentre/articles/2026/05/how-to-watch-eurovision-2026"
+          },
+          {
+            "label": "Track running order",
+            "value": "Monitor lineup updates before the final.",
+            "link_label": "Running order",
+            "link_url": "https://eurovisionworld.com/eurovision/2026"
+          },
+          {
+            "label": "Review schedule",
+            "value": "Keep final broadcast window and voting periods on calendar.",
+            "link_label": "Official schedule",
+            "link_url": "https://eurovision.tv/story/eurovision-2026-vienna-schedule"
+          }
+        ]
+      },
+      {
+        "component_type": "entity_list",
+        "title": "Who to track",
+        "items": [
+          {
+            "label": "Eurovision Song Contest",
+            "value": "Organizer and official channel for schedule updates."
+          },
+          {
+            "label": "National delegations",
+            "value": "Competing artists and teams moving through semis and final."
+          },
+          {
+            "label": "Broadcasters",
+            "value": "Regional rights holders for live streaming and recap coverage."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<section class="card">
+  {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
+  {% if section.summary %}<p class="muted" style="margin-top: 0;">{{ section.summary }}</p>{% endif %}
+  <div class="{% if section.columns == 3 %}grid-3{% else %}grid{% endif %}">
+    {% for item in section.items %}
+    {% if item.label and item.value %}
+    <div class="kpi">
+      <div class="label">{{ item.label }}</div>
+      <div class="value">{{ item.value }}</div>
+      {% if item.detail %}<div class="muted">{{ item.detail }}</div>{% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

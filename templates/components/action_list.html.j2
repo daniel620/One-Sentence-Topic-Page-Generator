@@ -1,0 +1,17 @@
+<section class="card">
+  {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
+  {% if section.summary %}<p class="muted" style="margin-top: 0;">{{ section.summary }}</p>{% endif %}
+  <ol>
+    {% for item in section.items %}
+    {% if item.value %}
+    <li>
+      <strong>{{ item.label }}</strong>: {{ item.value }}
+      {% if item.link_url and item.link_label %}
+      <div><a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }}</a></div>
+      {% endif %}
+      {% if item.detail %}<div class="muted">{{ item.detail }}</div>{% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+</section>

@@ -1,0 +1,15 @@
+<section class="card">
+  {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
+  {% if section.summary %}<p class="muted" style="margin-top: 0;">{{ section.summary }}</p>{% endif %}
+  <div class="grid">
+    {% for item in section.items %}
+    {% if item.label and item.value %}
+    <article class="card" style="margin:0;">
+      <h3>{{ item.label }}</h3>
+      <p class="muted">{{ item.value }}</p>
+      {% if item.detail %}<p class="muted">{{ item.detail }}</p>{% endif %}
+    </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

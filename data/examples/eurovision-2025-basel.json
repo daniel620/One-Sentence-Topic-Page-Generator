@@ -1,0 +1,119 @@
+{
+  "slug": "eurovision-2025-basel",
+  "inputSentence": "Eurovision Song Contest 2025 is being held in Basel from May 13 to May 17.",
+  "eventType": "culture",
+  "pageTitle": "Eurovision 2025 in Basel",
+  "kicker": "Festival week",
+  "heroSummary": "Eurovision is part live music competition, part continental political weather vane, and part internet event. Basel's edition needs a page that can hold schedule details, country narratives, fan momentum, and the finalists' changing odds in one place.",
+  "whatChanged": "Once host city, semi-final dates, and production details are locked, Eurovision stops being a long-range calendar note and becomes a live, update-heavy cultural event.",
+  "whyItMatters": "Eurovision reliably spills past entertainment coverage into identity, diplomacy, meme culture, and the business of staging one of Europe's biggest annual broadcasts.",
+  "lastUpdated": "2026-05-15",
+  "statusLabel": "Live event week · May 13–17, 2025",
+  "keyFacts": [
+    { "label": "Host city", "value": "Basel, Switzerland" },
+    { "label": "Grand final", "value": "May 17, 2025" },
+    { "label": "Semi-finals", "value": "May 13 and May 15" },
+    { "label": "Why Basel", "value": "Switzerland hosts after Nemo's 2024 win" }
+  ],
+  "timeline": [
+    {
+      "date": "May 2024",
+      "title": "Switzerland wins the previous contest",
+      "description": "Nemo's victory sends hosting rights to Switzerland and starts the race to define the next edition's city, venue, and production tone."
+    },
+    {
+      "date": "Late 2024",
+      "title": "Basel is selected as host",
+      "description": "The host-city choice shifts coverage toward venue logistics, local economic impact, and how the city intends to stage an event built for both TV and fan tourism."
+    },
+    {
+      "date": "May 13–17, 2025",
+      "title": "Contest week unfolds live",
+      "description": "The story turns into a rapid stream of qualifier results, staging surprises, jury-versus-televote tension, and the cultural conversation around standout acts."
+    }
+  ],
+  "watchItems": [
+    {
+      "title": "Semi-final qualifiers",
+      "description": "The shape of the grand final changes quickly once fan favorites either survive or fall out in the semi-finals."
+    },
+    {
+      "title": "Staging breakthroughs",
+      "description": "Eurovision coverage often pivots on performance design, camera language, and whether a live concept lands more powerfully than the studio track."
+    },
+    {
+      "title": "National narratives",
+      "description": "Every finalist arrives with a domestic media frame, and those narratives often influence how international audiences read the performances."
+    },
+    {
+      "title": "Voting drama",
+      "description": "The final scoreboard story is not only who wins, but whether juries and televoters reward the same kinds of entries."
+    }
+  ],
+  "entities": [
+    {
+      "name": "European Broadcasting Union",
+      "role": "Organizer",
+      "detail": "Sets the contest rules, coordinates participating broadcasters, and controls the official event schedule and production framework."
+    },
+    {
+      "name": "Basel",
+      "role": "Host city",
+      "detail": "Becomes a protagonist in its own right through venue logistics, fan zones, hospitality demand, and civic branding."
+    },
+    {
+      "name": "Participating broadcasters",
+      "role": "National gatekeepers",
+      "detail": "Each broadcaster shapes the pipeline from domestic selection to the final televised performance seen across Europe and beyond."
+    }
+  ],
+  "coverageAngles": [
+    {
+      "title": "The contest as a live internet event",
+      "description": "Beyond the TV audience, Eurovision is a social-media-native spectacle whose most important reactions often happen in real time online."
+    },
+    {
+      "title": "How host cities use Eurovision",
+      "description": "Track how Basel converts a global broadcast into a tourism and place-branding opportunity."
+    },
+    {
+      "title": "Performance concept versus song strength",
+      "description": "A recurring editorial question is whether staging can elevate a middling song or expose a weak live act."
+    },
+    {
+      "title": "Identity and geopolitics on stage",
+      "description": "Eurovision often doubles as a soft-power venue where symbolism, language choice, and representation matter nearly as much as the music itself."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Why does Eurovision need a bespoke page shape?",
+      "answer": "Because the audience wants a mix of logistics, entertainment analysis, live results, and fan-culture context rather than a generic event brief."
+    },
+    {
+      "question": "What changes from semi-finals to final?",
+      "answer": "The emphasis shifts from discovery and elimination to ranking outcomes, vote splits, and the winner's immediate cultural afterlife."
+    },
+    {
+      "question": "What would editors likely update most often?",
+      "answer": "Qualifiers, running order, standout performances, controversies, and anything that changes the odds heading into the grand final."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Eurovision.tv host city announcement",
+      "url": "https://eurovision.tv/",
+      "note": "Official event source for venue, dates, and contest operations."
+    },
+    {
+      "label": "Eurovision Song Contest 2025 event pages",
+      "url": "https://eurovision.tv/calendar",
+      "note": "Official schedule and programming reference."
+    },
+    {
+      "label": "Basel tourism and venue information",
+      "url": "https://www.basel.com/",
+      "note": "Local context for host-city logistics and visitor planning."
+    }
+  ]
+}

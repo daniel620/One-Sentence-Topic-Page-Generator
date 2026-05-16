@@ -1,0 +1,24 @@
+/* Live-dark theme — broadcast-room dark with magenta accent.
+   Used for: in-progress live_event, cultural_event, sports_tournament. */
+
+:root {
+  --page-bg: #0f1115;
+  --surface: #181b22;
+  --surface-muted: #1f232c;
+  --ink-strong: #f7f8fa;
+  --ink: #c6cad3;
+  --ink-muted: #8e94a3;
+  --rule: #262a33;
+  --rule-strong: #353a46;
+  --accent: #ff3d7f;
+  --accent-strong: #ff5e96;
+  --accent-soft: rgba(255, 61, 127, 0.12);
+  --accent-border: rgba(255, 61, 127, 0.35);
+  --warning: #f5b042;
+  --warning-soft: rgba(245, 176, 66, 0.12);
+  --danger: #ff7b93;
+  --danger-soft: rgba(255, 123, 147, 0.1);
+  --font-display: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

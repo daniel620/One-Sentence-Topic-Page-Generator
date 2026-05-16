@@ -1,10 +1,24 @@
+"""Generate one topic page HTML from one sentence.
+
+Two paths:
+
+  python scripts/generate.py --use-fixtures "<sentence>"
+      Looks up a saved fixture and renders it. No API keys required.
+      Use this for reviewers and CI smoke tests.
+
+  python scripts/generate.py "<sentence>"
+      Runs the live pipeline: Stage 1A (LLM) → Tavily search → Stage 1B (LLM)
+      → Stage 3 (LLM) → QA → render. Needs ANTHROPIC_API_KEY and
+      TAVILY_API_KEY in .env (gitignored).
+
+The output HTML is self-contained and opens directly in a browser.
+"""
 from __future__ import annotations
 
 import argparse
 import json
 import re
 import sys
-from datetime import date
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -13,9 +27,8 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from generator.pipeline import run_pipeline
 from generator.renderer import render_topic_page
-from generator.schemas import EventContext, RawResearch, TopicPageData
+from generator.schemas import RenderMode, TopicPageData
 
 
 def slugify(text: str) -> str:
@@ -23,44 +36,41 @@ def slugify(text: str) -> str:
     return slug.strip("-")[:80] or "topic-page"
 
 
+# When --use-fixtures is set, we match the input sentence to a known
+# saved evidence + page bundle. Keep this list small and explicit; it's
+# only for reviewer reproducibility.
+FIXTURE_BY_KEYWORD: dict[str, str] = {
+    "gpt-5.5": "tech_launch_gpt55.json",
+    "chatgpt": "tech_launch_gpt55.json",
+    "eurovision": "live_event_eurovision.json",
+    "vienna": "live_event_eurovision.json",
+    "world cup": "sports_tournament_worldcup.json",
+    "estadio azteca": "sports_tournament_worldcup.json",
+    "fifa": "sports_tournament_worldcup.json",
+}
+
+
 def fixture_path_from_sentence(sentence: str) -> Path:
     lowered = sentence.lower()
     fixture_dir = ROOT / "tests" / "fixtures"
-    if "gpt-5.5" in lowered or "chatgpt" in lowered:
-        return fixture_dir / "tech_launch_gpt55.json"
-    if "eurovision" in lowered or "vienna" in lowered:
-        return fixture_dir / "live_event_eurovision.json"
-    if "world cup" in lowered or "estadio azteca" in lowered:
-        return fixture_dir / "sports_tournament_worldcup.json"
-    raise ValueError("No fixture mapping found for sentence. Use a known sample input.")
+    for keyword, filename in FIXTURE_BY_KEYWORD.items():
+        if keyword in lowered:
+            return fixture_dir / filename
+    available = ", ".join(sorted(set(FIXTURE_BY_KEYWORD.values())))
+    raise ValueError(
+        "No fixture mapping found for that sentence. Try one matching one of: "
+        f"{available}. To run the live pipeline, drop --use-fixtures and "
+        "set ANTHROPIC_API_KEY + TAVILY_API_KEY in .env."
+    )
 
 
-def run_with_fixture(sentence: str, fixture_path: Path) -> TopicPageData:
+def topic_page_from_fixture(fixture_path: Path) -> TopicPageData:
     payload = json.loads(fixture_path.read_text(encoding="utf-8"))
-    fixture_context = EventContext.model_validate(payload["event_context"])
-    fixture_research = RawResearch.model_validate(payload["raw_research"])
-    fixture_page = TopicPageData.model_validate(payload["topic_page"])
-    fixture_today = date.fromisoformat(payload["today"])
-
-    def stage1(_: str, __: date | None = None) -> EventContext:
-        return fixture_context
-
-    def stage2(_: EventContext) -> RawResearch:
-        return fixture_research
-
-    def stage3(
-        _: EventContext,
-        __: RawResearch,
-        ___: date | None = None,
-    ) -> TopicPageData:
-        return fixture_page
-
-    return run_pipeline(
-        sentence=sentence,
-        today=fixture_today,
-        stage1_func=stage1,
-        stage2_func=stage2,
-        stage3_func=stage3,
+    return TopicPageData.model_validate(
+        {
+            **payload["topic_page"],
+            "evidence_graph_ref": payload["evidence_graph"],
+        }
     )
 
 
@@ -74,7 +84,12 @@ def main() -> None:
     parser.add_argument(
         "--use-fixtures",
         action="store_true",
-        help="Generate from local fixtures instead of live APIs.",
+        help="Render from a saved fixture instead of running the live pipeline.",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Render with debug trace UI (claim IDs, QA gate names, recipe).",
     )
     parser.add_argument(
         "--output-dir",
@@ -84,15 +99,18 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.use_fixtures:
-        fixture_path = fixture_path_from_sentence(args.sentence)
-        topic_page = run_with_fixture(args.sentence, fixture_path)
+        page = topic_page_from_fixture(fixture_path_from_sentence(args.sentence))
     else:
-        topic_page = run_pipeline(args.sentence)
+        from generator.pipeline import run_pipeline  # imported lazily so --use-fixtures doesn't require API keys
+        page = run_pipeline(args.sentence)
 
-    html = render_topic_page(topic_page)
+    mode = RenderMode.DEBUG if args.debug else RenderMode.PUBLIC
+    html = render_topic_page(page, mode=mode)
+
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_path = output_dir / f"{slugify(args.sentence)}.html"
+    suffix = ".debug.html" if args.debug else ".html"
+    output_path = output_dir / f"{slugify(args.sentence)}{suffix}"
     output_path.write_text(html, encoding="utf-8")
     print(output_path)
 

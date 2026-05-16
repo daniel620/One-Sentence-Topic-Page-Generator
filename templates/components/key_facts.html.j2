@@ -1,10 +1,13 @@
 {% from "components/_cite.html.j2" import cite with context %}
-<section class="block live-tracker-block" aria-label="Live status">
+{# This template is rarely used — the hero already shows page.key_facts. We
+   keep this so the registry stays internally consistent: a UIComponent with
+   component_type=key_facts renders as a stat-grid-styled block. #}
+<section class="block stat-grid-block">
   {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
   {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
-  <div class="live-strip">
+  <div class="stat-grid">
     {% for item in section.items %}
-    <div class="cell">
+    <div class="stat">
       <div class="label">{{ item.label }}</div>
       <div class="value">{{ item.value }}</div>
       {% if item.detail %}<div class="detail">{{ item.detail }}</div>{% endif %}

@@ -1,19 +1,20 @@
-<section class="card">
+{% from "components/_cite.html.j2" import cite with context %}
+<section class="block source-list-block">
   {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
-  {% if section.summary %}<p class="muted" style="margin-top: 0;">{{ section.summary }}</p>{% endif %}
-  <ol>
+  {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+  <ul class="sources-list">
     {% for item in section.items %}
-    {% if item.value %}
-    <li class="source">
+    <li>
       {% if item.link_url %}
       <a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">{{ item.value }}</a>
       {% else %}
       <span>{{ item.value }}</span>
       {% endif %}
-      {% if item.label %}<div class="meta">{{ item.label }}</div>{% endif %}
-      {% if item.detail %}<div class="muted">{{ item.detail }}</div>{% endif %}
+      <div class="meta">
+        <span class="pub">{{ item.label }}</span>
+        {% if item.detail %} · <span>{{ item.detail }}</span>{% endif %}
+      </div>
     </li>
-    {% endif %}
     {% endfor %}
-  </ol>
+  </ul>
 </section>

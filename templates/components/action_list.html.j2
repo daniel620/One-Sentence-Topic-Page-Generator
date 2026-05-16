@@ -1,17 +1,21 @@
-<section class="card">
+{% from "components/_cite.html.j2" import cite with context %}
+<section class="block action-list-block">
   {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
-  {% if section.summary %}<p class="muted" style="margin-top: 0;">{{ section.summary }}</p>{% endif %}
-  <ol>
+  {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+  <ol class="actions">
     {% for item in section.items %}
-    {% if item.value %}
-    <li>
-      <strong>{{ item.label }}</strong>: {{ item.value }}
-      {% if item.link_url and item.link_label %}
-      <div><a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }}</a></div>
-      {% endif %}
-      {% if item.detail %}<div class="muted">{{ item.detail }}</div>{% endif %}
+    <li class="action">
+      <div class="num">{{ "%02d" | format(loop.index) }}</div>
+      <div>
+        <div class="title">{{ item.label }}</div>
+        <div class="body">{{ item.value }}</div>
+        {% if item.detail %}<div class="detail">{{ item.detail }}</div>{% endif %}
+        {% if item.link_url and item.link_label %}
+        <div class="link"><a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }} →</a></div>
+        {% endif %}
+        {{ cite(item) }}
+      </div>
     </li>
-    {% endif %}
     {% endfor %}
   </ol>
 </section>

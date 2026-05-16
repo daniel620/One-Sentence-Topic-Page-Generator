@@ -1,7 +1,19 @@
+"""Stage 2: deterministic research → `EvidenceGraph`.
+
+1. Tavily search for each query from Stage 1A.
+2. Deduplicate results by URL, prefer higher Tavily scores.
+3. Fetch each URL and extract readable text + title.
+4. Run rule-based claim extraction (`generator.utils.extract_deterministic_claims`).
+5. Score each source's authority, freshness, and relevance.
+6. Detect contradictions between numeric/date claims.
+7. Return an `EvidenceGraph` for Stage 1B / Stage 3 / QA to consume.
+
+No LLM calls happen here — every step is reproducible and testable.
+"""
 from __future__ import annotations
 
+import logging
 import os
-import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from typing import Any
@@ -9,13 +21,20 @@ from typing import Any
 from tavily import TavilyClient
 
 from generator.schemas import (
-    ComponentEvidenceBucket,
-    ComponentType,
+    Claim,
+    EvidenceGraph,
     EventContext,
-    RawResearch,
-    ResearchEvidence,
     ResearchResult,
+    Source,
 )
+from generator.utils import (
+    create_source,
+    detect_contradictions,
+    extract_deterministic_claims,
+    fetch_and_extract_content,
+)
+
+LOGGER = logging.getLogger("stage2_research")
 
 
 def _build_tavily_client() -> TavilyClient:
@@ -33,9 +52,9 @@ def _search_query(client: Any, query: str, max_results: int) -> list[ResearchRes
         include_answer=False,
         search_depth="advanced",
     )
-    raw_items = response.get("results", [])
+    raw = response.get("results", []) if isinstance(response, dict) else []
     parsed: list[ResearchResult] = []
-    for item in raw_items:
+    for item in raw:
         title = (item.get("title") or "").strip()
         url = (item.get("url") or "").strip()
         content = (item.get("content") or "").strip()
@@ -55,152 +74,98 @@ def _search_query(client: Any, query: str, max_results: int) -> list[ResearchRes
     return parsed
 
 
-METRIC_PATTERN = re.compile(
-    r"\b\d+(?:\.\d+)?\s?(?:%|x|ms|s|minutes?|hours?|days?|weeks?)\b",
-    re.IGNORECASE,
-)
-DATE_PATTERN = re.compile(
-    r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{1,2}(?:,\s+\d{4})?|\b\d{4}-\d{2}-\d{2}\b",
-    re.IGNORECASE,
-)
-ACTION_PATTERN = re.compile(
-    r"\b(launch|release|rollout|kickoff|opens|start|watch|tickets?|broadcast|stream)\b",
-    re.IGNORECASE,
-)
-
-
-def _split_sentences(content: str) -> list[str]:
-    return [item.strip() for item in re.split(r"(?<=[.!?])\s+", content) if item.strip()]
-
-
-def _first_sentence_matching(content: str, pattern: re.Pattern[str]) -> str | None:
-    for sentence in _split_sentences(content):
-        if pattern.search(sentence):
-            return sentence
-    return None
-
-
-def _build_evidence_pack(results: list[ResearchResult]) -> list[ResearchEvidence]:
-    evidence: list[ResearchEvidence] = []
-    seen_pairs: set[tuple[str, str]] = set()
-
+def _dedupe_by_url(results: list[ResearchResult]) -> list[ResearchResult]:
+    by_url: dict[str, ResearchResult] = {}
     for item in results:
-        candidates: list[tuple[str, str]] = []
-        metric_sentence = _first_sentence_matching(item.content, METRIC_PATTERN)
-        if metric_sentence:
-            candidates.append(("metric", metric_sentence))
-        date_sentence = _first_sentence_matching(item.content, DATE_PATTERN)
-        if date_sentence:
-            candidates.append(("date", date_sentence))
-        action_sentence = _first_sentence_matching(item.content, ACTION_PATTERN)
-        if action_sentence:
-            candidates.append(("action", action_sentence))
-        if not candidates:
-            sentences = _split_sentences(item.content)
-            if sentences:
-                candidates.append(("general", sentences[0]))
-
-        for signal_type, sentence in candidates:
-            pair = (str(item.url), sentence)
-            if pair in seen_pairs:
-                continue
-            seen_pairs.add(pair)
-            evidence.append(
-                ResearchEvidence(
-                    label=item.query[:100],
-                    signal_type=signal_type,
-                    snippet=sentence[:500],
-                    source_url=item.url,
-                    source_title=item.title,
-                    source_publisher=item.source_name,
-                    published_at=item.published_date,
-                )
-            )
-            if len(evidence) >= 12:
-                return evidence
-
-    return evidence
+        url = str(item.url)
+        current = by_url.get(url)
+        if current is None or (item.score or 0) > (current.score or 0):
+            by_url[url] = item
+    return sorted(
+        by_url.values(),
+        key=lambda r: (r.score is not None, r.score or 0),
+        reverse=True,
+    )
 
 
-def _infer_component_for_query(query: str) -> ComponentType:
-    lowered = query.lower()
-    if any(token in lowered for token in ("compare", "versus", "benchmark", "changed")):
-        return ComponentType.COMPARISON_TABLE
-    if any(token in lowered for token in ("watch", "follow", "how to", "tickets", "broadcast", "stream")):
-        return ComponentType.ACTION_LIST
-    if any(token in lowered for token in ("schedule", "dates", "timeline", "next", "checkpoint")):
-        return ComponentType.TIMELINE
-    if any(token in lowered for token in ("status", "live", "now", "developing")):
-        return ComponentType.LIVE_TRACKER
-    return ComponentType.STAT_GRID
+def _build_evidence_graph(
+    results: list[ResearchResult], context: EventContext
+) -> EvidenceGraph:
+    sources: list[Source] = []
+    claims: list[Claim] = []
+    event_keywords = context.event_sentence.lower().split() if context.event_sentence else []
 
+    for result in _dedupe_by_url(results)[:20]:
+        source = create_source(
+            url=str(result.url),
+            title=result.title,
+            publisher=result.source_name,
+            published_at=result.published_date,
+            content=result.content,
+            event_keywords=event_keywords,
+        )
+        sources.append(source)
 
-def _build_component_evidence(
-    context: EventContext,
-    evidence_pack: list[ResearchEvidence],
-) -> list[ComponentEvidenceBucket]:
-    component_to_evidence: dict[ComponentType, list[ResearchEvidence]] = {
-        component: [] for component in context.planned_components
-    }
-    fallback_component = context.planned_components[0]
-
-    for evidence in evidence_pack:
-        query_component = _infer_component_for_query(evidence.label)
-        target = query_component if query_component in component_to_evidence else fallback_component
-        bucket = component_to_evidence[target]
-        if len(bucket) < 6:
-            bucket.append(evidence)
-
-    for component in context.planned_components:
-        if component_to_evidence[component]:
+        content, _ = fetch_and_extract_content(str(result.url))
+        if not content:
             continue
-        component_to_evidence[component] = evidence_pack[:2]
 
-    return [
-        ComponentEvidenceBucket(component_type=component, evidence=evidence_list)
-        for component, evidence_list in component_to_evidence.items()
-        if evidence_list
-    ]
+        for new_claim in extract_deterministic_claims(
+            url=str(result.url),
+            title=result.title,
+            content=content,
+            source_id=source.source_id,
+        ):
+            existing = next(
+                (
+                    c for c in claims
+                    if c.text.lower() == new_claim.text.lower() and c.claim_type == new_claim.claim_type
+                ),
+                None,
+            )
+            if existing is None:
+                claims.append(new_claim)
+            elif source.source_id not in existing.source_ids:
+                existing.source_ids.append(source.source_id)
+
+    valid_source_ids = {s.source_id for s in sources}
+    for claim in claims:
+        claim.source_ids = [sid for sid in claim.source_ids if sid in valid_source_ids]
+    claims = [c for c in claims if c.source_ids]
+
+    return EvidenceGraph(
+        event_hypothesis=context.event_sentence or context.primary_entity,
+        sources=sources,
+        claims=claims,
+        contradictions=detect_contradictions(claims),
+        unresolved_questions=[],
+        last_updated=datetime.now(timezone.utc),
+    )
 
 
 def run_research(
     context: EventContext,
     tavily_client: Any | None = None,
     max_results_per_query: int = 5,
-) -> RawResearch:
+) -> EvidenceGraph:
+    """Search the open web, build and return an `EvidenceGraph`."""
     client = tavily_client or _build_tavily_client()
-    with ThreadPoolExecutor(max_workers=len(context.search_queries)) as executor:
+
+    with ThreadPoolExecutor(max_workers=len(context.search_queries) or 1) as executor:
         batches = list(
             executor.map(
-                lambda query: _search_query(client, query, max_results_per_query),
+                lambda q: _search_query(client, q, max_results_per_query),
                 context.search_queries,
             )
         )
 
-    deduped: dict[str, ResearchResult] = {}
+    all_results: list[ResearchResult] = []
     for batch in batches:
-        for item in batch:
-            url_key = str(item.url)
-            current = deduped.get(url_key)
-            if current is None:
-                deduped[url_key] = item
-                continue
-            if (item.score or 0) > (current.score or 0):
-                deduped[url_key] = item
+        all_results.extend(batch)
 
-    results = sorted(
-        deduped.values(),
-        key=lambda item: (item.score is not None, item.score or 0),
-        reverse=True,
+    graph = _build_evidence_graph(all_results, context)
+    LOGGER.info(
+        "Built EvidenceGraph: %d sources, %d claims, %d contradictions",
+        len(graph.sources), len(graph.claims), len(graph.contradictions),
     )
-    evidence_pack = _build_evidence_pack(results)
-    component_evidence = _build_component_evidence(context, evidence_pack)
-
-    return RawResearch(
-        event_type=context.event_type,
-        status=context.status,
-        collected_at=datetime.now(timezone.utc).isoformat(),
-        results=results,
-        evidence_pack=evidence_pack,
-        component_evidence=component_evidence,
-    )
+    return graph

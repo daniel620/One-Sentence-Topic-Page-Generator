@@ -1,0 +1,14 @@
+{# Surfaces conflicting claims or unresolved open questions in editorial voice. #}
+<section class="notice uncertainty" aria-label="Unreconciled claims">
+  <h3>{{ section.title or "What we can't reconcile yet" }}</h3>
+  {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+  <ul>
+    {% for item in section.items %}
+    <li>
+      <span class="label">{{ item.label }}</span>
+      <span class="body"> — {{ item.value }}</span>
+      {% if item.detail %}<div class="detail">{{ item.detail }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

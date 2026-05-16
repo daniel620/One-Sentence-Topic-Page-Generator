@@ -1,0 +1,14 @@
+{# Live hero — high-contrast, leads with a pulsing "Live now" eyebrow. #}
+<header class="hero hero-live">
+  <div class="dateline">
+    <span class="eyebrow live"><span class="dot"></span>{{ page.urgency_label or "Live now" }}</span>
+    {% if page.as_of_label %}<span>{{ page.as_of_label }}</span>{% endif %}
+  </div>
+  <h1>{{ page.headline }}</h1>
+  {% if page.deck %}<p class="deck">{{ page.deck }}</p>{% endif %}
+  {% if page.summary %}
+    {% for paragraph in page.summary | split_sep("\n") %}
+      {% if paragraph %}<p class="lede">{{ paragraph }}</p>{% endif %}
+    {% endfor %}
+  {% endif %}
+</header>

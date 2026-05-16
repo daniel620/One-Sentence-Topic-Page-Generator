@@ -1,50 +1,46 @@
+"""End-to-end smoke test: render every fixture, assert valid HTML.
+
+Run before submitting changes. No API keys required; reads only the JSON
+bundles under tests/fixtures/.
+"""
 from __future__ import annotations
 
 import json
 import sys
-from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from generator.pipeline import run_pipeline
 from generator.renderer import render_topic_page
-from generator.schemas import EventContext, RawResearch, TopicPageData
+from generator.schemas import RenderMode, TopicPageData
 
 
 def verify_fixture(fixture_path: Path) -> None:
     payload = json.loads(fixture_path.read_text(encoding="utf-8"))
-    sentence = payload["input_sentence"]
-    fixture_today = date.fromisoformat(payload["today"])
-    fixture_context = EventContext.model_validate(payload["event_context"])
-    fixture_research = RawResearch.model_validate(payload["raw_research"])
-    fixture_page = TopicPageData.model_validate(payload["topic_page"])
-
-    def stage1(_: str, __: date | None = None) -> EventContext:
-        return fixture_context
-
-    def stage2(_: EventContext) -> RawResearch:
-        return fixture_research
-
-    def stage3(
-        _: EventContext,
-        __: RawResearch,
-        ___: date | None = None,
-    ) -> TopicPageData:
-        return fixture_page
-
-    result = run_pipeline(
-        sentence=sentence,
-        today=fixture_today,
-        stage1_func=stage1,
-        stage2_func=stage2,
-        stage3_func=stage3,
+    page = TopicPageData.model_validate(
+        {
+            **payload["topic_page"],
+            "evidence_graph_ref": payload["evidence_graph"],
+        }
     )
-    html = render_topic_page(result)
-    if "<html" not in html.lower():
-        raise AssertionError(f"Fixture {fixture_path.name} did not render valid HTML")
+
+    public_html = render_topic_page(page, mode=RenderMode.PUBLIC)
+    debug_html = render_topic_page(page, mode=RenderMode.DEBUG)
+
+    if "<html" not in public_html.lower():
+        raise AssertionError(f"{fixture_path.name}: public render produced invalid HTML")
+    if "<html" not in debug_html.lower():
+        raise AssertionError(f"{fixture_path.name}: debug render produced invalid HTML")
+
+    # Public mode must not leak internal trace strings.
+    forbidden_public = ["claim_id=", "QA repair", "Repair action", "Layout: dashboard"]
+    for needle in forbidden_public:
+        if needle in public_html:
+            raise AssertionError(
+                f"{fixture_path.name}: public render leaks internal '{needle}'"
+            )
 
 
 def main() -> None:

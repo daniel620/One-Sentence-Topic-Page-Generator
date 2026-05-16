@@ -1,0 +1,16 @@
+{# Inline editorial citation. Public mode: "Publisher · date" linked to the
+   most authoritative source. Debug mode: also exposes the claim_id. #}
+{% macro cite(item) %}
+  {% set claim = claim_lookup_by_id.get(item.claim_id) if item.claim_id and claim_lookup_by_id else None %}
+  {% if claim and claim.best_source %}
+  <div class="cite">
+    <a href="{{ claim.best_source.url }}" target="_blank" rel="noopener noreferrer">
+      <span class="pub{% if claim.best_source.is_official %} official{% endif %}">{{ claim.best_source.publisher or claim.best_source.publisher_short }}</span>{% if claim.best_source.published_at %} · {{ claim.best_source.published_at }}{% endif %}
+    </a>
+    {% if claim.sources | length > 1 %}<span class="more">+{{ claim.sources | length - 1 }} more</span>{% endif %}
+    {% if is_debug %}<span class="more"> · {{ item.claim_id }}</span>{% endif %}
+  </div>
+  {% elif is_debug and item.claim_id %}
+  <div class="cite"><span class="more">claim_id={{ item.claim_id }} (unresolved)</span></div>
+  {% endif %}
+{% endmacro %}

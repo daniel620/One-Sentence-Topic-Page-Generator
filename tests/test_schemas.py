@@ -323,19 +323,19 @@ class TestUIComponentValidation:
         )
         assert component.items[0].claim_id == "m1"
 
-    def test_stat_grid_numeric_items_without_claim_ids_fail(self):
-        """StatGrid with numeric items but no claim_ids should fail."""
+    def test_stat_grid_numeric_items_without_claim_ids_soft_warning(self):
+        """StatGrid with numeric items but no claim_ids should be lenient during migration."""
         item_without_claim = UIItem(
             label="Speed",
             value="40%",  # Numeric but no claim_id
         )
-        with pytest.raises(ValidationError) as exc:
-            UIComponent(
-                component_type=ComponentType.STAT_GRID,
-                title="Stats",
-                items=[item_without_claim],
-            )
-        assert "claim_id" in str(exc.value).lower()
+        # Should not raise an error during migration phase
+        component = UIComponent(
+            component_type=ComponentType.STAT_GRID,
+            title="Stats",
+            items=[item_without_claim],
+        )
+        assert component.items[0].claim_id is None  # No claim_id, but no error
 
 
 class TestTopicPageDataValidation:

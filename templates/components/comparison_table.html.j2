@@ -1,0 +1,15 @@
+{% from "components/_cite.html.j2" import cite with context %}
+<section class="block compare-block">
+  {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
+  {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+  <div class="compare">
+    {% for item in section.items %}
+    <div class="compare-row">
+      <div class="what">{{ item.label }}</div>
+      <div class="how">{{ item.value }}</div>
+      {% if item.detail %}<div class="detail">{{ item.detail }}</div>{% endif %}
+      {{ cite(item) }}
+    </div>
+    {% endfor %}
+  </div>
+</section>

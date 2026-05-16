@@ -1,2 +1,9 @@
 .env
-node_modules/
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.debug.html

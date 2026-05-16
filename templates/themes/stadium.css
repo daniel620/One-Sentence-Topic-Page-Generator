@@ -1,0 +1,24 @@
+/* Stadium theme — cool navy + brand red.
+   Used for: sports_tournament upcoming/scheduled. */
+
+:root {
+  --page-bg: #f3f5f8;
+  --surface: #ffffff;
+  --surface-muted: #eef2f7;
+  --ink-strong: #0d1c30;
+  --ink: #1c2a3d;
+  --ink-muted: #5d6b80;
+  --rule: #dee5ee;
+  --rule-strong: #c4cdda;
+  --accent: #c0102b;
+  --accent-strong: #9d0a21;
+  --accent-soft: #fde7eb;
+  --accent-border: #f0bcc4;
+  --warning: #b9650b;
+  --warning-soft: #fbe9d3;
+  --danger: #b02239;
+  --danger-soft: #fadfe3;
+  --font-display: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

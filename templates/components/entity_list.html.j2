@@ -1,0 +1,15 @@
+{% from "components/_cite.html.j2" import cite with context %}
+<section class="block entity-list-block">
+  {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
+  {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+  <ul class="entities">
+    {% for item in section.items %}
+    <li class="entity">
+      <div class="name">{{ item.label }}</div>
+      <div class="role">{{ item.value }}</div>
+      {% if item.detail %}<div class="detail">{{ item.detail }}</div>{% endif %}
+      {{ cite(item) }}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

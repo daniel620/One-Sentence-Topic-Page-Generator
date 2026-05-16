@@ -1,0 +1,986 @@
+{
+  "input_sentence": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+  "today": "2026-05-16",
+  "evidence_graph": {
+    "event_hypothesis": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+    "sources": [
+      {
+        "source_id": "src_41601",
+        "url": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+        "title": "GPT-5.5 Instant Is Now ChatGPT's Default Model: What Changed on ...",
+        "publisher": "Reddit",
+        "published_at": null,
+        "source_type": "social",
+        "authority_score": 0.5,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8571428571428571,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_23083",
+        "url": "https://pulse2.com/openai-gpt-5-5-introduced-as-most-advanced-model-yet-for-real-world-work-and-agentic-ai/",
+        "title": "OpenAI: GPT-5.5 Introduced As Most Advanced Model Yet For Real-World Work And Agentic AI",
+        "publisher": "Pulse2",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7142857142857143,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_15125",
+        "url": "https://openai.com/index/gpt-5-5-instant/",
+        "title": "GPT-5.5 Instant: smarter, clearer, and more personalized | OpenAI",
+        "publisher": "OpenAI",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.42857142857142855,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_98858",
+        "url": "https://mwm.ai/articles/openai-upgrades-chatgpt-default-model-to-gpt-5-5-instant-in-may-2026",
+        "title": "OpenAI Upgrades ChatGPT Default Model to GPT-5.5 Instant ... - MWM",
+        "publisher": "Mwm",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.9285714285714286,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_07247",
+        "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+        "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT",
+        "publisher": "TechCrunch",
+        "published_at": null,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8571428571428571,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_59546",
+        "url": "https://thezvi.substack.com/p/gpt-55-capabilities-and-reactions",
+        "title": "GPT-5.5: Capabilities and Reactions - by Zvi Mowshowitz - Substack",
+        "publisher": "Substack",
+        "published_at": null,
+        "source_type": "social",
+        "authority_score": 0.5,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_19210",
+        "url": "https://deploymentsafety.openai.com/gpt-5-5-instant",
+        "title": "GPT-5.5 Instant System Card - Deployment Safety Hub - OpenAI",
+        "publisher": "OpenAI",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7142857142857143,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_66141",
+        "url": "https://openai.com/index/introducing-gpt-5-5/",
+        "title": "Introducing GPT-5.5",
+        "publisher": "OpenAI",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.42857142857142855,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_28547",
+        "url": "https://help.openai.com/en/articles/11909943-gpt-5-1-in-chatgpt",
+        "title": "GPT-5.3 and GPT-5.5 in ChatGPT | OpenAI Help Center",
+        "publisher": "OpenAI",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7857142857142857,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_18243",
+        "url": "https://lablab.ai/ai-articles/this-week-in-ai-2026-05-12",
+        "title": "GPT-5.5 Is ChatGPT's New Default, Claude Mythos Hunts Zero-Days ...",
+        "publisher": "Lablab",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8571428571428571,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_70172",
+        "url": "https://deploymentsafety.openai.com/gpt-5-5",
+        "title": "GPT-5.5 System Card - OpenAI Deployment Safety Hub",
+        "publisher": "OpenAI",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_77916",
+        "url": "https://www.chatprd.ai/how-i-ai/openai-gpt-5.5-review",
+        "title": "How I AI: My GPT-5.5 Review—A 6-Hour Autonomous Task and the ...",
+        "publisher": "Chatprd",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_15015",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1t704ip/gpt55_instant_might_be_openais_most_important/",
+        "title": "GPT-5.5 Instant might be OpenAI’s most important update yet and almost nobody is talking about why : r/OpenAI",
+        "publisher": "Reddit",
+        "published_at": null,
+        "source_type": "social",
+        "authority_score": 0.5,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7857142857142857,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_42155",
+        "url": "https://releasebot.io/updates/openai/chatgpt",
+        "title": "ChatGPT Updates by OpenAI - May 2026 - Releasebot",
+        "publisher": "Releasebot",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8571428571428571,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_41447",
+        "url": "https://docsbot.ai/models/compare/gpt-5-5/gpt-5",
+        "title": "GPT-5.5 vs GPT‑5 - Detailed Performance & Feature Comparison",
+        "publisher": "Docsbot",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5714285714285714,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_68956",
+        "url": "https://releasebot.io/updates/openai",
+        "title": "OpenAI Release Notes - May 2026 Latest Updates\n    - Releasebot",
+        "publisher": "Releasebot",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7857142857142857,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_27099",
+        "url": "https://www.appaca.ai/resources/llm-for/data-analysis/gpt-5.5-vs-gpt-5",
+        "title": "GPT-5.5 vs GPT-5 for Data Analysis (2026) | Appaca",
+        "publisher": "Appaca",
+        "published_at": null,
+        "source_type": "primary_data",
+        "authority_score": 0.95,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_53604",
+        "url": "https://aibusinessweekly.net/p/chatgpt-new-features-2026",
+        "title": "ChatGPT New Features 2026: GPT-5.4, Codex & Updates",
+        "publisher": "Aibusinessweekly",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7142857142857143,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_43941",
+        "url": "https://mashable.com/article/openai-chatgpt-55-instant-out-now",
+        "title": "OpenAI rolls out ChatGPT 5.5 Instant as the new default model for ...",
+        "publisher": "Mashable",
+        "published_at": null,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8571428571428571,
+        "bias_or_limitation": null
+      },
+      {
+        "source_id": "src_51964",
+        "url": "https://benchlm.ai/compare/gpt-5-5-vs-gpt-5-5-pro",
+        "title": "GPT-5.5 vs GPT-5.5 Pro: AI Benchmark Comparison 2026",
+        "publisher": "Benchlm",
+        "published_at": null,
+        "source_type": "unknown",
+        "authority_score": 0.3,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5,
+        "bias_or_limitation": null
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "date_1206",
+        "text": "Apr 26, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_23083"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-04-26T00:00:00Z"
+      },
+      {
+        "claim_id": "metric_5140",
+        "text": "61.4 M",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_98858"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "61.4",
+        "unit": "M",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "ce Publisher Portfolio Rollout and Integrations Refining the Daily Driver Telemetry Downloads (30d) 61.4M Key takeaways 01 GPT-5.5 Instant has replaced GPT-5.3 Instant as the new default model for all Chat"
+      },
+      {
+        "claim_id": "metric_3545",
+        "text": "61 million",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_98858"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "61",
+        "unit": "million",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "ther tiers to follow. 04 The ChatGPT app continues to show strong market performance, securing over 61 million downloads in the last 30 days. 05 It remains unclear when the ChatGPT integration within Apple Inte"
+      },
+      {
+        "claim_id": "metric_7419",
+        "text": "30 days",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_98858"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "30",
+        "unit": "days",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "GPT app continues to show strong market performance, securing over 61 million downloads in the last 30 days. 05 It remains unclear when the ChatGPT integration within Apple Intelligence will adopt the new GP"
+      },
+      {
+        "claim_id": "date_5877",
+        "text": "May 20",
+        "claim_type": "date",
+        "source_ids": [
+          "src_98858",
+          "src_42155",
+          "src_68956"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-05-20T00:00:00Z"
+      },
+      {
+        "claim_id": "date_1527",
+        "text": "May 6, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_98858"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-05-06T00:00:00Z"
+      },
+      {
+        "claim_id": "date_0431",
+        "text": "May 5, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_98858",
+          "src_07247",
+          "src_19210"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-05-05T00:00:00Z"
+      },
+      {
+        "claim_id": "loc_8030",
+        "text": "May",
+        "claim_type": "location",
+        "source_ids": [
+          "src_98858"
+        ],
+        "confidence": "medium",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "location": "May"
+      },
+      {
+        "claim_id": "loc_8034",
+        "text": "Cases Flagged",
+        "claim_type": "location",
+        "source_ids": [
+          "src_70172"
+        ],
+        "confidence": "medium",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "location": "Cases Flagged"
+      },
+      {
+        "claim_id": "date_5240",
+        "text": "April 26, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_77916"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-04-26T00:00:00Z"
+      },
+      {
+        "claim_id": "loc_9109",
+        "text": "Get",
+        "claim_type": "location",
+        "source_ids": [
+          "src_77916"
+        ],
+        "confidence": "medium",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "location": "Get"
+      },
+      {
+        "claim_id": "date_0140",
+        "text": "May 16, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_42155",
+          "src_68956"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-05-16T00:00:00Z"
+      },
+      {
+        "claim_id": "date_6012",
+        "text": "May 15, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_42155",
+          "src_68956"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-05-15T00:00:00Z"
+      },
+      {
+        "claim_id": "date_8710",
+        "text": "May 14, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_42155",
+          "src_68956"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-05-14T00:00:00Z"
+      },
+      {
+        "claim_id": "loc_3047",
+        "text": "Create",
+        "claim_type": "location",
+        "source_ids": [
+          "src_42155",
+          "src_68956"
+        ],
+        "confidence": "medium",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "location": "Create"
+      },
+      {
+        "claim_id": "metric_5446",
+        "text": "31 B",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_41447"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "31",
+        "unit": "B",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "de Haiku 4.5 Claude 4.5 Sonnet Amazon Nova Micro Amazon Nova Lite Amazon Nova Pro Command A Gemma 4 31B Gemini 3.1 Flash-Lite Gemini 3.1 Pro Gemini 3 Flash Gemini 3 Pro Gemini 2.5 Flash Lite Gemini 2.5 F"
+      },
+      {
+        "claim_id": "metric_2870",
+        "text": "120 B",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_41447"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "120",
+        "unit": "B",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "lama 4 Behemoth Mistral Medium 3.5 Mistral Small 4 Mistral Large 3 Mistral Large 2 Nemotron 3 Super 120B A12B GPT-Realtime-2 GPT-5.5 GPT-5.5 Pro GPT‑5.4 mini GPT‑5.4 nano GPT‑5.4 GPT‑5.2 GPT‑5.1 GPT-5 Pro"
+      },
+      {
+        "claim_id": "metric_0722",
+        "text": "1 M",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_27099",
+          "src_51964"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "1",
+        "unit": "M",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "enAI OpenAI Model Type text text Context Window 1,000,000 tokens 400,000 tokens Input Cost $ 5.00 / 1M tokens $ 1.25 / 1M tokens Output Cost $ 30.00 / 1M tokens $ 10.00 / 1M tokens Top pick for Data Ana"
+      },
+      {
+        "claim_id": "metric_8037",
+        "text": "82.7 %",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_27099"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "82.7",
+        "unit": "%",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "a Analysis GPT-5.5 OpenAI 1. Strongest Agentic Coding Model State-of-the-art on Terminal-Bench 2.0 (82.7%), Expert-SWE (73.1%), and SWE-Bench Pro (58.6%), outperforming GPT-5.4 on complex coding tasks. Hol"
+      },
+      {
+        "claim_id": "metric_1310",
+        "text": "73.1 %",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_27099"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "73.1",
+        "unit": "%",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "penAI 1. Strongest Agentic Coding Model State-of-the-art on Terminal-Bench 2.0 (82.7%), Expert-SWE (73.1%), and SWE-Bench Pro (58.6%), outperforming GPT-5.4 on complex coding tasks. Holds context across la"
+      },
+      {
+        "claim_id": "metric_7241",
+        "text": "58.6 %",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_27099"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "58.6",
+        "unit": "%",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "Coding Model State-of-the-art on Terminal-Bench 2.0 (82.7%), Expert-SWE (73.1%), and SWE-Bench Pro (58.6%), outperforming GPT-5.4 on complex coding tasks. Holds context across large systems, reasons throug"
+      },
+      {
+        "claim_id": "date_7493",
+        "text": "Mar 26, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_53604"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-03-26T00:00:00Z"
+      },
+      {
+        "claim_id": "date_6545",
+        "text": "March 23, 2026",
+        "claim_type": "date",
+        "source_ids": [
+          "src_53604"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-03-23T00:00:00Z"
+      },
+      {
+        "claim_id": "date_4737",
+        "text": "March 20",
+        "claim_type": "date",
+        "source_ids": [
+          "src_53604"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "date_value": "2026-03-20T00:00:00Z"
+      },
+      {
+        "claim_id": "loc_0793",
+        "text": "Under",
+        "claim_type": "location",
+        "source_ids": [
+          "src_53604"
+        ],
+        "confidence": "medium",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "location": "Under"
+      },
+      {
+        "claim_id": "loc_6810",
+        "text": "School Creator Playbook All Series",
+        "claim_type": "location",
+        "source_ids": [
+          "src_43941"
+        ],
+        "confidence": "medium",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "location": "School Creator Playbook All Series"
+      },
+      {
+        "claim_id": "metric_6795",
+        "text": "30 $",
+        "claim_type": "metric",
+        "source_ids": [
+          "src_51964"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "value": "30",
+        "unit": "$",
+        "direction": null,
+        "base_value_if_delta": null,
+        "evidence_snippet": "1.7 vs 52.4 + 0.7 difference Operational Comparison GPT-5.5 GPT-5.5 Pro Price (per 1M tokens) $5 / $30 $30 / $180 Speed N/A N/A Latency (TTFT) N/A N/A Context Window 1M 1M Quick Verdict GPT-5.5 makes more"
+      }
+    ],
+    "contradictions": [
+      {
+        "topic": "M measurement",
+        "claim_a": "61.4 M",
+        "sources_a": [
+          "src_98858"
+        ],
+        "claim_b": "1 M",
+        "sources_b": [
+          "src_27099",
+          "src_51964"
+        ],
+        "resolution": "prefer_newer",
+        "display_policy": "show_uncertainty_box"
+      },
+      {
+        "topic": "B measurement",
+        "claim_a": "31 B",
+        "sources_a": [
+          "src_41447"
+        ],
+        "claim_b": "120 B",
+        "sources_b": [
+          "src_41447"
+        ],
+        "resolution": "prefer_newer",
+        "display_policy": "show_uncertainty_box"
+      },
+      {
+        "topic": "% measurement",
+        "claim_a": "82.7 %",
+        "sources_a": [
+          "src_27099"
+        ],
+        "claim_b": "73.1 %",
+        "sources_b": [
+          "src_27099"
+        ],
+        "resolution": "prefer_newer",
+        "display_policy": "show_uncertainty_box"
+      },
+      {
+        "topic": "Event date",
+        "claim_a": "Apr 26, 2026",
+        "sources_a": [
+          "src_23083"
+        ],
+        "claim_b": "May 20",
+        "sources_b": [
+          "src_98858",
+          "src_42155",
+          "src_68956"
+        ],
+        "resolution": "prefer_official",
+        "display_policy": "show_uncertainty_box"
+      }
+    ],
+    "unresolved_questions": [],
+    "last_updated": "2026-05-16T02:46:35.523639Z"
+  },
+  "topic_page": {
+    "event_type": "tech_launch",
+    "status": "concluded",
+    "confidence": "low",
+    "headline": "OpenAI Replaces ChatGPT Default with GPT-5.5 Instant",
+    "deck": "The new model rolled out to free users May 5–6, replacing GPT-5.3 Instant across the platform.",
+    "summary": "OpenAI upgraded ChatGPT's default model to GPT-5.5 Instant on May 5–6, 2026, replacing GPT-5.3 Instant for free-tier users. The company announced the model emphasizes smarter conversational understanding, clearer responses, and personalization improvements, along with optimization for agentic AI and real-world work tasks. Paid-tier rollout timelines remain unconfirmed.",
+    "urgency_label": "Rolled out",
+    "as_of_label": "as of May 16, 2026",
+    "key_facts": [
+      {
+        "label": "Launch date",
+        "value": "May 5–6, 2026",
+        "hint": null,
+        "claim_id": "date_0431"
+      },
+      {
+        "label": "Previous default",
+        "value": "GPT-5.3 Instant",
+        "hint": null,
+        "claim_id": null
+      },
+      {
+        "label": "Free tier status",
+        "value": "Fully deployed",
+        "hint": null,
+        "claim_id": "date_1527"
+      },
+      {
+        "label": "Paid tier status",
+        "value": "Timeline unconfirmed",
+        "hint": null,
+        "claim_id": null
+      },
+      {
+        "label": "ChatGPT downloads (30d)",
+        "value": "61 million",
+        "hint": null,
+        "claim_id": "metric_3545"
+      }
+    ],
+    "key_entities": [
+      {
+        "name": "OpenAI",
+        "role": "Developer and deployer of GPT-5.5 Instant"
+      },
+      {
+        "name": "GPT-5.5 Instant",
+        "role": "New default ChatGPT model for free tier"
+      },
+      {
+        "name": "GPT-5.3 Instant",
+        "role": "Previous default model, replaced May 5–6"
+      }
+    ],
+    "timeline": [
+      {
+        "date_label": "April 26, 2026",
+        "title": "GPT-5.5 model family introduced",
+        "detail": "OpenAI announced the GPT-5.5 family as its most advanced model for real-world work and agentic AI."
+      },
+      {
+        "date_label": "May 5, 2026",
+        "title": "GPT-5.5 Instant rollout begins",
+        "detail": "OpenAI started replacing GPT-5.3 Instant with GPT-5.5 Instant as the default model for free ChatGPT users."
+      },
+      {
+        "date_label": "May 6, 2026",
+        "title": "Free tier rollout complete",
+        "detail": "GPT-5.5 Instant became the active default for all ChatGPT free-tier accounts."
+      },
+      {
+        "date_label": "May 20, 2026",
+        "title": "Expected milestone date",
+        "detail": "Additional rollout activity or documentation updates anticipated around this date per release trackers."
+      }
+    ],
+    "layout_style": "hero_focus",
+    "sections": [
+      {
+        "component_type": "stat_grid",
+        "title": "Key Capabilities",
+        "summary": null,
+        "columns": 2,
+        "items": [
+          {
+            "label": "Model focus",
+            "value": "Smarter, clearer, more personalized responses",
+            "detail": "OpenAI official announcement emphasizes conversational understanding and tailored answers.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": null
+          },
+          {
+            "label": "Agentic AI optimization",
+            "value": "Enhanced for autonomous tasks and real-world work",
+            "detail": "Designed to handle complex workflows requiring extended autonomous operation.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": null
+          },
+          {
+            "label": "ChatGPT downloads",
+            "value": "61 million in 30 days",
+            "detail": "Strong continued adoption measured over the month ending mid-May 2026.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "metric_3545"
+          }
+        ]
+      },
+      {
+        "component_type": "action_list",
+        "title": "Rollout Status by Tier",
+        "summary": null,
+        "columns": 1,
+        "items": [
+          {
+            "label": "Free tier",
+            "value": "Fully deployed May 5–6, 2026",
+            "detail": "All free ChatGPT accounts now default to GPT-5.5 Instant.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "date_0431"
+          },
+          {
+            "label": "Plus, Team, Enterprise tiers",
+            "value": "Timeline unconfirmed",
+            "detail": "OpenAI has not published rollout dates for paid subscription tiers as of mid-May.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": null
+          },
+          {
+            "label": "Apple Intelligence integration",
+            "value": "Adoption timing unclear",
+            "detail": "No official announcement regarding when Apple's ChatGPT integration will switch to GPT-5.5 Instant.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": null
+          }
+        ]
+      },
+      {
+        "component_type": "comparison_table",
+        "title": "GPT-5.3 Instant vs GPT-5.5 Instant",
+        "summary": null,
+        "columns": 2,
+        "items": [
+          {
+            "label": "Default status",
+            "value": "GPT-5.3: Replaced May 5; GPT-5.5 Instant: Current default",
+            "detail": "GPT-5.5 Instant took over the default slot for free users on May 5–6.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "date_0431"
+          },
+          {
+            "label": "Target use case",
+            "value": "GPT-5.5 Instant optimized for agentic AI and real-world work",
+            "detail": "OpenAI positions GPT-5.5 Instant for complex autonomous workflows beyond general chat.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": null
+          },
+          {
+            "label": "Conversational quality",
+            "value": "GPT-5.5 Instant emphasizes clarity and personalization",
+            "detail": "Official materials highlight improved understanding and tailored responses over GPT-5.3.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": null
+          }
+        ]
+      },
+      {
+        "component_type": "source_list",
+        "title": "Key Sources",
+        "summary": null,
+        "columns": 1,
+        "items": [
+          {
+            "label": "OpenAI",
+            "value": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+            "detail": null,
+            "link_label": null,
+            "link_url": "https://openai.com/index/gpt-5-5-instant/",
+            "claim_id": null
+          },
+          {
+            "label": "TechCrunch",
+            "value": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT",
+            "detail": null,
+            "link_label": null,
+            "link_url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+            "claim_id": null
+          },
+          {
+            "label": "Mashable",
+            "value": "OpenAI rolls out ChatGPT 5.5 Instant as the new default model",
+            "detail": null,
+            "link_label": null,
+            "link_url": "https://mashable.com/article/openai-chatgpt-55-instant-out-now",
+            "claim_id": null
+          },
+          {
+            "label": "OpenAI Help Center",
+            "value": "GPT-5.3 and GPT-5.5 in ChatGPT",
+            "detail": null,
+            "link_label": null,
+            "link_url": "https://help.openai.com/en/articles/11909943-gpt-5-1-in-chatgpt",
+            "claim_id": null
+          }
+        ]
+      }
+    ],
+    "qa_results": [
+      {
+        "gate_name": "factuality",
+        "status": "fail",
+        "failed_items": [
+          "Contradiction on M measurement: 61.4 M vs 1 M",
+          "Contradiction on B measurement: 31 B vs 120 B",
+          "Contradiction on % measurement: 82.7 % vs 73.1 %",
+          "Contradiction on Event date: Apr 26, 2026 vs May 20",
+          "Section 0 item 0: traceable fact 'Model focus Smarter, clearer, more personalized responses OpenAI official announcement emphasizes conversational understanding and tailored answers.' has no claim_id",
+          "Section 0 item 1: traceable fact 'Agentic AI optimization Enhanced for autonomous tasks and real-world work Designed to handle complex workflows requiring extended autonomous operation.' has no claim_id",
+          "Section 1 item 1: traceable fact 'Plus, Team, Enterprise tiers Timeline unconfirmed OpenAI has not published rollout dates for paid subscription tiers as of mid-May.' has no claim_id",
+          "Section 2 item 1: numeric fact 'Target use case GPT-5.5 Instant optimized for agentic AI and real-world work OpenAI positions GPT-5.5 Instant for complex autonomous workflows beyond general chat.' has no claim_id",
+          "Section 2 item 2: numeric fact 'Conversational quality GPT-5.5 Instant emphasizes clarity and personalization Official materials highlight improved understanding and tailored responses over GPT-5.3.' has no claim_id",
+          "Section 3 item 0: numeric fact 'OpenAI GPT-5.5 Instant: smarter, clearer, and more personalized' has no claim_id",
+          "Section 3 item 1: numeric fact 'TechCrunch OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT' has no claim_id",
+          "Section 3 item 2: numeric fact 'Mashable OpenAI rolls out ChatGPT 5.5 Instant as the new default model' has no claim_id",
+          "Section 3 item 3: numeric fact 'OpenAI Help Center GPT-5.3 and GPT-5.5 in ChatGPT' has no claim_id"
+        ],
+        "repair_actions": [
+          "conflicting_claim",
+          "missing_claim_id"
+        ],
+        "confidence_score": 0.0,
+        "remediation_suggestions": [
+          "Add an uncertainty box or remove the conflicting claim from sections.",
+          "Add an uncertainty box or remove the conflicting claim from sections.",
+          "Add an uncertainty box or remove the conflicting claim from sections.",
+          "Add an uncertainty box or remove the conflicting claim from sections.",
+          "Attach a claim_id to every factual section item.",
+          "Attach a claim_id to every factual section item.",
+          "Attach a claim_id to every factual section item.",
+          "Add a claim_id that resolves to an EvidenceGraph numeric claim.",
+          "Add a claim_id that resolves to an EvidenceGraph numeric claim.",
+          "Add a claim_id that resolves to an EvidenceGraph numeric claim."
+        ]
+      },
+      {
+        "gate_name": "freshness",
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [
+          "weak_source"
+        ],
+        "confidence_score": 0.19999999999999946,
+        "remediation_suggestions": [
+          "Prefer stronger sources or annotate the limitation of weaker ones."
+        ]
+      },
+      {
+        "gate_name": "event_fit",
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [],
+        "confidence_score": 1.0,
+        "remediation_suggestions": []
+      }
+    ],
+    "last_updated": "2026-05-16T02:46:35.523639Z"
+  }
+}

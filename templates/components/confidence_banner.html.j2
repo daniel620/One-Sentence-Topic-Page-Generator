@@ -1,0 +1,15 @@
+{# Editor's note: only renders when something is genuinely uncertain.
+   See `_build_confidence_banner` in renderer.py for the firing rule. #}
+<section class="notice" aria-label="Editor's note">
+  <h3>{{ section.title or "Editor's note" }}</h3>
+  {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+  <ul>
+    {% for item in section.items %}
+    <li>
+      <span class="label">{{ item.label }}</span>
+      <span class="body"> — {{ item.value }}</span>
+      {% if item.detail %}<div class="detail">{{ item.detail }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

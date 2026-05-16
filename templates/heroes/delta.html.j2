@@ -1,0 +1,15 @@
+{# Delta hero — "what changed". Used for tech_launch. #}
+<header class="hero hero-delta">
+  <div class="dateline">
+    {% if page.urgency_label %}<span class="eyebrow"><span class="dot"></span>{{ page.urgency_label }}</span>{% endif %}
+    {% if page.as_of_label %}<span>{{ page.as_of_label }}</span>{% endif %}
+    {% if not page.as_of_label and page.last_updated %}<span>As of {{ page.last_updated | short_date }}</span>{% endif %}
+  </div>
+  <h1>{{ page.headline }}</h1>
+  {% if page.deck %}<p class="deck">{{ page.deck }}</p>{% endif %}
+  {% if page.summary %}
+    {% for paragraph in page.summary | split_sep("\n") %}
+      {% if paragraph %}<p class="lede">{{ paragraph }}</p>{% endif %}
+    {% endfor %}
+  {% endif %}
+</header>

@@ -1,0 +1,6 @@
+{
+  "decision": "proceed",
+  "reasoning": "The evidence is sufficient for a tech_launch event type. Key indicators:\n\n1. **Source quality**: 6 public_claim_source sources (exceeds the 3-source threshold for credibility)\n2. **Claim volume**: 12 public-eligible claims (exceeds the 5-claim threshold)\n3. **Verification**: 12 verified evidence sentences (strong verification rate)\n4. **Coverage of required topics**: \n   - What-changed: 'capabilities' (3 claims) and 'metrics' (1 claim) cover what's new about GPT-5.5 Instant\n   - Rollout/availability: 'rollout_status' (1 claim) and 'event_schedule' (1 claim) confirm the May 2026 default rollout in ChatGPT\n5. **Additional context**: History (3), controversy (1), participants (1), and safety (1) claims provide valuable context\n6. **No uncertainties**: 0 real uncertainties indicated\n\nThis evidence set answers the core reader questions for a tech launch: What was launched? (GPT-5.5 Instant), What changed/improved? (capabilities and metrics), When and how is it available? (May 2026, default in ChatGPT), and provides safety/controversy context. The source diversity (6 public sources) and full verification suggest credible, multi-source reporting.",
+  "new_queries": [],
+  "caveats": []
+}

@@ -1,0 +1,15 @@
+{
+  "final_event_type": "tech_launch",
+  "event_status": "concluded",
+  "page_thesis": "OpenAI released GPT-5.5 Instant as the new default ChatGPT model in early May 2026, delivering improved accuracy, faster response times, and reduced emoji usage. This page consolidates official specifications, performance comparisons with GPT-5, rollout details, and user access information.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "comparison_table",
+    "timeline",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "hero_focus",
+  "confidence_summary": "Excellent evidence quality with multiple official OpenAI sources and reputable media coverage. No significant contradictions detected."
+}

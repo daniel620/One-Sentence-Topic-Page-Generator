@@ -1,0 +1,12 @@
+{
+  "decision": "editor_review",
+  "reasoning": "This tech_launch event has strong foundational evidence but lacks a critical official/primary source:\n\n**Strengths:**\n- 6 public-eligible claims (exceeds the ≥5 threshold)\n- 5 claims with full_text_verified grade (strongest evidence tier)\n- 1 claim with reputable_snippet grade\n- All 6 claims have verified evidence sentences\n- Claims cover multiple relevant topics: capabilities, metrics, rollout_status, history, and safety\n- Addresses core tech_launch reader questions: what changed (GPT-5.5 Instant capabilities), rollout status (default model in ChatGPT, May 2026), who's affected (ChatGPT users)\n\n**Critical gap:**\n- Zero official/primary sources (no OpenAI blog posts, press releases, or official announcements)\n- All evidence appears to be from reputable media coverage only\n- For a major product launch from OpenAI, the absence of an official source is significant\n\nThis scenario fits the **editor_review** criteria precisely: good evidence quality and quantity, but missing the official source that would make it publishable without oversight. The evidence is too strong for evidence_limited (which is for thin/snippet-only evidence), and too substantive for not_acceptable (which requires <2 claims or critical flaws).\n\nAn editor should verify whether OpenAI has issued an official statement and assess whether the reputable media coverage is sufficient for publication given the news significance.",
+  "new_queries": [
+    "OpenAI GPT-5.5 Instant announcement site:openai.com",
+    "OpenAI official blog GPT-5.5 Instant ChatGPT default model May 2026"
+  ],
+  "caveats": [
+    "No official OpenAI source found; all evidence is from media coverage only",
+    "Editor should verify OpenAI's official announcement before publication"
+  ]
+}

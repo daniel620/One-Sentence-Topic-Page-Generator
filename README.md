@@ -1,134 +1,119 @@
 # One-Sentence Topic Page Generator
 
 Type **one sentence** about a real, currently-unfolding event. Get back a
-publishable HTML topic page — a one-minute orientation surface that
-answers *what happened, why it matters, what changed, what's the current
-status, what's still uncertain, what to do next, and where the critical
-claims came from.*
+**self-contained HTML topic page** — a one-minute orientation surface.
 
-The pages are deliberately not the same template with different words
-swapped. The renderer picks a **per-event-type layout recipe**: a tech
-launch reads as a delta report, a live event reads as a now/next guide,
-a sports tournament reads as a match-center.
+The system is an **agentic editorial workflow with hard safety contracts**.
+It researches the open web, extracts and grades evidence, critiques
+sufficiency, and composes a grounded page. It is designed for
+**editor-assisted** use — not fully autonomous publishing.
+
+## Status
+
+Classification and search query generation generalize across event types.
+Evidence acquisition (web page fetching) does not yet generalize reliably —
+60-80% of URLs return blocked responses. Five demo events across tech, sports, culture, disaster, and economic categories
+are committed. Events with accessible official pages (OpenAI, WHO, FIFA) produce
+stronger evidence graphs than those relying on news media alone.
+
+See [`DESIGN.md`](DESIGN.md) for the full architecture, evidence policy,
+and honest limitation assessment.
 
 ## Run it
 
 ```bash
-# 1. install
-python -m venv .venv && source .venv/bin/activate
+# install
 pip install -r requirements.txt
 
-# 2. render from saved fixtures (no API keys needed — recommended for reviewers)
-python scripts/generate.py --use-fixtures \
-  "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026."
-python scripts/generate.py --use-fixtures \
-  "Eurovision 2026 is being held in Vienna from May 12 to May 16."
-python scripts/generate.py --use-fixtures \
-  "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026."
+# Full editorial workflow — search, extract, grade, compose, critique, render
+python scripts/run_editorial.py "Your one-sentence event here."
 
-# Output: output/<slug>.html — self-contained, opens directly in a browser.
+# Render from saved fixtures (no API keys needed)
+python scripts/generate.py --use-fixtures "<sentence>"
 
-# 3. (optional) render from the live pipeline against the open web
-cp .env.example .env
-# fill in ANTHROPIC_API_KEY and TAVILY_API_KEY
-python scripts/generate.py "Your one-sentence event here."
+# Debug mode — exposes claim IDs, QA trace, AI curation metadata
+python scripts/generate.py --use-fixtures --debug "<sentence>"
 
-# 3b. (optional) save a live run as a new fixture
-python scripts/refresh_fixture.py \
-  --sentence "Your one-sentence event here." \
-  --fixture tests/fixtures/my_event.json
-
-# 4. debug mode — exposes claim IDs, QA gate trace, layout recipe
-python scripts/generate.py --use-fixtures --debug \
-  "Eurovision 2026 is being held in Vienna from May 12 to May 16."
+# Inspect a run's artifacts
+ls runs/<timestamp>/  # hypothesis, evidence_graph, product_critic, page_critic, HTML, etc.
 ```
 
 ## Pre-built examples
 
-Open these HTML files directly in any browser — no server needed.
+| Page | Event Type | Input |
+|------|-----------|-------|
+| [OpenAI GPT-5.5](output/openai-rolled-out-gpt-5-5-instant-as-the-default-model-in-chatgpt-in-may-2026.html) | tech_launch | "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026." |
+| [Eurovision 2026](output/eurovision-2026-is-being-held-in-vienna-from-may-12-to-may-16.html) | cultural_event | "Eurovision 2026 is being held in Vienna from May 12 to May 16." |
+| [FIFA World Cup 2026](output/the-2026-fifa-world-cup-kicks-off-at-estadio-azteca-on-june-11-2026.html) | sports_tournament | "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026." |
+| [Ebola PHEIC](output/the-who-declared-an-ebola-outbreak-in-the-drc-and-uganda-a-public-health-emergen.html) | disaster | "The WHO declared an Ebola outbreak in the DRC and Uganda a Public Health Emergency of International Concern on May 16, 2026." |
+| [UAE Leaves OPEC](output/the-uae-left-opec-on-may-1-2026-ending-six-decades-of-membership-in-the-oil-cart.html) | economic_event | "The UAE left OPEC on May 1, 2026, ending six decades of membership in the oil cartel." |
 
-- [`output/openai-rolled-out-gpt-5-5-instant-as-the-default-model-in-chatgpt-in-may-2026.html`](output/openai-rolled-out-gpt-5-5-instant-as-the-default-model-in-chatgpt-in-may-2026.html) — tech launch (delta report)
-- [`output/eurovision-2026-is-being-held-in-vienna-from-may-12-to-may-16.html`](output/eurovision-2026-is-being-held-in-vienna-from-may-12-to-may-16.html) — live cultural event (now/next guide)
-- [`output/the-2026-fifa-world-cup-kicks-off-at-estadio-azteca-on-june-11-2026.html`](output/the-2026-fifa-world-cup-kicks-off-at-estadio-azteca-on-june-11-2026.html) — sports tournament (match-center / scheduled)
+Open any file directly in a browser — no server needed.
 
-## Architecture in one diagram
+## Architecture
 
 ```
 one sentence
+   ├─► Stage 1A (LLM) — classify event, generate search queries
    │
-   ├─► Stage 1A (LLM, instructor)   →  EventHypothesis
-   │                                   classify + propose search queries
+   ├─► Stage 2 (mixed) — SEARCH → EXTRACT → GRADE
+   │     ├─ Tavily search → 20 candidate URLs
+   │     ├─ Dual-path extraction: trafilatura + Tavily Extract fallback
+   │     ├─ AI source curator (LLM) — classify each source's role
+   │     ├─ AI claim extractor (LLM, per-source, parallel) — typed claims
+   │     ├─ Evidence grading — full_text_verified / official_snippet /
+   │     │   reputable_snippet / weak_snippet
+   │     └─ AI contradiction reviewer (LLM)
    │
-   ├─► Stage 2  (deterministic)     →  Tavily search → reader text →
-   │                                   regex claim extraction → EvidenceGraph
+   ├─► Product Critic (LLM) — evaluate evidence sufficiency
+   │     publishable | editor_review | evidence_limited | not_acceptable | re_search
    │
-   ├─► Stage 1B (LLM, instructor)   →  EvidenceAwareIA
-   │                                   final event type, status, components, layout
-   │
-   ├─► Stage 3  (LLM, instructor)   →  TopicPageData
-   │                                   structured editorial content
-   │
-   ├─► QA loop  (deterministic)     →  factuality + freshness + event_fit
-   │                                   bounded resynthesis if any gate fails
-   │
-   └─► Renderer (deterministic)     →  Jinja2 → standalone HTML
-                                       public mode by default; debug mode opt-in
+   ├─► Stage 1B (LLM) — plan information architecture
+   ├─► Stage 3 (LLM) — compose page from claim cards
+   ├─► QA gates (deterministic) — factuality, freshness, event-fit
+   ├─► Page Critic (LLM) — evaluate final reader-facing quality
+   └─► Renderer (deterministic) — Jinja2 → standalone HTML
 ```
-
-Only Stage 1A, Stage 1B, and Stage 3 call an LLM. Everything else is
-reproducible from the data — and the renderer is a pure function of
-`TopicPageData`, so design changes don't require regenerating evidence.
-
-Full design rationale is in [`DESIGN.md`](DESIGN.md).
 
 ## Project layout
 
 ```
 generator/
-  schemas.py          # Pydantic data contract (the single source of truth)
-  prompts.py          # all LLM prompts; never inlined elsewhere
-  stage1_understand.py# Stage 1A (hypothesis) + Stage 1B (evidence-aware IA)
-  stage2_research.py  # Tavily search + EvidenceGraph construction
-  stage3_synthesize.py# LLM call that fills TopicPageData
-  qa_gates.py         # deterministic factuality/freshness/event_fit gates
-  page_layout.py      # per-(event_type, status) PageRecipe table
+  schemas.py          # Pydantic data contract
+  prompts.py          # all LLM prompts (AI curation, critics, composers)
+  orchestrator.py     # EditorialRun — stateful workflow, artifact persistence
+  ai_curation.py      # AI source curator, claim extractor, contradiction reviewer
+  stage1_understand.py# Stage 1A (hypothesis) + Stage 1B (IA planning)
+  stage2_research.py  # Search → Extract → Grade — the evidence layer
+  stage3_synthesize.py# Grounded page composer
+  qa_gates.py         # Factuality, freshness, event-fit gates
+  page_layout.py      # (event_type, status) → PageRecipe table
   renderer.py         # pure function: TopicPageData → HTML
-  utils.py            # source scoring + regex claim extraction
-templates/
-  page.html.j2        # top-level shell
-  themes/             # theme CSS bundles (editorial, live-dark, stadium, alert)
-  heroes/             # hero variants (delta, live, schedule, alert)
-  components/         # one Jinja partial per registry component type
+  utils.py            # trafilatura extraction, source scoring, publisher DB
+templates/            # Jinja2 — themes, heroes, components
 scripts/
-  generate.py         # generate one page; --use-fixtures or live
-  verify.py           # render every fixture and check public-mode invariants
-tests/                # unit tests; fixtures used by generate/verify
-output/               # committed pre-built HTML examples
+  run_editorial.py    # Full editorial workflow entry point
+  generate.py         # Render from fixtures (no API), with --debug mode
+  clean_fixtures.py   # Post-hoc source filter + QA recalc
+  probe_generalization.py  # Test classification on diverse inputs
+  verify.py           # Smoke-test all fixtures in both modes
+runs/                 # Timestamped artifact directories per run
+output/               # Committed pre-built HTML examples
 ```
 
 ## Testing
 
 ```bash
-pytest tests/          # 81 tests across schemas, registry, research, QA, renderer
-python scripts/verify.py  # smoke-test renders every fixture in both modes
+pytest tests/               # 96 tests
+python scripts/verify.py    # Smoke-test fixtures in public + debug modes
+python scripts/probe_generalization.py  # Test classification on 5 diverse inputs
 ```
-
-## What's intentionally out of scope
-
-- Hosting, deployment, Docker — the brief asks for committed HTML and we
-  ship committed HTML.
-- Auth / persistence — not needed for a topic page artifact.
-- Image fetching / hero imagery — possible follow-up, not required.
 
 ## Environment variables
 
-Used only when running the live pipeline (not for `--use-fixtures`):
+Set in `.env` (gitignored). `.env.example` lists the names only.
 
 ```
-ANTHROPIC_API_KEY    # for Stage 1A, Stage 1B, Stage 3 LLM calls
-TAVILY_API_KEY       # for Stage 2 web search
+ANTHROPIC_API_KEY    # All LLM calls (Stages 1-3, AI curation, critics)
+TAVILY_API_KEY       # Search + Extract (Tavily search and content extraction)
 ```
-
-Place them in `.env` (gitignored). `.env.example` lists the names only.
-
-Never commit `.env` or any keys.

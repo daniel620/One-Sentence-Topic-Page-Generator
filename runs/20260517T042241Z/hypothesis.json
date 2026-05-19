@@ -1,0 +1,25 @@
+{
+  "preliminary_event_type": "live_event",
+  "freshness_need": "just concluded (May 16), immediate post-event coverage needed",
+  "search_intents": [
+    "Eurovision 2026 winner results",
+    "Eurovision 2026 final voting results May 16",
+    "Eurovision Song Contest 2026 Vienna full results",
+    "Eurovision 2026 top 10 countries",
+    "Eurovision 2026 semifinal results May 12-14",
+    "Eurovision 2026 public vote vs jury vote"
+  ],
+  "required_source_types": [
+    "official",
+    "reputable_media",
+    "primary_data",
+    "social"
+  ],
+  "unknowns": [
+    "Which country won Eurovision 2026",
+    "Final voting breakdown and point totals",
+    "Whether any controversies or notable incidents occurred during the event",
+    "Viewership figures and audience size",
+    "Specific performances or artists that generated significant attention"
+  ]
+}

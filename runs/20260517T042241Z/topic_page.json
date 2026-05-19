@@ -1,0 +1,255 @@
+{
+  "event_type": "live_event",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "Bulgaria Wins Eurovision 2026 in Vienna with Historic First Victory",
+  "deck": "DARA's triumph marks Bulgaria's first-ever Eurovision win at the 70th Contest, earning 516 points in the Grand Final.",
+  "summary": "Bulgaria claimed its first-ever Eurovision Song Contest victory on May 16, 2026, as DARA won the 70th edition held in Vienna with a total of 516 points. The contest took place over three nights at the Wiener Stadthalle, with semi-finals on May 12 and 14 preceding the Grand Final. Five countries boycotted the event in protest of Israel's participation.",
+  "urgency_label": "Concluded May 16",
+  "as_of_label": "Final results",
+  "key_facts": [
+    {
+      "label": "Winner",
+      "value": "Bulgaria (DARA) — 516 points",
+      "hint": null,
+      "claim_id": "src_34434_001"
+    },
+    {
+      "label": "Historic milestone",
+      "value": "Bulgaria's first-ever Eurovision victory",
+      "hint": null,
+      "claim_id": "src_34434_007"
+    },
+    {
+      "label": "Venue",
+      "value": "Wiener Stadthalle, Vienna, Austria",
+      "hint": null,
+      "claim_id": "src_57204_003"
+    },
+    {
+      "label": "Boycott",
+      "value": "5 countries withdrew over Israel's participation",
+      "hint": null,
+      "claim_id": "src_57204_007"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "Bulgaria",
+      "role": "Winning country, first-ever Eurovision victory"
+    },
+    {
+      "name": "DARA",
+      "role": "Bulgaria's winning artist"
+    },
+    {
+      "name": "Wiener Stadthalle",
+      "role": "Host venue in Vienna, Austria"
+    },
+    {
+      "name": "Eurovision Song Contest",
+      "role": "Annual international song competition, 70th edition"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "January 12, 2026",
+      "title": "Semi-Final Draw at Vienna's City Hall",
+      "detail": null
+    },
+    {
+      "date_label": "May 12, 2026",
+      "title": "First Semi-Final",
+      "detail": "15 countries competed at Wiener Stadthalle"
+    },
+    {
+      "date_label": "May 16, 2026",
+      "title": "Grand Final — Bulgaria wins with 516 points",
+      "detail": "DARA secures Bulgaria's first-ever Eurovision victory"
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "timeline",
+      "title": "Eurovision 2026 Timeline",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Semi-Final Draw",
+          "value": "January 12 at Vienna's City Hall",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_12126_000"
+        },
+        {
+          "label": "First Semi-Final",
+          "value": "May 12, 2026",
+          "detail": "15 countries competed; Germany and Italy performed and voted",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_12126_001"
+        },
+        {
+          "label": "Grand Final",
+          "value": "May 16, 2026",
+          "detail": "Bulgaria won with 516 points, achieving the country's first-ever Eurovision victory",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "stat_grid",
+      "title": "Contest Facts & Figures",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Winning score",
+          "value": "516 points (Bulgaria)",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_34434_001"
+        },
+        {
+          "label": "Semi-Final 1 participants",
+          "value": "15 countries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_57204_005"
+        },
+        {
+          "label": "Voting method",
+          "value": "Combined public and jury vote",
+          "detail": "Both votes determined Top 10 qualifiers from each semi-final",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_12126_005"
+        },
+        {
+          "label": "Big Five voters (Semi 1)",
+          "value": "Germany and Italy",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_12126_006"
+        }
+      ]
+    },
+    {
+      "component_type": "live_tracker",
+      "title": "Key Moments",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Historic win",
+          "value": "Bulgaria achieves first-ever Eurovision victory",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_34434_007"
+        },
+        {
+          "label": "Boycott controversy",
+          "value": "Iceland, Ireland, Netherlands, Slovenia, Spain withdrew",
+          "detail": "Five countries boycotted because Israel was allowed to participate",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_57204_007"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Explore More",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official results",
+          "value": "Read the full story on Eurovision.com",
+          "detail": null,
+          "link_label": "View results",
+          "link_url": "https://www.eurovision.com/stories/dara-wins-the-eurovision-song-contest-2026-for-bulgaria/",
+          "claim_id": null
+        },
+        {
+          "label": "Semi-Final 1 scorecards",
+          "value": "Download detailed voting breakdown (PDF)",
+          "detail": null,
+          "link_label": "Download PDF",
+          "link_url": "https://pix.eurovisionworld.com/grafik/2026/scorecard-eurovision-2026-semi-final-1.pdf?v=5",
+          "claim_id": null
+        },
+        {
+          "label": "Contest overview",
+          "value": "Explore Eurovision 2026 on EurovisionWorld",
+          "detail": null,
+          "link_label": "Visit page",
+          "link_url": "https://eurovisionworld.com/eurovision/2026",
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "uncertainty_box",
+      "title": "Event Context",
+      "summary": "This edition faced controversy as five nations boycotted over Israel's participation. The contest proceeded with modified participation numbers.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Boycotting countries",
+          "value": "Iceland, Ireland, Netherlands, Slovenia, Spain",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_57204_007"
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Section 0 item 2: numeric fact 'Grand Final May 16, 2026 Bulgaria won with 516 points, achieving the country's first-ever Eurovision victory' has no claim_id"
+      ],
+      "repair_actions": [
+        "missing_claim_id"
+      ],
+      "confidence_score": 0.8,
+      "remediation_suggestions": [
+        "Add a claim_id from the claim cards."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T04:20:18.015378Z"
+}

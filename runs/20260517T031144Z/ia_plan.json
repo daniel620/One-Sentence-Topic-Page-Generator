@@ -1,0 +1,18 @@
+{
+  "final_event_type": "live_event",
+  "event_status": "concluded",
+  "page_thesis": "Eurovision 2026 concluded in Vienna on May 16, 2026, with Bulgaria winning the grand final. This page provides comprehensive final results, voting breakdowns, performance recaps, and coverage of the Israel participation controversy that dominated the event.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "live_tracker",
+    "comparison_table",
+    "entity_list",
+    "action_list",
+    "uncertainty_box",
+    "source_list"
+  ],
+  "layout_style": "dashboard",
+  "confidence_summary": "Strong evidence for dates and structure from Wikipedia and EurovisionWorld. Bulgaria victory needs official confirmation. Israel controversy well-documented by BBC."
+}

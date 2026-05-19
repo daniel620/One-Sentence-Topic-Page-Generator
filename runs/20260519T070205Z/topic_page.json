@@ -1,0 +1,265 @@
+{
+  "event_type": "live_event",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "Bulgaria Wins Eurovision 2026 with DARA's \"Bangaranga\"",
+  "deck": "DARA delivered Bulgaria's first-ever Eurovision victory in Vienna, earning 516 points in the 70th contest.",
+  "summary": "Bulgaria won the Eurovision Song Contest 2026 on May 16 in Vienna, with DARA's \"Bangaranga\" earning 516 points and securing the nation's first-ever victory in the competition's 70-year history. The contest featured 35 participating broadcasters and introduced new rules including the return of jury voting to semi-finals at 50% weighting. Ukraine's entry also made history by holding the contest's longest-ever note.",
+  "urgency_label": "Concluded May 16",
+  "as_of_label": "Final results",
+  "key_facts": [
+    {
+      "label": "Winner",
+      "value": "Bulgaria (DARA - \"Bangaranga\")",
+      "hint": null,
+      "claim_id": "src_89678_000"
+    },
+    {
+      "label": "Winning Score",
+      "value": "516 points",
+      "hint": null,
+      "claim_id": "src_89678_001"
+    },
+    {
+      "label": "Participating Countries",
+      "value": "35 broadcasters",
+      "hint": null,
+      "claim_id": "src_00305_003"
+    },
+    {
+      "label": "Historic Milestone",
+      "value": "Bulgaria's first-ever Eurovision victory",
+      "hint": null,
+      "claim_id": "src_89678_007"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "DARA",
+      "role": "Winning artist for Bulgaria"
+    },
+    {
+      "name": "Bulgaria",
+      "role": "Winning country, first Eurovision victory"
+    },
+    {
+      "name": "Vienna",
+      "role": "Host city for Eurovision 2026"
+    },
+    {
+      "name": "European Broadcasting Union",
+      "role": "Contest organizer"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "Rules Announcement",
+      "title": "Jury vote returned to Semi-Finals at 50% weighting",
+      "detail": "New rules implemented for Vienna 2026, including increased jury panel size to seven members."
+    },
+    {
+      "date_label": "May 16, 2026",
+      "title": "Bulgaria wins Eurovision 2026 with 516 points",
+      "detail": "DARA's \"Bangaranga\" secured Bulgaria's first-ever victory in the contest's 70-year history."
+    },
+    {
+      "date_label": "May 16, 2026",
+      "title": "Ukraine sets record for longest note in contest history",
+      "detail": "Historic vocal performance achieved during the grand final in Vienna."
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "live_tracker",
+      "title": "Final Results",
+      "summary": "Bulgaria secured its first Eurovision victory with DARA's performance of \"Bangaranga,\" marking a historic moment in the 70th edition of the contest.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Winner",
+          "value": "Bulgaria - DARA with \"Bangaranga\"",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_89678_000"
+        },
+        {
+          "label": "Total Points",
+          "value": "516 points",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_89678_001"
+        },
+        {
+          "label": "Historic Achievement",
+          "value": "Bulgaria's first-ever Eurovision Song Contest victory",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_89678_007"
+        },
+        {
+          "label": "Participating Broadcasters",
+          "value": "35 broadcasters participated",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_00305_003"
+        }
+      ]
+    },
+    {
+      "component_type": "stat_grid",
+      "title": "Contest Statistics",
+      "summary": "Key numbers from Eurovision 2026 in Vienna, including participation and scoring details.",
+      "columns": 2,
+      "items": [
+        {
+          "label": "Winning Points Total",
+          "value": "516 points",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_89678_001"
+        },
+        {
+          "label": "Participating Broadcasters",
+          "value": "35 broadcasters",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_00305_003"
+        },
+        {
+          "label": "Jury Panel Size",
+          "value": "Seven jurors (increased from five)",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_00305_002"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Contest Timeline",
+      "summary": "Key moments from Eurovision 2026 in Vienna.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Contest Preparation",
+          "value": "Jury vote returned to Semi-Finals at 50% weighting for Vienna 2026",
+          "detail": "New rules were implemented including the return of jury voting to semi-finals.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_00305_001"
+        },
+        {
+          "label": "Grand Final - May 16",
+          "value": "Bulgaria won Eurovision 2026 with 516 points",
+          "detail": "DARA's \"Bangaranga\" secured Bulgaria's first-ever Eurovision victory.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_89678_001"
+        },
+        {
+          "label": "Historic Moment",
+          "value": "Ukraine's entry held the contest's longest ever note",
+          "detail": "History was made during Ukraine's performance with a record-breaking sustained note.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_36695_005"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Notable Performances",
+      "summary": "Key artists and moments from the 70th Eurovision Song Contest.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "DARA (Bulgaria)",
+          "value": "Won the Eurovision Song Contest 2026 with \"Bangaranga\"",
+          "detail": "Delivered Bulgaria's first-ever Eurovision victory with 516 points.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_89678_000"
+        },
+        {
+          "label": "Ukraine",
+          "value": "Made history by holding the contest's longest ever note",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_36695_005"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Watch & Explore",
+      "summary": "Resources for full results, performances, and official contest information.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official Results",
+          "value": "View complete voting breakdown and country standings",
+          "detail": null,
+          "link_label": "See full results",
+          "link_url": "https://www.eurovision.com/stories/dara-wins-the-eurovision-song-contest-2026-for-bulgaria/",
+          "claim_id": null
+        },
+        {
+          "label": "Contest Information",
+          "value": "Explore Vienna 2026 details, rules, and participants",
+          "detail": null,
+          "link_label": "Visit Eurovision.com",
+          "link_url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+          "claim_id": null
+        },
+        {
+          "label": "Video Highlights",
+          "value": "Watch recap and analysis of the grand final",
+          "detail": null,
+          "link_label": "Watch on BBC",
+          "link_url": "https://www.bbc.co.uk/news/videos/cj3pznr0zr4o",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-19T07:00:28.954668Z"
+}

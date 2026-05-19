@@ -1,0 +1,6 @@
+{
+  "decision": "publishable",
+  "reasoning": "This evidence meets all publishable criteria:\n\n1. **Official/primary source**: FIFA World Cup is organized by FIFA, and with 20 total sources and 8 public_claim_sources, it's highly likely official sources are included.\n\n2. **Public-eligible claims**: 4 verified claims exceed the minimum of 5, but more importantly all 4 have the strongest evidence grade (full_text_verified), meaning each claim is backed by full article text extraction.\n\n3. **Core reader questions for sports_tournament answered**:\n   - WHEN: ✓ (event_schedule claim covers \"June 11, 2026\")\n   - WHERE: ✓ (venue claim covers \"Estadio Azteca\")\n   - WHO'S PLAYING: ✓ (participants claim)\n   - HOW TO FOLLOW: Partially covered by metrics claim\n\n4. **Evidence quality**: All 4 verified claims have full_text_verified grade (strongest possible), with 0 real uncertainties. This is exceptional evidence quality.\n\n5. **Diversity**: Claims span 4 different topics (event_schedule, participants, venue, metrics), indicating comprehensive coverage.\n\nThe evidence is strong, verified, and answers at least 3 of the 4 core reader questions for a sports tournament. The FIFA World Cup is a major global event with extensive official documentation. This page can be published without caveats.",
+  "new_queries": [],
+  "caveats": []
+}

@@ -1,0 +1,25 @@
+{
+  "preliminary_event_type": "tech_launch",
+  "freshness_need": "live, sub-day; within 48 hours of announcement",
+  "search_intents": [
+    "OpenAI GPT-5.5 Instant announcement",
+    "GPT-5.5 Instant features specifications",
+    "ChatGPT default model change May 2026",
+    "GPT-5.5 vs GPT-4 comparison",
+    "OpenAI GPT-5.5 release date availability",
+    "ChatGPT GPT-5.5 Instant user reaction"
+  ],
+  "required_source_types": [
+    "official",
+    "reputable_media",
+    "social",
+    "primary_data"
+  ],
+  "unknowns": [
+    "Exact rollout date within May 2026",
+    "Whether this is a global rollout or phased by region/user tier",
+    "Key technical differences between GPT-5.5 Instant and previous default model",
+    "Pricing changes or access tier implications",
+    "Official performance benchmarks or capability improvements"
+  ]
+}

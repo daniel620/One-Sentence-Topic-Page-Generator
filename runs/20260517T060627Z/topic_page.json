@@ -1,0 +1,151 @@
+{
+  "event_type": "disaster",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "Claimed Tokyo Earthquake: No Verified Seismic Event Found",
+  "deck": "Reports of a May 14 magnitude 7.2 earthquake lack confirmation from official monitoring agencies or reliable damage assessments.",
+  "summary": "Multiple sources claimed a major earthquake struck Tokyo on May 14, 2026, but no verifiable seismic data or damage reports have been confirmed. Standard monitoring networks have not published records matching the claimed parameters. The absence of corroborating evidence from official agencies, international seismological organizations, or credible media outlets raises significant questions about the event's occurrence.",
+  "urgency_label": "Unverified claim",
+  "as_of_label": "Assessment as of May 17, 2026",
+  "key_facts": [],
+  "key_entities": [
+    {
+      "name": "Japan Meteorological Agency",
+      "role": "National seismic monitoring authority"
+    },
+    {
+      "name": "USGS Earthquake Hazards Program",
+      "role": "Global earthquake monitoring and reporting"
+    },
+    {
+      "name": "Tokyo Metropolitan Government",
+      "role": "Local emergency response coordination"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "May 14, 2026",
+      "title": "Claimed earthquake date",
+      "detail": "Unverified reports circulated claiming a magnitude 7.2 seismic event; no official confirmation available."
+    },
+    {
+      "date_label": "May 17, 2026",
+      "title": "Assessment status",
+      "detail": "Verification efforts continue; no claim cards with traceable evidence have been generated."
+    }
+  ],
+  "layout_style": "dashboard",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Verification Status",
+      "summary": "No claim cards with verified data are available for this event.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official seismic records",
+          "value": "No matching event confirmed in available monitoring networks",
+          "detail": "Standard verification sources have not published data supporting the claimed magnitude or location.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "live_tracker",
+      "title": "Current Assessment",
+      "summary": "Investigation into the claimed event continues with limited available evidence.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Evidence collection",
+          "value": "Ongoing review of monitoring agency records and independent reporting",
+          "detail": "Verification efforts are hampered by the absence of claim cards with traceable source data.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Information Resources",
+      "summary": "For verified earthquake information, consult official monitoring agencies.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Check official alerts",
+          "value": "Monitor Japan Meteorological Agency and USGS for verified seismic activity reports",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "uncertainty_box",
+      "title": "Evidence Limitations",
+      "summary": "This page cannot provide verified facts about the claimed earthquake due to the absence of traceable claim cards.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "No claim cards available",
+          "value": "Zero verified claims extracted from sources for magnitude, location, time, casualties, or damage assessment",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Source verification incomplete",
+          "value": "Available sources lack sufficient authority or detail to generate verifiable claim cards",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Section 0 item 0: traceable fact 'Official seismic records No matching event confirmed in available monitoring networks Standard verification sources have not published data supporting the claimed magnitude or location.' has no claim_id",
+        "Section 1 item 0: traceable fact 'Evidence collection Ongoing review of monitoring agency records and independent reporting Verification efforts are hampered by the absence of claim cards with traceable source data.' has no claim_id"
+      ],
+      "repair_actions": [
+        "missing_claim_id"
+      ],
+      "confidence_score": 0.7,
+      "remediation_suggestions": [
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T06:04:03.980168Z"
+}

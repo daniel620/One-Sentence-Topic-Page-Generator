@@ -1,0 +1,15 @@
+{
+  "decision": "not_acceptable",
+  "reasoning": "**Critical flaws identified:**\n\n1. **Zero public-eligible claims** (0 vs. required minimum of 2 for acceptability)\n2. **Zero verified evidence sentences** - no claims with evidence backing\n3. **Empty claim topics** - no substantive information extracted\n4. **No official/primary source** - all 20 sources are categorized as needs_review, background_only, debug_only, or reject; none from Tesla (the primary source for earnings reports)\n5. **Zero core tech_launch questions answered** - For a tech earnings report, readers need: What changed in earnings/margins? What's driving the improvement? What does this mean for the company/investors? None of these are addressed.\n\nThis is a tech_launch/earnings event that requires:\n- Official source (Tesla investor relations, SEC filings)\n- At least 5 public claims with grade ≥ official_snippet\n- Core questions answered (earnings figures, margin details, business drivers)\n\nThe complete absence of public-eligible claims and verified evidence means there is no trustworthy information to build a page. The event describes Tesla's Q2 2026 earnings (future date relative to query date of 2026-05-17, suggesting this is a forward-looking projection or the query date may be the event date), but no actual earnings data, official announcements, or credible reporting has been collected.",
+  "new_queries": [
+    "Tesla Q2 2026 earnings report site:ir.tesla.com OR site:sec.gov",
+    "Tesla second quarter 2026 financial results 45% margin investor.tesla.com"
+  ],
+  "caveats": [
+    "No verified claims from any source",
+    "No official Tesla earnings announcement found",
+    "All collected sources marked as needs_review, background_only, debug_only, or rejected",
+    "Zero substantive information about earnings figures, margin improvement drivers, or business performance",
+    "Cannot answer any core reader questions about the earnings report"
+  ]
+}

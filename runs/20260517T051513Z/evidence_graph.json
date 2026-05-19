@@ -1,0 +1,635 @@
+{
+  "event_hypothesis": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+  "sources": [
+    {
+      "source_id": "src_66486",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
+      "title": "FIFA World Cup 2026™ | Fixtures, groups, teams & more",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official FIFA source with tournament details, dates, and host cities. Primary authority for World Cup 2026 facts."
+    },
+    {
+      "source_id": "src_04808",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+      "title": "World Cup 2026 | Match schedule, fixtures & stadiums - FIFA",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official FIFA match schedule and fixtures page. Primary source for tournament schedule and stadium information."
+    },
+    {
+      "source_id": "src_65145",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/stadium-information-details",
+      "title": "STADIUM INFORMATION",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official FIFA stadium information page. Primary source for venue details including Estadio Azteca opening ceremony."
+    },
+    {
+      "source_id": "src_11101",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results",
+      "title": "Final Draw results | FIFA World Cup 2026",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official FIFA draw results. Primary source for group stage composition and tournament structure."
+    },
+    {
+      "source_id": "src_35960",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/qualifiers",
+      "title": "FIFA World Cup 26™ Qualifiers",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Official FIFA qualifiers page. Relevant for qualification context but not direct)"
+    },
+    {
+      "source_id": "src_77210",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
+      "title": "Qualified teams for the FIFA World Cup 2026",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Official FIFA qualified teams list. Contextual information about participants bu)"
+    },
+    {
+      "source_id": "src_42293",
+      "url": "https://fifaworldcup26.suites.fifa.com/venues/",
+      "title": "FIFA World Cup 2026™ Venues",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official FIFA venues page. Primary source for stadium and venue information for the tournament."
+    },
+    {
+      "source_id": "src_10440",
+      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+      "title": "2026 FIFA World Cup - Wikipedia",
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "source_type": "primary_data",
+      "authority_score": 0.95,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Wikipedia primary data page for 2026 World Cup. Well-sourced encyclopedia entry suitable for factual claims verification."
+    },
+    {
+      "source_id": "src_01030",
+      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification",
+      "title": "2026 FIFA World Cup qualification - Wikipedia",
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "source_type": "primary_data",
+      "authority_score": 0.95,
+      "freshness_score": 0.5,
+      "relevance_score": 0.42857142857142855,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Wikipedia qualification page. Useful context about how teams qualified but not d)"
+    },
+    {
+      "source_id": "src_10182",
+      "url": "https://www.olympics.com/en/news/2026-fifa-world-cup-football-teams-squads-players-complete-list",
+      "title": "2026 FIFA World Cup: All teams, squads and players - complete list",
+      "publisher": "Olympics",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Olympics.com coverage of teams and squads. Reputable but tangential to opening c)"
+    },
+    {
+      "source_id": "src_47724",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+      "title": "Scores & Fixtures | FIFA World Cup 2026™",
+      "publisher": "FIFA",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official FIFA scores and fixtures page. Primary source for match schedule including opening match details."
+    },
+    {
+      "source_id": "src_02283",
+      "url": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-qualified-teams-groups-match-dates-fixtures-how-to-watch-050724214.html",
+      "title": "2026 World Cup schedule: Qualified teams, groups, match dates ...",
+      "publisher": "Yahoo Sports",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Yahoo Sports comprehensive schedule coverage. Reputable media outlet directly covering tournament dates and format."
+    },
+    {
+      "source_id": "src_99875",
+      "url": "https://www.skysports.com/football/news/12010/13272067/2026-world-cup-dates-venues-host-cities-and-format-for-usa-canada-and-mexico-tournament",
+      "title": "2026 World Cup dates, venues, host cities and format for USA ...",
+      "publisher": "Sky Sports",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Sky Sports coverage of dates, venues, and format. Reputable sports media outlet suitable for public claims."
+    },
+    {
+      "source_id": "src_14869",
+      "url": "https://www.hitc.com/why-the-2026-fifa-world-cup-opening-ceremony-wont-be-held-in-the-us/",
+      "title": "Why the 2026 FIFA World Cup opening ceremony won't be held in the US",
+      "publisher": "HITC",
+      "published_at": null,
+      "source_type": "local_media",
+      "authority_score": 0.7,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "AI: HITC article on opening ceremony location. Local media providing analysis but not primary source authority."
+    },
+    {
+      "source_id": "src_66874",
+      "url": "https://www.espn.com/soccer/story/_/id/47108758/2026-fifa-world-cup-format-tiebreakers-fixtures-schedule",
+      "title": "2026 FIFA World Cup: Format, groups, full match schedule, more - ESPN",
+      "publisher": "ESPN",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: ESPN comprehensive World Cup coverage. Major reputable sports outlet covering format, schedule, and fixtures."
+    },
+    {
+      "source_id": "src_51510",
+      "url": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/venues/",
+      "title": "2026 World Cup Cities Map and Venues - Roadtrips",
+      "publisher": "Roadtrips",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6428571428571429,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Roadtrips travel package site. Commercial aggregator of venue information, not a)"
+    },
+    {
+      "source_id": "src_87001",
+      "url": "https://ussoccer.com/stories/2025/09/which-nations-qualified-2026-fifa-world-cup-usmnt",
+      "title": "Which Nations have Qualified for the 2026 FIFA World Cup?",
+      "publisher": "Ussoccer",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (US Soccer official site on qualified nations. Relevant context but focused on qu)"
+    },
+    {
+      "source_id": "src_93054",
+      "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-draw-results-ranking-all-12-groups-from-easiest-toughest",
+      "title": "2026 World Cup Draw Results: Ranking All 12 Groups From Easiest ...",
+      "publisher": "Foxsports",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Fox Sports draw analysis and rankings. Reputable outlet but analysis/opinion pie)"
+    },
+    {
+      "source_id": "src_20508",
+      "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-groups-confirmed-full-draw-groups-details",
+      "title": "2026 World Cup groups confirmed: Full draw, groups, details",
+      "publisher": "Nbcsports",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.42857142857142855,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=public_claim_source, det=debug_only → debug_only (NBC Sports coverage of draw and groups. Reputable major sports outlet covering t)"
+    },
+    {
+      "source_id": "src_62059",
+      "url": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
+      "title": "2026 World Cup Schedule – USA, Canada and Mexico - Roadtrips",
+      "publisher": "Roadtrips",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Roadtrips travel package schedule page. Commercial site aggregating schedule inf)"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "src_66486_000",
+      "text": "The 2026 FIFA World Cup will feature 48 teams.",
+      "claim_type": "metric",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_66486",
+        "src_04808",
+        "src_42293",
+        "src_02283",
+        "src_99875"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "The 2026 edition of the World Cup will be the first with 48 teams",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "48",
+      "unit": "teams",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "the first with 48 teams"
+    },
+    {
+      "claim_id": "src_66486_001",
+      "text": "Canada, Mexico and the USA will co-host the 2026 FIFA World Cup.",
+      "claim_type": "entity",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_66486",
+        "src_47724",
+        "src_02283"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Hosting of the tournament will be shared between Canada, Mexico and the USA",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "Canada, Mexico and the USA",
+      "entity_role": "co-hosts of the 2026 FIFA World Cup"
+    },
+    {
+      "claim_id": "src_66486_002",
+      "text": "The FIFA World Cup 2026 final will be played on July 19, 2026.",
+      "claim_type": "schedule",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_66486",
+        "src_65145",
+        "src_10440",
+        "src_47724",
+        "src_02283",
+        "src_99875"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline",
+        "live_tracker"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Final will be played on 19 July, 2026, in New York New Jersey",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "event_datetime": "2026-07-19T00:00:00Z",
+      "timezone": null,
+      "event_name": "FIFA World Cup 2026 Final"
+    },
+    {
+      "claim_id": "src_66486_003",
+      "text": "The FIFA World Cup 2026 final will be played in New York New Jersey.",
+      "claim_type": "location",
+      "claim_topic": "venue",
+      "source_ids": [
+        "src_66486",
+        "src_04808",
+        "src_65145",
+        "src_42293",
+        "src_10440",
+        "src_47724",
+        "src_02283",
+        "src_99875"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Final will be played on 19 July, 2026, in New York New Jersey",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "location": "New York New Jersey"
+    },
+    {
+      "claim_id": "src_66486_004",
+      "text": "This is the first FIFA World Cup to be co-hosted across three countries.",
+      "claim_type": "status",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_66486"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "The world's premier international football competition returns in 2026, with a number of firsts as it is co-hosted across three countries and features 48 teams.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "first FIFA World Cup co-hosted across three countries",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_66486_005",
+      "text": "Argentina are the defending champions from the FIFA World Cup Qatar 2022.",
+      "claim_type": "entity",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_66486"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "After the thrilling drama of the FIFA World Cup Qatar 2022™, Argentina are aiming to become ju",
+      "public_claim_eligible": false,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "Argentina",
+      "entity_role": "defending champions from FIFA World Cup Qatar 2022"
+    },
+    {
+      "claim_id": "src_04808_002",
+      "text": "The 2026 FIFA World Cup will be hosted across 16 host cities.",
+      "claim_type": "metric",
+      "claim_topic": "venue",
+      "source_ids": [
+        "src_04808",
+        "src_65145"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "On this page you'll find the full FIFA World Cup 2026™schedule, including all match fixtures, dates and venues, plus live results from the games played across 16 host cities in Canada, Mexico and the United States.",
+      "public_claim_eligible": false,
+      "evidence_grade": "full_text_verified",
+      "value": "16",
+      "unit": "host cities",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "across 16 host cities in Canada, Mexico and the United States"
+    },
+    {
+      "claim_id": "src_04808_004",
+      "text": "The match schedule for FIFA World Cup 2026 was published on March 31, 2026.",
+      "claim_type": "date",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_04808",
+        "src_47724",
+        "src_99875"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Published 31 Mar 2026",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "date_value": "2026-03-31T00:00:00Z"
+    },
+    {
+      "claim_id": "src_65145_005",
+      "text": "The stadium information article was published on October 15, 2025.",
+      "claim_type": "date",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_65145",
+        "src_77210",
+        "src_14869",
+        "src_87001",
+        "src_62059"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Published 15 Oct 2025",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "date_value": "2025-10-15T00:00:00Z"
+    },
+    {
+      "claim_id": "src_42293_002",
+      "text": "Toronto Stadium is one of the host venues for the FIFA World Cup 2026.",
+      "claim_type": "entity",
+      "claim_topic": "venue",
+      "source_ids": [
+        "src_42293",
+        "src_99875"
+      ],
+      "confidence": "medium",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "Toronto Stadium",
+      "public_claim_eligible": false,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "Toronto Stadium",
+      "entity_role": "host venue"
+    },
+    {
+      "claim_id": "src_02283_006",
+      "text": "The tournament has 12 four-team groups.",
+      "claim_type": "metric",
+      "claim_topic": "metrics",
+      "source_ids": [
+        "src_02283"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "The 48 teams were drawn in 12 four-team groups.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "12",
+      "unit": "groups",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "48 teams were drawn in 12 four-team groups"
+    },
+    {
+      "claim_id": "src_99875_005",
+      "text": "The winning team of the 2026 World Cup will receive $50 million in prize money.",
+      "claim_type": "metric",
+      "claim_topic": "pricing",
+      "source_ids": [
+        "src_99875"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "stat_grid",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "- Winners: $50m (£37.5m)",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "50",
+      "unit": "million USD",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "Winners: $50m (£37.5m)"
+    },
+    {
+      "claim_id": "metric_5674",
+      "text": "27 days",
+      "claim_type": "metric",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_77210",
+        "src_62059"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "evidence_grade": "weak_snippet",
+      "value": "27",
+      "unit": "days",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "Lamouchi names much-changed Tunisia squad Lamouchi names much-changed Tunisia squad\n\nImage 11: FIFA 27 days to go: Father and sons 27 days to go: Father and sons\n\nImage 12: FIFA World Cup wonder goals: Cahil"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "Event date",
+      "claim_a": "The match schedule for FIFA World Cup 2026 was published on March 31, 2026.",
+      "sources_a": [
+        "src_04808",
+        "src_47724",
+        "src_99875"
+      ],
+      "claim_b": "The stadium information article was published on October 15, 2025.",
+      "sources_b": [
+        "src_65145",
+        "src_77210",
+        "src_14869",
+        "src_87001",
+        "src_62059"
+      ],
+      "resolution": "prefer_official",
+      "display_policy": "show_uncertainty_box",
+      "ai_resolution": "scope_difference",
+      "ai_resolution_reason": "Two different publication dates for different articles (match schedule vs stadium info). Not contradictory."
+    }
+  ],
+  "unresolved_questions": [],
+  "last_updated": "2026-05-17T05:14:03.242117Z"
+}

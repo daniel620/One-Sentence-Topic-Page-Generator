@@ -17,9 +17,9 @@ from __future__ import annotations
 
 from datetime import datetime
 from enum import Enum
-from typing import Annotated, Literal, Union
+from typing import Any
 
-from pydantic import BaseModel, ConfigDict, Discriminator, Field, HttpUrl, field_validator
+from pydantic import BaseModel, ConfigDict, Field, HttpUrl, field_validator
 
 
 # ---------------------------------------------------------------------------
@@ -32,6 +32,7 @@ class EventType(str, Enum):
     SPORTS_TOURNAMENT = "sports_tournament"
     CULTURAL_EVENT = "cultural_event"
     DISASTER = "disaster"
+    ECONOMIC_EVENT = "economic_event"
 
 
 class EventStatus(str, Enum):
@@ -134,6 +135,52 @@ class ClaimType(str, Enum):
     ACTION = "action"
 
 
+class ClaimTopic(str, Enum):
+    """Controlled topic vocabulary for claim comparison and contradiction detection."""
+    EVENT_SCHEDULE = "event_schedule"
+    VENUE = "venue"
+    PARTICIPANTS = "participants"
+    PRICING = "pricing"
+    CAPABILITIES = "capabilities"
+    ROLLOUT_STATUS = "rollout_status"
+    SAFETY = "safety"
+    METRICS = "metrics"
+    CONTROVERSY = "controversy"
+    HISTORY = "history"
+    HOW_TO_WATCH = "how_to_watch"
+    TICKETING = "ticketing"
+    OTHER = "other"
+
+
+class AISourceRole(str, Enum):
+    """AI curator's assessment of a source's role in supporting claims."""
+    PUBLIC_CLAIM = "public_claim_source"
+    SUPPORTING = "supporting_context"
+    BACKGROUND = "background_only"
+    DEBUG = "debug_only"
+    REJECT = "reject"
+    NEEDS_REVIEW = "needs_review"
+
+
+class AIContradictionResolution(str, Enum):
+    """AI reviewer's judgment on whether a candidate contradiction matters."""
+    REAL_UNCERTAINTY = "real_uncertainty"
+    SCOPE_DIFFERENCE = "scope_difference"
+    EXTRACTION_NOISE = "extraction_noise"
+    DEBUG_ONLY = "debug_only"
+
+
+class EvidenceGrade(str, Enum):
+    """How strong is the evidence backing a claim? Used to decide which claims
+    can anchor public hard facts and which should only support context."""
+    FULL_TEXT_VERIFIED = "full_text_verified"
+    OFFICIAL_SNIPPET = "official_snippet"
+    REPUTABLE_SNIPPET = "reputable_snippet"
+    MULTI_SOURCED = "multi_sourced"
+    WEAK_SNIPPET = "weak_snippet"
+
+
+
 class QARepairAction(str, Enum):
     MISSING_CLAIM_ID = "missing_claim_id"
     WEAK_SOURCE = "weak_source"
@@ -199,6 +246,10 @@ class Source(BaseModel):
     freshness_score: float = Field(default=0.5, ge=0.0, le=1.0)
     relevance_score: float = Field(default=0.5, ge=0.0, le=1.0)
     bias_or_limitation: str | None = Field(default=None, max_length=200)
+    # AI curation
+    ai_source_role: AISourceRole | None = Field(default=None)
+    final_source_role: AISourceRole | None = Field(default=None)
+    curation_reason: str | None = Field(default=None, max_length=200)
 
     @property
     def overall_score(self) -> float:
@@ -221,63 +272,43 @@ class Source(BaseModel):
 # ---------------------------------------------------------------------------
 
 class Claim(BaseModel):
-    """Base claim model with fields common to every claim type."""
+    """A single unified claim model. No type-specific subclasses.
+
+    All claims share the same core fields. Type-specific data lives in
+    claim_attributes — a dict keyed by field name. This replaces the
+    old MetricClaim/DateClaim/... discriminator hierarchy, which added
+    compile-time complexity for zero runtime benefit (the typed fields
+    were only consumed in one place — contradiction detection).
+    """
 
     model_config = ConfigDict(extra="forbid")
 
     claim_id: str = Field(min_length=1, max_length=100)
     text: str = Field(min_length=1, max_length=500)
     claim_type: ClaimType
-    source_ids: list[str] = Field(min_length=1, max_length=5)
+    claim_topic: ClaimTopic = ClaimTopic.OTHER
+    source_ids: list[str] = Field(min_length=1, max_length=20)
     confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM
     freshness: str = Field(default="fresh", max_length=20)
     component_targets: list[ComponentType] = Field(default_factory=list)
     validation_status: str = Field(default="pending", max_length=40)
+    # AI-extracted fields
+    evidence_sentence: str = Field(default="", max_length=600)
+    public_claim_eligible: bool = False
+    evidence_grade: EvidenceGrade = EvidenceGrade.WEAK_SNIPPET
+    # Type-specific data. Keys vary by claim_type:
+    #   metric: value, unit, direction, base_value_if_delta, evidence_snippet
+    #   date: date_value (ISO str)
+    #   schedule: event_datetime (ISO str), timezone, event_name
+    #   location: location
+    #   entity: entity_name, entity_role
+    #   status: status, observed_at (ISO str), source_evidence
+    claim_attributes: dict[str, Any] = Field(default_factory=dict)
 
 
-class MetricClaim(Claim):
-    claim_type: Literal[ClaimType.METRIC] = ClaimType.METRIC
-    value: str = Field(min_length=1, max_length=60)
-    unit: str = Field(min_length=1, max_length=60)
-    direction: str | None = Field(default=None, max_length=40)
-    base_value_if_delta: str | None = Field(default=None, max_length=60)
-    evidence_snippet: str = Field(min_length=1, max_length=300)
-
-
-class StatusClaim(Claim):
-    claim_type: Literal[ClaimType.STATUS] = ClaimType.STATUS
-    status: str = Field(min_length=1, max_length=120)
-    observed_at: datetime | None = None
-    source_evidence: str | None = Field(default=None, max_length=300)
-
-
-class ScheduleClaim(Claim):
-    claim_type: Literal[ClaimType.SCHEDULE] = ClaimType.SCHEDULE
-    event_datetime: datetime
-    timezone: str | None = Field(default=None, max_length=40)
-    event_name: str = Field(min_length=1, max_length=160)
-
-
-class DateClaim(Claim):
-    claim_type: Literal[ClaimType.DATE] = ClaimType.DATE
-    date_value: datetime
-
-
-class LocationClaim(Claim):
-    claim_type: Literal[ClaimType.LOCATION] = ClaimType.LOCATION
-    location: str = Field(min_length=1, max_length=200)
-
-
-class EntityClaim(Claim):
-    claim_type: Literal[ClaimType.ENTITY] = ClaimType.ENTITY
-    entity_name: str = Field(min_length=1, max_length=160)
-    entity_role: str = Field(min_length=1, max_length=200)
-
-
-ClaimUnion = Annotated[
-    Union[MetricClaim, StatusClaim, ScheduleClaim, DateClaim, LocationClaim, EntityClaim],
-    Discriminator("claim_type"),
-]
+# For backward compatibility — ClaimUnion is now just Claim.
+# All code that previously consumed ClaimUnion (list[ClaimUnion]) now uses list[Claim].
+ClaimUnion = Claim
 
 
 class Contradiction(BaseModel):
@@ -285,11 +316,14 @@ class Contradiction(BaseModel):
 
     topic: str = Field(min_length=1, max_length=160)
     claim_a: str = Field(min_length=1, max_length=500)
-    sources_a: list[str] = Field(min_length=1, max_length=5)
+    sources_a: list[str] = Field(min_length=1, max_length=20)
     claim_b: str = Field(min_length=1, max_length=500)
-    sources_b: list[str] = Field(min_length=1, max_length=5)
+    sources_b: list[str] = Field(min_length=1, max_length=20)
     resolution: ResolutionPolicy = ResolutionPolicy.UNRESOLVED
     display_policy: DisplayPolicy = DisplayPolicy.SHOW_UNCERTAINTY_BOX
+    # AI reviewer fields
+    ai_resolution: AIContradictionResolution | None = Field(default=None)
+    ai_resolution_reason: str | None = Field(default=None, max_length=200)
 
 
 class EvidenceGraph(BaseModel):
@@ -297,7 +331,7 @@ class EvidenceGraph(BaseModel):
 
     event_hypothesis: str = Field(min_length=1, max_length=300)
     sources: list[Source] = Field(default_factory=list, max_length=30)
-    claims: list[ClaimUnion] = Field(default_factory=list, max_length=50)
+    claims: list[Claim] = Field(default_factory=list, max_length=120)
     contradictions: list[Contradiction] = Field(default_factory=list, max_length=10)
     unresolved_questions: list[str] = Field(default_factory=list, max_length=5)
     last_updated: datetime | None = None
@@ -333,6 +367,49 @@ class EvidenceGraph(BaseModel):
                         f"Claim {claim.claim_id} references nonexistent source {source_id}"
                     )
         return errors
+
+    @property
+    def public_evidence_view(self) -> "EvidenceGraph":
+        """Return a filtered EvidenceGraph with only public-eligible content."""
+        public_sources = [
+            s for s in self.sources
+            if s.final_source_role and s.final_source_role.value in (
+                "public_claim_source", "supporting_context",
+            )
+        ]
+        public_source_ids = {s.source_id for s in public_sources}
+        public_claims = [
+            c for c in self.claims
+            if c.public_claim_eligible and set(c.source_ids) & public_source_ids
+        ]
+        public_contradictions = [
+            c for c in self.contradictions
+            if c.ai_resolution and c.ai_resolution == AIContradictionResolution.REAL_UNCERTAINTY
+        ]
+        return EvidenceGraph(
+            event_hypothesis=self.event_hypothesis,
+            sources=public_sources,
+            claims=public_claims,
+            contradictions=public_contradictions,
+            unresolved_questions=self.unresolved_questions,
+            last_updated=self.last_updated,
+        )
+
+
+class AISourceAssessment(BaseModel):
+    """AI curator's verdict on a single source."""
+    model_config = ConfigDict(extra="forbid")
+    source_id: str
+    role: AISourceRole
+    reason: str = Field(default="", max_length=200)
+
+
+class AIContradictionReview(BaseModel):
+    """AI reviewer's verdict on a candidate contradiction."""
+    model_config = ConfigDict(extra="forbid")
+    contradiction_index: int
+    resolution: AIContradictionResolution
+    reason: str = Field(default="", max_length=200)
 
 
 # ---------------------------------------------------------------------------
@@ -548,6 +625,19 @@ EVENT_TYPE_REQUIREMENTS = {
         description=(
             "Disasters must show impact zones, casualties, affected services, "
             "relief resources, and live status."
+        ),
+    ),
+    EventType.ECONOMIC_EVENT: EventTypeRequirement(
+        event_type=EventType.ECONOMIC_EVENT,
+        required_components=[
+            ComponentType.STAT_GRID,
+            ComponentType.COMPARISON_TABLE,
+            ComponentType.TIMELINE,
+            ComponentType.ACTION_LIST,
+        ],
+        required_claim_types=[ClaimType.METRIC, ClaimType.STATUS, ClaimType.IMPACT, ClaimType.DATE],
+        description=(
+            "Economic/political events must show key metrics, affected entities, timeline, and analysis."
         ),
     ),
 }

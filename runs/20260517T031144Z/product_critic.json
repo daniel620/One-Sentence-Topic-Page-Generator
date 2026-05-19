@@ -1,0 +1,6 @@
+{
+  "decision": "proceed",
+  "reasoning": "This live_event (Eurovision 2026) meets all key evidence requirements:\n\n1. **Schedule/date claims**: Present (1 event_schedule claim topic)\n2. **Venue/location claims**: Present (1 venue claim topic)\n3. **How-to-watch info**: Present (1 how_to_watch claim topic)\n\nAdditional strengths:\n- 6 public_claim_source sources (exceeds the minimum threshold of 3)\n- 11 public-eligible claims (exceeds the minimum threshold of 5)\n- 11 verified evidence sentences (strong verification coverage)\n- 0 real uncertainties (high confidence in the claims)\n- Diverse claim topics including participants, metrics, history, and controversy\n\nAll essential reader questions for a live event can be answered: when (May 12-16), where (Vienna), and how to watch. The evidence is credible, verified, and comprehensive enough to build a useful, trustworthy page.",
+  "new_queries": [],
+  "caveats": []
+}

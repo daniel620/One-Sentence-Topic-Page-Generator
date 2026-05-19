@@ -1,0 +1,16 @@
+{
+  "final_event_type": "live_event",
+  "event_status": "concluded",
+  "page_thesis": "This page provides comprehensive results and coverage of Eurovision Song Contest 2026, held in Vienna May 12-16, including Bulgaria's historic victory, complete voting breakdown, semi-final qualifiers, and performance highlights from all 25 grand final participants.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "entity_list",
+    "comparison_table",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "hero_focus",
+  "confidence_summary": "High-quality evidence from official Eurovision sources and specialist media (EurovisionWorld) confirms Bulgaria's win. Event concluded May 16, authoritative voting data available."
+}

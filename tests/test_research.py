@@ -5,19 +5,15 @@ import pytest
 from datetime import datetime, timezone
 
 from generator.schemas import (
+    Claim,
     ClaimType,
-    ConfidenceLevel,
-    DateClaim,
-    EntityClaim,
-    LocationClaim,
-    MetricClaim,
     SourceType,
 )
+from generator.contradictions import detect_contradictions
 from generator.utils import (
     calculate_freshness_score,
     calculate_relevance_score,
     create_source,
-    detect_contradictions,
     extract_date_claims,
     extract_deterministic_claims,
     extract_entity_claims,
@@ -149,7 +145,7 @@ class TestExtractMetricClaims:
         content = "The system has 95 % accuracy in testing."
         claims = extract_metric_claims(content, "src_001")
         assert len(claims) > 0
-        assert any(c.value == "95" for c in claims)
+        assert any(c.claim_attributes.get("value") == "95" for c in claims)
 
     def test_extract_multiple_metrics(self):
         """Test multiple metric extraction."""
@@ -231,82 +227,45 @@ class TestDetectContradictions:
 
     def test_detect_metric_contradiction(self):
         """Test detection of conflicting metrics."""
-        claim1 = MetricClaim(
-            claim_id="m1",
-            text="95%",
-            claim_type=ClaimType.METRIC,
-            value="95",
-            unit="%",
-            source_ids=["src1"],
-            confidence=ConfidenceLevel.HIGH,
-            freshness="fresh",
-            evidence_snippet="95% accuracy",
+        claim1 = Claim(
+            claim_id="m1", text="95%", claim_type=ClaimType.METRIC,
+            source_ids=["src1"], freshness="fresh",
+            claim_attributes={"value": "95", "unit": "%", "evidence_snippet": "95% accuracy"},
         )
-        claim2 = MetricClaim(
-            claim_id="m2",
-            text="80%",
-            claim_type=ClaimType.METRIC,
-            value="80",
-            unit="%",
-            source_ids=["src2"],
-            confidence=ConfidenceLevel.HIGH,
-            freshness="fresh",
-            evidence_snippet="80% accuracy",
+        claim2 = Claim(
+            claim_id="m2", text="80%", claim_type=ClaimType.METRIC,
+            source_ids=["src2"], freshness="fresh",
+            claim_attributes={"value": "80", "unit": "%", "evidence_snippet": "80% accuracy"},
         )
         contradictions = detect_contradictions([claim1, claim2])
         assert len(contradictions) > 0
 
     def test_no_contradiction_similar_values(self):
         """Test no contradiction when metrics are similar."""
-        claim1 = MetricClaim(
-            claim_id="m1",
-            text="95%",
-            claim_type=ClaimType.METRIC,
-            value="95",
-            unit="%",
-            source_ids=["src1"],
-            confidence=ConfidenceLevel.HIGH,
-            freshness="fresh",
-            evidence_snippet="95% accuracy",
+        claim1 = Claim(
+            claim_id="m1", text="95%", claim_type=ClaimType.METRIC,
+            source_ids=["src1"], freshness="fresh",
+            claim_attributes={"value": "95", "unit": "%", "evidence_snippet": "95% accuracy"},
         )
-        claim2 = MetricClaim(
-            claim_id="m2",
-            text="94%",
-            claim_type=ClaimType.METRIC,
-            value="94",
-            unit="%",
-            source_ids=["src2"],
-            confidence=ConfidenceLevel.HIGH,
-            freshness="fresh",
-            evidence_snippet="94% accuracy",
+        claim2 = Claim(
+            claim_id="m2", text="94%", claim_type=ClaimType.METRIC,
+            source_ids=["src2"], freshness="fresh",
+            claim_attributes={"value": "94", "unit": "%", "evidence_snippet": "94% accuracy"},
         )
         contradictions = detect_contradictions([claim1, claim2])
-        # Should not detect contradiction for minor differences
         assert len(contradictions) == 0
 
     def test_no_contradiction_different_units(self):
         """Test no contradiction for different units."""
-        claim1 = MetricClaim(
-            claim_id="m1",
-            text="100 million",
-            claim_type=ClaimType.METRIC,
-            value="100",
-            unit="million",
-            source_ids=["src1"],
-            confidence=ConfidenceLevel.HIGH,
-            freshness="fresh",
-            evidence_snippet="100 million users",
+        claim1 = Claim(
+            claim_id="m1", text="100 million", claim_type=ClaimType.METRIC,
+            source_ids=["src1"], freshness="fresh",
+            claim_attributes={"value": "100", "unit": "million", "evidence_snippet": "100 million users"},
         )
-        claim2 = MetricClaim(
-            claim_id="m2",
-            text="50000 km",
-            claim_type=ClaimType.METRIC,
-            value="50000",
-            unit="km",
-            source_ids=["src2"],
-            confidence=ConfidenceLevel.HIGH,
-            freshness="fresh",
-            evidence_snippet="50000 km coverage",
+        claim2 = Claim(
+            claim_id="m2", text="50000 km", claim_type=ClaimType.METRIC,
+            source_ids=["src2"], freshness="fresh",
+            claim_attributes={"value": "50000", "unit": "km", "evidence_snippet": "50000 km coverage"},
         )
         contradictions = detect_contradictions([claim1, claim2])
         # Different units, no contradiction

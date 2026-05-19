@@ -51,6 +51,7 @@ def test_stage1b_prompt_uses_evidence_graph_and_uncertainty() -> None:
     assert "uncertainty_box" in joined
     assert "layout_style" in joined
     assert "final_event_type" in joined
+    assert "mandatory components" in joined.lower()  # injected from EVENT_TYPE_REQUIREMENTS
 
 
 def test_stage3_prompt_requires_claim_traceability() -> None:
@@ -68,8 +69,8 @@ def test_stage3_prompt_requires_claim_traceability() -> None:
     joined = "\n".join(message["content"] for message in messages)
 
     assert "claim_id" in joined
-    assert "EvidenceAwareIA" in joined
-    assert "EvidenceGraph" in joined
+    assert "claim cards" in joined.lower()  # composer prompt uses claim cards, not raw EvidenceGraph
+    assert "compose" in joined.lower()      # system prompt says "compose", not "write"
 
 
 def test_tech_launch_fixture_has_evidence_and_official_source() -> None:

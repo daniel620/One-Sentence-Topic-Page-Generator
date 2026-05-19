@@ -1,0 +1,15 @@
+{
+  "final_event_type": "sports_tournament",
+  "event_status": "upcoming",
+  "page_thesis": "This page provides comprehensive pre-tournament information for the 2026 FIFA World Cup, including the opening ceremony at Estadio Azteca on June 11, 2026, complete match schedules, all 48 qualified teams, group stage draw results, and venue details across the three host nations.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "entity_list",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "timeline_first",
+  "confidence_summary": "Evidence quality is excellent with multiple official FIFA sources confirming all core facts. Opening match participants and ceremony details remain to be confirmed closer to event date."
+}

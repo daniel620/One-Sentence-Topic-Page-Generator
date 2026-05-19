@@ -1,0 +1,552 @@
+{
+  "event_hypothesis": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+  "sources": [
+    {
+      "source_id": "src_12126",
+      "url": "https://www.eurovision.com/stories/vienna-2026-semi-final-draw-results/",
+      "title": "Vienna 2026: Semi-Final Draw results",
+      "publisher": "Eurovision (official)",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official Eurovision source for semi-final draw results, primary authoritative information"
+    },
+    {
+      "source_id": "src_34434",
+      "url": "https://www.eurovision.com/stories/dara-wins-the-eurovision-song-contest-2026-for-bulgaria/",
+      "title": "DARA wins the Eurovision Song Contest 2026 for Bulgaria",
+      "publisher": "Eurovision (official)",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official Eurovision announcement of 2026 winner, most authoritative source possible"
+    },
+    {
+      "source_id": "src_75300",
+      "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+      "title": "Eurovision Song Contest 2026",
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "source_type": "primary_data",
+      "authority_score": 0.95,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Wikipedia primary data page, aggregates verifiable information with citations"
+    },
+    {
+      "source_id": "src_57204",
+      "url": "https://eurovisionworld.com/eurovision/2026/semi-final-1",
+      "title": "Eurovision 2026 Semi-final 1 Results - Eurovisionworld",
+      "publisher": "EurovisionWorld",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7692307692307693,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: EurovisionWorld is established reputable Eurovision coverage site, semi-final results"
+    },
+    {
+      "source_id": "src_68664",
+      "url": "https://eurovisionworld.com/eurovision/2026",
+      "title": "Eurovision 2026 Results: Voting & Points - Eurovisionworld",
+      "publisher": "EurovisionWorld",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7692307692307693,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: EurovisionWorld main results page with voting and points data"
+    },
+    {
+      "source_id": "src_91752",
+      "url": "https://eurovisionworld.com/eurovision/2026/semi-final-2",
+      "title": "Eurovision 2026 Semi-final 2 Results - Eurovisionworld",
+      "publisher": "EurovisionWorld",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7692307692307693,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: EurovisionWorld semi-final 2 results, reputable coverage"
+    },
+    {
+      "source_id": "src_21987",
+      "url": "https://pix.eurovisionworld.com/grafik/2026/scorecard-eurovision-2026-semi-final-1.pdf?v=5",
+      "title": "Scorecard Eurovision 2026 Semi-final 1",
+      "publisher": "EurovisionWorld",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official scorecard PDF from EurovisionWorld, primary data document"
+    },
+    {
+      "source_id": "src_64861",
+      "url": "https://eurovisionworld.com/odds/eurovision-top-10",
+      "title": "Odds Eurovision 2026: Top 10",
+      "publisher": "EurovisionWorld",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "background_only",
+      "curation_reason": "disagreement: AI=background_only, det=public_claim_source → background_only (Betting odds are predictive/speculative, not factual results)"
+    },
+    {
+      "source_id": "src_50376",
+      "url": "https://www.youtube.com/watch?v=KunQdgLsKGs",
+      "title": "Full Results and Winner Prediction Voting Simulation, Reaction",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube social content with predictions/simulations, not official results)"
+    },
+    {
+      "source_id": "src_68640",
+      "url": "https://www.youtube.com/watch?v=aVJzmCF4fMI",
+      "title": "The Jury Results of Eurovision 2026 | Grand Final | #UnitedByMusic",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube social video about jury results, unclear authenticity)"
+    },
+    {
+      "source_id": "src_88558",
+      "url": "https://www.youtube.com/watch?v=Ebb6zY4W2l8",
+      "title": "Eurovision Song Contest 2026 / ESCBubble's Final results - YouTube",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube user-generated content (ESCBubble), not authoritative source)"
+    },
+    {
+      "source_id": "src_63775",
+      "url": "https://www.instagram.com/p/DXtpb3OiBdm/",
+      "title": "The Official Results of the “My Eurovision 2026” Grand Final! The ...",
+      "publisher": "Instagram",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Instagram social media post with user-generated results, not official)"
+    },
+    {
+      "source_id": "src_65598",
+      "url": "https://www.chroniclelive.co.uk/whats-on/music-nightlife-news/eurovision-2026-final-live-results-33955218",
+      "title": "Eurovision 2026 final LIVE: Results and updates from Vienna as fans predict their winners | Chronicle Live",
+      "publisher": "Co",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8461538461538461,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Chronicle Live local press coverage with live updates, context but not primary)"
+    },
+    {
+      "source_id": "src_90222",
+      "url": "https://www.the-independent.com/arts-entertainment/eurovision/eurovision-2026-live-updates-semi-final-israel-finland-b2974741.html",
+      "title": "Eurovision 2026 live: Results and updates from tonight’s semi-final as UK’s Look Mum No Computer performs | The Independent",
+      "publisher": "The-Independent",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (The Independent reputable media semi-final live coverage, good context source)"
+    },
+    {
+      "source_id": "src_45771",
+      "url": "https://www.the-independent.com/arts-entertainment/eurovision/eurovision-2026-final-countries-full-list-b2977040.html",
+      "title": "Eurovision 2026: The 25 countries competing in the grand final | The Independent",
+      "publisher": "The-Independent",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (The Independent article on final countries list, reputable but secondary)"
+    },
+    {
+      "source_id": "src_15146",
+      "url": "https://www.euronews.com/culture/2026/05/17/eurovision-2026-follow-our-coverage-of-the-worlds-greatest-song-contest",
+      "title": "Eurovision 2026: Bulgaria wins as nail-biting final sees Israel finish second",
+      "publisher": "Euronews",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=public_claim_source, det=debug_only → debug_only (Euronews reputable international media with direct result coverage)"
+    },
+    {
+      "source_id": "src_98800",
+      "url": "https://www.aussievision.net/post/changes-to-eurovision-2026-voting-you-need-to-know",
+      "title": "Changes to Eurovision 2026 voting you need to know",
+      "publisher": "Aussievision",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Aussievision specialist blog explaining voting changes, useful context)"
+    },
+    {
+      "source_id": "src_52554",
+      "url": "https://www.independent.co.uk/arts-entertainment/eurovision/eurovision-2026-countries-final-full-list-b2976953.html",
+      "title": "Eurovision 2026: All the countries through to the song contest’s grand final | The Independent",
+      "publisher": "Co",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (The Independent article on finalists, reputable but secondary coverage)"
+    },
+    {
+      "source_id": "src_90065",
+      "url": "https://www.hellomagazine.com/us/901951/eurovision-2026-winner-crowned-after-dramatic-grand-final/",
+      "title": "Eurovision 2026 winner crowned after dramatic grand final",
+      "publisher": "Hellomagazine",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.46153846153846156,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Hello Magazine entertainment media covering winner, less authoritative than news)"
+    },
+    {
+      "source_id": "src_14365",
+      "url": "https://eurovisionfun.com/en/2026/05/eurovision-2026-the-results-of-the-first-semi-final-2/",
+      "title": "Eurovision 2026: The results of the second semi-final! - eurovisionfun",
+      "publisher": "Eurovisionfun",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3076923076923077,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Eurovisionfun specialist site, useful coverage but not primary authority)"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "src_12126_000",
+      "text": "The Semi-Final Draw for Eurovision 2026 took place on Monday 12 January at Vienna's City Hall.",
+      "claim_type": "date",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_12126",
+        "src_57204",
+        "src_68664",
+        "src_91752"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "On Monday 12 January we were off to Vienna's City Hall to commence the Semi-Final Draw for Vienna 2026.",
+      "public_claim_eligible": true,
+      "date_value": "2026-01-12T00:00:00Z"
+    },
+    {
+      "claim_id": "src_12126_001",
+      "text": "The First Semi-Final of Eurovision 2026 is scheduled for 12 May.",
+      "claim_type": "schedule",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_12126"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline",
+        "key_facts",
+        "live_tracker"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "First Semi-Final (12 May)",
+      "public_claim_eligible": true,
+      "event_datetime": "2026-05-12T00:00:00Z",
+      "timezone": null,
+      "event_name": "First Semi-Final"
+    },
+    {
+      "claim_id": "src_12126_004",
+      "text": "The precise running order for the two Semi-Finals will be determined by the end of March.",
+      "claim_type": "status",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_12126"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "The precise running order for the two Semi-Finals will be determined by the end of March.",
+      "public_claim_eligible": true,
+      "status": "Running order to be determined by end of March",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_12126_005",
+      "text": "Both a public vote and a jury vote will determine the Top 10 countries from each Semi-Final that progress to the Grand Final.",
+      "claim_type": "status",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_12126"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "For Vienna 2026, both a public vote and a jury vote will determine the Top 10 countries from each Semi-Final.",
+      "public_claim_eligible": true,
+      "status": "Top 10 determined by combined public and jury vote",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_12126_006",
+      "text": "Germany and Italy will perform and vote in the First Semi-Final.",
+      "claim_type": "entity",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_12126",
+        "src_34434",
+        "src_57204",
+        "src_68664",
+        "src_91752"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Germany and Italy will perform and vote in the First Semi-Final, while Austria, France and the United Kingdom will do so in the Second Semi-Final.",
+      "public_claim_eligible": true,
+      "entity_name": "Germany and Italy",
+      "entity_role": "Grand Finalists performing and voting in First Semi-Final"
+    },
+    {
+      "claim_id": "src_34434_001",
+      "text": "Bulgaria won Eurovision 2026 with a total of 516 points",
+      "claim_type": "metric",
+      "claim_topic": "metrics",
+      "source_ids": [
+        "src_34434",
+        "src_57204",
+        "src_68664",
+        "src_91752"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Bulgaria won the Contest with a points tally of 516.",
+      "public_claim_eligible": true,
+      "value": "516",
+      "unit": "points",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "Bulgaria won the Contest with a points tally of 516."
+    },
+    {
+      "claim_id": "src_34434_007",
+      "text": "This is Bulgaria's first-ever Eurovision Song Contest victory",
+      "claim_type": "status",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_34434",
+        "src_68664"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "In a monumental Eurovision result at the 70th Contest, we saw Bulgaria score its first-ever victory.",
+      "public_claim_eligible": true,
+      "status": "first victory",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_57204_003",
+      "text": "Eurovision 2026 Semi-final 1 was held at Wiener Stadthalle in Vienna, Austria",
+      "claim_type": "location",
+      "claim_topic": "venue",
+      "source_ids": [
+        "src_57204",
+        "src_68664",
+        "src_91752"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Arena: Wiener Stadthalle",
+      "public_claim_eligible": true,
+      "location": "Wiener Stadthalle, Vienna, Austria"
+    },
+    {
+      "claim_id": "src_57204_005",
+      "text": "15 countries participated in Semi-final 1",
+      "claim_type": "metric",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_57204",
+        "src_91752"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "15 countries participated in Semi-final 1 (determined by draw).",
+      "public_claim_eligible": true,
+      "value": "15",
+      "unit": "countries",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "15 countries participated in Semi-final 1"
+    },
+    {
+      "claim_id": "src_57204_007",
+      "text": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate",
+      "claim_type": "status",
+      "claim_topic": "controversy",
+      "source_ids": [
+        "src_57204"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "uncertainty_box"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate in the contest",
+      "public_claim_eligible": true,
+      "status": "boycotted",
+      "observed_at": null,
+      "source_evidence": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate in the contest"
+    },
+    {
+      "claim_id": "metric_8915",
+      "text": "3 minutes",
+      "claim_type": "metric",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_15146",
+        "src_98800"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "value": "3",
+      "unit": "minutes",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "ny were Ireland, The Netherlands, Iceland and Slovenia.\nPomp and performance\nThe musicians had just 3 minutes to win over viewers and Bulgaria's Dara can boast she effectively used each and every second.\n“Bang"
+    }
+  ],
+  "contradictions": [],
+  "unresolved_questions": [],
+  "last_updated": "2026-05-17T04:20:18.015378Z"
+}

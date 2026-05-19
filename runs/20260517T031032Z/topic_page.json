@@ -1,0 +1,255 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "2026 FIFA World Cup Opens June 11 at Estadio Azteca",
+  "deck": "Mexico City will host the opening ceremony and first match of the expanded 48-team tournament featuring 104 matches across three nations.",
+  "summary": "The 2026 FIFA World Cup kicks off on June 11, 2026, at Mexico City's Estadio Azteca with an opening ceremony beginning at 11:30 local time, 90 minutes before the first match. The tournament marks a historic expansion to 48 teams competing in 104 matches across 16 host cities in the United States, Mexico, and Canada, culminating in the final on July 19, 2026, at New York New Jersey Stadium. Top Latin music artists including J Balvin, Maná, and Alejandro Fernández will perform at the opening ceremony.",
+  "urgency_label": "25 days away",
+  "as_of_label": "Updated May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Opening Ceremony",
+      "value": "June 11, 2026, 11:30 local time",
+      "hint": null,
+      "claim_id": "src_25199_000"
+    },
+    {
+      "label": "Venue",
+      "value": "Estadio Azteca, Mexico City",
+      "hint": null,
+      "claim_id": "src_25199_003"
+    },
+    {
+      "label": "Tournament Scale",
+      "value": "104 matches across 16 host cities",
+      "hint": null,
+      "claim_id": "src_25199_004"
+    },
+    {
+      "label": "Final Match",
+      "value": "July 19, 2026 at New York New Jersey Stadium",
+      "hint": null,
+      "claim_id": "src_25199_006"
+    },
+    {
+      "label": "Teams",
+      "value": "48 teams in 12 four-team groups",
+      "hint": null,
+      "claim_id": "src_25107_004"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Tournament organizer"
+    },
+    {
+      "name": "Estadio Azteca (Mexico City Stadium)",
+      "role": "Opening ceremony and match venue"
+    },
+    {
+      "name": "J Balvin, Maná, Alejandro Fernández, Belinda, Danny Ocean, Lila Downs, Los Ángeles Azules, Tyl",
+      "role": "Opening ceremony performers"
+    },
+    {
+      "name": "New York New Jersey Stadium",
+      "role": "Final match venue"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "June 11, 2026, 11:30 local time",
+      "title": "Opening Ceremony at Estadio Azteca",
+      "detail": "Ceremony begins 90 minutes before kickoff featuring artists including J Balvin, Maná, Alejandro Fernández, and more"
+    },
+    {
+      "date_label": "June 11, 2026",
+      "title": "Tournament Begins in Mexico City",
+      "detail": "First match kicks off at Mexico City Stadium following the opening ceremony"
+    },
+    {
+      "date_label": "July 19, 2026",
+      "title": "Final at New York New Jersey Stadium",
+      "detail": "Tournament concludes with the championship match"
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament by the Numbers",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Total Matches",
+          "value": "104 matches across 16 host cities",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_004"
+        },
+        {
+          "label": "Tournament Structure",
+          "value": "48 teams drawn into 12 four-team groups",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25107_004"
+        },
+        {
+          "label": "Opening Match Time",
+          "value": "June 11, 2026 at 11:30 local time",
+          "detail": "Ceremony begins 90 minutes before kickoff at Estadio Azteca",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_000"
+        },
+        {
+          "label": "Final Match Date",
+          "value": "July 19, 2026",
+          "detail": "At New York New Jersey Stadium",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_006"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key Tournament Dates",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Opening Ceremony",
+          "value": "June 11, 2026 at 11:30 local time at Mexico City Stadium",
+          "detail": "Fans should arrive early as the ceremony begins 90 minutes before the first match kickoff",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_000"
+        },
+        {
+          "label": "Tournament Begins",
+          "value": "June 11, 2026 in Mexico City",
+          "detail": "First of 104 matches across 16 host cities in three nations",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_004"
+        },
+        {
+          "label": "Final Match",
+          "value": "July 19, 2026 at New York New Jersey Stadium",
+          "detail": "Tournament concludes with the championship match",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_006"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Opening Ceremony Performers",
+      "summary": "Some of the most exciting voices in global music will take the stage to perform from the Official FIFA World Cup 2026 Album.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Featured Artists",
+          "value": "Alejandro Fernández, Belinda, Danny Ocean, J Balvin, Lila Downs, Los Ángeles Azules, Maná, and Tyl",
+          "detail": "Performers will bring the Official FIFA World Cup 2026 Album to life in a powerful opening ceremony performance",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_001"
+        },
+        {
+          "label": "Opening Venue",
+          "value": "Mexico City Stadium (Estadio Azteca)",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25199_003"
+        },
+        {
+          "label": "Qualified Teams Include",
+          "value": "Türkiye (qualified by beating Kosovo)",
+          "detail": "One of 48 nations competing in the expanded tournament format",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_25107_007"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Plan Your World Cup Experience",
+      "summary": "Essential resources for fans looking to attend matches or follow the tournament.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "View Match Schedule & Fixtures",
+          "value": "Check complete schedule of all 104 matches across 16 host cities",
+          "detail": null,
+          "link_label": "See full schedule",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+          "claim_id": null
+        },
+        {
+          "label": "Ticket Information",
+          "value": "Learn about ticket pricing tiers, random selection draw, and purchasing options",
+          "detail": null,
+          "link_label": "Ticket details",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-where-and-when-can-i-buy-tickets-hospitality",
+          "claim_id": null
+        },
+        {
+          "label": "Explore Host Venues",
+          "value": "Discover the 16 stadiums hosting matches across the USA, Mexico, and Canada",
+          "detail": null,
+          "link_label": "View venues",
+          "link_url": "https://fifaworldcup26.suites.fifa.com/venues/",
+          "claim_id": null
+        },
+        {
+          "label": "Opening Ceremony Details",
+          "value": "Get information about the June 11 ceremony at Estadio Azteca with top music performers",
+          "detail": null,
+          "link_label": "Ceremony info",
+          "link_url": "https://inside.fifa.com/media-releases/world-cup-2026-opening-ceremony-mexico-city",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T03:09:44.779756Z"
+}

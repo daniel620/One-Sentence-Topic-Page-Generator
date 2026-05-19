@@ -13,8 +13,9 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-from generator.renderer import render_topic_page
+from generator.render import render_topic_page
 from generator.schemas import (
+    Claim,
     ClaimType,
     ComponentType,
     ConfidenceLevel,
@@ -24,14 +25,12 @@ from generator.schemas import (
     EventStatus,
     EventType,
     KeyFact,
-    MetricClaim,
     QARepairAction,
     QAGateResult,
     RenderMode,
     ResolutionPolicy,
     Source,
     SourceType,
-    StatusClaim,
     TopicPageData,
     UIComponent,
     UIItem,
@@ -53,21 +52,23 @@ def _build_basic_page(
         source_type=SourceType.OFFICIAL,
         published_at=datetime(2026, 5, 10, tzinfo=timezone.utc),
     )
-    metric_claim = MetricClaim(
+    metric_claim = Claim(
         claim_id="metric_speed",
         text="3x faster",
         claim_type=ClaimType.METRIC,
         source_ids=["src_official"],
-        value="3",
-        unit="× faster",
-        evidence_snippet="Benchmarks show 3x faster output.",
+        claim_attributes={
+            "value": "3",
+            "unit": "× faster",
+            "evidence_snippet": "Benchmarks show 3x faster output.",
+        },
     )
-    status_claim = StatusClaim(
+    status_claim = Claim(
         claim_id="status_live",
         text="Now default",
         claim_type=ClaimType.STATUS,
         source_ids=["src_official"],
-        status="default",
+        claim_attributes={"status": "default"},
     )
     graph = EvidenceGraph(
         event_hypothesis="Test event",

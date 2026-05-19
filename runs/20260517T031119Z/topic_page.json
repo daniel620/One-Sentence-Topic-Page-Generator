@@ -1,0 +1,234 @@
+{
+  "event_type": "tech_launch",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "OpenAI Launches GPT-5.5 Instant as Default ChatGPT Model",
+  "deck": "The new foundation model replaces GPT-5.3 Instant, arriving less than two months after GPT-5.4 in the fastest upgrade cycle yet.",
+  "summary": "OpenAI released GPT-5.5 Instant in early May 2026, making it the new default model for ChatGPT users. The launch represents the latest step in an accelerating development cycle, with GPT-5.5 arriving less than two months after its predecessor GPT-5.4. OpenAI President Greg Brockman highlighted the model's ability to accomplish more with less guidance, while the company confirmed GPT-5.5 meets \"High\" cybersecurity risk criteria but does not cross the \"Critical\" threshold.",
+  "urgency_label": "Rolled out",
+  "as_of_label": "As of May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Model Name",
+      "value": "GPT-5.5 Instant",
+      "hint": null,
+      "claim_id": "src_06055_000"
+    },
+    {
+      "label": "Rollout Status",
+      "value": "Replaced GPT-5.3 Instant as default",
+      "hint": null,
+      "claim_id": "src_06055_001"
+    },
+    {
+      "label": "Development Pace",
+      "value": "Less than 2 months after GPT-5.4",
+      "hint": null,
+      "claim_id": "src_06040_002"
+    },
+    {
+      "label": "Safety Classification",
+      "value": "High risk, below Critical threshold",
+      "hint": null,
+      "claim_id": "src_06040_003"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "OpenAI",
+      "role": "Developer and publisher of GPT-5.5 Instant"
+    },
+    {
+      "name": "GPT-5.5 Instant",
+      "role": "New default ChatGPT foundation model"
+    },
+    {
+      "name": "Greg Brockman",
+      "role": "OpenAI President"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "February 2026",
+      "title": "AI models fully saturate basic tasks",
+      "detail": "Foundation models reached full saturation on basic evaluation benchmarks, signaling need for more advanced capability testing."
+    },
+    {
+      "date_label": "April 2026",
+      "title": "Claude Mythos Preview evaluated",
+      "detail": "UK AISI evaluated Anthropic's Claude Mythos Preview, finding it represented a step up in cyber performance and was first to complete corporate network attack simulation."
+    },
+    {
+      "date_label": "Late April 2026",
+      "title": "OpenAI announces GPT-5.5",
+      "detail": "OpenAI President Greg Brockman announced GPT-5.5, emphasizing improved autonomy and guidance efficiency."
+    },
+    {
+      "date_label": "Early May 2026",
+      "title": "GPT-5.5 Instant becomes default",
+      "detail": "OpenAI released GPT-5.5 Instant as the new default ChatGPT model, replacing GPT-5.3 Instant."
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Launch Specifications",
+      "summary": "Core facts about the GPT-5.5 Instant release and its position in OpenAI's model lineup.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Model Released",
+          "value": "GPT-5.5 Instant foundation model",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_06055_000"
+        },
+        {
+          "label": "Default Status",
+          "value": "Replaced GPT-5.3 Instant as default ChatGPT model",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_06055_001"
+        },
+        {
+          "label": "Development Speed",
+          "value": "Released less than two months after GPT 5.4",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_06040_002"
+        },
+        {
+          "label": "Cybersecurity Risk",
+          "value": "High risk classification, below Critical threshold",
+          "detail": "Does not bring unprecedented pathways to severe harm but meets High criteria",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_06040_003"
+        }
+      ]
+    },
+    {
+      "component_type": "comparison_table",
+      "title": "Frontier Model Capabilities Context",
+      "summary": "How GPT-5.5 fits into the broader AI capability landscape, including competitor developments.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Claude Mythos Preview (April)",
+          "value": "First model to complete corporate network attack simulation end-to-end",
+          "detail": "Anthropic's model represented a step up in cyber performance over previous frontier models",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_60718_002"
+        },
+        {
+          "label": "Human Baseline",
+          "value": "Corporate network attack takes around 20 hours for human",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_60718_003"
+        },
+        {
+          "label": "Basic Task Saturation",
+          "value": "Models fully saturated basic tasks since at least February 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_60718_005"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Get Started with GPT-5.5 Instant",
+      "summary": "The new model is already live as the default ChatGPT experience. Review these resources to understand changes and capabilities.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Read the official announcement",
+          "value": "OpenAI's blog post details GPT-5.5 Instant capabilities and design philosophy",
+          "detail": null,
+          "link_label": "View announcement",
+          "link_url": "https://openai.com/index/gpt-5-5-instant/",
+          "claim_id": null
+        },
+        {
+          "label": "Review safety evaluation",
+          "value": "UK AISI published independent evaluation of GPT-5.5 cyber capabilities",
+          "detail": null,
+          "link_label": "Read AISI report",
+          "link_url": "https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities",
+          "claim_id": null
+        },
+        {
+          "label": "Explore model documentation",
+          "value": "Technical specifications and usage guidance for developers",
+          "detail": null,
+          "link_label": "View docs",
+          "link_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Key Players",
+      "summary": "Organizations and individuals central to the GPT-5.5 launch.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Greg Brockman",
+          "value": "OpenAI President",
+          "detail": "Emphasized the model's ability to do more with less guidance during announcement briefing",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_06040_001"
+        },
+        {
+          "label": "Dario Amodei",
+          "value": "Anthropic CEO",
+          "detail": "Met with senior Trump administration members to discuss Claude Mythos model",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_21205_005"
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T03:10:32.837540Z"
+}

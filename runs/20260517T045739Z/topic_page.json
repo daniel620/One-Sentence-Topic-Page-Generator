@@ -1,0 +1,200 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "2026 FIFA World Cup Opens June 11 in Mexico City",
+  "deck": "First 48-team tournament spans three nations with opening ceremony featuring global music stars at Estadio Azteca.",
+  "summary": "The 2026 FIFA World Cup kicks off June 11, 2026, at Mexico City Stadium (Estadio Azteca) with an opening ceremony beginning 90 minutes before the first match at 11:30 local time. The tournament marks a historic expansion to 48 teams and will feature 104 matches across 16 host cities in Mexico, the United States, and Canada. Global music stars including J Balvin, Maná, Tyla, and Alejandro Fernández will headline the opening ceremony performance.",
+  "urgency_label": "Opening June 11, 2026",
+  "as_of_label": "Updated May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Opening Date",
+      "value": "June 11, 2026, 11:30 local time",
+      "hint": null,
+      "claim_id": "src_31419_000"
+    },
+    {
+      "label": "Opening Venue",
+      "value": "Mexico City Stadium (Estadio Azteca)",
+      "hint": null,
+      "claim_id": "src_31419_002"
+    },
+    {
+      "label": "Tournament Scale",
+      "value": "104 matches across 16 host cities",
+      "hint": null,
+      "claim_id": "src_31419_004"
+    },
+    {
+      "label": "Ceremony Start",
+      "value": "90 minutes before kickoff",
+      "hint": null,
+      "claim_id": "src_31419_000"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Tournament organizer"
+    },
+    {
+      "name": "Estadio Azteca (Mexico City Stadium)",
+      "role": "Opening ceremony and match venue"
+    },
+    {
+      "name": "J Balvin, Maná, Tyla, Alejandro Fernández, Belinda, Danny Ocean, Lila Downs, Los Ángeles Azules",
+      "role": "Opening ceremony performers"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "June 11, 2026 – 11:30 local time",
+      "title": "Opening Ceremony at Mexico City Stadium",
+      "detail": "Ceremony begins 90 minutes before kickoff featuring performances from J Balvin, Maná, Tyla, Alejandro Fernández, and more"
+    },
+    {
+      "date_label": "June 11 – July 19, 2026",
+      "title": "104 Matches Across 16 Host Cities",
+      "detail": "Tournament spans Mexico, United States, and Canada with final at New York New Jersey Stadium on July 19"
+    }
+  ],
+  "layout_style": "dashboard",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament at a Glance",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Total Matches",
+          "value": "104 matches across 16 Host Cities",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31419_004"
+        },
+        {
+          "label": "Opening Ceremony Time",
+          "value": "Thursday, June 11, 2026 at 11:30 local time",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31419_000"
+        },
+        {
+          "label": "Opening Stadium",
+          "value": "Mexico City Stadium (Estadio Azteca)",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31419_002"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key Dates",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Opening Ceremony",
+          "value": "June 11, 2026 at 11:30 local time in Mexico City",
+          "detail": "Ceremony begins 90 minutes before kickoff at Estadio Azteca",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31419_000"
+        },
+        {
+          "label": "Tournament Duration",
+          "value": "104 matches across 16 host cities through July 19, 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31419_004"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Opening Ceremony Performers",
+      "summary": "Global music stars will take the stage 90 minutes before kickoff to perform the Official FIFA World Cup 2026 Album.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Headlining Artists",
+          "value": "Alejandro Fernández, Belinda, Danny Ocean, J Balvin, Lila Downs, Los Ángeles Azules, Maná, and Tyla",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31419_001"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Plan Your World Cup",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "View Full Match Schedule",
+          "value": "Check fixtures, kickoff times, and stadium assignments for all 104 matches",
+          "detail": null,
+          "link_label": "See Schedule",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+          "claim_id": null
+        },
+        {
+          "label": "Explore Host Venues",
+          "value": "Discover the 16 stadiums across Mexico, USA, and Canada hosting tournament matches",
+          "detail": null,
+          "link_label": "View Venues",
+          "link_url": "https://fifaworldcup26.suites.fifa.com/venues/",
+          "claim_id": null
+        },
+        {
+          "label": "Official Tournament Info",
+          "value": "Get the latest updates on teams, qualification, and tournament format",
+          "detail": null,
+          "link_label": "FIFA World Cup 2026",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/qualifiers",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T04:56:14.100313Z"
+}

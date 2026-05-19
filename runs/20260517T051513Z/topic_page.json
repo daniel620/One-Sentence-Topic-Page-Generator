@@ -1,0 +1,252 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "2026 FIFA World Cup: 48 Teams Across Three Nations",
+  "deck": "The expanded tournament kicks off June 2026 with Canada, Mexico, and the USA co-hosting football's biggest event.",
+  "summary": "The 2026 FIFA World Cup marks a historic milestone as the first edition to feature 48 teams and the first co-hosted across three countries. The tournament runs from June through July 19, 2026, when the final will be played in New York New Jersey. Match schedules were published on March 31, 2026, with teams drawn into 12 four-team groups.",
+  "urgency_label": "Tournament starts June 2026",
+  "as_of_label": "Updated May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Teams",
+      "value": "48 teams",
+      "hint": null,
+      "claim_id": "src_66486_000"
+    },
+    {
+      "label": "Host nations",
+      "value": "Canada, Mexico, and the USA",
+      "hint": null,
+      "claim_id": "src_66486_001"
+    },
+    {
+      "label": "Final date",
+      "value": "July 19, 2026",
+      "hint": null,
+      "claim_id": "src_66486_002"
+    },
+    {
+      "label": "Final venue",
+      "value": "New York New Jersey",
+      "hint": null,
+      "claim_id": "src_66486_003"
+    },
+    {
+      "label": "Winner's prize",
+      "value": "$50 million",
+      "hint": null,
+      "claim_id": "src_99875_005"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Tournament organizer"
+    },
+    {
+      "name": "Canada",
+      "role": "Co-host nation"
+    },
+    {
+      "name": "Mexico",
+      "role": "Co-host nation"
+    },
+    {
+      "name": "USA",
+      "role": "Co-host nation"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "October 15, 2025",
+      "title": "Stadium information published",
+      "detail": "FIFA released venue details for the tournament"
+    },
+    {
+      "date_label": "March 31, 2026",
+      "title": "Match schedule released",
+      "detail": "Complete fixture list published by FIFA"
+    },
+    {
+      "date_label": "June 2026",
+      "title": "Tournament begins",
+      "detail": "Group stage matches kick off across all three host nations"
+    },
+    {
+      "date_label": "July 19, 2026",
+      "title": "Final in New York New Jersey",
+      "detail": "The championship match crowns the 2026 World Cup winner"
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament by the numbers",
+      "summary": null,
+      "columns": 3,
+      "items": [
+        {
+          "label": "Participating teams",
+          "value": "48 teams",
+          "detail": "First World Cup with expanded 48-team format",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_66486_000"
+        },
+        {
+          "label": "Group stage format",
+          "value": "12 four-team groups",
+          "detail": "Teams were drawn into 12 groups of four",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_02283_006"
+        },
+        {
+          "label": "Host countries",
+          "value": "3 nations",
+          "detail": "First FIFA World Cup co-hosted across three countries",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_66486_004"
+        },
+        {
+          "label": "Prize for champions",
+          "value": "$50 million",
+          "detail": "Winning team receives $50 million in prize money",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_99875_005"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key dates and milestones",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Stadium details",
+          "value": "Published October 15, 2025",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_65145_005"
+        },
+        {
+          "label": "Match schedule",
+          "value": "Published March 31, 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_04808_004"
+        },
+        {
+          "label": "Final match",
+          "value": "July 19, 2026 in New York New Jersey",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_66486_002"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Host nations and key participants",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Co-host countries",
+          "value": "Canada, Mexico, and the USA",
+          "detail": "Three nations share hosting duties for the tournament",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_66486_001"
+        },
+        {
+          "label": "Final venue",
+          "value": "New York New Jersey",
+          "detail": "Location of the championship match on July 19",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_66486_003"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "How to follow the tournament",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official FIFA information",
+          "value": "View fixtures, results, and team details",
+          "detail": null,
+          "link_label": "Visit FIFA.com",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "claim_id": null
+        },
+        {
+          "label": "Venue details",
+          "value": "Explore all tournament stadiums across three countries",
+          "detail": null,
+          "link_label": "View stadiums",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/stadium-information-details",
+          "claim_id": null
+        },
+        {
+          "label": "Qualified teams",
+          "value": "See which 48 teams earned their place",
+          "detail": null,
+          "link_label": "Team list",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
+          "claim_id": null
+        },
+        {
+          "label": "Group stage draw",
+          "value": "Check complete draw results for all 12 groups",
+          "detail": null,
+          "link_label": "Draw results",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T05:14:03.242117Z"
+}

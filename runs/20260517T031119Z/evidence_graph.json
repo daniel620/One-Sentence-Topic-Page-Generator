@@ -1,0 +1,641 @@
+{
+  "event_hypothesis": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+  "sources": [
+    {
+      "source_id": "src_76315",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized | OpenAI",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI announcement about GPT-5.5 Instant, primary authoritative source for the rollout."
+    },
+    {
+      "source_id": "src_03218",
+      "url": "https://en.wikipedia.org/wiki/GPT-5.5",
+      "title": "GPT-5.5 - Wikipedia",
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "source_type": "primary_data",
+      "authority_score": 0.95,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7857142857142857,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "background_only",
+      "curation_reason": "disagreement: AI=background_only, det=public_claim_source → background_only (Wikipedia can be edited by anyone and is not a primary source. Useful for genera)"
+    },
+    {
+      "source_id": "src_01634",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "title": "Introducing GPT-5.5 - OpenAI",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.42857142857142855,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI announcement introducing GPT-5.5, primary authoritative source."
+    },
+    {
+      "source_id": "src_60718",
+      "url": "https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities",
+      "title": "Our evaluation of OpenAI's GPT-5.5 cyber capabilities | AISI Work",
+      "publisher": "Gov",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.35714285714285715,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official government (AISI) evaluation of GPT-5.5 cyber capabilities, authoritative primary source."
+    },
+    {
+      "source_id": "src_06055",
+      "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT",
+      "publisher": "TechCrunch",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7857142857142857,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: TechCrunch is reputable media with direct coverage of the GPT-5.5 Instant default rollout."
+    },
+    {
+      "source_id": "src_21205",
+      "url": "https://www.cnbc.com/2026/05/07/openai-rolls-out-new-gpt-5point5-cyber-to-vetted-cybersecurity-teams.html",
+      "title": "OpenAI rolls out new GPT-5.5-Cyber to vetted cybersecurity teams",
+      "publisher": "CNBC",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6428571428571429,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: CNBC is reputable media covering GPT-5.5-Cyber rollout, reliable for public claims."
+    },
+    {
+      "source_id": "src_06040",
+      "url": "https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html",
+      "title": "OpenAI announces GPT-5.5, its latest artificial intelligence model",
+      "publisher": "CNBC",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6428571428571429,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: CNBC reputable media coverage of GPT-5.5 announcement, suitable for public claims."
+    },
+    {
+      "source_id": "src_34928",
+      "url": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+      "title": "GPT-5.5 Instant Is Now ChatGPT's Default Model: What Changed on ...",
+      "publisher": "Reddit",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Reddit is user-generated social media content, not authoritative. Useful for sen)"
+    },
+    {
+      "source_id": "src_28407",
+      "url": "https://www.reddit.com/r/The_AI/comments/1t57gng/openai_releases_gpt55_instant_new_default_model/",
+      "title": "OpenAI releases GPT-5.5 Instant, New Default model for ChatGPT",
+      "publisher": "Reddit",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Reddit is user-generated social media content, not suitable for public citation.)"
+    },
+    {
+      "source_id": "src_69637",
+      "url": "https://mwm.ai/articles/openai-upgrades-chatgpt-default-model-to-gpt-5-5-instant-in-may-2026",
+      "title": "OpenAI Upgrades ChatGPT Default Model to GPT-5.5 Instant, Promising Higher Accuracy",
+      "publisher": "Mwm",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.9285714285714286,
+      "bias_or_limitation": null,
+      "ai_source_role": "needs_review",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=needs_review, det=debug_only → debug_only (Unknown publisher 'Mwm' with no clear authority or reputation. Requires human ve)"
+    },
+    {
+      "source_id": "src_71787",
+      "url": "https://incrypted.com/en/what-gpt-5-5-instant-capable/",
+      "title": "What GPT-5.5 Instant Is Capable Of: Review and Curated Tricky Prompts - INCRYPTED",
+      "publisher": "Incrypted",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.9285714285714286,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Incrypted appears to be a tech blog with analysis/review content. Useful context)"
+    },
+    {
+      "source_id": "src_51721",
+      "url": "https://www.datacamp.com/blog/gpt-5-5-instant",
+      "title": "GPT 5.5 Instant: An Upgrade to OpenAI's Default Model | DataCamp",
+      "publisher": "Datacamp",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (DataCamp is an educational platform with analysis content. Good for context but )"
+    },
+    {
+      "source_id": "src_67252",
+      "url": "https://lablab.ai/ai-articles/this-week-in-ai-2026-05-12",
+      "title": "GPT-5.5 Is ChatGPT's New Default, Claude Mythos Hunts Zero-Days ...",
+      "publisher": "Lablab",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Lablab weekly AI roundup aggregates multiple stories. General reference, not dir)"
+    },
+    {
+      "source_id": "src_79064",
+      "url": "https://releasebot.io/updates/openai/chatgpt",
+      "title": "ChatGPT Updates by OpenAI - May 2026",
+      "publisher": "Releasebot",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Releasebot aggregates product updates. Useful reference but not original reporti)"
+    },
+    {
+      "source_id": "src_96612",
+      "url": "https://www.thurrott.com/a-i/335724/openai-starts-rolling-out-new-gpt-5-5-instant-model-and-memory-sources-to-chatgpt-users",
+      "title": "OpenAI Starts Rolling Out New GPT-5.5 Instant Model and Memory Sources to ChatGPT Users",
+      "publisher": "Thurrott",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Thurrott is a tech news site with decent reputation but less authoritative than )"
+    },
+    {
+      "source_id": "src_85549",
+      "url": "https://releasebot.io/updates/openai",
+      "title": "OpenAI Release Notes - May 2026 Latest Updates - Releasebot",
+      "publisher": "Releasebot",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Releasebot release notes aggregator. General reference, not original reporting.)"
+    },
+    {
+      "source_id": "src_44403",
+      "url": "https://aibusinessweekly.net/p/chatgpt-new-features-2026",
+      "title": "ChatGPT New Features 2026: GPT-5.4, Codex & Updates",
+      "publisher": "Aibusinessweekly",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7142857142857143,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (AI Business Weekly appears to be a newsletter/blog. General coverage of multiple)"
+    },
+    {
+      "source_id": "src_07137",
+      "url": "https://www.taskade.com/blog/chatgpt-models",
+      "title": "ChatGPT Models: GPT-3.5 to GPT-5 & o3 Guide (2026) - Taskade",
+      "publisher": "Taskade",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6428571428571429,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Taskade guide article covering multiple ChatGPT models. General reference materi)"
+    },
+    {
+      "source_id": "src_23714",
+      "url": "https://www.chatprd.ai/how-i-ai/openai-gpt-5.5-review",
+      "title": "How I AI: My GPT-5.5 Review—A 6-Hour Autonomous Task and the Bluetooth Hack No Other Model Could Solve | ChatPRD Blog",
+      "publisher": "Chatprd",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (ChatPRD personal review/use case blog. Useful for user experience context but no)"
+    },
+    {
+      "source_id": "src_73202",
+      "url": "https://www.oneusefulthing.org/p/sign-of-the-future-gpt-55",
+      "title": "Sign of the future: GPT-5.5 - by Ethan Mollick - One Useful Thing",
+      "publisher": "Oneusefulthing",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Ethan Mollick's newsletter provides expert analysis but is opinion/commentary, n)"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "src_60718_000",
+      "text": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+      "claim_type": "schedule",
+      "claim_topic": "rollout_status",
+      "source_ids": [
+        "src_60718"
+      ],
+      "confidence": "medium",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+      "public_claim_eligible": false,
+      "event_datetime": "2026-05-01T00:00:00Z",
+      "timezone": null,
+      "event_name": "GPT-5.5 Instant rollout as default ChatGPT model"
+    },
+    {
+      "claim_id": "src_60718_001",
+      "text": "Anthropic's Claude Mythos Preview was evaluated in April.",
+      "claim_type": "date",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_60718",
+        "src_06055",
+        "src_21205"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "In April, our evaluation of an early snapshot of Anthropic's Claude Mythos Preview found that it represented a step up in cyber performance over previous frontier models and was the first to complete our corporate network attack simulation end-to-end, a multi-step exercise we estimate would take a human around 20 hours.",
+      "public_claim_eligible": true,
+      "date_value": "2026-04-01T00:00:00Z"
+    },
+    {
+      "claim_id": "src_60718_002",
+      "text": "Claude Mythos Preview was the first model to complete the corporate network attack simulation end-to-end.",
+      "claim_type": "status",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_60718",
+        "src_21205"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "comparison_table"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "In April, our evaluation of an early snapshot of Anthropic's Claude Mythos Preview found that it represented a step up in cyber performance over previous frontier models and was the first to complete our corporate network attack simulation end-to-end, a multi-step exercise we estimate would take a human around 20 hours.",
+      "public_claim_eligible": true,
+      "status": "first to complete corporate network attack simulation end-to-end",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_60718_003",
+      "text": "The corporate network attack simulation would take a human around 20 hours to complete.",
+      "claim_type": "metric",
+      "claim_topic": "metrics",
+      "source_ids": [
+        "src_60718",
+        "src_06055"
+      ],
+      "confidence": "medium",
+      "freshness": "fresh",
+      "component_targets": [
+        "stat_grid",
+        "comparison_table"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "In April, our evaluation of an early snapshot of Anthropic's Claude Mythos Preview found that it represented a step up in cyber performance over previous frontier models and was the first to complete our corporate network attack simulation end-to-end, a multi-step exercise we estimate would take a human around 20 hours.",
+      "public_claim_eligible": true,
+      "value": "20",
+      "unit": "hours",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "a multi-step exercise we estimate would take a human around 20 hours"
+    },
+    {
+      "claim_id": "src_60718_005",
+      "text": "Models have fully saturated basic tasks since at least February 2026.",
+      "claim_type": "date",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_60718"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Models have fully saturated our basic tasks since at least February 2026.",
+      "public_claim_eligible": true,
+      "date_value": "2026-02-01T00:00:00Z"
+    },
+    {
+      "claim_id": "src_06055_000",
+      "text": "OpenAI released GPT-5.5 Instant as a new foundation model",
+      "claim_type": "entity",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_06055",
+        "src_21205"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "On Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model.",
+      "public_claim_eligible": true,
+      "entity_name": "GPT-5.5 Instant",
+      "entity_role": "new foundation model released by OpenAI"
+    },
+    {
+      "claim_id": "src_06055_001",
+      "text": "GPT-5.5 Instant replaced GPT-5.3 Instant as the default ChatGPT model",
+      "claim_type": "status",
+      "claim_topic": "rollout_status",
+      "source_ids": [
+        "src_06055",
+        "src_21205",
+        "src_06040"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "On Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model.",
+      "public_claim_eligible": true,
+      "status": "GPT-5.5 Instant is now the default ChatGPT model, replacing GPT-5.3 Instant",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_21205_005",
+      "text": "Anthropic CEO Dario Amodei met with senior members of the Trump administration to discuss Claude Mythos model",
+      "claim_type": "entity",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_21205"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "Anthropic CEO Dario Amodei met with senior members of the Trump administration to talk about the model and its potential power, even after the company had been blacklisted by the Pentagon just weeks earlier.",
+      "public_claim_eligible": true,
+      "entity_name": "Dario Amodei",
+      "entity_role": "Anthropic CEO who met with Trump administration officials"
+    },
+    {
+      "claim_id": "src_21205_006",
+      "text": "Anthropic had been blacklisted by the Pentagon weeks before CEO met with Trump administration",
+      "claim_type": "status",
+      "claim_topic": "controversy",
+      "source_ids": [
+        "src_21205"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "Anthropic CEO Dario Amodei met with senior members of the Trump administration to talk about the model and its potential power, even after the company had been blacklisted by the Pentagon just weeks earlier.",
+      "public_claim_eligible": true,
+      "status": "blacklisted by the Pentagon",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_06040_000",
+      "text": "OpenAI announced GPT-5.5 on Thursday (May 2026)",
+      "claim_type": "date",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_06040"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "OpenAI on Thursday announced its latest artificial intelligence model, GPT-5.5, which the company says is better at coding, using computers and pursuing deeper research capabilities.",
+      "public_claim_eligible": true,
+      "date_value": "2026-05-15T00:00:00Z"
+    },
+    {
+      "claim_id": "src_06040_001",
+      "text": "Greg Brockman is OpenAI President",
+      "claim_type": "entity",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_06040"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "\"What is really special about this model is how much more it can do with less guidance,\" OpenAI President Greg Brockman said during a briefing with reporters on Thursday.",
+      "public_claim_eligible": true,
+      "entity_name": "Greg Brockman",
+      "entity_role": "OpenAI President"
+    },
+    {
+      "claim_id": "src_06040_002",
+      "text": "GPT-5.5 was released less than two months after GPT 5.4",
+      "claim_type": "status",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_06040"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "The launch comes less than two months after OpenAI released GPT 5.4, the latest sign of the breakneck pace of development that's driving the AI sector.",
+      "public_claim_eligible": true,
+      "status": "Released less than two months after GPT 5.4",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_06040_003",
+      "text": "GPT-5.5 does not cross OpenAI's 'Critical' cybersecurity risk threshold but meets 'High' risk classification criteria",
+      "claim_type": "status",
+      "claim_topic": "safety",
+      "source_ids": [
+        "src_06040"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "uncertainty_box"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "The company added that the model does not cross its \"Critical\" cybersecurity risk threshold, which could bring \"unprecedented new pathways to severe harm,\" but it does meet the criteria for its \"High\" risk classification, which could \"amplify existing pathways to severe harm.\"",
+      "public_claim_eligible": true,
+      "status": "High risk classification (not Critical)",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "metric_7481",
+      "text": "18 days",
+      "claim_type": "metric",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_03218",
+        "src_69637",
+        "src_71787",
+        "src_51721",
+        "src_67252",
+        "src_85549",
+        "src_07137",
+        "src_23714",
+        "src_73202"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "value": "18",
+      "unit": "days",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "# GPT-5.5\n\n| GPT-5.5 | |\n --- |\n|  | |\n| Developer | OpenAI |\n| Initial release | April 23, 2026; 18 days ago (2026-04-23) |\n| Predecessor | GPT-5.4 |\n| License | Proprietary |\n| Website | openai.com/index"
+    },
+    {
+      "claim_id": "date_1387",
+      "text": "April 23, 2026",
+      "claim_type": "date",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_03218",
+        "src_69637",
+        "src_71787",
+        "src_51721",
+        "src_67252",
+        "src_79064",
+        "src_85549",
+        "src_44403",
+        "src_07137"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "date_value": "2026-04-23T00:00:00Z"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "Event date",
+      "claim_a": "Anthropic's Claude Mythos Preview was evaluated in April.",
+      "sources_a": [
+        "src_60718",
+        "src_06055",
+        "src_21205"
+      ],
+      "claim_b": "Models have fully saturated basic tasks since at least February 2026.",
+      "sources_b": [
+        "src_60718"
+      ],
+      "resolution": "prefer_official",
+      "display_policy": "show_uncertainty_box",
+      "ai_resolution": "scope_difference",
+      "ai_resolution_reason": "A refers to when Claude Mythos was evaluated; B refers to when models generally saturated basic tasks. Different events/claims."
+    }
+  ],
+  "unresolved_questions": [],
+  "last_updated": "2026-05-17T03:10:32.837540Z"
+}

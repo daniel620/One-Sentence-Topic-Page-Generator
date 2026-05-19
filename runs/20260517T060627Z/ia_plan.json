@@ -1,0 +1,16 @@
+{
+  "final_event_type": "disaster",
+  "event_status": "concluded",
+  "page_thesis": "This page addresses the claimed 7.2 magnitude Tokyo earthquake on May 14, 2026, clarifying verified seismic activity, aftershock risks, and damage assessment while highlighting major evidence gaps.",
+  "required_components": [
+    "uncertainty_box",
+    "stat_grid",
+    "live_tracker",
+    "key_facts",
+    "action_list",
+    "timeline",
+    "source_list"
+  ],
+  "layout_style": "dashboard",
+  "confidence_summary": "No authoritative sources confirm a 7.2 magnitude Tokyo earthquake on May 14, 2026. Evidence shows only smaller quakes (M3.7-6.7) in various Japan regions May 14-15. Hypothesis unverified."
+}

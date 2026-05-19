@@ -1,0 +1,12 @@
+{
+  "decision": "editor_review",
+  "reasoning": "The evidence collected is substantial with 16 public-eligible claims and 16 verified evidence sentences. Evidence quality is strong with 12 full_text_verified and 4 reputable_snippet grades. Core tech_launch reader questions appear to be addressed: what changed (capabilities, 4 claims), who's affected (pricing, 2 claims), and rollout status (3 claims).\n\nHowever, there is one critical gap: NO official or primary source from OpenAI itself. All evidence grades are either full_text_verified or reputable_snippet, meaning we lack official_snippet grade evidence. For a major tech launch announcement like a new GPT model becoming the default in ChatGPT, we would expect official communication from OpenAI (blog post, announcement, press release, etc.).\n\nThe evidence is otherwise strong enough to build a page - good volume of claims (16), high verification rate, diverse topics covering core reader questions. But the absence of any official source from OpenAI is a significant gap that warrants editor review before publication. An editor should verify whether OpenAI has made any official statement about GPT-5.5 Instant, as this appears to be a major product change that would typically be accompanied by official communication.",
+  "new_queries": [
+    "site:openai.com GPT-5.5 Instant announcement",
+    "OpenAI official blog GPT-5.5 Instant ChatGPT default model May 2026"
+  ],
+  "caveats": [
+    "No official source from OpenAI found - all evidence is from secondary reporting rather than primary announcements from the company",
+    "Editor should verify existence of official OpenAI blog post, press release, or announcement about GPT-5.5 Instant"
+  ]
+}

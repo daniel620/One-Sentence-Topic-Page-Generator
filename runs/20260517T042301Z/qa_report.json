@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "confidence_score": 0.567,
+  "confidence_level": "low",
+  "failed_gates": [
+    "factuality",
+    "event_fit"
+  ],
+  "repair_actions": [
+    "missing_claim_id",
+    "weak_source",
+    "missing_required_component"
+  ]
+}

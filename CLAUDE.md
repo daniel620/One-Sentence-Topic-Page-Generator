@@ -46,21 +46,34 @@ answers, in order:
 5. **Freshness or honesty.** Editor's note when confidence is genuinely
    low; nothing when confidence is high.
 6. **Deterministic rendering.** LLM owns content; code owns layout.
-7. **Schema flexibility, not escape hatches.** Typed unions over `dict`.
+7. **Unified claim model, not discriminator hierarchy.** Single `Claim` class
+   with `claim_attributes` dict for type-specific data. Six typed subclasses
+   collapsed into one.
 
 ## Architecture (current)
 
 ```
 sentence
   ├─► Stage 1A (LLM)            EventHypothesis
-  ├─► Stage 2  (deterministic)  Tavily + claim extraction → EvidenceGraph
+  ├─► Stage 2  (mixed)          SEARCH → EXTRACT → GRADE → EvidenceGraph
+  │     AI source curator + AI claim extractor + deterministic contradiction
+  │     pre-filter + AI contradiction reviewer (only pre-filter survivors)
+  ├─► Evidence Gate (deterministic)  counts claims/sources/topics (may loop back)
   ├─► Stage 1B (LLM)            EvidenceAwareIA
-  ├─► Stage 3  (LLM)            TopicPageData
-  ├─► QA loop  (deterministic)  factuality + freshness + event_fit
-  └─► Renderer (deterministic)  Jinja2 → HTML (public or debug mode)
+  ├─► Stage 3  (LLM)            Grounded page composer (degraded mode if thin evidence)
+  ├─► QA gates (deterministic)  factuality + freshness + event_fit
+  ├─► Repair (deterministic)    strips bad items from TopicPageData (no LLM retry)
+  ├─► Fidelity check (deterministic)  cross-references page vs claim texts
+  ├─► Renderer (deterministic)  Jinja2 → HTML
+  └─► Page Gate (LLM on structured summary)  final verdict (enforced)
 ```
 
-LLM calls only in `stage1_understand.py` and `stage3_synthesize.py`.
+LLM calls: Stage 1A, AI source curator (batch), AI claim extractors (per-source,
+parallel), AI contradiction reviewer (batch, only pre-filter survivors),
+Evidence Gate enrichment (only when thin), Stage 1B, Stage 3, Page Gate.
+Deterministic: Tavily search, source scoring, source filtering, evidence grading,
+claim merging, contradiction detection + pre-filter, Evidence Gate primary,
+QA gates, repair, fidelity check, rendering, public/debug boundaries.
 
 ## Coding conventions
 

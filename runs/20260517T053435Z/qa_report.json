@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "confidence_score": 0.733,
+  "confidence_level": "medium",
+  "failed_gates": [],
+  "repair_actions": [
+    "weak_source"
+  ]
+}

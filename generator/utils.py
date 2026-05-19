@@ -13,18 +13,8 @@ from anthropic import Anthropic
 from generator.schemas import (
     Claim,
     ClaimType,
-    Contradiction,
-    ConfidenceLevel,
-    DateClaim,
-    DisplayPolicy,
-    EntityClaim,
-    LocationClaim,
-    MetricClaim,
-    ResolutionPolicy,
-    ScheduleClaim,
     Source,
     SourceType,
-    StatusClaim,
 )
 
 LOGGER = logging.getLogger("research_utils")
@@ -39,8 +29,9 @@ DATE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+_LOCATION_TRIGGERS = r"(?:venue|venues|stadium|City of|held in|hosted in|taking place in|located in|city of)"
 LOCATION_PATTERN = re.compile(
-    r"\b(City|City of|in|at|at the|located in|venue|location|stadium)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b"
+    rf"\b{_LOCATION_TRIGGERS}\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b"
 )
 
 TIME_PATTERN = re.compile(
@@ -68,6 +59,40 @@ KNOWN_PUBLISHERS: dict[str, tuple[str, SourceType]] = {
     "concacaf.com": ("CONCACAF", SourceType.OFFICIAL),
     "wien.info": ("vienna.info (City of Vienna)", SourceType.OFFICIAL),
     "ebu.ch": ("European Broadcasting Union", SourceType.OFFICIAL),
+    # Disaster / emergency official sources
+    "fema.gov": ("FEMA", SourceType.OFFICIAL),
+    "usgs.gov": ("USGS", SourceType.OFFICIAL),
+    "noaa.gov": ("NOAA", SourceType.OFFICIAL),
+    "redcross.org": ("Red Cross", SourceType.OFFICIAL),
+    "who.int": ("WHO", SourceType.OFFICIAL),
+    "cdc.gov": ("CDC", SourceType.OFFICIAL),
+    # Economic / financial official sources
+    "opec.org": ("OPEC", SourceType.OFFICIAL),
+    "imf.org": ("IMF", SourceType.OFFICIAL),
+    "worldbank.org": ("World Bank", SourceType.OFFICIAL),
+    "eia.gov": ("U.S. Energy Information Administration", SourceType.OFFICIAL),
+    "iea.org": ("International Energy Agency", SourceType.OFFICIAL),
+    "bis.org": ("Bank for International Settlements", SourceType.OFFICIAL),
+    # Governmental / multilateral
+    "state.gov": ("U.S. Department of State", SourceType.OFFICIAL),
+    "gov.uk": ("UK Government", SourceType.OFFICIAL),
+    "europa.eu": ("European Union", SourceType.OFFICIAL),
+    "un.org": ("United Nations", SourceType.OFFICIAL),
+    # Major tech companies
+    "apple.com": ("Apple", SourceType.OFFICIAL),
+    "google.com": ("Google", SourceType.OFFICIAL),
+    "microsoft.com": ("Microsoft", SourceType.OFFICIAL),
+    "meta.com": ("Meta", SourceType.OFFICIAL),
+    "amazon.com": ("Amazon", SourceType.OFFICIAL),
+    # More sports
+    "mlb.com": ("MLB", SourceType.OFFICIAL),
+    "nba.com": ("NBA", SourceType.OFFICIAL),
+    "nfl.com": ("NFL", SourceType.OFFICIAL),
+    "premierleague.com": ("Premier League", SourceType.OFFICIAL),
+    "wimbledon.com": ("Wimbledon", SourceType.OFFICIAL),
+    # Cultural / entertainment
+    "grammy.com": ("GRAMMY Awards", SourceType.OFFICIAL),
+    "oscars.org": ("The Academy", SourceType.OFFICIAL),
     # Primary data / reference
     "wikipedia.org": ("Wikipedia", SourceType.PRIMARY_DATA),
     # Reputable media (international)
@@ -166,6 +191,10 @@ def infer_source_type(publisher: str | None, url: str | None) -> SourceType:
 
     if host and (".gov" in host or ".gov." in host or host.endswith(".gov")):
         return SourceType.OFFICIAL
+    if host and (".edu" in host or ".edu." in host or host.endswith(".edu")):
+        return SourceType.PRIMARY_DATA
+    if host and (".ac." in host):
+        return SourceType.PRIMARY_DATA
     if "official" in (publisher or "").lower():
         return SourceType.OFFICIAL
     return SourceType.UNKNOWN
@@ -285,39 +314,40 @@ def create_source(
 def extract_metric_claims(
     content: str,
     source_id: str,
-    confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM,
-) -> list[MetricClaim]:
+    confidence: str = "medium",
+    event_keywords: list[str] | None = None,
+) -> list[Claim]:
     """Extract metric claims using regex patterns."""
-    claims: list[MetricClaim] = []
+    claims: list[Claim] = []
     seen_values: set[str] = set()
 
     for match in METRIC_PATTERN.finditer(content):
         value = match.group(1)
         unit = match.group(2)
 
-        # Deduplicate
         claim_key = f"{value}_{unit}"
         if claim_key in seen_values:
             continue
         seen_values.add(claim_key)
 
-        # Extract surrounding sentence
         start = max(0, match.start() - 100)
         end = min(len(content), match.end() + 100)
         snippet = content[start:end].strip()
 
         claim_id = f"metric_{hash(claim_key) % 10000:04d}"
         claims.append(
-            MetricClaim(
+            Claim(
                 claim_id=claim_id,
                 text=f"{value} {unit}",
                 claim_type=ClaimType.METRIC,
-                value=value,
-                unit=unit,
                 source_ids=[source_id],
                 confidence=confidence,
                 freshness="fresh",
-                evidence_snippet=snippet[:300],
+                claim_attributes={
+                    "value": value,
+                    "unit": unit,
+                    "evidence_snippet": snippet[:300],
+                },
             )
         )
 
@@ -327,10 +357,10 @@ def extract_metric_claims(
 def extract_date_claims(
     content: str,
     source_id: str,
-    confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM,
-) -> list[DateClaim]:
+    confidence: str = "medium",
+) -> list[Claim]:
     """Extract date claims using regex patterns."""
-    claims: list[DateClaim] = []
+    claims: list[Claim] = []
     seen_dates: set[str] = set()
 
     for match in DATE_PATTERN.finditer(content):
@@ -340,27 +370,24 @@ def extract_date_claims(
             continue
         seen_dates.add(date_str)
 
-        # Try to parse date
         try:
-            # Try various date formats
             for fmt in ["%B %d, %Y", "%b %d, %Y", "%B %d", "%b %d", "%Y-%m-%d", "%m/%d/%Y"]:
                 try:
                     parsed = datetime.strptime(date_str.rstrip(","), fmt)
-                    # If year is missing, assume current or next year context
                     if parsed.year == 1900:
                         parsed = parsed.replace(year=2026)
                     date_value = parsed.replace(tzinfo=timezone.utc)
 
                     claim_id = f"date_{hash(date_str) % 10000:04d}"
                     claims.append(
-                        DateClaim(
+                        Claim(
                             claim_id=claim_id,
                             text=date_str,
                             claim_type=ClaimType.DATE,
                             source_ids=[source_id],
                             confidence=confidence,
                             freshness="fresh",
-                            date_value=date_value,
+                            claim_attributes={"date_value": date_value.isoformat()},
                         )
                     )
                     break
@@ -375,10 +402,11 @@ def extract_date_claims(
 def extract_location_claims(
     content: str,
     source_id: str,
-    confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM,
-) -> list[LocationClaim]:
+    confidence: str = "medium",
+    event_keywords: list[str] | None = None,
+) -> list[Claim]:
     """Extract location claims using regex patterns."""
-    claims: list[LocationClaim] = []
+    claims: list[Claim] = []
     seen_locations: set[str] = set()
 
     for match in LOCATION_PATTERN.finditer(content):
@@ -390,14 +418,14 @@ def extract_location_claims(
 
         claim_id = f"loc_{hash(location) % 10000:04d}"
         claims.append(
-            LocationClaim(
+            Claim(
                 claim_id=claim_id,
                 text=location,
                 claim_type=ClaimType.LOCATION,
                 source_ids=[source_id],
                 confidence=confidence,
                 freshness="fresh",
-                location=location[:200],
+                claim_attributes={"location": location[:200]},
             )
         )
 
@@ -407,10 +435,10 @@ def extract_location_claims(
 def extract_entity_claims(
     content: str,
     source_id: str,
-    confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM,
-) -> list[EntityClaim]:
+    confidence: str = "medium",
+) -> list[Claim]:
     """Extract entity claims using regex patterns."""
-    claims: list[EntityClaim] = []
+    claims: list[Claim] = []
     seen_entities: set[str] = set()
 
     for match in ENTITY_PATTERN.finditer(content):
@@ -424,15 +452,17 @@ def extract_entity_claims(
 
         claim_id = f"ent_{hash(entity_key) % 10000:04d}"
         claims.append(
-            EntityClaim(
+            Claim(
                 claim_id=claim_id,
                 text=f"{entity_name} ({role})",
                 claim_type=ClaimType.ENTITY,
                 source_ids=[source_id],
                 confidence=confidence,
                 freshness="fresh",
-                entity_name=entity_name[:160],
-                entity_role=role[:200],
+                claim_attributes={
+                    "entity_name": entity_name[:160],
+                    "entity_role": role[:200],
+                },
             )
         )
 
@@ -444,21 +474,18 @@ def extract_deterministic_claims(
     title: str,
     content: str,
     source_id: str,
+    event_keywords: list[str] | None = None,
+    *,
+    is_clean_text: bool = True,
 ) -> list[Claim]:
-    """Extract all deterministic claims from content."""
+    """Extract deterministic claims. Extra kwargs accepted for stage2 compat."""
     claims: list[Claim] = []
 
-    # Extract metric claims
-    claims.extend(extract_metric_claims(content, source_id, ConfidenceLevel.HIGH))
-
-    # Extract date claims
-    claims.extend(extract_date_claims(content, source_id, ConfidenceLevel.HIGH))
-
-    # Extract location claims
-    claims.extend(extract_location_claims(content, source_id, ConfidenceLevel.MEDIUM))
-
-    # Extract entity claims
-    claims.extend(extract_entity_claims(content, source_id, ConfidenceLevel.MEDIUM))
+    claims.extend(extract_metric_claims(content, source_id, "high", event_keywords))
+    claims.extend(extract_date_claims(content, source_id, "high"))
+    if is_clean_text:
+        claims.extend(extract_location_claims(content, source_id, "medium", event_keywords))
+        claims.extend(extract_entity_claims(content, source_id, "medium"))
 
     return claims
 
@@ -471,132 +498,69 @@ def extract_semantic_claim_with_llm(
 ) -> Claim | None:
     """Use constrained LLM to extract a semantic claim from content."""
     try:
-        # Build a simple status claim based on content
-        # For now, we'll use a simple heuristic
         sentences = [s.strip() for s in content.split(".") if s.strip()]
         if not sentences:
             return None
 
-        # Take the first sentence with meaningful content
         main_sentence = sentences[0]
         if len(main_sentence) < 10:
             main_sentence = sentences[1] if len(sentences) > 1 else main_sentence
 
         claim_id = f"status_{hash(main_sentence) % 10000:04d}"
-        return StatusClaim(
+        return Claim(
             claim_id=claim_id,
             text=main_sentence[:500],
             claim_type=ClaimType.STATUS,
             source_ids=[source_id],
-            confidence=ConfidenceLevel.MEDIUM,
+            confidence="medium",
             freshness="fresh",
-            status=main_sentence[:120],
+            claim_attributes={"status": main_sentence[:120]},
         )
     except Exception as e:
         LOGGER.debug(f"Failed to extract semantic claim: {e}")
         return None
 
 
-def detect_contradictions(claims: list[Claim]) -> list[Contradiction]:
-    """Detect contradictions between claims."""
-    contradictions: list[Contradiction] = []
-
-    # Group claims by type and rough topic
-    metric_claims: dict[str, list[MetricClaim]] = {}
-    date_claims: dict[str, list[DateClaim]] = {}
-
-    for claim in claims:
-        if isinstance(claim, MetricClaim):
-            # Group by unit
-            unit_key = claim.unit
-            if unit_key not in metric_claims:
-                metric_claims[unit_key] = []
-            metric_claims[unit_key].append(claim)
-
-        elif isinstance(claim, DateClaim):
-            # Group by claim text (rough grouping)
-            text_key = claim.text[:50]
-            if text_key not in date_claims:
-                date_claims[text_key] = []
-            date_claims[text_key].append(claim)
-
-    # Check for metric contradictions (same unit, different values)
-    for unit, unit_claims in metric_claims.items():
-        if len(unit_claims) > 1:
-            # Check if values differ significantly
-            values = [float(c.value) for c in unit_claims if c.value.replace(".", "").isdigit()]
-            if len(set(values)) > 1:
-                max_val = max(values)
-                min_val = min(values)
-                if max_val / min_val > 1.1:  # More than 10% difference
-                    claim_a = unit_claims[0]
-                    claim_b = unit_claims[1]
-                    contradictions.append(
-                        Contradiction(
-                            topic=f"{unit} measurement",
-                            claim_a=f"{claim_a.value} {claim_a.unit}",
-                            sources_a=claim_a.source_ids,
-                            claim_b=f"{claim_b.value} {claim_b.unit}",
-                            sources_b=claim_b.source_ids,
-                            resolution=ResolutionPolicy.PREFER_NEWER if claim_a.freshness == "fresh" else ResolutionPolicy.UNRESOLVED,
-                            display_policy=DisplayPolicy.SHOW_UNCERTAINTY_BOX,
-                        )
-                    )
-
-    # Check for date contradictions (same event, different dates)
-    # This is simpler - just flag if we have multiple conflicting dates
-    if len(date_claims) > 1:
-        claim_list = []
-        for group in date_claims.values():
-            claim_list.extend(group)
-        if len(claim_list) > 1:
-            # Check for significant date differences
-            dates = [c.date_value for c in claim_list if c.date_value]
-            if len(set(dates)) > 1:
-                # Flag as potential contradiction
-                claim_a = claim_list[0]
-                claim_b = claim_list[1]
-                contradictions.append(
-                    Contradiction(
-                        topic="Event date",
-                        claim_a=claim_a.text,
-                        sources_a=claim_a.source_ids,
-                        claim_b=claim_b.text,
-                        sources_b=claim_b.source_ids,
-                        resolution=ResolutionPolicy.PREFER_OFFICIAL,
-                        display_policy=DisplayPolicy.SHOW_UNCERTAINTY_BOX,
-                    )
-                )
-
-    return contradictions
+# detect_contradictions moved to generator.contradictions
 
 
-def fetch_and_extract_content(url: str, timeout: int = 10) -> tuple[str, str] | tuple[None, None]:
-    """Fetch a URL and extract readable text content and title.
-    
-    Returns:
-        (content, title) or (None, None) if fetch fails
+def fetch_and_extract_content(url: str, timeout: int = 10) -> tuple[str, str, bool] | tuple[None, None, None]:
+    """Fetch a URL and extract main article text via trafilatura.
+
+    Returns (body_text, title, is_full_article) or (None, None, None).
+    is_full_article = True when trafilatura extracted ≥200 chars of body text.
+    When False, the text is likely a nav remnant or short Tavily snippet —
+    claims extracted from it should not be public_claim_eligible.
     """
+    import trafilatura
+
     try:
-        with httpx.Client(timeout=timeout) as client:
-            response = client.get(url, follow_redirects=True)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; TopicPageBot/1.0)",
+            "Accept": "text/html,application/xhtml+xml",
+        }
+        with httpx.Client(timeout=timeout, follow_redirects=True, headers=headers) as client:
+            response = client.get(url)
             response.raise_for_status()
+    except Exception:
+        LOGGER.debug("httpx fetch failed for %s", url)
+        return None, None, None
 
-        # Extract title from HTML
-        title_match = re.search(r"<title>(.*?)</title>", response.text, re.IGNORECASE)
-        title = title_match.group(1) if title_match else ""
-
-        # Simple text extraction: remove script/style tags, extract text
-        html = response.text
+    html = response.text
+    extracted = trafilatura.extract(
+        html, include_comments=False, include_tables=False,
+        include_links=False, include_images=False, output_format="txt",
+    )
+    is_full = bool(extracted and len(extracted.strip()) >= 200)
+    if not extracted or len(extracted.strip()) < 40:
         html = re.sub(r"<script[^>]*>.*?</script>", "", html, flags=re.IGNORECASE | re.DOTALL)
         html = re.sub(r"<style[^>]*>.*?</style>", "", html, flags=re.IGNORECASE | re.DOTALL)
-        html = re.sub(r"<[^>]+>", " ", html)  # Remove all HTML tags
-        text = " ".join(html.split())  # Normalize whitespace
+        html = re.sub(r"<[^>]+>", " ", html)
+        extracted = " ".join(html.split())
 
-        # Limit to first 2000 chars to avoid token explosion
-        text = text[:2000]
+    extracted = extracted[:3000]
 
-        return text, title
-    except Exception as e:
-        LOGGER.debug(f"Failed to fetch {url}: {e}")
-        return None, None
+    title_match = re.search(r"<title>(.*?)</title>", response.text, re.IGNORECASE)
+    title = title_match.group(1).strip() if title_match else ""
+
+    return extracted, title, is_full

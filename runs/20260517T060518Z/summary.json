@@ -1,0 +1,8 @@
+{
+  "sentence": "Apple announced the iPhone 18 Pro at WWDC 2026 on June 8.",
+  "status": "complete",
+  "confidence": "medium",
+  "search_rounds": 1,
+  "qa_passed": false,
+  "qa_score": 0.633
+}

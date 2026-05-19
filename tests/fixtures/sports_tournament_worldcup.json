@@ -1,95 +1,71 @@
 {
   "input_sentence": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
-  "today": "2026-05-16",
+  "today": "2026-05-17",
   "evidence_graph": {
     "event_hypothesis": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
     "sources": [
       {
-        "source_id": "src_30237",
-        "url": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/venues/",
-        "title": "2026 World Cup Cities Map and Venues",
-        "publisher": "Roadtrips",
-        "published_at": null,
-        "source_type": "unknown",
-        "authority_score": 0.3,
-        "freshness_score": 0.5,
-        "relevance_score": 0.6428571428571429,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_43511",
-        "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
-        "title": "2026 FIFA World Cup - Wikipedia",
-        "publisher": "Wikipedia",
-        "published_at": null,
-        "source_type": "primary_data",
-        "authority_score": 0.95,
-        "freshness_score": 0.5,
-        "relevance_score": 0.7857142857142857,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_18157",
-        "url": "https://www.australiafootball.com/world-cup/history/2026-united-states-canada-mexico/",
-        "title": "2026 World Cup USA, Canada & Mexico — Preview, Schedule & Austral",
-        "publisher": "Australiafootball",
-        "published_at": null,
-        "source_type": "unknown",
-        "authority_score": 0.3,
-        "freshness_score": 0.5,
-        "relevance_score": 0.8571428571428571,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_36967",
-        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-stadiums-fifa-soccer-football-mexico-usa-canada",
-        "title": "FIFA World Cup 2026 stadiums in Canada, Mexico and the USA",
+        "source_id": "src_03998",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-where-and-when-can-i-buy-tickets-hospitality",
+        "title": "FIFA World Cup 2026 | How, where and when can I buy tickets?",
         "publisher": "FIFA",
         "published_at": null,
         "source_type": "official",
         "authority_score": 1.0,
         "freshness_score": 0.5,
-        "relevance_score": 0.7857142857142857,
-        "bias_or_limitation": null
+        "relevance_score": 0.5714285714285714,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official FIFA ticketing information page, primary authority for World Cup 2026 tickets"
       },
       {
-        "source_id": "src_65762",
-        "url": "https://www.bundesliga.com/en/bundesliga/news/2026-fifa-world-cup-usa-canada-mexico-germany-chances-30069",
-        "title": "How will the 2026 FIFA World Cup in the USA, Canada and Mexico work? | Bundesliga",
-        "publisher": "Bundesliga",
+        "source_id": "src_55717",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/last-minute-sales-phase-new-ticket-drop-22-april",
+        "title": "New ticket drop on sale | FIFA World Cup 2026",
+        "publisher": "FIFA",
         "published_at": null,
-        "source_type": "local_media",
-        "authority_score": 0.7,
+        "source_type": "official",
+        "authority_score": 1.0,
         "freshness_score": 0.5,
-        "relevance_score": 0.7857142857142857,
-        "bias_or_limitation": null
+        "relevance_score": 0.5714285714285714,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official FIFA announcement about ticket sales for World Cup 2026"
       },
       {
-        "source_id": "src_09045",
-        "url": "https://www.aljazeera.com/sports/2026/5/7/whats-the-full-match-schedule-groups-and-format-for-world-cup-2026",
-        "title": "What’s the full match schedule, groups and format for World Cup 2026? | World Cup 2026 News | Al Jazeera",
-        "publisher": "Al Jazeera",
+        "source_id": "src_51025",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/random-selection-draw-ticketing-phase-now-open",
+        "title": "Random Selection Draw Ticketing Phase now open - FIFA",
+        "publisher": "FIFA",
         "published_at": null,
-        "source_type": "reputable_media",
-        "authority_score": 0.8,
+        "source_type": "official",
+        "authority_score": 1.0,
         "freshness_score": 0.5,
-        "relevance_score": 0.6428571428571429,
-        "bias_or_limitation": null
+        "relevance_score": 0.5,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official FIFA ticketing phase announcement for World Cup 2026"
       },
       {
-        "source_id": "src_73022",
-        "url": "https://www.espn.com/soccer/story/_/id/47108758/2026-fifa-world-cup-format-tiebreakers-fixtures-schedule",
-        "title": "2026 FIFA World Cup: Format, groups, full match schedule, more",
-        "publisher": "ESPN",
+        "source_id": "src_08655",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+        "title": "World Cup 2026 | Mexico City Stadium hosts opening match - FIFA",
+        "publisher": "FIFA",
         "published_at": null,
-        "source_type": "reputable_media",
-        "authority_score": 0.8,
+        "source_type": "official",
+        "authority_score": 1.0,
         "freshness_score": 0.5,
-        "relevance_score": 0.3,
-        "bias_or_limitation": null
+        "relevance_score": 0.5,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official FIFA page confirming Estadio Azteca hosts opening match on June 11, 2026 - directly supports main claim"
       },
       {
-        "source_id": "src_65118",
+        "source_id": "src_48154",
         "url": "https://fifaworldcup26.suites.fifa.com/venues/",
         "title": "FIFA World Cup 2026™ Venues",
         "publisher": "FIFA",
@@ -98,130 +74,28 @@
         "authority_score": 1.0,
         "freshness_score": 0.5,
         "relevance_score": 0.5,
-        "bias_or_limitation": null
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official FIFA venues page for World Cup 2026, primary authority"
       },
       {
-        "source_id": "src_81424",
-        "url": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-        "title": "2026 World Cup Schedule and Locations in USA, Mexico, Canada | Roadtrips",
-        "publisher": "Roadtrips",
-        "published_at": null,
-        "source_type": "unknown",
-        "authority_score": 0.3,
-        "freshness_score": 0.5,
-        "relevance_score": 0.35714285714285715,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_05182",
-        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
-        "title": "Qualified teams for the FIFA World Cup 2026",
-        "publisher": "FIFA",
-        "published_at": null,
-        "source_type": "official",
-        "authority_score": 1.0,
-        "freshness_score": 0.5,
-        "relevance_score": 0.5,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_53357",
-        "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification",
-        "title": "2026 FIFA World Cup qualification - Wikipedia",
+        "source_id": "src_04972",
+        "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+        "title": "2026 FIFA World Cup - Wikipedia",
         "publisher": "Wikipedia",
         "published_at": null,
         "source_type": "primary_data",
         "authority_score": 0.95,
         "freshness_score": 0.5,
         "relevance_score": 0.5714285714285714,
-        "bias_or_limitation": null
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Wikipedia with primary data sourcing on 2026 World Cup, well-documented tournament facts"
       },
       {
-        "source_id": "src_03098",
-        "url": "https://www.espn.com/soccer/story/_/id/40297462/2026-world-cup-how-nations-world-qualify",
-        "title": "2026 World Cup: Which 48 teams qualified for the tournament?",
-        "publisher": "ESPN",
-        "published_at": null,
-        "source_type": "reputable_media",
-        "authority_score": 0.8,
-        "freshness_score": 0.5,
-        "relevance_score": 0.5,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_01259",
-        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/qualifiers",
-        "title": "FIFA World Cup 26™ Qualifiers",
-        "publisher": "FIFA",
-        "published_at": null,
-        "source_type": "official",
-        "authority_score": 1.0,
-        "freshness_score": 0.5,
-        "relevance_score": 0.5714285714285714,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_40895",
-        "url": "https://www.hitc.com/why-the-2026-fifa-world-cup-opening-ceremony-wont-be-held-in-the-us/",
-        "title": "Why the 2026 FIFA World Cup opening ceremony won't be held in the US",
-        "publisher": "Hitc",
-        "published_at": null,
-        "source_type": "local_media",
-        "authority_score": 0.7,
-        "freshness_score": 0.5,
-        "relevance_score": 0.8571428571428571,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_64997",
-        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
-        "title": "World Cup 2026 | Match schedule, fixtures & stadiums - FIFA",
-        "publisher": "FIFA",
-        "published_at": null,
-        "source_type": "official",
-        "authority_score": 1.0,
-        "freshness_score": 0.5,
-        "relevance_score": 0.5714285714285714,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_36728",
-        "url": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-qualified-teams-groups-match-dates-fixtures-how-to-watch-050724214.html",
-        "title": "2026 World Cup schedule: Qualified teams, groups, match dates ...",
-        "publisher": "Yahoo",
-        "published_at": null,
-        "source_type": "reputable_media",
-        "authority_score": 0.8,
-        "freshness_score": 0.5,
-        "relevance_score": 0.7142857142857143,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_75244",
-        "url": "https://nynjfwc26.com/schedule/",
-        "title": "Schedule | FIFA World Cup 2026™ NYNJ",
-        "publisher": "Nynjfwc26",
-        "published_at": null,
-        "source_type": "unknown",
-        "authority_score": 0.3,
-        "freshness_score": 0.5,
-        "relevance_score": 0.42857142857142855,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_30798",
-        "url": "https://inside.fifa.com/media-releases/world-cup-2026-opening-ceremony-mexico-city",
-        "title": "FIFA World Cup 2026™ opening ceremony set to deliver star-powered celebration in Mexico City",
-        "publisher": "FIFA",
-        "published_at": null,
-        "source_type": "official",
-        "authority_score": 1.0,
-        "freshness_score": 0.5,
-        "relevance_score": 0.6428571428571429,
-        "bias_or_limitation": null
-      },
-      {
-        "source_id": "src_63527",
+        "source_id": "src_80507",
         "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
         "title": "Scores & Fixtures | FIFA World Cup 2026™",
         "publisher": "FIFA",
@@ -230,554 +104,555 @@
         "authority_score": 1.0,
         "freshness_score": 0.5,
         "relevance_score": 0.3,
-        "bias_or_limitation": null
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official FIFA scores and fixtures page for World Cup 2026"
       },
       {
-        "source_id": "src_41656",
+        "source_id": "src_33089",
         "url": "https://www.skysports.com/football/news/11095/13481245/world-cup-2026-fixture-schedule-and-uk-kick-off-times-day-by-day-breakdown-of-all-104-matches-including-england-scotland",
-        "title": "World Cup 2026 fixture schedule and UK kick-off times - Sky Sports",
+        "title": "World Cup 2026 fixture schedule and UK kick-off times: Day-by-day breakdown of all 104 matches including England, Scotland | Football News | Sky Sports",
         "publisher": "Sky Sports",
         "published_at": null,
-        "source_type": "local_media",
-        "authority_score": 0.7,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
         "freshness_score": 0.5,
         "relevance_score": 0.6428571428571429,
-        "bias_or_limitation": null
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Sky Sports, reputable media with comprehensive fixture schedule for World Cup 2026"
+      },
+      {
+        "source_id": "src_11340",
+        "url": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-qualified-teams-groups-match-dates-fixtures-how-to-watch-050724214.html",
+        "title": "2026 World Cup schedule: Qualified teams, groups, match dates ...",
+        "publisher": "Yahoo Sports",
+        "published_at": null,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
+        "freshness_score": 0.5,
+        "relevance_score": 0.5,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Yahoo Sports, reputable media outlet covering World Cup 2026 schedule and teams"
+      },
+      {
+        "source_id": "src_98449",
+        "url": "https://www.skysports.com/football/news/12010/13272067/2026-world-cup-dates-venues-host-cities-and-format-for-usa-canada-and-mexico-tournament",
+        "title": "2026 World Cup dates, venues, host cities and format for USA ...",
+        "publisher": "Sky Sports",
+        "published_at": null,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
+        "freshness_score": 0.5,
+        "relevance_score": 0.3,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Sky Sports, reputable media covering dates, venues, format for World Cup 2026"
+      },
+      {
+        "source_id": "src_03974",
+        "url": "https://www.facebook.com/IOLlifestyle/posts/history-will-be-made-on-june-11-at-estadio-azteca-the-2026-fifa-world-cup-offici/1588302349964846/",
+        "title": "History will be made on... - IOL Lifestyle / Entertainment",
+        "publisher": "Facebook",
+        "published_at": null,
+        "source_type": "social",
+        "authority_score": 0.5,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8571428571428571,
+        "bias_or_limitation": null,
+        "ai_source_role": "debug_only",
+        "final_source_role": "debug_only",
+        "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Facebook social media post - not suitable for citation despite relevant content)"
       }
     ],
     "claims": [
       {
-        "claim_id": "loc_6306",
-        "text": "The Masters The Most Watched Sporting Events",
+        "claim_id": "src_48154_000",
+        "text": "The FIFA World Cup 2026 will take place across North America, with matches hosted at 16 venues in Canada, Mexico, and the United States.",
         "claim_type": "location",
+        "claim_topic": "venue",
         "source_ids": [
-          "src_30237",
-          "src_81424"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "The Masters The Most Watched Sporting Events"
-      },
-      {
-        "claim_id": "loc_3934",
-        "text": "The World Must",
-        "claim_type": "location",
-        "source_ids": [
-          "src_30237",
-          "src_81424"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "The World Must"
-      },
-      {
-        "claim_id": "date_8290",
-        "text": "July 20",
-        "claim_type": "date",
-        "source_ids": [
-          "src_18157",
-          "src_65762"
+          "src_48154",
+          "src_33089",
+          "src_11340",
+          "src_98449"
         ],
         "confidence": "high",
         "freshness": "fresh",
         "component_targets": [],
         "validation_status": "pending",
-        "date_value": "2026-07-20T00:00:00Z"
+        "evidence_sentence": "The FIFA World Cup 2026™ will take place across North America, with matches hosted at 16 venues in Canada, Mexico, and the United States.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "location": "North America (Canada, Mexico, and the United States)"
+        }
       },
       {
-        "claim_id": "loc_1330",
-        "text": "History The",
-        "claim_type": "location",
+        "claim_id": "src_48154_001",
+        "text": "The FIFA World Cup 2026 will have 16 host venues across three countries.",
+        "claim_type": "metric",
+        "claim_topic": "venue",
         "source_ids": [
-          "src_18157"
+          "src_48154",
+          "src_98449"
         ],
-        "confidence": "medium",
+        "confidence": "high",
         "freshness": "fresh",
         "component_targets": [],
         "validation_status": "pending",
-        "location": "History The"
+        "evidence_sentence": "The FIFA World Cup 2026™ will take place across North America, with matches hosted at 16 venues in Canada, Mexico, and the United States.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "venues",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "16",
+          "evidence_snippet": "with matches hosted at 16 venues in Canada, Mexico, and the United States"
+        }
       },
       {
-        "claim_id": "ent_8168",
-        "text": "United States (Hosted by)",
+        "claim_id": "src_48154_002",
+        "text": "Luxury suites will include amenities such as high-end catering and dedicated entrances.",
         "claim_type": "entity",
+        "claim_topic": "other",
         "source_ids": [
-          "src_18157"
+          "src_48154"
         ],
         "confidence": "medium",
         "freshness": "fresh",
         "component_targets": [],
         "validation_status": "pending",
-        "entity_name": "United States",
-        "entity_role": "Hosted by"
+        "evidence_sentence": "Luxury suites will include amenities such as high-end catering and dedicated entrances, making for a truly unforgettable experience.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "entity_role": "Premium hospitality offering with high-end catering and dedicated entrances",
+          "entity_name": "Luxury suites"
+        }
       },
       {
-        "claim_id": "loc_3732",
-        "text": "Canada",
-        "claim_type": "location",
+        "claim_id": "src_33089_000",
+        "text": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+        "claim_type": "schedule",
+        "claim_topic": "event_schedule",
         "source_ids": [
-          "src_65762",
-          "src_09045",
-          "src_65118"
+          "src_33089",
+          "src_11340",
+          "src_98449"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "timeline",
+          "key_facts"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "With all 48 teams now qualified for the 2026 World Cup, here's your day-by-day breakdown of the 37-day tournament, which kicks off in Mexico on June 11 with 103 matches leading up to the World Cup final at the MetLife Stadium on July 19.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "event_name": "2026 FIFA World Cup Opening Match",
+          "timezone": "BST",
+          "event_datetime": "2026-06-11T20:00:00"
+        }
+      },
+      {
+        "claim_id": "src_33089_002",
+        "text": "The 2026 World Cup features 48 teams.",
+        "claim_type": "metric",
+        "claim_topic": "participants",
+        "source_ids": [
+          "src_33089",
+          "src_11340",
+          "src_98449"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "stat_grid",
+          "key_facts"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "With all 48 teams now qualified for the 2026 World Cup, here's your day-by-day breakdown of the 37-day tournament, which kicks off in Mexico on June 11 with 103 matches leading up to the World Cup final at the MetLife Stadium on July 19.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "teams",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "48",
+          "evidence_snippet": "With all 48 teams now qualified for the 2026 World Cup"
+        }
+      },
+      {
+        "claim_id": "src_33089_003",
+        "text": "The tournament includes 104 matches total.",
+        "claim_type": "metric",
+        "claim_topic": "metrics",
+        "source_ids": [
+          "src_33089",
+          "src_98449"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "stat_grid",
+          "key_facts"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "Full World Cup 2026 fixture schedule in Mexico, USA and Canada with UK kick-off times; Mexico host South Africa in June 11 opener; 104-game tournament ends at MetLife Stadium in New Jersey on Sunday July 19; England and Scotland are part of the 48-team tournament",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "matches",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "104",
+          "evidence_snippet": "104-game tournament ends at MetLife Stadium in New Jersey on Sunday July 19"
+        }
+      },
+      {
+        "claim_id": "src_33089_004",
+        "text": "The tournament spans 37 days.",
+        "claim_type": "metric",
+        "claim_topic": "event_schedule",
+        "source_ids": [
+          "src_33089"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "stat_grid",
+          "key_facts"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "With all 48 teams now qualified for the 2026 World Cup, here's your day-by-day breakdown of the 37-day tournament, which kicks off in Mexico on June 11 with 103 matches leading up to the World Cup final at the MetLife Stadium on July 19.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "days",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "37",
+          "evidence_snippet": "day-by-day breakdown of the 37-day tournament"
+        }
+      },
+      {
+        "claim_id": "src_33089_007",
+        "text": "England and Scotland both qualified for the 2026 World Cup.",
+        "claim_type": "entity",
+        "claim_topic": "participants",
+        "source_ids": [
+          "src_33089",
+          "src_11340"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "entity_list",
+          "key_facts"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "Full World Cup 2026 fixture schedule in Mexico, USA and Canada with UK kick-off times; Mexico host South Africa in June 11 opener; 104-game tournament ends at MetLife Stadium in New Jersey on Sunday July 19; England and Scotland are part of the 48-team tournament",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "entity_role": "qualified teams in the 2026 World Cup",
+          "entity_name": "England and Scotland"
+        }
+      },
+      {
+        "claim_id": "src_98449_004",
+        "text": "This is the first time a World Cup has been hosted by three nations",
+        "claim_type": "status",
+        "claim_topic": "history",
+        "source_ids": [
+          "src_98449"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "It is the first time a World Cup has been hosted by three nations.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "status": "first time a World Cup has been hosted by three nations",
+          "source_evidence": null,
+          "observed_at": null
+        }
+      },
+      {
+        "claim_id": "src_98449_006",
+        "text": "The prize money for winning the 2026 World Cup is $50 million",
+        "claim_type": "metric",
+        "claim_topic": "pricing",
+        "source_ids": [
+          "src_98449"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "- Winners: $50m (£37.5m)",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "million USD",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "50",
+          "evidence_snippet": "Winners: $50m"
+        }
+      },
+      {
+        "claim_id": "src_98449_007",
+        "text": "The prize money for the 2026 World Cup was confirmed at a FIFA Council meeting in Doha on December 17",
+        "claim_type": "date",
+        "claim_topic": "pricing",
+        "source_ids": [
+          "src_98449"
         ],
         "confidence": "medium",
         "freshness": "fresh",
         "component_targets": [],
         "validation_status": "pending",
-        "location": "Canada"
+        "evidence_sentence": "The prize money for the 2026 World Cup was confirmed at a FIFA Council meeting in Doha on December 17.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "date_value": "2025-12-17T00:00:00Z"
+        }
       },
       {
-        "claim_id": "date_7728",
+        "claim_id": "date_6730",
         "text": "June 11",
         "claim_type": "date",
+        "claim_topic": "other",
         "source_ids": [
-          "src_09045"
+          "src_03974"
         ],
         "confidence": "high",
         "freshness": "fresh",
         "component_targets": [],
         "validation_status": "pending",
-        "date_value": "2026-06-11T00:00:00Z"
-      },
-      {
-        "claim_id": "date_6957",
-        "text": "July 19",
-        "claim_type": "date",
-        "source_ids": [
-          "src_09045"
-        ],
-        "confidence": "high",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "date_value": "2026-07-19T00:00:00Z"
-      },
-      {
-        "claim_id": "date_1204",
-        "text": "May 20",
-        "claim_type": "date",
-        "source_ids": [
-          "src_09045",
-          "src_30798"
-        ],
-        "confidence": "high",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "date_value": "2026-05-20T00:00:00Z"
-      },
-      {
-        "claim_id": "loc_1725",
-        "text": "Qatar",
-        "claim_type": "location",
-        "source_ids": [
-          "src_09045"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Qatar"
-      },
-      {
-        "claim_id": "loc_9402",
-        "text": "Stadium Kansas City",
-        "claim_type": "location",
-        "source_ids": [
-          "src_65118"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Stadium Kansas City"
-      },
-      {
-        "claim_id": "loc_5950",
-        "text": "Stadium Mexico City",
-        "claim_type": "location",
-        "source_ids": [
-          "src_65118"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Stadium Mexico City"
-      },
-      {
-        "claim_id": "metric_7647",
-        "text": "90 minutes",
-        "claim_type": "metric",
-        "source_ids": [
-          "src_30798"
-        ],
-        "confidence": "high",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "value": "90",
-        "unit": "minutes",
-        "direction": null,
-        "base_value_if_delta": null,
-        "evidence_snippet": "Downs, Los Ángeles Azules, Maná and Tyla among the headliners Mexican culture to take center stage 90 minutes before kick-off through music, dance and artistry, featuring indigenous talent and modern folkloric"
-      },
-      {
-        "claim_id": "loc_8590",
-        "text": "Mexico City",
-        "claim_type": "location",
-        "source_ids": [
-          "src_30798"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Mexico City"
-      },
-      {
-        "claim_id": "loc_1518",
-        "text": "Mexico City Mexico",
-        "claim_type": "location",
-        "source_ids": [
-          "src_30798"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Mexico City Mexico"
-      },
-      {
-        "claim_id": "loc_6524",
-        "text": "Mexico City Stadium",
-        "claim_type": "location",
-        "source_ids": [
-          "src_30798"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Mexico City Stadium"
-      },
-      {
-        "claim_id": "loc_1914",
-        "text": "Football Watch Sky Sports Football Home News Watch Scores",
-        "claim_type": "location",
-        "source_ids": [
-          "src_41656"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Football Watch Sky Sports Football Home News Watch Scores"
-      },
-      {
-        "claim_id": "loc_7817",
-        "text": "Manchester United Newcastle United Nottingham Forest Sunderland Tottenham Hotspur West Ham United Wolverhampton Wanderers Women",
-        "claim_type": "location",
-        "source_ids": [
-          "src_41656"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Manchester United Newcastle United Nottingham Forest Sunderland Tottenham Hotspur West Ham United Wolverhampton Wanderers Women"
-      },
-      {
-        "claim_id": "loc_0806",
-        "text": "Women Liverpool Women London City Lionesses Manchester City Women Manchester United Women Tottenham Hotspur Women West Ham United Women Championship Birmingham City Blackburn Rovers Bristol City Charlton Athletic Coventry City Derby County Hull City Ipswich Town Leicester City Middlesbrough Millwall Norwich City Oxford United Portsmouth Preston North End Queens Park Rangers Sheffield United Sheffield Wednesday Stoke City Southampton Swansea City Watford West Bromwich Albion Wrexham League One",
-        "claim_type": "location",
-        "source_ids": [
-          "src_41656"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Women Liverpool Women London City Lionesses Manchester City Women Manchester United Women Tottenham Hotspur Women West Ham United Women Championship Birmingham City Blackburn Rovers Bristol City Charl"
-      },
-      {
-        "claim_id": "loc_6201",
-        "text": "Burton Albion Cardiff City Doncaster Rovers Exeter City Huddersfield Town Leyton Orient Lincoln City Luton Town Mansfield Town Northampton Town Peterborough United Plymouth Argyle Port Vale Reading Rotherham United Stevenage Stockport County Wigan Athletic Wycombe Wanderers League Two Accrington Stanley Barnet Barrow Bristol Rovers Bromley Cambridge United Cheltenham Town Chesterfield Colchester United Crawley Town Crewe Alexandra Fleetwood Town Gi",
-        "claim_type": "location",
-        "source_ids": [
-          "src_41656"
-        ],
-        "confidence": "medium",
-        "freshness": "fresh",
-        "component_targets": [],
-        "validation_status": "pending",
-        "location": "Burton Albion Cardiff City Doncaster Rovers Exeter City Huddersfield Town Leyton Orient Lincoln City Luton Town Mansfield Town Northampton Town Peterborough United Plymouth Argyle Port Vale Reading Ro"
+        "evidence_sentence": "",
+        "public_claim_eligible": false,
+        "claim_attributes": {
+          "date_value": "2026-06-11T00:00:00Z"
+        }
       }
     ],
-    "contradictions": [
-      {
-        "topic": "Event date",
-        "claim_a": "July 20",
-        "sources_a": [
-          "src_18157",
-          "src_65762"
-        ],
-        "claim_b": "June 11",
-        "sources_b": [
-          "src_09045"
-        ],
-        "resolution": "prefer_official",
-        "display_policy": "show_uncertainty_box"
-      }
-    ],
+    "contradictions": [],
     "unresolved_questions": [],
-    "last_updated": "2026-05-16T02:46:54.268690Z"
+    "last_updated": "2026-05-17T01:33:03.961674Z"
   },
   "topic_page": {
     "event_type": "sports_tournament",
     "status": "upcoming",
-    "confidence": "low",
-    "headline": "2026 FIFA World Cup Opens June 11 in Mexico City",
-    "deck": "First-ever 48-team tournament kicks off at Estadio Azteca with ceremony featuring Mexican culture.",
-    "summary": "The 2026 FIFA World Cup begins June 11, 2026 at Estadio Azteca in Mexico City, marking the first 48-team tournament. The expanded format features matches across 16 venues in the United States, Canada, and Mexico, with the final scheduled for July 19. An opening ceremony celebrating Mexican culture will precede the first match, featuring 90 minutes of music, dance, and indigenous talent.",
-    "urgency_label": "Kickoff in 26 days",
-    "as_of_label": "As of May 16, 2026",
+    "confidence": "high",
+    "headline": "2026 FIFA World Cup Opens June 11 at Estadio Azteca",
+    "deck": "Historic 48-team tournament across three nations begins with Mexico hosting South Africa in Mexico City.",
+    "summary": "The 2026 FIFA World Cup kicks off on June 11, 2026, at Estadio Azteca in Mexico City, marking the first World Cup hosted by three nations. The expanded tournament features 48 teams competing across 16 venues in Canada, Mexico, and the United States over 37 days. With 104 matches scheduled and a $50 million prize for the champions, this historic edition represents the largest World Cup in history.",
+    "urgency_label": "Kicks off June 11, 2026",
+    "as_of_label": "Updated May 17, 2026",
     "key_facts": [
       {
-        "label": "Tournament Start",
-        "value": "June 11, 2026",
+        "label": "Opening Match",
+        "value": "June 11, 2026 at Estadio Azteca",
         "hint": null,
-        "claim_id": "date_7728"
+        "claim_id": "src_33089_000"
       },
       {
-        "label": "Opening Venue",
-        "value": "Estadio Azteca, Mexico City",
+        "label": "Tournament Size",
+        "value": "48 teams, 104 matches",
         "hint": null,
-        "claim_id": "loc_8590"
+        "claim_id": "src_33089_002"
       },
       {
-        "label": "Final Match",
-        "value": "July 19, 2026",
+        "label": "Host Nations",
+        "value": "Canada, Mexico, United States (16 venues)",
         "hint": null,
-        "claim_id": "date_6957"
+        "claim_id": "src_48154_001"
       },
       {
-        "label": "Ceremony Length",
-        "value": "90 minutes before kickoff",
+        "label": "Duration",
+        "value": "37 days",
         "hint": null,
-        "claim_id": "metric_7647"
+        "claim_id": "src_33089_004"
+      },
+      {
+        "label": "Winner's Prize",
+        "value": "$50 million",
+        "hint": null,
+        "claim_id": "src_98449_006"
       }
     ],
     "key_entities": [
       {
-        "name": "United States",
-        "role": "Co-host nation"
+        "name": "FIFA",
+        "role": "Organizing body for the 2026 World Cup"
       },
       {
-        "name": "Canada",
-        "role": "Co-host nation"
+        "name": "Estadio Azteca",
+        "role": "Opening match venue in Mexico City"
       },
       {
-        "name": "Mexico",
-        "role": "Opening ceremony host"
+        "name": "Canada, Mexico, United States",
+        "role": "Co-host nations"
       }
     ],
     "timeline": [
       {
-        "date_label": "May 20, 2026",
-        "title": "Opening ceremony details announced",
-        "detail": "FIFA confirms 90-minute celebration featuring Mexican artists including Maná, Los Ángeles Azules, and Tyla"
+        "date_label": "December 17",
+        "title": "Prize Money Confirmed",
+        "detail": "FIFA Council meeting in Doha confirmed $50 million prize for winners"
       },
       {
         "date_label": "June 11, 2026",
-        "title": "Tournament opens at Estadio Azteca",
-        "detail": "First match follows opening ceremony in Mexico City"
-      },
-      {
-        "date_label": "July 19, 2026",
-        "title": "World Cup final",
-        "detail": "Tournament concludes after 104 matches across three nations"
+        "title": "Opening Match at Estadio Azteca",
+        "detail": "Tournament kicks off in Mexico City"
       }
     ],
     "layout_style": "timeline_first",
     "sections": [
       {
         "component_type": "stat_grid",
-        "title": "Tournament by the Numbers",
+        "title": "Tournament Overview",
         "summary": null,
         "columns": 2,
         "items": [
           {
-            "label": "Opening Match",
-            "value": "June 11, 2026",
+            "label": "Teams Competing",
+            "value": "48 teams qualified",
             "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "date_7728"
+            "claim_id": "src_33089_002"
           },
           {
-            "label": "Final Match",
-            "value": "July 19, 2026",
+            "label": "Total Matches",
+            "value": "104 matches scheduled",
             "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "date_6957"
+            "claim_id": "src_33089_003"
           },
           {
-            "label": "Ceremony Duration",
-            "value": "90 minutes",
+            "label": "Tournament Duration",
+            "value": "37 days",
             "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "metric_7647"
+            "claim_id": "src_33089_004"
           },
           {
-            "label": "Ceremony Announced",
-            "value": "May 20, 2026",
+            "label": "Host Venues",
+            "value": "16 venues across three countries",
             "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "date_1204"
+            "claim_id": "src_48154_001"
+          },
+          {
+            "label": "Prize Money",
+            "value": "$50 million for winners",
+            "detail": null,
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_98449_006"
+          },
+          {
+            "label": "Historic First",
+            "value": "First World Cup hosted by three nations",
+            "detail": null,
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_98449_004"
           }
         ]
       },
       {
-        "component_type": "key_facts",
-        "title": "Opening Ceremony",
+        "component_type": "timeline",
+        "title": "Key Tournament Dates",
         "summary": null,
         "columns": 1,
         "items": [
           {
-            "label": "Location",
-            "value": "Estadio Azteca, Mexico City",
-            "detail": "90 minutes of music, dance, and indigenous talent before first match",
+            "label": "Prize Money Confirmed",
+            "value": "December 17: FIFA Council meeting in Doha confirmed $50 million prize",
+            "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "loc_8590"
+            "claim_id": "src_98449_007"
           },
           {
-            "label": "Duration",
-            "value": "90 minutes before kickoff",
-            "detail": "Features Mexican culture with modern and folkloric elements",
+            "label": "Opening Match",
+            "value": "June 11, 2026: Tournament kicks off at Estadio Azteca",
+            "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "metric_7647"
-          },
-          {
-            "label": "Announcement Date",
-            "value": "May 20, 2026",
-            "detail": "FIFA confirmed headliners and ceremony details",
-            "link_label": null,
-            "link_url": null,
-            "claim_id": "date_1204"
+            "claim_id": "src_33089_000"
           }
         ]
       },
       {
         "component_type": "entity_list",
-        "title": "Host Nations",
-        "summary": null,
+        "title": "Qualified Teams & Key Participants",
+        "summary": "All 48 teams have qualified for the expanded tournament, including European representatives England and Scotland.",
         "columns": 1,
         "items": [
           {
-            "label": "United States",
-            "value": "Primary host with most venues",
+            "label": "England",
+            "value": "Qualified for 2026 World Cup",
             "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "ent_8168"
+            "claim_id": "src_33089_007"
           },
           {
-            "label": "Canada",
-            "value": "Co-host nation",
+            "label": "Scotland",
+            "value": "Qualified for 2026 World Cup",
             "detail": null,
             "link_label": null,
             "link_url": null,
-            "claim_id": "loc_3732"
-          },
-          {
-            "label": "Mexico",
-            "value": "Opening ceremony and match host",
-            "detail": null,
-            "link_label": null,
-            "link_url": null,
-            "claim_id": "loc_8590"
+            "claim_id": "src_33089_007"
           }
         ]
       },
       {
         "component_type": "action_list",
-        "title": "Tournament Information",
-        "summary": null,
+        "title": "Plan Your World Cup Experience",
+        "summary": "Tickets and hospitality packages are available through official FIFA channels.",
         "columns": 1,
         "items": [
           {
-            "label": "Match Schedule",
-            "value": "View fixtures and stadium assignments",
+            "label": "View Full Schedule",
+            "value": "See all 104 matches with dates, times, and venues",
             "detail": null,
-            "link_label": "FIFA Official Schedule",
-            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+            "link_label": "FIFA Schedule",
+            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
             "claim_id": null
           },
           {
-            "label": "Qualified Teams",
-            "value": "Check which nations have secured spots",
+            "label": "Purchase Tickets",
+            "value": "Buy tickets through the official FIFA ticketing portal",
             "detail": null,
-            "link_label": "Qualification Status",
-            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
+            "link_label": "Ticket Information",
+            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-where-and-when-can-i-buy-tickets-hospitality",
             "claim_id": null
           },
           {
-            "label": "Venues",
-            "value": "Explore host cities and stadiums",
+            "label": "Explore Venues",
+            "value": "Discover all 16 host venues across North America",
             "detail": null,
-            "link_label": "Stadium Guide",
-            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-stadiums-fifa-soccer-football-mexico-usa-canada",
+            "link_label": "Venue Guide",
+            "link_url": "https://fifaworldcup26.suites.fifa.com/venues/",
             "claim_id": null
           },
           {
-            "label": "Opening Ceremony",
-            "value": "Details on Mexico City celebration",
+            "label": "Luxury Hospitality",
+            "value": "Premium suites with high-end catering and dedicated entrances",
             "detail": null,
-            "link_label": "Ceremony Announcement",
-            "link_url": "https://inside.fifa.com/media-releases/world-cup-2026-opening-ceremony-mexico-city",
-            "claim_id": null
-          }
-        ]
-      },
-      {
-        "component_type": "source_list",
-        "title": "Official Sources",
-        "summary": null,
-        "columns": 1,
-        "items": [
-          {
-            "label": "FIFA",
-            "value": "Official tournament schedule and venue information",
-            "detail": null,
-            "link_label": "Visit FIFA.com",
-            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
-            "claim_id": null
-          },
-          {
-            "label": "FIFA Media",
-            "value": "Opening ceremony announcement and details",
-            "detail": null,
-            "link_label": "Media Release",
-            "link_url": "https://inside.fifa.com/media-releases/world-cup-2026-opening-ceremony-mexico-city",
-            "claim_id": null
-          },
-          {
-            "label": "ESPN",
-            "value": "Tournament format and fixture analysis",
-            "detail": null,
-            "link_label": "ESPN Coverage",
-            "link_url": "https://www.espn.com/soccer/story/_/id/47108758/2026-fifa-world-cup-format-tiebreakers-fixtures-schedule",
-            "claim_id": null
+            "link_label": "Hospitality Packages",
+            "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-where-and-when-can-i-buy-tickets-hospitality",
+            "claim_id": "src_48154_002"
           }
         ]
       }
@@ -785,20 +660,11 @@
     "qa_results": [
       {
         "gate_name": "factuality",
-        "status": "fail",
-        "failed_items": [
-          "Contradiction on Event date: July 20 vs June 11",
-          "Section 1 item 0: numeric fact 'Location Estadio Azteca, Mexico City 90 minutes of music, dance, and indigenous talent before first match' is not backed by a numeric claim"
-        ],
-        "repair_actions": [
-          "conflicting_claim",
-          "unsupported_numeric_claim"
-        ],
-        "confidence_score": 0.55,
-        "remediation_suggestions": [
-          "Add an uncertainty box or remove the conflicting claim from sections.",
-          "Replace the item with a supported metric/date/status claim."
-        ]
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [],
+        "confidence_score": 1.0,
+        "remediation_suggestions": []
       },
       {
         "gate_name": "freshness",
@@ -807,26 +673,438 @@
         "repair_actions": [
           "weak_source"
         ],
-        "confidence_score": 0.19999999999999946,
+        "confidence_score": 0.6199999999999997,
         "remediation_suggestions": [
           "Prefer stronger sources or annotate the limitation of weaker ones."
         ]
       },
       {
         "gate_name": "event_fit",
-        "status": "fail",
-        "failed_items": [
-          "Required component missing: timeline"
-        ],
-        "repair_actions": [
-          "missing_required_component"
-        ],
-        "confidence_score": 0.75,
-        "remediation_suggestions": [
-          "Add a non-empty timeline section for the sports_tournament page."
-        ]
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [],
+        "confidence_score": 1.0,
+        "remediation_suggestions": []
       }
     ],
-    "last_updated": "2026-05-16T02:46:54.268690Z"
+    "last_updated": "2026-05-17T01:33:03.961674Z",
+    "evidence_graph_ref": {
+      "event_hypothesis": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+      "sources": [
+        {
+          "source_id": "src_03998",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-where-and-when-can-i-buy-tickets-hospitality",
+          "title": "FIFA World Cup 2026 | How, where and when can I buy tickets?",
+          "publisher": "FIFA",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5714285714285714,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official FIFA ticketing information page, primary authority for World Cup 2026 tickets"
+        },
+        {
+          "source_id": "src_55717",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/last-minute-sales-phase-new-ticket-drop-22-april",
+          "title": "New ticket drop on sale | FIFA World Cup 2026",
+          "publisher": "FIFA",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5714285714285714,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official FIFA announcement about ticket sales for World Cup 2026"
+        },
+        {
+          "source_id": "src_51025",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/random-selection-draw-ticketing-phase-now-open",
+          "title": "Random Selection Draw Ticketing Phase now open - FIFA",
+          "publisher": "FIFA",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official FIFA ticketing phase announcement for World Cup 2026"
+        },
+        {
+          "source_id": "src_08655",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+          "title": "World Cup 2026 | Mexico City Stadium hosts opening match - FIFA",
+          "publisher": "FIFA",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official FIFA page confirming Estadio Azteca hosts opening match on June 11, 2026 - directly supports main claim"
+        },
+        {
+          "source_id": "src_48154",
+          "url": "https://fifaworldcup26.suites.fifa.com/venues/",
+          "title": "FIFA World Cup 2026™ Venues",
+          "publisher": "FIFA",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official FIFA venues page for World Cup 2026, primary authority"
+        },
+        {
+          "source_id": "src_04972",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+          "title": "2026 FIFA World Cup - Wikipedia",
+          "publisher": "Wikipedia",
+          "published_at": null,
+          "source_type": "primary_data",
+          "authority_score": 0.95,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5714285714285714,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Wikipedia with primary data sourcing on 2026 World Cup, well-documented tournament facts"
+        },
+        {
+          "source_id": "src_80507",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+          "title": "Scores & Fixtures | FIFA World Cup 2026™",
+          "publisher": "FIFA",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.3,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official FIFA scores and fixtures page for World Cup 2026"
+        },
+        {
+          "source_id": "src_33089",
+          "url": "https://www.skysports.com/football/news/11095/13481245/world-cup-2026-fixture-schedule-and-uk-kick-off-times-day-by-day-breakdown-of-all-104-matches-including-england-scotland",
+          "title": "World Cup 2026 fixture schedule and UK kick-off times: Day-by-day breakdown of all 104 matches including England, Scotland | Football News | Sky Sports",
+          "publisher": "Sky Sports",
+          "published_at": null,
+          "source_type": "reputable_media",
+          "authority_score": 0.8,
+          "freshness_score": 0.5,
+          "relevance_score": 0.6428571428571429,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Sky Sports, reputable media with comprehensive fixture schedule for World Cup 2026"
+        },
+        {
+          "source_id": "src_11340",
+          "url": "https://sports.yahoo.com/soccer/article/2026-world-cup-schedule-qualified-teams-groups-match-dates-fixtures-how-to-watch-050724214.html",
+          "title": "2026 World Cup schedule: Qualified teams, groups, match dates ...",
+          "publisher": "Yahoo Sports",
+          "published_at": null,
+          "source_type": "reputable_media",
+          "authority_score": 0.8,
+          "freshness_score": 0.5,
+          "relevance_score": 0.5,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Yahoo Sports, reputable media outlet covering World Cup 2026 schedule and teams"
+        },
+        {
+          "source_id": "src_98449",
+          "url": "https://www.skysports.com/football/news/12010/13272067/2026-world-cup-dates-venues-host-cities-and-format-for-usa-canada-and-mexico-tournament",
+          "title": "2026 World Cup dates, venues, host cities and format for USA ...",
+          "publisher": "Sky Sports",
+          "published_at": null,
+          "source_type": "reputable_media",
+          "authority_score": 0.8,
+          "freshness_score": 0.5,
+          "relevance_score": 0.3,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Sky Sports, reputable media covering dates, venues, format for World Cup 2026"
+        },
+        {
+          "source_id": "src_03974",
+          "url": "https://www.facebook.com/IOLlifestyle/posts/history-will-be-made-on-june-11-at-estadio-azteca-the-2026-fifa-world-cup-offici/1588302349964846/",
+          "title": "History will be made on... - IOL Lifestyle / Entertainment",
+          "publisher": "Facebook",
+          "published_at": null,
+          "source_type": "social",
+          "authority_score": 0.5,
+          "freshness_score": 0.5,
+          "relevance_score": 0.8571428571428571,
+          "bias_or_limitation": null,
+          "ai_source_role": "debug_only",
+          "final_source_role": "debug_only",
+          "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Facebook social media post - not suitable for citation despite relevant content)"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "src_48154_000",
+          "text": "The FIFA World Cup 2026 will take place across North America, with matches hosted at 16 venues in Canada, Mexico, and the United States.",
+          "claim_type": "location",
+          "claim_topic": "venue",
+          "source_ids": [
+            "src_48154",
+            "src_33089",
+            "src_11340",
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "The FIFA World Cup 2026™ will take place across North America, with matches hosted at 16 venues in Canada, Mexico, and the United States.",
+          "public_claim_eligible": true,
+          "location": "North America (Canada, Mexico, and the United States)"
+        },
+        {
+          "claim_id": "src_48154_001",
+          "text": "The FIFA World Cup 2026 will have 16 host venues across three countries.",
+          "claim_type": "metric",
+          "claim_topic": "venue",
+          "source_ids": [
+            "src_48154",
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "The FIFA World Cup 2026™ will take place across North America, with matches hosted at 16 venues in Canada, Mexico, and the United States.",
+          "public_claim_eligible": true,
+          "value": "16",
+          "unit": "venues",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "with matches hosted at 16 venues in Canada, Mexico, and the United States"
+        },
+        {
+          "claim_id": "src_48154_002",
+          "text": "Luxury suites will include amenities such as high-end catering and dedicated entrances.",
+          "claim_type": "entity",
+          "claim_topic": "other",
+          "source_ids": [
+            "src_48154"
+          ],
+          "confidence": "medium",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "Luxury suites will include amenities such as high-end catering and dedicated entrances, making for a truly unforgettable experience.",
+          "public_claim_eligible": true,
+          "entity_name": "Luxury suites",
+          "entity_role": "Premium hospitality offering with high-end catering and dedicated entrances"
+        },
+        {
+          "claim_id": "src_33089_000",
+          "text": "The 2026 FIFA World Cup kicks off at Estadio Azteca on June 11, 2026.",
+          "claim_type": "schedule",
+          "claim_topic": "event_schedule",
+          "source_ids": [
+            "src_33089",
+            "src_11340",
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "timeline",
+            "key_facts"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "With all 48 teams now qualified for the 2026 World Cup, here's your day-by-day breakdown of the 37-day tournament, which kicks off in Mexico on June 11 with 103 matches leading up to the World Cup final at the MetLife Stadium on July 19.",
+          "public_claim_eligible": true,
+          "event_datetime": "2026-06-11T20:00:00",
+          "timezone": "BST",
+          "event_name": "2026 FIFA World Cup Opening Match"
+        },
+        {
+          "claim_id": "src_33089_002",
+          "text": "The 2026 World Cup features 48 teams.",
+          "claim_type": "metric",
+          "claim_topic": "participants",
+          "source_ids": [
+            "src_33089",
+            "src_11340",
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "stat_grid",
+            "key_facts"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "With all 48 teams now qualified for the 2026 World Cup, here's your day-by-day breakdown of the 37-day tournament, which kicks off in Mexico on June 11 with 103 matches leading up to the World Cup final at the MetLife Stadium on July 19.",
+          "public_claim_eligible": true,
+          "value": "48",
+          "unit": "teams",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "With all 48 teams now qualified for the 2026 World Cup"
+        },
+        {
+          "claim_id": "src_33089_003",
+          "text": "The tournament includes 104 matches total.",
+          "claim_type": "metric",
+          "claim_topic": "metrics",
+          "source_ids": [
+            "src_33089",
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "stat_grid",
+            "key_facts"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "Full World Cup 2026 fixture schedule in Mexico, USA and Canada with UK kick-off times; Mexico host South Africa in June 11 opener; 104-game tournament ends at MetLife Stadium in New Jersey on Sunday July 19; England and Scotland are part of the 48-team tournament",
+          "public_claim_eligible": true,
+          "value": "104",
+          "unit": "matches",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "104-game tournament ends at MetLife Stadium in New Jersey on Sunday July 19"
+        },
+        {
+          "claim_id": "src_33089_004",
+          "text": "The tournament spans 37 days.",
+          "claim_type": "metric",
+          "claim_topic": "event_schedule",
+          "source_ids": [
+            "src_33089"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "stat_grid",
+            "key_facts"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "With all 48 teams now qualified for the 2026 World Cup, here's your day-by-day breakdown of the 37-day tournament, which kicks off in Mexico on June 11 with 103 matches leading up to the World Cup final at the MetLife Stadium on July 19.",
+          "public_claim_eligible": true,
+          "value": "37",
+          "unit": "days",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "day-by-day breakdown of the 37-day tournament"
+        },
+        {
+          "claim_id": "src_33089_007",
+          "text": "England and Scotland both qualified for the 2026 World Cup.",
+          "claim_type": "entity",
+          "claim_topic": "participants",
+          "source_ids": [
+            "src_33089",
+            "src_11340"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "entity_list",
+            "key_facts"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "Full World Cup 2026 fixture schedule in Mexico, USA and Canada with UK kick-off times; Mexico host South Africa in June 11 opener; 104-game tournament ends at MetLife Stadium in New Jersey on Sunday July 19; England and Scotland are part of the 48-team tournament",
+          "public_claim_eligible": true,
+          "entity_name": "England and Scotland",
+          "entity_role": "qualified teams in the 2026 World Cup"
+        },
+        {
+          "claim_id": "src_98449_004",
+          "text": "This is the first time a World Cup has been hosted by three nations",
+          "claim_type": "status",
+          "claim_topic": "history",
+          "source_ids": [
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "It is the first time a World Cup has been hosted by three nations.",
+          "public_claim_eligible": true,
+          "status": "first time a World Cup has been hosted by three nations",
+          "observed_at": null,
+          "source_evidence": null
+        },
+        {
+          "claim_id": "src_98449_006",
+          "text": "The prize money for winning the 2026 World Cup is $50 million",
+          "claim_type": "metric",
+          "claim_topic": "pricing",
+          "source_ids": [
+            "src_98449"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "- Winners: $50m (£37.5m)",
+          "public_claim_eligible": true,
+          "value": "50",
+          "unit": "million USD",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "Winners: $50m"
+        },
+        {
+          "claim_id": "src_98449_007",
+          "text": "The prize money for the 2026 World Cup was confirmed at a FIFA Council meeting in Doha on December 17",
+          "claim_type": "date",
+          "claim_topic": "pricing",
+          "source_ids": [
+            "src_98449"
+          ],
+          "confidence": "medium",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "The prize money for the 2026 World Cup was confirmed at a FIFA Council meeting in Doha on December 17.",
+          "public_claim_eligible": true,
+          "date_value": "2025-12-17T00:00:00Z"
+        },
+        {
+          "claim_id": "date_6730",
+          "text": "June 11",
+          "claim_type": "date",
+          "claim_topic": "other",
+          "source_ids": [
+            "src_03974"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "",
+          "public_claim_eligible": false,
+          "date_value": "2026-06-11T00:00:00Z"
+        }
+      ],
+      "contradictions": [],
+      "unresolved_questions": [],
+      "last_updated": "2026-05-17T01:33:03.961674Z"
+    }
   }
 }

@@ -7,6 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.headline }}</title>
   {% if page.deck %}<meta name="description" content="{{ page.deck }}">{% endif %}
+  <meta property="og:title" content="{{ page.headline }}">
+  {% if page.deck %}<meta property="og:description" content="{{ page.deck }}">{% endif %}
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.headline }}">
+  {% if page.deck %}<meta name="twitter:description" content="{{ page.deck }}">{% endif %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>📄</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=IBM+Plex+Mono:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
   <style>
 {% include "themes/" ~ recipe.theme ~ ".css" %}
 {% include "themes/_base.css" %}
@@ -69,7 +79,7 @@
       <ul class="sources-list">
         {% for source in sources_for_footer %}
         <li>
-          <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>
+          {% if source.url %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>{% else %}<span>{{ source.title }}</span>{% endif %}
           <div class="meta">
             <span class="pub{% if source.is_official %} official{% endif %}">{{ source.publisher or source.publisher_short }}</span>
             {% if source.published_at %} · <span>{{ source.published_at }}</span>{% endif %}
@@ -101,8 +111,10 @@ section order: {{ recipe.section_order | map(attribute="value") | join(", ") }}
 QA failed gates: {{ qa_summary.failed_gates | join(", ") or "(none)" }}
 QA repair actions: {{ qa_summary.repair_actions | join(", ") or "(none)" }}
 QA average score: {{ "%.2f" | format(qa_summary.average_score) }}
-sources: {{ sources_for_footer | length }}
-claims: {{ (claim_lookup_by_id or {}) | length }}</pre>
+sources: {{ sources_for_footer | length }} ({{ source_roles_summary }})
+claims: {{ (claim_lookup_by_id or {}) | length }} ({{ public_claims_count }} public-eligible)
+contradictions: {% if contradictions_debug %}{% for c in contradictions_debug %}
+  #{{ loop.index0 }}: {{ c.resolution }} — {{ c.topic }} | A={{ c.claim_a }} B={{ c.claim_b }}{% endfor %}{% else %}(none){% endif %}</pre>
     </section>
     {% endif %}
   </main>

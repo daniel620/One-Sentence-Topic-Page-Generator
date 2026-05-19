@@ -1,0 +1,180 @@
+{
+  "event_type": "tech_launch",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "OpenAI Launches GPT-5.5 Instant as New Default ChatGPT Model",
+  "deck": "Faster foundation model replaces GPT-5.3 Instant, emphasizing speed and security testing through trusted partnerships.",
+  "summary": "On May 5, 2026, OpenAI released GPT-5.5 Instant, a new foundation model that immediately replaced GPT-5.3 Instant as the default ChatGPT experience. The launch follows OpenAI's rigorous safety evaluation framework, which included feedback from nearly 200 trusted early-access partners and targeted testing for advanced cybersecurity capabilities. This transition continues OpenAI's pattern of model updates, following the February 2026 deprecation of GPT-4o.",
+  "urgency_label": "Rolled out",
+  "as_of_label": "As of May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Launch Date",
+      "value": "May 5, 2026",
+      "hint": null,
+      "claim_id": "src_45589_004"
+    },
+    {
+      "label": "Model Name",
+      "value": "GPT-5.5 Instant",
+      "hint": null,
+      "claim_id": "src_45014_000"
+    },
+    {
+      "label": "Safety Testing",
+      "value": "Nearly 200 trusted early-access partners",
+      "hint": null,
+      "claim_id": "src_30214_006"
+    },
+    {
+      "label": "Replaces",
+      "value": "GPT-5.3 Instant (default model)",
+      "hint": null,
+      "claim_id": "src_45014_000"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "OpenAI",
+      "role": "Developer and publisher of GPT-5.5 Instant"
+    },
+    {
+      "name": "GPT-5.5 Instant",
+      "role": "New default foundation model for ChatGPT"
+    },
+    {
+      "name": "ChatGPT",
+      "role": "Consumer product powered by GPT-5.5 Instant"
+    },
+    {
+      "name": "CVE-Bench",
+      "role": "Security benchmark for vulnerability testing"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "February 2026",
+      "title": "GPT-4o Deprecated",
+      "detail": "OpenAI deprecated GPT-4o despite user outcry, continuing its model transition strategy."
+    },
+    {
+      "date_label": "May 5, 2026",
+      "title": "GPT-5.5 Instant Launched",
+      "detail": "OpenAI announced GPT-5.5 Instant as the new default ChatGPT model, replacing GPT-5.3 Instant."
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Model Safety & Testing Metrics",
+      "summary": "OpenAI subjected GPT-5.5 Instant to comprehensive safety evaluations before public release.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Early-Access Partners",
+          "value": "Nearly 200 trusted partners provided feedback",
+          "detail": "OpenAI worked with internal and external red-teamers, adding targeted testing for advanced cybersecurity and biology capabilities.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_30214_006"
+        },
+        {
+          "label": "CVE-Bench Version",
+          "value": "Version 1.0",
+          "detail": "The evaluation used CVE-Bench version 1.0, focusing on vulnerabilities in content-management systems, AI/ML apps, business-management tools, and web infrastructure.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31210_001"
+        }
+      ]
+    },
+    {
+      "component_type": "comparison_table",
+      "title": "Security Testing Framework",
+      "summary": "GPT-5.5 Instant underwent specialized cybersecurity evaluations using industry-standard benchmarks.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "CVE-Bench Benchmark",
+          "value": "Tasks models with identifying and exploiting real-world web-application vulnerabilities in a sandbox environment",
+          "detail": "CVE-Bench is a specialized benchmark designed to test AI models' ability to find and exploit genuine security flaws under controlled conditions.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31210_000"
+        },
+        {
+          "label": "Evaluation Scope",
+          "value": "Version 1.0 of CVE-Bench",
+          "detail": "Testing covered content-management systems, AI/ML applications, business-management tools, operational-monitoring systems, and web infrastructure libraries.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_31210_001"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Next Steps for Users",
+      "summary": "ChatGPT users will automatically access GPT-5.5 Instant. Developers and enterprise customers can explore official documentation.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Read the Official Announcement",
+          "value": "Learn about GPT-5.5 Instant features and capabilities",
+          "detail": null,
+          "link_label": "Visit OpenAI Blog",
+          "link_url": "https://openai.com/index/gpt-5-5-instant/",
+          "claim_id": null
+        },
+        {
+          "label": "Review Safety Documentation",
+          "value": "Explore deployment safety measures and testing results",
+          "detail": null,
+          "link_label": "View Safety Report",
+          "link_url": "https://deploymentsafety.openai.com/gpt-5-5-instant",
+          "claim_id": null
+        },
+        {
+          "label": "Understand the GPT-5.5 Family",
+          "value": "Compare GPT-5.5 Instant with other models in the series",
+          "detail": null,
+          "link_label": "Read Model Overview",
+          "link_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T05:32:56.512238Z"
+}

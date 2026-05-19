@@ -1,0 +1,266 @@
+{
+  "event_type": "tech_launch",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "OpenAI Releases GPT-5.5 Instant as New Default ChatGPT Model",
+  "deck": "The faster, smarter model replaces GPT-5.3 Instant and brings improved intelligence while matching GPT-5.4 latency.",
+  "summary": "OpenAI launched GPT-5.5 Instant in early May 2026, making it the default model for all logged-in ChatGPT users. The new model delivers GPT-5.5-level intelligence at GPT-5.4 speed, with a 1,050,000-token context window and knowledge through December 2025. Free users get 10 messages every 5 hours, while the full GPT-5.5 and Pro variants remain available to paid subscribers.",
+  "urgency_label": "Rolled out",
+  "as_of_label": "As of May 19, 2026",
+  "key_facts": [
+    {
+      "label": "Default model",
+      "value": "GPT-5.5 Instant for all logged-in users",
+      "hint": null,
+      "claim_id": "src_73922_000"
+    },
+    {
+      "label": "Context window",
+      "value": "1,050,000 tokens",
+      "hint": null,
+      "claim_id": "src_92310_001"
+    },
+    {
+      "label": "Free tier limit",
+      "value": "10 messages every 5 hours",
+      "hint": null,
+      "claim_id": "src_73922_002"
+    },
+    {
+      "label": "API availability",
+      "value": "Since April 24, 2026",
+      "hint": null,
+      "claim_id": "src_87646_001"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "OpenAI",
+      "role": "Developer and publisher of GPT-5.5 models"
+    },
+    {
+      "name": "GPT-5.5 Instant",
+      "role": "New default ChatGPT model"
+    },
+    {
+      "name": "ChatGPT",
+      "role": "Conversational AI platform"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "April 2026",
+      "title": "GPT-5.5 released",
+      "detail": "OpenAI launched the GPT-5.5 model family"
+    },
+    {
+      "date_label": "April 24, 2026",
+      "title": "API access opened",
+      "detail": "GPT-5.5 and GPT-5.5 Pro became available via API"
+    },
+    {
+      "date_label": "Early May 2026",
+      "title": "GPT-5.5 Instant becomes default",
+      "detail": "Replaced GPT-5.3 Instant as the standard ChatGPT model"
+    },
+    {
+      "date_label": "May 15, 2026",
+      "title": "Personal finance experience launched",
+      "detail": "OpenAI introduced personal finance features in ChatGPT"
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Technical Specifications",
+      "summary": "Core capabilities and constraints of GPT-5.5 Instant",
+      "columns": 2,
+      "items": [
+        {
+          "label": "Context window",
+          "value": "1,050,000 tokens",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_92310_001"
+        },
+        {
+          "label": "Knowledge cutoff",
+          "value": "December 01, 2025",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_92310_003"
+        },
+        {
+          "label": "API input pricing",
+          "value": "$5.00 per 1M tokens",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_92310_004"
+        },
+        {
+          "label": "Per-token latency",
+          "value": "Matches GPT-5.4 in real-world serving",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87646_002"
+        },
+        {
+          "label": "Safety testing partners",
+          "value": "Nearly 200 trusted early-access partners",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87646_003"
+        }
+      ]
+    },
+    {
+      "component_type": "comparison_table",
+      "title": "GPT-5.5 Model Variants",
+      "summary": "OpenAI offers three GPT-5.5 variants optimized for different use cases",
+      "columns": 1,
+      "items": [
+        {
+          "label": "GPT-5.5 Instant",
+          "value": "Fast responses for everyday questions; default for all logged-in users",
+          "detail": "Available to everyone including free tier users",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_73922_001"
+        },
+        {
+          "label": "GPT-5.5 Thinking",
+          "value": "Deeper reasoning for more complex tasks",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_73922_001"
+        },
+        {
+          "label": "GPT-5.5 Pro",
+          "value": "Research-grade intelligence",
+          "detail": "Only available to Pro, Business, Enterprise and Edu plans",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_73922_001"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "How to Access GPT-5.5",
+      "summary": "Get started with the new model in ChatGPT or via API",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Use GPT-5.5 Instant in ChatGPT",
+          "value": "Log in to ChatGPT; GPT-5.5 Instant is now the default model for all users",
+          "detail": null,
+          "link_label": "Open ChatGPT",
+          "link_url": "https://help.openai.com/en/articles/11909943-gpt-53-and-54-in-chatgpt",
+          "claim_id": "src_73922_000"
+        },
+        {
+          "label": "Free tier usage limits",
+          "value": "Free accounts can send up to 10 messages with GPT-5.5 every 5 hours",
+          "detail": null,
+          "link_label": "Learn more",
+          "link_url": "https://help.openai.com/en/articles/11909943-gpt-53-and-54-in-chatgpt",
+          "claim_id": "src_73922_002"
+        },
+        {
+          "label": "Access via API",
+          "value": "GPT-5.5 and GPT-5.5 Pro available in the API since April 24, 2026",
+          "detail": null,
+          "link_label": "API documentation",
+          "link_url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+          "claim_id": "src_87646_001"
+        },
+        {
+          "label": "Upgrade for Pro variant",
+          "value": "GPT-5.5 Pro requires Pro, Business, Enterprise or Edu plans",
+          "detail": null,
+          "link_label": "View plans",
+          "link_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "claim_id": "src_73922_005"
+        }
+      ]
+    },
+    {
+      "component_type": "source_list",
+      "title": "Official Sources",
+      "summary": "Primary documentation and announcements from OpenAI",
+      "columns": 1,
+      "items": [
+        {
+          "label": "OpenAI help documentation",
+          "value": "GPT-5.3 and 5.4 in ChatGPT guide",
+          "detail": null,
+          "link_label": "Read guide",
+          "link_url": "https://help.openai.com/en/articles/11909943-gpt-53-and-54-in-chatgpt",
+          "claim_id": null
+        },
+        {
+          "label": "Official announcement",
+          "value": "Introducing GPT-5.5",
+          "detail": null,
+          "link_label": "View announcement",
+          "link_url": "https://openai.com/index/introducing-gpt-5-5/",
+          "claim_id": null
+        },
+        {
+          "label": "API reference",
+          "value": "GPT-5.5 model documentation",
+          "detail": null,
+          "link_label": "API docs",
+          "link_url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+          "claim_id": null
+        },
+        {
+          "label": "Release notes",
+          "value": "ChatGPT product updates",
+          "detail": null,
+          "link_label": "View changelog",
+          "link_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-19T07:01:11.666799Z"
+}

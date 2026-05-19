@@ -1,0 +1,8 @@
+{
+  "sentence": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+  "status": "complete",
+  "confidence": "medium",
+  "search_rounds": 1,
+  "qa_passed": true,
+  "qa_score": 0.733
+}

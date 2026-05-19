@@ -1,0 +1,24 @@
+{
+  "preliminary_event_type": "sports_tournament",
+  "freshness_need": "pre-event coverage, weekly updates until start, then live during tournament",
+  "search_intents": [
+    "Wimbledon 2026 schedule",
+    "Wimbledon 2026 draw seedings",
+    "Wimbledon 2026 ticket information",
+    "Wimbledon Championships 2026 defending champions",
+    "All England Club Wimbledon June 2026",
+    "Wimbledon 2026 players entry list"
+  ],
+  "required_source_types": [
+    "official",
+    "primary_data",
+    "reputable_media"
+  ],
+  "unknowns": [
+    "Tournament duration and end date",
+    "Whether draw has been released yet",
+    "Current seeded players and entry list status",
+    "Defending champions from 2025 edition",
+    "Any format or rule changes for 2026"
+  ]
+}

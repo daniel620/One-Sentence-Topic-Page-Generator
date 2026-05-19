@@ -1,0 +1,24 @@
+{
+  "preliminary_event_type": "sports_tournament",
+  "freshness_need": "pre-event (~3 weeks out); daily updates on schedules, rosters, venues",
+  "search_intents": [
+    "2026 FIFA World Cup opening ceremony Estadio Azteca June 11",
+    "2026 World Cup opening match teams schedule",
+    "FIFA World Cup 2026 host cities venues",
+    "2026 World Cup groups draw results",
+    "FIFA 2026 qualified teams roster",
+    "Mexico USA Canada World Cup 2026 fixtures"
+  ],
+  "required_source_types": [
+    "official",
+    "reputable_media",
+    "primary_data"
+  ],
+  "unknowns": [
+    "Which two teams play in the opening match at Estadio Azteca",
+    "Complete match schedule and group stage fixtures",
+    "Official opening ceremony details and performers",
+    "Final roster confirmations for all 48 participating nations",
+    "Whether this is confirmed as the first match or if concurrent matches exist"
+  ]
+}

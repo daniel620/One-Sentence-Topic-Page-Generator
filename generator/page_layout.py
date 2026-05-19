@@ -139,7 +139,7 @@ _RECIPES: dict[tuple[EventType, EventStatus], PageRecipe] = {
         pinned_top=(ComponentType.LIVE_TRACKER,),
     ),
     (EventType.LIVE_EVENT, EventStatus.CONCLUDED): _recipe(
-        EventType.LIVE_EVENT, "delta", "editorial", "Wrapped",
+        EventType.LIVE_EVENT, "delta", "live-dark", "Wrapped",
         section_order=(
             ComponentType.STAT_GRID,
             ComponentType.TIMELINE,
@@ -197,6 +197,27 @@ _RECIPES: dict[tuple[EventType, EventStatus], PageRecipe] = {
         ),
         pinned_top=(ComponentType.LIVE_TRACKER,),
     ),
+    # Economic/political events read as analysis pieces. Delta hero, editorial theme.
+    (EventType.ECONOMIC_EVENT, EventStatus.CONCLUDED): _recipe(
+        EventType.ECONOMIC_EVENT, "delta", "editorial", "Analysis",
+        section_order=(
+            ComponentType.COMPARISON_TABLE,
+            ComponentType.STAT_GRID,
+            ComponentType.TIMELINE,
+            ComponentType.ACTION_LIST,
+            ComponentType.ENTITY_LIST,
+        ),
+    ),
+    (EventType.ECONOMIC_EVENT, EventStatus.DEVELOPING): _recipe(
+        EventType.ECONOMIC_EVENT, "delta", "editorial", "Developing",
+        section_order=(
+            ComponentType.LIVE_TRACKER,
+            ComponentType.COMPARISON_TABLE,
+            ComponentType.STAT_GRID,
+            ComponentType.TIMELINE,
+            ComponentType.ACTION_LIST,
+        ),
+    ),
     # Disasters lead with the alert and safety actions.
     (EventType.DISASTER, EventStatus.DEVELOPING): _recipe(
         EventType.DISASTER, "alert", "alert", "Developing",
@@ -217,6 +238,7 @@ _FALLBACK: dict[EventType, PageRecipe] = {
     EventType.CULTURAL_EVENT: _RECIPES[(EventType.CULTURAL_EVENT, EventStatus.UPCOMING)],
     EventType.SPORTS_TOURNAMENT: _RECIPES[(EventType.SPORTS_TOURNAMENT, EventStatus.UPCOMING)],
     EventType.DISASTER: _RECIPES[(EventType.DISASTER, EventStatus.DEVELOPING)],
+    EventType.ECONOMIC_EVENT: _RECIPES[(EventType.ECONOMIC_EVENT, EventStatus.CONCLUDED)],
 }
 
 

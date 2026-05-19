@@ -1,0 +1,164 @@
+{
+  "event_type": "tech_launch",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "No Tesla Q2 2026 Earnings Exist: Quarter Still In Progress",
+  "deck": "False claims circulate about Tesla Q2 2026 results showing 45% margin improvement, but the quarter has not concluded.",
+  "summary": "A fabricated claim alleges Tesla released Q2 2026 earnings with a 45% margin improvement. This is impossible: Q2 2026 runs through June 30, 2026, and today is May 17, 2026. No legitimate earnings report exists for an incomplete quarter. Tesla's most recent authentic earnings were for Q1 2026, released in April 2026.",
+  "urgency_label": "Misinformation alert",
+  "as_of_label": "As of May 17, 2026",
+  "key_facts": [],
+  "key_entities": [
+    {
+      "name": "Tesla",
+      "role": "Electric vehicle manufacturer subject of false earnings claim"
+    },
+    {
+      "name": "Q2 2026",
+      "role": "Financial quarter ending June 30, 2026"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "April 2026",
+      "title": "Tesla released Q1 2026 earnings",
+      "detail": "Most recent legitimate quarterly results"
+    },
+    {
+      "date_label": "May 17, 2026",
+      "title": "False Q2 2026 earnings claim emerges",
+      "detail": "Fabricated report circulates claiming 45% margin improvement"
+    },
+    {
+      "date_label": "June 30, 2026",
+      "title": "Q2 2026 quarter ends",
+      "detail": "Earliest possible date for authentic Q2 data"
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Timeline Facts",
+      "summary": "Key dates confirming Q2 2026 earnings cannot exist yet.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Current date",
+          "value": "May 17, 2026 — Q2 2026 still in progress",
+          "detail": "Q2 runs January through June 30; no results can be released before quarter end",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "comparison_table",
+      "title": "False Claim vs. Reality",
+      "summary": "The circulating claim contradicts the calendar and standard financial reporting practices.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "False claim",
+          "value": "Tesla released Q2 2026 earnings with 45% margin improvement",
+          "detail": "This claim is fabricated and logistically impossible",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Reality",
+          "value": "Q2 2026 ends June 30, 2026",
+          "detail": "Earnings reports are published weeks after quarter close, not during the quarter",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Latest real Tesla earnings",
+          "value": "Q1 2026 results released April 2026",
+          "detail": "Tesla's most recent legitimate quarterly financial disclosure",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "How to Verify Earnings Claims",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Check Tesla Investor Relations",
+          "value": "Visit Tesla's official IR site for authentic earnings announcements",
+          "detail": null,
+          "link_label": "Tesla IR",
+          "link_url": "https://ir.tesla.com/",
+          "claim_id": null
+        },
+        {
+          "label": "Verify quarter end dates",
+          "value": "Confirm the financial quarter has concluded before any earnings can be reported",
+          "detail": "Q2 ends June 30; Q3 ends September 30; Q4 ends December 31",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Cross-check reputable financial news",
+          "value": "Consult established financial media outlets for earnings confirmation",
+          "detail": "Bloomberg, Reuters, Wall Street Journal report verified earnings",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Section 0 item 0: numeric fact 'Current date May 17, 2026 — Q2 2026 still in progress Q2 runs January through June 30; no results can be released before quarter end' has no claim_id",
+        "Section 1 item 0: numeric fact 'False claim Tesla released Q2 2026 earnings with 45% margin improvement This claim is fabricated and logistically impossible' has no claim_id",
+        "Section 1 item 1: numeric fact 'Reality Q2 2026 ends June 30, 2026 Earnings reports are published weeks after quarter close, not during the quarter' has no claim_id",
+        "Section 1 item 2: numeric fact 'Latest real Tesla earnings Q1 2026 results released April 2026 Tesla's most recent legitimate quarterly financial disclosure' has no claim_id"
+      ],
+      "repair_actions": [
+        "missing_claim_id"
+      ],
+      "confidence_score": 0.6,
+      "remediation_suggestions": [
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T06:04:41.211191Z"
+}

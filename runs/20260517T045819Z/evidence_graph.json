@@ -1,0 +1,686 @@
+{
+  "event_hypothesis": "OpenAI rolled out GPT-5.5 Instant as the default model in ChatGPT in May 2026.",
+  "sources": [
+    {
+      "source_id": "src_91046",
+      "url": "https://community.openai.com/t/gpt-5-5-instant-on-api-just-via-chat-latest-pricing/1380410",
+      "title": "GPT 5.5 Instant on API .. just via chat-latest? Pricing? - API - OpenAI Developer Community",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7857142857142857,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Official OpenAI forum, but community discussion thread asking questions about AP)"
+    },
+    {
+      "source_id": "src_10420",
+      "url": "https://help.openai.com/en/articles/11909943-gpt-53-and-54-in-chatgpt",
+      "title": "GPT-5.5 in ChatGPT | OpenAI Help Center",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7857142857142857,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI Help Center documentation about GPT-5.5 in ChatGPT. Primary authoritative source."
+    },
+    {
+      "source_id": "src_76370",
+      "url": "https://deploymentsafety.openai.com/gpt-5-5-instant",
+      "title": "GPT-5.5 Instant System Card - Deployment Safety Hub - OpenAI",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6428571428571429,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI System Card - primary technical documentation from the source."
+    },
+    {
+      "source_id": "src_18944",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "title": "GPT-5.5 Model | OpenAI API",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI API documentation for GPT-5.5 model. Primary authoritative source."
+    },
+    {
+      "source_id": "src_47820",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized | OpenAI",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.42857142857142855,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI announcement page for GPT-5.5 Instant. Primary source for the launch."
+    },
+    {
+      "source_id": "src_33598",
+      "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT",
+      "publisher": "TechCrunch",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.9285714285714286,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: TechCrunch - well-known reputable tech publication directly covering the GPT-5.5 Instant release."
+    },
+    {
+      "source_id": "src_73952",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "title": "Introducing GPT-5.5 - OpenAI",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.42857142857142855,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI announcement introducing GPT-5.5. Primary authoritative source."
+    },
+    {
+      "source_id": "src_87518",
+      "url": "https://deploymentsafety.openai.com/gpt-5-5",
+      "title": "GPT-5.5 System Card - Deployment Safety Hub - OpenAI",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.42857142857142855,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official OpenAI System Card for GPT-5.5. Primary technical documentation."
+    },
+    {
+      "source_id": "src_95897",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "title": "Pricing | OpenAI API",
+      "publisher": "OpenAI",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.35714285714285715,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Official OpenAI pricing page - relevant for API context but general reference, n)"
+    },
+    {
+      "source_id": "src_48517",
+      "url": "https://www.axios.com/2026/05/05/openai-chatgpt-update-default-model",
+      "title": "OpenAI updates ChatGPT Instant with GPT 5.5 - Axios",
+      "publisher": "Axios",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7857142857142857,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Axios - reputable news outlet directly covering the ChatGPT update with GPT 5.5."
+    },
+    {
+      "source_id": "src_81825",
+      "url": "https://mashable.com/article/openai-chatgpt-55-instant-out-now",
+      "title": "OpenAI rolls out ChatGPT 5.5 Instant as the new default model for ...",
+      "publisher": "Mashable",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Mashable - established reputable media outlet covering the GPT-5.5 Instant rollout."
+    },
+    {
+      "source_id": "src_48529",
+      "url": "https://www.reddit.com/r/CompareClaw/comments/1t91do4/gpt55_instant_is_now_chatgpts_default_model_what/",
+      "title": "GPT-5.5 Instant Is Now ChatGPT's Default Model: What Changed on ...",
+      "publisher": "Reddit",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Reddit social media post. Useful for sentiment but not suitable for public citat)"
+    },
+    {
+      "source_id": "src_05336",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1t704ip/gpt55_instant_might_be_openais_most_important/",
+      "title": "GPT-5.5 Instant might be OpenAI’s most important update yet and almost nobody is talking about why : r/OpenAI",
+      "publisher": "Reddit",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7857142857142857,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Reddit social media discussion. User-generated content, not appropriate for fact)"
+    },
+    {
+      "source_id": "src_02472",
+      "url": "https://www.progressiverobot.com/2026/05/07/gpt-5-5-instant/",
+      "title": "GPT-5.5 Instant: 9 Powerful ChatGPT Upgrades Explained",
+      "publisher": "Progressiverobot",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.9285714285714286,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Progressiverobot - unknown publisher, appears to be explainer/aggregation conten)"
+    },
+    {
+      "source_id": "src_88076",
+      "url": "https://www.c-sharpcorner.com/news/openai-releases-gpt55-instant-the-smarter-concise-new-default-for-chatgpt",
+      "title": "OpenAI Releases GPT-5.5 Instant: The Smarter, Concise New Default for ChatGPT",
+      "publisher": "C-Sharpcorner",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (C-Sharpcorner - developer community site aggregating the news, not primary repor)"
+    },
+    {
+      "source_id": "src_55181",
+      "url": "https://tomorrowaccess.com/en/news/18772",
+      "title": "OpenAI Launches GPT-5.5 Instant as ChatGPT's New Default Model",
+      "publisher": "Tomorrowaccess",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8571428571428571,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Tomorrowaccess - unknown publisher, likely aggregating existing news coverage.)"
+    },
+    {
+      "source_id": "src_93492",
+      "url": "https://openrouter.ai/openai/gpt-5.5",
+      "title": "GPT-5.5 - API Pricing & Benchmarks | OpenRouter",
+      "publisher": "Openrouter",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6428571428571429,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (OpenRouter third-party API aggregator with pricing/benchmarks. Useful context bu)"
+    },
+    {
+      "source_id": "src_59141",
+      "url": "https://docsbot.ai/models/compare/gpt-5-5/gpt-5",
+      "title": "GPT-5.5 vs GPT‑5 - Detailed Performance & Feature Comparison",
+      "publisher": "Docsbot",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Docsbot comparison page - third-party tool site aggregating model comparisons, n)"
+    },
+    {
+      "source_id": "src_05559",
+      "url": "https://techjacksolutions.com/ai-brief/gpt-55-instant-api-what-the-reported-price-increase-and-memo/",
+      "title": "GPT-5.5 Instant API: Pricing & Memory Guide 2025",
+      "publisher": "Techjacksolutions",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5714285714285714,
+      "bias_or_limitation": null,
+      "ai_source_role": "background_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=background_only, det=debug_only → debug_only (Techjacksolutions - unknown publisher with guide content, appears to be SEO-orie)"
+    },
+    {
+      "source_id": "src_33946",
+      "url": "https://artificialanalysis.ai/models/comparisons/gpt-5-5-medium-vs-gpt-5",
+      "title": "GPT-5.5 (medium) vs GPT-5 (high): Model Comparison",
+      "publisher": "Artificialanalysis",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Artificialanalysis - specialist model comparison site, useful technical context )"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "src_76370_000",
+      "text": "CVE-Bench is a benchmark that tasks models with identifying and exploiting real-world web-application vulnerabilities in a sandbox environment.",
+      "claim_type": "entity",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_76370",
+        "src_18944",
+        "src_87518"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "CVE-Bench is a benchmark that tasks models with identifying and exploiting real-world web-application vulnerabilities in a sandbox environment.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "CVE-Bench",
+      "entity_role": "benchmark for testing models on identifying and exploiting web-application vulnerabilities"
+    },
+    {
+      "claim_id": "src_76370_001",
+      "text": "The evaluation used version 1.0 of CVE-Bench.",
+      "claim_type": "metric",
+      "claim_topic": "metrics",
+      "source_ids": [
+        "src_76370",
+        "src_33598",
+        "src_81825"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "stat_grid",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "We used CVE-Bench (version 1.0) with a focus on vulnerabilities covering content-management systems, AI/ML apps, business-management tools, operational-monitoring systems, web infrastructure, libraries/packages, e-commerce platforms, and a small number of computing-management, mail-server, and web-portal applications; due to some infrastructure challenges porting the eval, we only ran 34 out of the 40 benchmark challenges.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "1.0",
+      "unit": "version",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "We used CVE-Bench (version 1.0)"
+    },
+    {
+      "claim_id": "src_76370_003",
+      "text": "The benchmark was run using the zero-day prompt configuration where the model is given a general task description rather than a description of the vulnerability.",
+      "claim_type": "status",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_76370",
+        "src_87518",
+        "src_81825"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "We ran the benchmark using the zero-day prompt configuration, where the model is given a general task description of what it needs to do, as opposed to the one-day configuration, where the model is given a description of the vulnerability to exploit.",
+      "public_claim_eligible": false,
+      "evidence_grade": "full_text_verified",
+      "status": "zero-day prompt configuration",
+      "observed_at": null,
+      "source_evidence": "We ran the benchmark using the zero-day prompt configuration"
+    },
+    {
+      "claim_id": "src_18944_001",
+      "text": "GPT-5.5 has a 1,050,000 token context window",
+      "claim_type": "metric",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_18944"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "1,050,000 context window",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "1,050,000",
+      "unit": "tokens",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "1,050,000 context window"
+    },
+    {
+      "claim_id": "src_18944_003",
+      "text": "GPT-5.5 has a knowledge cutoff date of December 1, 2025",
+      "claim_type": "date",
+      "claim_topic": "capabilities",
+      "source_ids": [
+        "src_18944"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Dec 01, 2025 knowledge cutoff",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "date_value": "2025-12-01T00:00:00Z"
+    },
+    {
+      "claim_id": "src_18944_004",
+      "text": "GPT-5.5 input tokens are priced at $5.00 per 1M tokens",
+      "claim_type": "metric",
+      "claim_topic": "pricing",
+      "source_ids": [
+        "src_18944"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Input\n$5.00",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "5.00",
+      "unit": "USD per 1M tokens",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "Input $5.00"
+    },
+    {
+      "claim_id": "src_18944_007",
+      "text": "For prompts with >272K input tokens, GPT-5.5 is priced at 2x input and 1.5x output for the full session",
+      "claim_type": "status",
+      "claim_topic": "pricing",
+      "source_ids": [
+        "src_18944"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "For GPT-5.5, prompts with >272K input tokens are priced at 2x input and 1.5x output for the full session for standard, batch, and flex.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "pricing increased for large prompts",
+      "observed_at": null,
+      "source_evidence": "For GPT-5.5, prompts with >272K input tokens are priced at 2x input and 1.5x output for the full session for standard, batch, and flex."
+    },
+    {
+      "claim_id": "src_33598_000",
+      "text": "OpenAI released a new foundation model called GPT-5.5 Instant on Tuesday.",
+      "claim_type": "entity",
+      "claim_topic": "rollout_status",
+      "source_ids": [
+        "src_33598"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "On Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "GPT-5.5 Instant",
+      "entity_role": "new foundation model released by OpenAI"
+    },
+    {
+      "claim_id": "src_33598_001",
+      "text": "GPT-5.5 Instant will replace GPT-5.3 Instant as the default ChatGPT model.",
+      "claim_type": "status",
+      "claim_topic": "rollout_status",
+      "source_ids": [
+        "src_33598",
+        "src_81825"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "comparison_table"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "On Tuesday, OpenAI released a new foundation model called GPT-5.5 Instant, which will replace GPT-5.3 Instant as the default ChatGPT model.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "replacing GPT-5.3 Instant as default",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_33598_007",
+      "text": "GPT-4o was deprecated in February 2026.",
+      "claim_type": "date",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_33598",
+        "src_81825"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Despite the outcry, GPT-4o was deprecated in February 2026.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "date_value": "2026-02-01T00:00:00Z"
+    },
+    {
+      "claim_id": "src_87518_002",
+      "text": "Nearly 200 early-access partners provided feedback on real use cases before GPT-5.5's release.",
+      "claim_type": "metric",
+      "claim_topic": "rollout_status",
+      "source_ids": [
+        "src_87518"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "stat_grid",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "We subjected the model to our full suite of predeployment safety evaluations and our Preparedness Framework, including targeted red-teaming for advanced cybersecurity and biology capabilities, and collected feedback on real use cases from nearly 200 early-access partners before release.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "200",
+      "unit": "early-access partners",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "collected feedback on real use cases from nearly 200 early-access partners before release"
+    },
+    {
+      "claim_id": "src_87518_003",
+      "text": "GPT-5.5 is being released with OpenAI's strongest set of safeguards to date, designed to reduce misuse while preserving legitimate, beneficial uses of advanced capabilities.",
+      "claim_type": "status",
+      "claim_topic": "safety",
+      "source_ids": [
+        "src_87518"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "We are releasing GPT-5.5 with our strongest set of safeguards to date, designed to reduce misuse while preserving legitimate, beneficial uses of advanced capabilities.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "released with strongest safeguards to date",
+      "observed_at": null,
+      "source_evidence": null
+    },
+    {
+      "claim_id": "src_87518_005",
+      "text": "The system card was updated on April 24, 2026 to include additional information about safeguards for GPT-5.5 and GPT-5.5 Pro deployment in the API.",
+      "claim_type": "date",
+      "claim_topic": "rollout_status",
+      "source_ids": [
+        "src_87518"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "timeline",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "This card was updated on April 24, 2026 to include additional information about safeguards for the deployment of GPT-5.5 and GPT-5.5 Pro in the API.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "date_value": "2026-04-24T00:00:00Z"
+    },
+    {
+      "claim_id": "src_81825_006",
+      "text": "Ziff Davis, Mashable's parent company, in April 2025 filed a lawsuit against OpenAI, alleging it infringed Ziff Davis copyrights in training and operating its AI systems",
+      "claim_type": "entity",
+      "claim_topic": "controversy",
+      "source_ids": [
+        "src_81825"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Disclosure: Ziff Davis, Mashable's parent company, in April 2025 filed a lawsuit against OpenAI, alleging it infringed Ziff Davis copyrights in training and operating its AI systems.",
+      "public_claim_eligible": false,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "Ziff Davis",
+      "entity_role": "filed lawsuit against OpenAI in April 2025 for copyright infringement"
+    },
+    {
+      "claim_id": "date_0319",
+      "text": "March 11, 2026",
+      "claim_type": "date",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_91046",
+        "src_02472",
+        "src_88076",
+        "src_55181",
+        "src_93492",
+        "src_59141",
+        "src_05559"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "evidence_grade": "weak_snippet",
+      "date_value": "2026-03-11T00:00:00Z"
+    },
+    {
+      "claim_id": "metric_4314",
+      "text": "10 %",
+      "claim_type": "metric",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_95897",
+        "src_48529",
+        "src_02472",
+        "src_88076",
+        "src_93492",
+        "src_59141",
+        "src_33946"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "evidence_grade": "weak_snippet",
+      "value": "10",
+      "unit": "%",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "Regional processing (data residency) endpoints are charged a 10% uplift for gpt-5.5, gpt-5.5-pro, gpt-5.4, gpt-5.4-mini, gpt-5.4-nano, and gpt-5.4-pro. See our Your"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "Event date",
+      "claim_a": "GPT-5.5 has a knowledge cutoff date of December 1, 2025",
+      "sources_a": [
+        "src_18944"
+      ],
+      "claim_b": "GPT-4o was deprecated in February 2026.",
+      "sources_b": [
+        "src_33598",
+        "src_81825"
+      ],
+      "resolution": "prefer_official",
+      "display_policy": "show_uncertainty_box",
+      "ai_resolution": "scope_difference",
+      "ai_resolution_reason": "Different models and different date types: GPT-5.5 knowledge cutoff vs GPT-4o deprecation date. Not the same fact."
+    }
+  ],
+  "unresolved_questions": [],
+  "last_updated": "2026-05-17T04:56:57.771185Z"
+}

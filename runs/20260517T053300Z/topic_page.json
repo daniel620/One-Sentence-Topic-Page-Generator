@@ -1,0 +1,250 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "2026 FIFA World Cup Opens June 11 in Mexico City",
+  "deck": "Estadio Azteca hosts the opening ceremony and first match as 48 nations compete across three countries in the tournament's most ambitious edition yet.",
+  "summary": "The 2026 FIFA World Cup kicks off on June 11, 2026 at Estadio Azteca in Mexico City with an opening ceremony at 11:30 local time, followed by the tournament's first match between Mexico and South Africa. The expanded tournament features 48 teams competing in 104 matches across 16 host cities in Canada, Mexico, and the United States, concluding with the final on July 19, 2026 at New York New Jersey Stadium.",
+  "urgency_label": "Opening in 25 days",
+  "as_of_label": "As of May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Opening Date",
+      "value": "June 11, 2026 at 11:30 local time",
+      "hint": null,
+      "claim_id": "src_83376_000"
+    },
+    {
+      "label": "Opening Venue",
+      "value": "Estadio Azteca, Mexico City",
+      "hint": null,
+      "claim_id": "src_83376_001"
+    },
+    {
+      "label": "Teams",
+      "value": "48 teams competing",
+      "hint": null,
+      "claim_id": "src_73186_000"
+    },
+    {
+      "label": "Total Matches",
+      "value": "104 matches across 16 host cities",
+      "hint": null,
+      "claim_id": "src_83376_004"
+    },
+    {
+      "label": "First Match",
+      "value": "Mexico vs South Africa",
+      "hint": null,
+      "claim_id": "src_83376_003"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Tournament organizer"
+    },
+    {
+      "name": "Estadio Azteca",
+      "role": "Opening ceremony and first match venue in Mexico City"
+    },
+    {
+      "name": "Mexico",
+      "role": "Opening match participant and co-host nation"
+    },
+    {
+      "name": "South Africa",
+      "role": "Opening match participant"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "June 11, 2026",
+      "title": "Opening Ceremony & First Match",
+      "detail": "Ceremony at 11:30 local time at Estadio Azteca, followed by Mexico vs South Africa"
+    },
+    {
+      "date_label": "July 19, 2026",
+      "title": "Tournament Final",
+      "detail": "Championship match at New York New Jersey Stadium"
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament by the Numbers",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Total Teams",
+          "value": "48 teams will compete",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_73186_000"
+        },
+        {
+          "label": "Total Matches",
+          "value": "104 matches across 16 Host Cities",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83376_004"
+        },
+        {
+          "label": "Host Venues",
+          "value": "16 venues across Canada, Mexico, and the United States",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_80630_001"
+        },
+        {
+          "label": "Tournament Format",
+          "value": "12 groups of four teams",
+          "detail": "Replacing the previous format of 32 teams in eight groups",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_88121_007"
+        },
+        {
+          "label": "Winner's Prize",
+          "value": "$50m in prize money",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_88121_005"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key Dates & Schedule",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Opening Ceremony",
+          "value": "June 11, 2026 at 11:30 local time in Mexico City",
+          "detail": "Fans should arrive early as the ceremony begins 90 minutes before kick-off",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83376_000"
+        },
+        {
+          "label": "Opening Match",
+          "value": "Mexico vs South Africa at Estadio Azteca",
+          "detail": "The first match of the tournament at the first stadium to host matches across three FIFA World Cups",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83376_003"
+        },
+        {
+          "label": "Tournament Final",
+          "value": "July 19, 2026 at New York New Jersey Stadium",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_96156_001"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Opening Ceremony Performers",
+      "summary": "Global music stars will perform at the opening ceremony, bringing the Official FIFA World Cup 2026 Album to life 90 minutes before the first match kicks off.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Confirmed Artists",
+          "value": "Alejandro Fernández, Belinda, Danny Ocean, J Balvin, Lila Downs, Los Ángeles Azules, Maná and Tyla",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83376_002"
+        },
+        {
+          "label": "Historic Venue",
+          "value": "Estadio Azteca - first stadium to host matches across three FIFA World Cups",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83376_007"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "How to Follow the World Cup",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official Match Schedule",
+          "value": "View complete fixtures, match dates, and results",
+          "detail": null,
+          "link_label": "See full schedule",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+          "claim_id": null
+        },
+        {
+          "label": "Host Cities & Venues",
+          "value": "Explore all 16 stadiums across North America",
+          "detail": null,
+          "link_label": "Browse venues",
+          "link_url": "https://fifaworldcup26.suites.fifa.com/venues/",
+          "claim_id": null
+        },
+        {
+          "label": "Tournament Information",
+          "value": "Learn about format, teams, and qualification",
+          "detail": null,
+          "link_label": "Tournament overview",
+          "link_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+          "claim_id": null
+        },
+        {
+          "label": "Opening Ceremony Details",
+          "value": "Full information about the Mexico City ceremony",
+          "detail": null,
+          "link_label": "Read more",
+          "link_url": "https://inside.fifa.com/media-releases/world-cup-2026-opening-ceremony-mexico-city",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T05:31:26.479504Z"
+}

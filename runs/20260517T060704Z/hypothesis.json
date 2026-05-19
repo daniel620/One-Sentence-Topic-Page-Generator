@@ -1,0 +1,24 @@
+{
+  "preliminary_event_type": "tech_launch",
+  "freshness_need": "Same-day to 48 hours; earnings reports are time-sensitive financial news",
+  "search_intents": [
+    "Tesla Q2 2026 earnings report",
+    "Tesla Q2 2026 financial results margin improvement",
+    "Tesla earnings call transcript Q2 2026",
+    "Tesla stock price reaction earnings May 2026",
+    "Tesla 45% margin improvement analysis",
+    "Tesla Q2 2026 revenue profit breakdown"
+  ],
+  "required_source_types": [
+    "official",
+    "primary_data",
+    "reputable_media"
+  ],
+  "unknowns": [
+    "Has Tesla officially released Q2 2026 earnings yet, or is this a leak/rumor? Q2 2026 has not ended yet (today is May 17, 2026)",
+    "Is the 45% margin improvement figure gross margin, operating margin, or net margin?",
+    "What is the comparison baseline - Q2 2025, Q1 2026, or another period?",
+    "Has this been filed with SEC (8-K, 10-Q) or is this preliminary guidance?",
+    "What are the actual revenue and profit figures, not just margin percentages?"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "decision": "evidence_limited",
+  "reasoning": "The evidence shows 8 public-eligible claims with strong verification (7 full_text_verified, 1 reputable_snippet), which meets the ≥5 threshold. However, there is a critical gap: **zero official/primary sources**. All evidence comes from media sources (reputable_snippet and full_text_verified grades indicate news articles, not official FIFA or organizing body communications).\n\nFor a sports_tournament event type, core reader questions are: when? where? who's playing? how to follow? The evidence covers:\n- ✓ When: June 11, 2026 (from event sentence, likely verified)\n- ✓ Where: Estadio Azteca (from event sentence, venue claims present)\n- ✓ Who's playing: participants claims present (2 claims)\n- ? How to follow: unclear if addressed\n\nWhile 3+ core questions appear answered, the **complete absence of official FIFA sources** is a fundamental flaw for a World Cup page. FIFA is the organizing body and primary source for tournament information. Without at least one official source, this cannot be publishable per the criteria.\n\nThe page should be built with a prominent evidence-quality caveat explaining that all information comes from media reports and no official FIFA sources have been verified yet. This is 23 days before the event, so official sources should exist.",
+  "new_queries": [
+    "FIFA 2026 World Cup opening match June 11 site:fifa.com",
+    "2026 World Cup Estadio Azteca opening ceremony official announcement site:fifa.com OR site:concacaf.com"
+  ],
+  "caveats": [
+    "All information is sourced from news media reports only—no official FIFA sources have been verified",
+    "Official tournament details from FIFA.com or the organizing committee have not yet been included in this page"
+  ]
+}

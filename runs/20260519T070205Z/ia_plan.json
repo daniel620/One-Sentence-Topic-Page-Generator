@@ -1,0 +1,17 @@
+{
+  "final_event_type": "live_event",
+  "event_status": "concluded",
+  "page_thesis": "This page provides comprehensive results and analysis of Eurovision 2026, which concluded on May 16 in Vienna with Bulgaria's DARA winning with \"Bangaranga\", including voting breakdowns, controversies surrounding Israel's participation, and viewership metrics.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "action_list",
+    "comparison_table",
+    "live_tracker",
+    "uncertainty_box",
+    "source_list"
+  ],
+  "layout_style": "hero_focus",
+  "confidence_summary": "High confidence on winner from official sources. Moderate uncertainty on precise viewership and controversy impact metrics from specialist sites."
+}

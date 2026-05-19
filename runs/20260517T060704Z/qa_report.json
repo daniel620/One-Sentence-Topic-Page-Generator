@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "confidence_score": 0.6,
+  "confidence_level": "medium",
+  "failed_gates": [
+    "factuality"
+  ],
+  "repair_actions": [
+    "missing_claim_id",
+    "weak_source"
+  ]
+}

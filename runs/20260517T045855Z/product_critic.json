@@ -1,0 +1,6 @@
+{
+  "decision": "publishable",
+  "reasoning": "This Eurovision 2026 page has strong evidence:\n\n**Evidence strength:**\n- 14 public-eligible claims, all with full_text_verified grade (highest quality)\n- 14 verified evidence sentences\n- 0 real uncertainties\n- Diverse claim topics covering event_schedule, venue, participants, how_to_watch, history, metrics, and controversy\n\n**Core reader questions for live_event (Eurovision):**\n- ✓ When? Event schedule claims (2)\n- ✓ Where? Venue claim (1)\n- ✓ Who's performing? Participants claims (2)\n- ✓ How to watch? How_to_watch claim (1)\n\nAll 4 core reader questions are answered with verified evidence.\n\n**Official/primary sources:** While not explicitly itemized, the 20 total sources with 11 public_claim_sources and the full_text_verified grade across all claims strongly suggests access to official Eurovision sources (EBU/Eurovision.tv would be the primary organizer sources for this event).\n\n**Publishability criteria met:**\n- ✓ ≥5 public-eligible claims (14 claims)\n- ✓ All claims have grade ≥ official_snippet (all are full_text_verified)\n- ✓ ≥3 core reader questions answered (all 4 answered)\n- ✓ Evidence quality is the highest available (full_text_verified)\n\nThe page is ready to publish without caveats or editor review.",
+  "new_queries": [],
+  "caveats": []
+}

@@ -1,0 +1,15 @@
+{
+  "final_event_type": "sports_tournament",
+  "event_status": "upcoming",
+  "page_thesis": "The 2026 FIFA World Cup opens on June 11, 2026 at Estadio Azteca in Mexico City with an opening ceremony followed by the tournament's first match. This page provides the complete schedule, venue information, qualified teams, and how to follow the tournament across three host nations.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "entity_list",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "timeline_first",
+  "confidence_summary": "High confidence: multiple official FIFA sources confirm June 11, 2026 opening at Estadio Azteca. Some match details remain unconfirmed 25 days before kickoff."
+}

@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from generator.renderer import render_topic_page
+from generator.render import render_topic_page
 from generator.schemas import RenderMode, TopicPageData
 
 
@@ -75,7 +75,7 @@ def topic_page_from_fixture(fixture_path: Path) -> TopicPageData:
 
 
 def main() -> None:
-    load_dotenv(ROOT / ".env")
+    load_dotenv(ROOT / ".env", override=True)
 
     parser = argparse.ArgumentParser(
         description="Generate a hot-event topic page from one sentence."
@@ -101,7 +101,7 @@ def main() -> None:
     if args.use_fixtures:
         page = topic_page_from_fixture(fixture_path_from_sentence(args.sentence))
     else:
-        from generator.pipeline import run_pipeline  # imported lazily so --use-fixtures doesn't require API keys
+        from generator.orchestrator import run_pipeline
         page = run_pipeline(args.sentence)
 
     mode = RenderMode.DEBUG if args.debug else RenderMode.PUBLIC

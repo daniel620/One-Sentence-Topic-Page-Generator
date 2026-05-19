@@ -1,0 +1,236 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "2026 FIFA World Cup Opens June 11 at Estadio Azteca",
+  "deck": "Mexico City will host the opening ceremony featuring J Balvin, Maná, and other Latin stars 90 minutes before kickoff.",
+  "summary": "The 2026 FIFA World Cup begins on June 11, 2026, at Mexico City Stadium (Estadio Azteca) with an opening ceremony starting at 11:30 local time. For the first time in World Cup history, three host countries—Canada, Mexico, and the United States—will each hold opening ceremonies. The expanded tournament features 48 qualified teams competing in 104 matches across 16 host cities, with the final scheduled for July 19 at New York New Jersey Stadium.",
+  "urgency_label": "25 days to kickoff",
+  "as_of_label": "Updated May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Opening Ceremony",
+      "value": "June 11, 2026, 11:30 local time",
+      "hint": null,
+      "claim_id": "src_16332_000"
+    },
+    {
+      "label": "Venue",
+      "value": "Mexico City Stadium (Estadio Azteca)",
+      "hint": null,
+      "claim_id": "src_16332_002"
+    },
+    {
+      "label": "Tournament Scale",
+      "value": "104 matches across 16 host cities",
+      "hint": null,
+      "claim_id": "src_16332_004"
+    },
+    {
+      "label": "Teams Qualified",
+      "value": "48-team field confirmed",
+      "hint": null,
+      "claim_id": "src_15012_007"
+    },
+    {
+      "label": "Prize Money",
+      "value": "$50 million for winners",
+      "hint": null,
+      "claim_id": "src_99906_005"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Tournament organizer"
+    },
+    {
+      "name": "Mexico, USA, Canada",
+      "role": "Host countries"
+    },
+    {
+      "name": "Estadio Azteca",
+      "role": "Opening ceremony venue"
+    },
+    {
+      "name": "J Balvin, Maná, Alejandro Fernández",
+      "role": "Opening ceremony performers"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "December 17, 2025",
+      "title": "FIFA Council confirms prize money structure",
+      "detail": "FIFA Council meeting in Doha confirmed $50 million prize for winners"
+    },
+    {
+      "date_label": "May 2026",
+      "title": "World Cup qualifying completed",
+      "detail": "All 48 teams now qualified for the expanded tournament format"
+    },
+    {
+      "date_label": "June 11, 2026",
+      "title": "Opening ceremony at Estadio Azteca",
+      "detail": "Ceremony begins 11:30 local time, 90 minutes before first match in Mexico City"
+    },
+    {
+      "date_label": "July 19, 2026",
+      "title": "Final at New York New Jersey Stadium",
+      "detail": "Tournament culminates after 104 matches across three nations"
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament by the Numbers",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Total Matches",
+          "value": "104 matches across 16 host cities",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_16332_004"
+        },
+        {
+          "label": "Qualified Teams",
+          "value": "48-team field now confirmed",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_15012_007"
+        },
+        {
+          "label": "Host Countries",
+          "value": "Three opening ceremonies in Canada, Mexico, and United States",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_35039_001"
+        },
+        {
+          "label": "Winners' Prize",
+          "value": "$50 million in prize money",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_99906_005"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key Dates",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Opening Ceremony",
+          "value": "June 11, 2026, 11:30 local time at Mexico City Stadium",
+          "detail": "Ceremony begins 90 minutes before the opening match kicks off",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_16332_000"
+        },
+        {
+          "label": "Prize Money Confirmed",
+          "value": "December 17 FIFA Council meeting in Doha",
+          "detail": "Winners to receive $50 million",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_99906_007"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Opening Ceremony Performers",
+      "summary": "Mexico City's ceremony will feature prominent Latin music artists performing from the Official FIFA World Cup 2026 Album.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Confirmed Artists",
+          "value": "Alejandro Fernández, Belinda, Danny Ocean, J Balvin, Lila Downs, Los Ángeles Azules, Maná and Tyl",
+          "detail": "Performers will bring the Official FIFA World Cup 2026 Album to life on stage at Estadio Azteca",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_16332_001"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Get Ready for the World Cup",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "View Full Match Schedule",
+          "value": "Check fixtures, dates, and stadiums for all 104 matches",
+          "detail": null,
+          "link_label": "FIFA Match Schedule",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "claim_id": null
+        },
+        {
+          "label": "Explore Qualified Teams",
+          "value": "See the complete 48-team field and squad lists",
+          "detail": null,
+          "link_label": "Team Squads",
+          "link_url": "https://www.olympics.com/en/news/2026-fifa-world-cup-football-teams-squads-players-complete-list",
+          "claim_id": null
+        },
+        {
+          "label": "Opening Ceremony Details",
+          "value": "Learn about the historic three-country opening ceremonies",
+          "detail": null,
+          "link_label": "FIFA Announcement",
+          "link_url": "https://inside.fifa.com/media-releases/world-cup-2026-opening-ceremony-mexico-city",
+          "claim_id": null
+        },
+        {
+          "label": "Tournament Format",
+          "value": "Understand the expanded 48-team format, tiebreakers, and fixtures",
+          "detail": null,
+          "link_label": "Format Guide",
+          "link_url": "https://www.espn.com/soccer/story/_/id/47108758/2026-fifa-world-cup-format-tiebreakers-fixtures-schedule",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T02:57:33.922326Z"
+}

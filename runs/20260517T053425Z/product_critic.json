@@ -1,0 +1,13 @@
+{
+  "decision": "evidence_limited",
+  "reasoning": "This is a live_event (Eurovision 2026). Core reader questions are: when? where? who's performing? how to watch?\n\nEvidence assessment:\n- **When**: Covered (May 12-16)\n- **Where**: Covered (Vienna)\n- **Who's performing**: Not clear from the claim topics listed (participants mentioned but unclear if these are performers/countries competing)\n- **How to watch**: No evidence\n\n**Critical gap: No official/primary source evidence.** All evidence is either full_text_verified (5) or reputable_snippet (2) - zero official_snippet or primary source material from the European Broadcasting Union (EBU), the official organizer of Eurovision.\n\nWhile we have 7 public-eligible claims covering 6 topic areas, the absence of any official source is disqualifying for publishable status. Eurovision is organized by the EBU, and without their official confirmation, we cannot verify critical details like the exact dates, venue, participating countries, or broadcast information.\n\nThe page answers 2-3 of the 4 core questions (when, where, possibly participants) but lacks both official sourcing and \"how to watch\" information. This meets evidence_limited criteria: some core questions answered but missing the critical official source validation.",
+  "new_queries": [
+    "EBU European Broadcasting Union Eurovision 2026 Vienna official announcement",
+    "Eurovision 2026 Vienna participating countries broadcasters official site:eurovision.tv"
+  ],
+  "caveats": [
+    "No official source from the European Broadcasting Union (EBU), the organizer of Eurovision, has been verified",
+    "Broadcasting and viewing information is not available in current evidence",
+    "Participating countries and performers list may be incomplete"
+  ]
+}

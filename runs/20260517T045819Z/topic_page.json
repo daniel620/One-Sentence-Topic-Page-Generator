@@ -1,0 +1,245 @@
+{
+  "event_type": "tech_launch",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "OpenAI Releases GPT-5.5 Instant as New Default ChatGPT Model",
+  "deck": "The successor to GPT-5.3 Instant brings a massive context window, updated knowledge cutoff, and new safeguards.",
+  "summary": "On May 5, 2026, OpenAI released GPT-5.5 Instant, replacing GPT-5.3 Instant as the default model powering ChatGPT. The new model features a 1,050,000-token context window and knowledge cutoff of December 1, 2025. OpenAI deployed its strongest set of safeguards to date, incorporating feedback from nearly 200 early-access partners before the public launch.",
+  "urgency_label": "Released May 5",
+  "as_of_label": "As of May 17, 2026",
+  "key_facts": [
+    {
+      "label": "Context window",
+      "value": "1,050,000 tokens",
+      "hint": null,
+      "claim_id": "src_18944_001"
+    },
+    {
+      "label": "Knowledge cutoff",
+      "value": "December 1, 2025",
+      "hint": null,
+      "claim_id": "src_18944_003"
+    },
+    {
+      "label": "Default model",
+      "value": "Replaced GPT-5.3 Instant",
+      "hint": null,
+      "claim_id": "src_33598_001"
+    },
+    {
+      "label": "API pricing",
+      "value": "$5.00 per 1M input tokens",
+      "hint": null,
+      "claim_id": "src_18944_004"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "GPT-5.5 Instant",
+      "role": "New default ChatGPT model released May 5, 2026"
+    },
+    {
+      "name": "OpenAI",
+      "role": "Developer and publisher"
+    },
+    {
+      "name": "GPT-5.3 Instant",
+      "role": "Previous default model, now replaced"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "February 2026",
+      "title": "GPT-4o deprecated",
+      "detail": "OpenAI deprecated GPT-4o despite user concerns."
+    },
+    {
+      "date_label": "April 24, 2026",
+      "title": "System card updated",
+      "detail": "OpenAI updated the system card with additional safeguard information for GPT-5.5 and GPT-5.5 Pro API deployment."
+    },
+    {
+      "date_label": "May 5, 2026",
+      "title": "GPT-5.5 Instant released",
+      "detail": "OpenAI released GPT-5.5 Instant as the new default ChatGPT model, replacing GPT-5.3 Instant."
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Key Specifications",
+      "summary": "Core technical capabilities and pricing for GPT-5.5.",
+      "columns": 2,
+      "items": [
+        {
+          "label": "Context window",
+          "value": "1,050,000 tokens",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_18944_001"
+        },
+        {
+          "label": "Knowledge cutoff",
+          "value": "December 1, 2025",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_18944_003"
+        },
+        {
+          "label": "Input pricing",
+          "value": "$5.00 per 1M tokens",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_18944_004"
+        },
+        {
+          "label": "High-volume pricing",
+          "value": "Prompts >272K tokens: 2× input, 1.5× output for full session",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_18944_007"
+        }
+      ]
+    },
+    {
+      "component_type": "comparison_table",
+      "title": "GPT-5.5 vs. Previous Models",
+      "summary": "How the new default model compares to its predecessor and earlier versions.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Default model status",
+          "value": "GPT-5.5 Instant replaces GPT-5.3 Instant as the default ChatGPT model",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_33598_001"
+        },
+        {
+          "label": "Context window advantage",
+          "value": "1,050,000-token context window enables processing of extremely long documents",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_18944_001"
+        },
+        {
+          "label": "Previous generation",
+          "value": "GPT-4o was deprecated in February 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_33598_007"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Resources & Documentation",
+      "summary": "Official documentation, safety information, and developer resources for GPT-5.5.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "API documentation",
+          "value": "View model specifications, parameters, and integration details",
+          "detail": null,
+          "link_label": "View docs",
+          "link_url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+          "claim_id": null
+        },
+        {
+          "label": "Safety & deployment",
+          "value": "Read OpenAI's system card on safeguards and preparedness framework",
+          "detail": null,
+          "link_label": "Read system card",
+          "link_url": "https://deploymentsafety.openai.com/gpt-5-5-instant",
+          "claim_id": null
+        },
+        {
+          "label": "Pricing details",
+          "value": "Check current API pricing for all usage tiers",
+          "detail": null,
+          "link_label": "See pricing",
+          "link_url": "https://developers.openai.com/api/docs/pricing",
+          "claim_id": null
+        },
+        {
+          "label": "Official announcement",
+          "value": "Read OpenAI's full release announcement",
+          "detail": null,
+          "link_label": "Read announcement",
+          "link_url": "https://openai.com/index/gpt-5-5-instant/",
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "stat_grid",
+      "title": "Safety & Testing",
+      "summary": "OpenAI's approach to responsible deployment and evaluation.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Early-access testing",
+          "value": "Nearly 200 partners provided feedback on real use cases",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87518_002"
+        },
+        {
+          "label": "Safeguards",
+          "value": "Released with OpenAI's strongest set of safeguards to date",
+          "detail": "Designed to reduce misuse while preserving legitimate, beneficial uses of advanced capabilities.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87518_003"
+        },
+        {
+          "label": "CVE-Bench evaluation",
+          "value": "Version 1.0 used to assess vulnerability identification",
+          "detail": "CVE-Bench tasks models with identifying and exploiting real-world web-application vulnerabilities in a sandbox environment.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_76370_001"
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T04:56:57.771185Z"
+}

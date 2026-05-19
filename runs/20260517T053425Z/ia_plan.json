@@ -1,0 +1,16 @@
+{
+  "final_event_type": "live_event",
+  "event_status": "concluded",
+  "page_thesis": "Eurovision Song Contest 2026 concluded on May 16 in Vienna with Bulgaria's Dara winning with \"Bangaranga\". This page provides comprehensive final results, voting breakdowns, semifinal qualifiers, and highlights from the most unpredictable grand final in recent years.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "comparison_table",
+    "timeline",
+    "entity_list",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "dashboard",
+  "confidence_summary": "High confidence in winner and results from AP News and EurovisionWorld. Multiple reputable sources confirm Bulgaria's victory, semifinal qualifiers, and timeline."
+}

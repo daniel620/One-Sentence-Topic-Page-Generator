@@ -1,0 +1,6 @@
+{
+  "decision": "proceed",
+  "reasoning": "The evidence meets the criteria for a sports_tournament event type:\n\n1. **Schedule/date claims**: 3 claims covering event schedule ✓\n2. **Venue/location claims**: 2 claims covering venue information ✓\n3. **Team/participant info**: 2 claims covering participants ✓\n\nQuality signals are strong:\n- 10 public_claim_source sources (well above the 3 minimum)\n- 8 public-eligible claims (above the 5 minimum)\n- 8 verified evidence sentences (all claims verified)\n- Covers all required claim topic categories for sports tournaments\n- 0 real uncertainties indicates high confidence\n\nThe event is only 25 days away (June 11, 2026), making this timely and newsworthy. All core reader questions for a World Cup opening match are answerable: when (June 11, 2026), where (Estadio Azteca), and who (participants covered). The evidence is sufficient to build a useful, trustworthy page.",
+  "new_queries": [],
+  "caveats": []
+}

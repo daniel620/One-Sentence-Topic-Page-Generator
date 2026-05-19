@@ -1,0 +1,8 @@
+{
+  "sentence": "A 7.2 magnitude earthquake struck near Tokyo on May 14, 2026.",
+  "status": "complete",
+  "confidence": "medium",
+  "search_rounds": 1,
+  "qa_passed": false,
+  "qa_score": 0.633
+}

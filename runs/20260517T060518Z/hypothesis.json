@@ -1,0 +1,24 @@
+{
+  "preliminary_event_type": "tech_launch",
+  "freshness_need": "future event; will need live coverage on June 8, then post-event analysis",
+  "search_intents": [
+    "Apple WWDC 2026 June 8",
+    "iPhone 18 Pro announcement",
+    "iPhone 18 Pro specs features",
+    "Apple WWDC 2026 keynote livestream",
+    "iPhone 18 Pro price release date",
+    "WWDC 2026 announcements"
+  ],
+  "required_source_types": [
+    "official",
+    "reputable_media",
+    "social"
+  ],
+  "unknowns": [
+    "Is the June 8 date confirmed by Apple officially?",
+    "Is this a leak/rumor or confirmed announcement?",
+    "What are the actual specs and features of iPhone 18 Pro?",
+    "What is the release date and pricing?",
+    "What other products will be announced at WWDC 2026?"
+  ]
+}

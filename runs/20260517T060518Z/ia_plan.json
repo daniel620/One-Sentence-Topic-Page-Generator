@@ -1,0 +1,16 @@
+{
+  "final_event_type": "tech_launch",
+  "event_status": "upcoming",
+  "page_thesis": "Apple's WWDC 2026 will take place June 8-12, 2026, where iOS 27 and other software updates are expected to be revealed. While WWDC dates are officially confirmed by Apple, iPhone 18 Pro announcement and specifications remain unconfirmed rumors from aggregator sites and social sources.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "comparison_table",
+    "timeline",
+    "action_list",
+    "uncertainty_box",
+    "source_list"
+  ],
+  "layout_style": "timeline_first",
+  "confidence_summary": "WWDC dates confirmed via reputable outlets citing Apple. iPhone 18 Pro details are unconfirmed rumors from speculation sources. Most evidence marked debug_only/background_only."
+}

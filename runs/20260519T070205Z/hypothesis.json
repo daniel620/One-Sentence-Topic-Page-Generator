@@ -1,0 +1,24 @@
+{
+  "preliminary_event_type": "live_event",
+  "freshness_need": "post-event, recent wrap-up (event concluded 3 days ago)",
+  "search_intents": [
+    "Eurovision 2026 Vienna results winner",
+    "Eurovision Song Contest 2026 final standings voting",
+    "Eurovision 2026 performances highlights",
+    "EBU Eurovision 2026 official results",
+    "Eurovision 2026 controversy incidents",
+    "Eurovision 2026 attendance viewership ratings"
+  ],
+  "required_source_types": [
+    "official",
+    "reputable_media",
+    "primary_data"
+  ],
+  "unknowns": [
+    "Which country/artist won Eurovision 2026",
+    "Were there any major controversies or incidents during the event",
+    "What were the final voting results and point distribution",
+    "Viewership and attendance figures",
+    "Any significant rule changes or format updates for 2026 edition"
+  ]
+}

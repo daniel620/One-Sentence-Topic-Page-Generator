@@ -1,0 +1,13 @@
+{
+  "decision": "editor_review",
+  "reasoning": "The evidence shows strong overall quality with 12 public-eligible claims and 12 verified evidence sentences. The evidence grade distribution is strong (9 full_text_verified + 3 reputable_snippet = 12 total verified claims). The claim topics cover multiple core reader questions for a sports_tournament: when (event_schedule: 2), where (venue: 2), and who's playing (participants: 3).\n\nHowever, there is a critical gap: zero official or primary sources. All evidence is either full_text_verified or reputable_snippet - no official_snippet grade. For a major event like the FIFA World Cup, we would expect official sources from FIFA.org or the official tournament organizers.\n\nSince we have:\n- ≥5 public-eligible claims (12) ✓\n- ≥3 core reader questions answered (when, where, who) ✓\n- BUT: 0 official/primary sources ✗\n\nThis meets the criteria for editor_review: \"Good evidence but one gap — no official source.\" The page should be built but flagged for editor review to verify against official FIFA sources before full publication.",
+  "new_queries": [
+    "FIFA World Cup 2026 opening match Estadio Azteca June 11 site:fifa.com",
+    "2026 World Cup schedule official FIFA announcement"
+  ],
+  "caveats": [
+    "No official FIFA or tournament organizer sources identified in evidence collection",
+    "All claims rely on media reporting (reputable_snippet) or full_text verification without direct official source confirmation",
+    "For a major FIFA event, official tournament information from FIFA.org should ideally be included"
+  ]
+}

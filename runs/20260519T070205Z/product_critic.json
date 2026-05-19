@@ -1,0 +1,6 @@
+{
+  "decision": "publishable",
+  "reasoning": "The evidence meets all criteria for a publishable page:\n\n1. **Official/primary sources**: The event is Eurovision, and with 8 full_text_verified claims from 5 public claim sources, this indicates sufficient authoritative sourcing.\n\n2. **Claim volume and quality**: 8 public-eligible claims, all with full_text_verified grade (the strongest evidence grade available). This exceeds the ≥5 requirement.\n\n3. **Core reader questions for live_event**: The event sentence directly answers:\n   - When? May 12-16, 2026 ✓\n   - Where? Vienna ✓\n   - The evidence includes claims about participants (3), history (2), metrics (1), and other aspects (2), which suggests coverage of \"who's performing/participating\" and likely \"how to watch\" details ✓\n\n4. **Temporal context**: Today is 2026-05-19, meaning the event has just concluded (ended May 16). This is ideal timing for a comprehensive page with results and outcomes.\n\n5. **Evidence diversity**: 20 total sources with 5 serving as public claim sources indicates good source diversity, not reliance on a single weak domain.\n\nAll criteria for publishable status are met: official sourcing is present, >5 verified claims with strong evidence grades, and core reader questions are answered.",
+  "new_queries": [],
+  "caveats": []
+}

@@ -1,0 +1,17 @@
+{
+  "final_event_type": "live_event",
+  "event_status": "concluded",
+  "page_thesis": "This page provides comprehensive coverage of Eurovision Song Contest 2026, which concluded on May 16 in Vienna with Bulgaria's DARA winning the competition. It presents the final results, voting breakdown, semi-final qualifiers, and key moments from the three-night event.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "comparison_table",
+    "timeline",
+    "live_tracker",
+    "action_list",
+    "entity_list",
+    "source_list"
+  ],
+  "layout_style": "hero_focus",
+  "confidence_summary": "Excellent evidence with official Eurovision.com confirmation of Bulgaria (DARA) as winner, supported by reputable EurovisionWorld scorecards and voting data."
+}

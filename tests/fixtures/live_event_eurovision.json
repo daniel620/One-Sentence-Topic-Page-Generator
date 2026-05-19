@@ -1,0 +1,970 @@
+{
+  "input_sentence": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+  "today": "2026-05-17",
+  "evidence_graph": {
+    "event_hypothesis": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+    "sources": [
+      {
+        "source_id": "src_05200",
+        "url": "https://www.eurovision.com/stories/running-order-eurovision-2026-grand-final-vienna/",
+        "title": "The Running Order of the Eurovision 2026 Grand Final",
+        "publisher": "Eurovision (official)",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.7692307692307693,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official Eurovision website publishing running order - primary source for contest details"
+      },
+      {
+        "source_id": "src_57399",
+        "url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+        "title": "Vienna 2026 - Eurovision",
+        "publisher": "Eurovision (official)",
+        "published_at": null,
+        "source_type": "official",
+        "authority_score": 1.0,
+        "freshness_score": 0.5,
+        "relevance_score": 0.6923076923076923,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Official Eurovision website page for Vienna 2026 - authoritative primary source"
+      },
+      {
+        "source_id": "src_37304",
+        "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+        "title": "Eurovision Song Contest 2026",
+        "publisher": "Wikipedia",
+        "published_at": null,
+        "source_type": "primary_data",
+        "authority_score": 0.95,
+        "freshness_score": 0.5,
+        "relevance_score": 0.38461538461538464,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: Wikipedia article on Eurovision 2026 - well-maintained primary data source for major events"
+      },
+      {
+        "source_id": "src_22420",
+        "url": "https://en.wikipedia.org/wiki/Controversies_of_the_Eurovision_Song_Contest",
+        "title": "Controversies of the Eurovision Song Contest",
+        "publisher": "Wikipedia",
+        "published_at": null,
+        "source_type": "primary_data",
+        "authority_score": 0.95,
+        "freshness_score": 0.5,
+        "relevance_score": 0.38461538461538464,
+        "bias_or_limitation": null,
+        "ai_source_role": "supporting_context",
+        "final_source_role": "supporting_context",
+        "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Wikipedia controversies page - useful context but too broad/historical to anchor)"
+      },
+      {
+        "source_id": "src_20071",
+        "url": "https://eurovisionworld.com/eurovision/2026",
+        "title": "Eurovision 2026 Results: Voting & Points",
+        "publisher": "EurovisionWorld",
+        "published_at": null,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
+        "freshness_score": 0.5,
+        "relevance_score": 0.38461538461538464,
+        "bias_or_limitation": null,
+        "ai_source_role": "public_claim_source",
+        "final_source_role": "public_claim_source",
+        "curation_reason": "AI: EurovisionWorld results page - established Eurovision specialist site with voting data"
+      },
+      {
+        "source_id": "src_64380",
+        "url": "https://www.theguardian.com/tv-and-radio/2026/may/13/best-eurovision-songs-2026-sarah-engels-delta-goodrem-jonas-lovv",
+        "title": "‘Sung by a silver robot from 1984!’ The 11 biggest bangers in Eurovision 2026 | Eurovision 2026 | The Guardian",
+        "publisher": "The Guardian",
+        "published_at": null,
+        "source_type": "reputable_media",
+        "authority_score": 0.8,
+        "freshness_score": 0.5,
+        "relevance_score": 0.3076923076923077,
+        "bias_or_limitation": null,
+        "ai_source_role": "supporting_context",
+        "final_source_role": "supporting_context",
+        "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Guardian opinion/entertainment piece on songs - reputable but subjective listicl)"
+      },
+      {
+        "source_id": "src_02518",
+        "url": "https://www.youtube.com/watch?v=XgqVHqHt5yc",
+        "title": "Eurovision 2026 Controversy: Israel, Boycotts and Politics | CNN One World With Zain Asher",
+        "publisher": "YouTube",
+        "published_at": null,
+        "source_type": "social",
+        "authority_score": 0.5,
+        "freshness_score": 0.5,
+        "relevance_score": 0.8461538461538461,
+        "bias_or_limitation": null,
+        "ai_source_role": "debug_only",
+        "final_source_role": "debug_only",
+        "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube social video - user-generated or commentary content, not primary news so)"
+      },
+      {
+        "source_id": "src_62991",
+        "url": "https://www.instagram.com/p/DXtpb3OiBdm/",
+        "title": "The Official Results of the “My Eurovision 2026” Grand Final! The ...",
+        "publisher": "Instagram",
+        "published_at": null,
+        "source_type": "social",
+        "authority_score": 0.5,
+        "freshness_score": 0.5,
+        "relevance_score": 0.6153846153846154,
+        "bias_or_limitation": null,
+        "ai_source_role": "debug_only",
+        "final_source_role": "debug_only",
+        "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Instagram post with unofficial fan results - social media content, not authorita)"
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "src_05200_000",
+        "text": "The Eurovision 2026 Grand Final will be held on Saturday, May 16, 2026 at 21:00 CEST.",
+        "claim_type": "schedule",
+        "claim_topic": "event_schedule",
+        "source_ids": [
+          "src_05200",
+          "src_57399"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "The Grand Final of Vienna 2026 will be broadcast on Saturday 16 May at 21:00 CEST, via our YouTube channel and the 35 participating broadcasters.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "event_name": "Eurovision 2026 Grand Final",
+          "timezone": "CEST",
+          "event_datetime": "2026-05-16T21:00:00"
+        }
+      },
+      {
+        "claim_id": "src_05200_001",
+        "text": "The Eurovision 2026 Grand Final takes place in Vienna, Austria.",
+        "claim_type": "location",
+        "claim_topic": "venue",
+        "source_ids": [
+          "src_05200",
+          "src_57399",
+          "src_20071"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "We can now present the Running Order for the Grand Final of the 70th Eurovision Song Contest, taking place in the Austrian capital of Vienna on Saturday 16 May.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "location": "Vienna, Austria"
+        }
+      },
+      {
+        "claim_id": "src_05200_002",
+        "text": "This is the 70th Eurovision Song Contest.",
+        "claim_type": "metric",
+        "claim_topic": "history",
+        "source_ids": [
+          "src_05200",
+          "src_57399"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "We can now present the Running Order for the Grand Final of the 70th Eurovision Song Contest, taking place in the Austrian capital of Vienna on Saturday 16 May.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "edition number",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "70",
+          "evidence_snippet": "the 70th Eurovision Song Contest"
+        }
+      },
+      {
+        "claim_id": "src_05200_003",
+        "text": "Broadcaster ORF is hosting Eurovision 2026.",
+        "claim_type": "entity",
+        "claim_topic": "participants",
+        "source_ids": [
+          "src_05200",
+          "src_57399",
+          "src_20071"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "Broadcaster ORF brought us two Semi-Finals earlier in the week, which gave us 20 qualifiers joining our Big 4 countries and reigning Contest champs Austria.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "entity_role": "host broadcaster",
+          "entity_name": "ORF"
+        }
+      },
+      {
+        "claim_id": "src_05200_004",
+        "text": "25 countries will compete in the Grand Final.",
+        "claim_type": "metric",
+        "claim_topic": "participants",
+        "source_ids": [
+          "src_05200"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "Broadcaster ORF brought us two Semi-Finals earlier in the week, which gave us 20 qualifiers joining our Big 4 countries and reigning Contest champs Austria.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "countries",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "25",
+          "evidence_snippet": "20 qualifiers joining our Big 4 countries and reigning Contest champs Austria"
+        }
+      },
+      {
+        "claim_id": "src_05200_006",
+        "text": "Austria is the reigning Eurovision Contest champion.",
+        "claim_type": "status",
+        "claim_topic": "history",
+        "source_ids": [
+          "src_05200",
+          "src_57399"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "Broadcaster ORF brought us two Semi-Finals earlier in the week, which gave us 20 qualifiers joining our Big 4 countries and reigning Contest champs Austria.",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "status": "reigning champion",
+          "source_evidence": null,
+          "observed_at": null
+        }
+      },
+      {
+        "claim_id": "src_57399_003",
+        "text": "Bulgaria, Moldova, and Romania are returning to the Eurovision Song Contest in 2026.",
+        "claim_type": "status",
+        "claim_topic": "participants",
+        "source_ids": [
+          "src_57399"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "Vienna 2026 sees three broadcasters return to the Contest: Bulgaria (BNT), Moldova (TVM) and Romania (TVR).",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "status": "returning",
+          "source_evidence": "Vienna 2026 sees three broadcasters return to the Contest: Bulgaria (BNT), Moldova (TVM) and Romania (TVR).",
+          "observed_at": null
+        }
+      },
+      {
+        "claim_id": "src_20071_001",
+        "text": "Bulgaria's winning song received 516 points",
+        "claim_type": "metric",
+        "claim_topic": "metrics",
+        "source_ids": [
+          "src_20071"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "stat_grid",
+          "key_facts"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "Eurovision Song Contest 2026 result: Bulgaria won with the song \"Bangaranga\" by Dara with 516 points",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "unit": "points",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "516",
+          "evidence_snippet": "Bulgaria won with the song \"Bangaranga\" by Dara with 516 points"
+        }
+      },
+      {
+        "claim_id": "src_20071_002",
+        "text": "The Eurovision 2026 Grand Final took place on 16 May 2026",
+        "claim_type": "date",
+        "claim_topic": "event_schedule",
+        "source_ids": [
+          "src_20071"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "key_facts",
+          "timeline"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "Date: 16 May 2026",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "date_value": "2026-05-16T00:00:00Z"
+        }
+      },
+      {
+        "claim_id": "src_20071_007",
+        "text": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate",
+        "claim_type": "status",
+        "claim_topic": "controversy",
+        "source_ids": [
+          "src_20071"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [
+          "key_facts",
+          "uncertainty_box"
+        ],
+        "validation_status": "pending",
+        "evidence_sentence": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate in the contest",
+        "public_claim_eligible": true,
+        "claim_attributes": {
+          "status": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted due to Israel participation",
+          "source_evidence": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate in the contest",
+          "observed_at": null
+        }
+      },
+      {
+        "claim_id": "metric_9734",
+        "text": "150 million",
+        "claim_type": "metric",
+        "claim_topic": "other",
+        "source_ids": [
+          "src_64380"
+        ],
+        "confidence": "high",
+        "freshness": "fresh",
+        "component_targets": [],
+        "validation_status": "pending",
+        "evidence_sentence": "",
+        "public_claim_eligible": false,
+        "claim_attributes": {
+          "unit": "million",
+          "direction": null,
+          "base_value_if_delta": null,
+          "value": "150",
+          "evidence_snippet": "ers, it seemed the answer was yes. Nul points for you, former Culture Club frontman.\nAn audience of 150 million is expected to tune in this weekend for ye olde blend of geopolitical point-scoring and surreal spe"
+        }
+      }
+    ],
+    "contradictions": [],
+    "unresolved_questions": [],
+    "last_updated": "2026-05-17T01:34:03.757362Z"
+  },
+  "topic_page": {
+    "event_type": "live_event",
+    "status": "concluded",
+    "confidence": "high",
+    "headline": "Bulgaria Wins Eurovision 2026 in Vienna",
+    "deck": "Dara's \"Bangaranga\" triumphs with 516 points as five nations boycott over Israel's participation.",
+    "summary": "Bulgaria won the Eurovision Song Contest 2026 on May 16, 2026, in Vienna, Austria, with Dara's song \"Bangaranga\" securing 516 points. The 70th edition of the competition featured 25 countries competing in the Grand Final, but was overshadowed by a boycott from Iceland, Ireland, the Netherlands, Slovenia, and Spain over Israel's participation. Austria hosted the event as the reigning 2025 champion, with broadcaster ORF organizing the show.",
+    "urgency_label": "Final results",
+    "as_of_label": "Updated May 17, 2026",
+    "key_facts": [
+      {
+        "label": "Winner",
+        "value": "Bulgaria – 516 points",
+        "hint": null,
+        "claim_id": "src_20071_001"
+      },
+      {
+        "label": "Host City",
+        "value": "Vienna, Austria",
+        "hint": null,
+        "claim_id": "src_05200_001"
+      },
+      {
+        "label": "Grand Final Date",
+        "value": "May 16, 2026",
+        "hint": null,
+        "claim_id": "src_20071_002"
+      },
+      {
+        "label": "Competing Nations",
+        "value": "25 countries",
+        "hint": null,
+        "claim_id": "src_05200_004"
+      },
+      {
+        "label": "Contest Edition",
+        "value": "70th Eurovision Song Contest",
+        "hint": null,
+        "claim_id": "src_05200_002"
+      }
+    ],
+    "key_entities": [
+      {
+        "name": "Bulgaria",
+        "role": "Winning country with song 'Bangaranga' by Dara"
+      },
+      {
+        "name": "ORF",
+        "role": "Host broadcaster for Eurovision 2026"
+      },
+      {
+        "name": "Vienna",
+        "role": "Host city in Austria"
+      },
+      {
+        "name": "Austria",
+        "role": "Reigning Eurovision champion and 2026 host nation"
+      }
+    ],
+    "timeline": [
+      {
+        "date_label": "May 16, 2026 at 21:00 CEST",
+        "title": "Grand Final held in Vienna",
+        "detail": "The 70th Eurovision Song Contest Grand Final broadcast from Vienna, Austria, with 25 countries competing."
+      },
+      {
+        "date_label": "May 16, 2026",
+        "title": "Bulgaria wins with 516 points",
+        "detail": "Dara's song 'Bangaranga' secures victory for Bulgaria in the Grand Final."
+      }
+    ],
+    "layout_style": "hero_focus",
+    "sections": [
+      {
+        "component_type": "stat_grid",
+        "title": "Final Results & Competition Stats",
+        "summary": "Key numbers from the 70th Eurovision Song Contest held in Vienna",
+        "columns": 1,
+        "items": [
+          {
+            "label": "Winner",
+            "value": "Bulgaria – 516 points",
+            "detail": "Dara's song 'Bangaranga' won the competition",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_20071_001"
+          },
+          {
+            "label": "Competing Countries",
+            "value": "25 countries in the Grand Final",
+            "detail": "20 qualifiers joined Big 4 countries and reigning champion Austria",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_004"
+          },
+          {
+            "label": "Contest Edition",
+            "value": "70th Eurovision Song Contest",
+            "detail": null,
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_002"
+          },
+          {
+            "label": "Returning Nations",
+            "value": "Bulgaria, Moldova, and Romania",
+            "detail": "Three broadcasters returned to the contest in 2026",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_57399_003"
+          }
+        ]
+      },
+      {
+        "component_type": "timeline",
+        "title": "Key Dates",
+        "summary": "Timeline of the 70th Eurovision Song Contest",
+        "columns": 1,
+        "items": [
+          {
+            "label": "May 16, 2026 at 21:00 CEST",
+            "value": "Grand Final held in Vienna",
+            "detail": "The 70th Eurovision Song Contest Grand Final broadcast from Vienna, Austria, with 25 countries competing.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_000"
+          },
+          {
+            "label": "May 16, 2026",
+            "value": "Bulgaria wins with 516 points",
+            "detail": "Dara's song 'Bangaranga' secures victory for Bulgaria in the Grand Final.",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_20071_001"
+          }
+        ]
+      },
+      {
+        "component_type": "live_tracker",
+        "title": "Event Details",
+        "summary": "Grand Final broadcast and hosting information",
+        "columns": 1,
+        "items": [
+          {
+            "label": "Date & Time",
+            "value": "Saturday, May 16, 2026 at 21:00 CEST",
+            "detail": null,
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_000"
+          },
+          {
+            "label": "Venue",
+            "value": "Vienna, Austria",
+            "detail": null,
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_001"
+          },
+          {
+            "label": "Host Broadcaster",
+            "value": "ORF (Austrian broadcaster)",
+            "detail": null,
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_003"
+          },
+          {
+            "label": "Defending Champion",
+            "value": "Austria",
+            "detail": "Austria was the reigning Eurovision Contest champion",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_05200_006"
+          }
+        ]
+      },
+      {
+        "component_type": "uncertainty_box",
+        "title": "Controversy: Five-Nation Boycott",
+        "summary": "Multiple countries withdrew from Eurovision 2026 in protest",
+        "columns": 1,
+        "items": [
+          {
+            "label": "Boycotting Countries",
+            "value": "Iceland, Ireland, the Netherlands, Slovenia and Spain",
+            "detail": "These countries boycotted Eurovision 2026 because Israel was allowed to participate in the contest",
+            "link_label": null,
+            "link_url": null,
+            "claim_id": "src_20071_007"
+          }
+        ]
+      },
+      {
+        "component_type": "action_list",
+        "title": "More Information",
+        "summary": null,
+        "columns": 1,
+        "items": [
+          {
+            "label": "Official Eurovision Site",
+            "value": "View complete results and running order",
+            "detail": null,
+            "link_label": "Visit site",
+            "link_url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+            "claim_id": null
+          },
+          {
+            "label": "Detailed Results",
+            "value": "Full voting breakdown and country rankings",
+            "detail": null,
+            "link_label": "See results",
+            "link_url": "https://eurovisionworld.com/eurovision/2026",
+            "claim_id": null
+          }
+        ]
+      }
+    ],
+    "qa_results": [
+      {
+        "gate_name": "factuality",
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [],
+        "confidence_score": 1.0,
+        "remediation_suggestions": []
+      },
+      {
+        "gate_name": "freshness",
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [
+          "weak_source"
+        ],
+        "confidence_score": 0.6599999999999998,
+        "remediation_suggestions": [
+          "Prefer stronger sources or annotate the limitation of weaker ones."
+        ]
+      },
+      {
+        "gate_name": "event_fit",
+        "status": "pass",
+        "failed_items": [],
+        "repair_actions": [],
+        "confidence_score": 1.0,
+        "remediation_suggestions": []
+      }
+    ],
+    "last_updated": "2026-05-17T01:34:03.757362Z",
+    "evidence_graph_ref": {
+      "event_hypothesis": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+      "sources": [
+        {
+          "source_id": "src_05200",
+          "url": "https://www.eurovision.com/stories/running-order-eurovision-2026-grand-final-vienna/",
+          "title": "The Running Order of the Eurovision 2026 Grand Final",
+          "publisher": "Eurovision (official)",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.7692307692307693,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official Eurovision website publishing running order - primary source for contest details"
+        },
+        {
+          "source_id": "src_57399",
+          "url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+          "title": "Vienna 2026 - Eurovision",
+          "publisher": "Eurovision (official)",
+          "published_at": null,
+          "source_type": "official",
+          "authority_score": 1.0,
+          "freshness_score": 0.5,
+          "relevance_score": 0.6923076923076923,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Official Eurovision website page for Vienna 2026 - authoritative primary source"
+        },
+        {
+          "source_id": "src_37304",
+          "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+          "title": "Eurovision Song Contest 2026",
+          "publisher": "Wikipedia",
+          "published_at": null,
+          "source_type": "primary_data",
+          "authority_score": 0.95,
+          "freshness_score": 0.5,
+          "relevance_score": 0.38461538461538464,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: Wikipedia article on Eurovision 2026 - well-maintained primary data source for major events"
+        },
+        {
+          "source_id": "src_22420",
+          "url": "https://en.wikipedia.org/wiki/Controversies_of_the_Eurovision_Song_Contest",
+          "title": "Controversies of the Eurovision Song Contest",
+          "publisher": "Wikipedia",
+          "published_at": null,
+          "source_type": "primary_data",
+          "authority_score": 0.95,
+          "freshness_score": 0.5,
+          "relevance_score": 0.38461538461538464,
+          "bias_or_limitation": null,
+          "ai_source_role": "supporting_context",
+          "final_source_role": "supporting_context",
+          "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Wikipedia controversies page - useful context but too broad/historical to anchor)"
+        },
+        {
+          "source_id": "src_20071",
+          "url": "https://eurovisionworld.com/eurovision/2026",
+          "title": "Eurovision 2026 Results: Voting & Points",
+          "publisher": "EurovisionWorld",
+          "published_at": null,
+          "source_type": "reputable_media",
+          "authority_score": 0.8,
+          "freshness_score": 0.5,
+          "relevance_score": 0.38461538461538464,
+          "bias_or_limitation": null,
+          "ai_source_role": "public_claim_source",
+          "final_source_role": "public_claim_source",
+          "curation_reason": "AI: EurovisionWorld results page - established Eurovision specialist site with voting data"
+        },
+        {
+          "source_id": "src_64380",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/may/13/best-eurovision-songs-2026-sarah-engels-delta-goodrem-jonas-lovv",
+          "title": "‘Sung by a silver robot from 1984!’ The 11 biggest bangers in Eurovision 2026 | Eurovision 2026 | The Guardian",
+          "publisher": "The Guardian",
+          "published_at": null,
+          "source_type": "reputable_media",
+          "authority_score": 0.8,
+          "freshness_score": 0.5,
+          "relevance_score": 0.3076923076923077,
+          "bias_or_limitation": null,
+          "ai_source_role": "supporting_context",
+          "final_source_role": "supporting_context",
+          "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Guardian opinion/entertainment piece on songs - reputable but subjective listicl)"
+        },
+        {
+          "source_id": "src_02518",
+          "url": "https://www.youtube.com/watch?v=XgqVHqHt5yc",
+          "title": "Eurovision 2026 Controversy: Israel, Boycotts and Politics | CNN One World With Zain Asher",
+          "publisher": "YouTube",
+          "published_at": null,
+          "source_type": "social",
+          "authority_score": 0.5,
+          "freshness_score": 0.5,
+          "relevance_score": 0.8461538461538461,
+          "bias_or_limitation": null,
+          "ai_source_role": "debug_only",
+          "final_source_role": "debug_only",
+          "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube social video - user-generated or commentary content, not primary news so)"
+        },
+        {
+          "source_id": "src_62991",
+          "url": "https://www.instagram.com/p/DXtpb3OiBdm/",
+          "title": "The Official Results of the “My Eurovision 2026” Grand Final! The ...",
+          "publisher": "Instagram",
+          "published_at": null,
+          "source_type": "social",
+          "authority_score": 0.5,
+          "freshness_score": 0.5,
+          "relevance_score": 0.6153846153846154,
+          "bias_or_limitation": null,
+          "ai_source_role": "debug_only",
+          "final_source_role": "debug_only",
+          "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (Instagram post with unofficial fan results - social media content, not authorita)"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "src_05200_000",
+          "text": "The Eurovision 2026 Grand Final will be held on Saturday, May 16, 2026 at 21:00 CEST.",
+          "claim_type": "schedule",
+          "claim_topic": "event_schedule",
+          "source_ids": [
+            "src_05200",
+            "src_57399"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "The Grand Final of Vienna 2026 will be broadcast on Saturday 16 May at 21:00 CEST, via our YouTube channel and the 35 participating broadcasters.",
+          "public_claim_eligible": true,
+          "event_datetime": "2026-05-16T21:00:00",
+          "timezone": "CEST",
+          "event_name": "Eurovision 2026 Grand Final"
+        },
+        {
+          "claim_id": "src_05200_001",
+          "text": "The Eurovision 2026 Grand Final takes place in Vienna, Austria.",
+          "claim_type": "location",
+          "claim_topic": "venue",
+          "source_ids": [
+            "src_05200",
+            "src_57399",
+            "src_20071"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "We can now present the Running Order for the Grand Final of the 70th Eurovision Song Contest, taking place in the Austrian capital of Vienna on Saturday 16 May.",
+          "public_claim_eligible": true,
+          "location": "Vienna, Austria"
+        },
+        {
+          "claim_id": "src_05200_002",
+          "text": "This is the 70th Eurovision Song Contest.",
+          "claim_type": "metric",
+          "claim_topic": "history",
+          "source_ids": [
+            "src_05200",
+            "src_57399"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "We can now present the Running Order for the Grand Final of the 70th Eurovision Song Contest, taking place in the Austrian capital of Vienna on Saturday 16 May.",
+          "public_claim_eligible": true,
+          "value": "70",
+          "unit": "edition number",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "the 70th Eurovision Song Contest"
+        },
+        {
+          "claim_id": "src_05200_003",
+          "text": "Broadcaster ORF is hosting Eurovision 2026.",
+          "claim_type": "entity",
+          "claim_topic": "participants",
+          "source_ids": [
+            "src_05200",
+            "src_57399",
+            "src_20071"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "Broadcaster ORF brought us two Semi-Finals earlier in the week, which gave us 20 qualifiers joining our Big 4 countries and reigning Contest champs Austria.",
+          "public_claim_eligible": true,
+          "entity_name": "ORF",
+          "entity_role": "host broadcaster"
+        },
+        {
+          "claim_id": "src_05200_004",
+          "text": "25 countries will compete in the Grand Final.",
+          "claim_type": "metric",
+          "claim_topic": "participants",
+          "source_ids": [
+            "src_05200"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "Broadcaster ORF brought us two Semi-Finals earlier in the week, which gave us 20 qualifiers joining our Big 4 countries and reigning Contest champs Austria.",
+          "public_claim_eligible": true,
+          "value": "25",
+          "unit": "countries",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "20 qualifiers joining our Big 4 countries and reigning Contest champs Austria"
+        },
+        {
+          "claim_id": "src_05200_006",
+          "text": "Austria is the reigning Eurovision Contest champion.",
+          "claim_type": "status",
+          "claim_topic": "history",
+          "source_ids": [
+            "src_05200",
+            "src_57399"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "Broadcaster ORF brought us two Semi-Finals earlier in the week, which gave us 20 qualifiers joining our Big 4 countries and reigning Contest champs Austria.",
+          "public_claim_eligible": true,
+          "status": "reigning champion",
+          "observed_at": null,
+          "source_evidence": null
+        },
+        {
+          "claim_id": "src_57399_003",
+          "text": "Bulgaria, Moldova, and Romania are returning to the Eurovision Song Contest in 2026.",
+          "claim_type": "status",
+          "claim_topic": "participants",
+          "source_ids": [
+            "src_57399"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "Vienna 2026 sees three broadcasters return to the Contest: Bulgaria (BNT), Moldova (TVM) and Romania (TVR).",
+          "public_claim_eligible": true,
+          "status": "returning",
+          "observed_at": null,
+          "source_evidence": "Vienna 2026 sees three broadcasters return to the Contest: Bulgaria (BNT), Moldova (TVM) and Romania (TVR)."
+        },
+        {
+          "claim_id": "src_20071_001",
+          "text": "Bulgaria's winning song received 516 points",
+          "claim_type": "metric",
+          "claim_topic": "metrics",
+          "source_ids": [
+            "src_20071"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "stat_grid",
+            "key_facts"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "Eurovision Song Contest 2026 result: Bulgaria won with the song \"Bangaranga\" by Dara with 516 points",
+          "public_claim_eligible": true,
+          "value": "516",
+          "unit": "points",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "Bulgaria won with the song \"Bangaranga\" by Dara with 516 points"
+        },
+        {
+          "claim_id": "src_20071_002",
+          "text": "The Eurovision 2026 Grand Final took place on 16 May 2026",
+          "claim_type": "date",
+          "claim_topic": "event_schedule",
+          "source_ids": [
+            "src_20071"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "key_facts",
+            "timeline"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "Date: 16 May 2026",
+          "public_claim_eligible": true,
+          "date_value": "2026-05-16T00:00:00Z"
+        },
+        {
+          "claim_id": "src_20071_007",
+          "text": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate",
+          "claim_type": "status",
+          "claim_topic": "controversy",
+          "source_ids": [
+            "src_20071"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [
+            "key_facts",
+            "uncertainty_box"
+          ],
+          "validation_status": "pending",
+          "evidence_sentence": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate in the contest",
+          "public_claim_eligible": true,
+          "status": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted due to Israel participation",
+          "observed_at": null,
+          "source_evidence": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate in the contest"
+        },
+        {
+          "claim_id": "metric_9734",
+          "text": "150 million",
+          "claim_type": "metric",
+          "claim_topic": "other",
+          "source_ids": [
+            "src_64380"
+          ],
+          "confidence": "high",
+          "freshness": "fresh",
+          "component_targets": [],
+          "validation_status": "pending",
+          "evidence_sentence": "",
+          "public_claim_eligible": false,
+          "value": "150",
+          "unit": "million",
+          "direction": null,
+          "base_value_if_delta": null,
+          "evidence_snippet": "ers, it seemed the answer was yes. Nul points for you, former Culture Club frontman.\nAn audience of 150 million is expected to tune in this weekend for ye olde blend of geopolitical point-scoring and surreal spe"
+        }
+      ],
+      "contradictions": [],
+      "unresolved_questions": [],
+      "last_updated": "2026-05-17T01:34:03.757362Z"
+    }
+  }
+}

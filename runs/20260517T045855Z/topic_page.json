@@ -1,0 +1,323 @@
+{
+  "event_type": "live_event",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "Bulgaria Wins Eurovision Song Contest 2026 in Vienna",
+  "deck": "The 70th Eurovision Song Contest concluded in Vienna with 25 countries competing in the Grand Final at Wiener Stadthalle.",
+  "summary": "Bulgaria claimed victory at the Eurovision Song Contest 2026, held May 12-16 in Vienna, Austria. The 70th edition of the competition brought 25 songs to the Grand Final stage at the Wiener Stadthalle on May 16. Austria served as host after winning the 2025 contest, with broadcaster ORF producing the event for a venue capacity of up to 16,000 attendees.",
+  "urgency_label": "Event concluded",
+  "as_of_label": "Final results · May 16, 2026",
+  "key_facts": [
+    {
+      "label": "Winner",
+      "value": "Bulgaria",
+      "hint": "Historic first victory",
+      "claim_id": null
+    },
+    {
+      "label": "Grand Final",
+      "value": "Saturday, May 16, 2026 at 21:00 CEST",
+      "hint": null,
+      "claim_id": "src_87326_000"
+    },
+    {
+      "label": "Venue",
+      "value": "Wiener Stadthalle, Vienna, Austria",
+      "hint": null,
+      "claim_id": "src_87326_001"
+    },
+    {
+      "label": "Finalists",
+      "value": "25 songs competing",
+      "hint": null,
+      "claim_id": "src_87326_002"
+    },
+    {
+      "label": "Edition",
+      "value": "70th Eurovision Song Contest",
+      "hint": null,
+      "claim_id": "src_51242_002"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "Bulgaria",
+      "role": "Winner of Eurovision Song Contest 2026"
+    },
+    {
+      "name": "ORF (Österreichischer Rundfunk)",
+      "role": "Host broadcaster"
+    },
+    {
+      "name": "Wiener Stadthalle",
+      "role": "Grand Final venue"
+    },
+    {
+      "name": "JJ (Johannes Pietsch)",
+      "role": "2025 champion for Austria with 'Wasted Love'"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "May 12, 2026",
+      "title": "Semi-final 1",
+      "detail": "Israel won Semi-final 1 with 269 points, performed by Noam Bettan with 'Michelle'"
+    },
+    {
+      "date_label": "May 14, 2026",
+      "title": "Semi-final 2",
+      "detail": "Second semi-final took place, determining 10 more Grand Final qualifiers"
+    },
+    {
+      "date_label": "May 16, 2026 · 21:00 CEST",
+      "title": "Grand Final",
+      "detail": "25 songs competed at Wiener Stadthalle; Bulgaria won the 70th Eurovision Song Contest"
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "live_tracker",
+      "title": "Grand Final Results",
+      "summary": "Bulgaria secured victory in the 70th Eurovision Song Contest held at Wiener Stadthalle.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Winner",
+          "value": "Bulgaria achieved its first Eurovision victory",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Competing songs",
+          "value": "25 songs competed in the Grand Final",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87326_002"
+        },
+        {
+          "label": "Venue capacity",
+          "value": "Up to 16,000 seating capacity",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_99881_006"
+        },
+        {
+          "label": "Broadcast reach",
+          "value": "Aired live by all 35 participating broadcasters",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87326_006"
+        },
+        {
+          "label": "Voting power",
+          "value": "10 votes allowed per person",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87326_007"
+        }
+      ]
+    },
+    {
+      "component_type": "stat_grid",
+      "title": "Contest at a Glance",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Host city",
+          "value": "Vienna, Austria",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_87326_001"
+        },
+        {
+          "label": "Edition",
+          "value": "70th Eurovision Song Contest",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_51242_002"
+        },
+        {
+          "label": "Host broadcaster",
+          "value": "ORF (Österreichischer Rundfunk)",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_79668_003"
+        },
+        {
+          "label": "Reigning champion",
+          "value": "Austria",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_51242_005"
+        },
+        {
+          "label": "2025 winner",
+          "value": "JJ (Johannes Pietsch) with 'Wasted Love'",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_62670_007"
+        },
+        {
+          "label": "Semi-final 1 winner",
+          "value": "Israel with 269 points (Noam Bettan, 'Michelle')",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_03186_000"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Explore More",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Grand Final coverage",
+          "value": "Complete details, running order, and official information",
+          "detail": null,
+          "link_label": "View on Eurovision.com",
+          "link_url": "https://www.eurovision.com/stories/vienna-2026-all-you-need-to-know-about-the-grand-final/",
+          "claim_id": null
+        },
+        {
+          "label": "Contest overview",
+          "value": "Full event details including semi-final results and statistics",
+          "detail": null,
+          "link_label": "EurovisionWorld event page",
+          "link_url": "https://eurovisionworld.com/eurovision/2026",
+          "claim_id": null
+        },
+        {
+          "label": "Vienna host city",
+          "value": "Learn about the host city and venue",
+          "detail": null,
+          "link_label": "Vienna tourism guide",
+          "link_url": "https://www.wien.info/en/now-on/eurovision-song-contest/esc-2026-wien-966540",
+          "claim_id": null
+        },
+        {
+          "label": "Semi-final 1 results",
+          "value": "Israel topped Semi-final 1 with 269 points",
+          "detail": null,
+          "link_label": "View results",
+          "link_url": "https://eurovisionworld.com/eurovision/2026/semi-final-1",
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Key Participants",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Host broadcaster",
+          "value": "ORF (Österreichischer Rundfunk) produced the contest",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_51242_006"
+        },
+        {
+          "label": "Defending champion",
+          "value": "Austria (reigning Contest champion)",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_51242_005"
+        },
+        {
+          "label": "2025 winner",
+          "value": "JJ (Johannes Pietsch) won 2025 with 'Wasted Love'",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_62670_007"
+        },
+        {
+          "label": "Semi-final 1 winner",
+          "value": "Israel won with 269 points (Noam Bettan, 'Michelle')",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_03186_000"
+        }
+      ]
+    },
+    {
+      "component_type": "uncertainty_box",
+      "title": "Contest Controversy",
+      "summary": "Five countries boycotted the 2026 contest in protest.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Boycotting nations",
+          "value": "Iceland, Ireland, Netherlands, Slovenia, and Spain boycotted Eurovision 2026 because Israel was allowed to participate",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_82548_007"
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Section 0 item 0: traceable fact 'Winner Bulgaria achieved its first Eurovision victory' has no claim_id"
+      ],
+      "repair_actions": [
+        "missing_claim_id"
+      ],
+      "confidence_score": 0.85,
+      "remediation_suggestions": [
+        "Add a claim_id from the claim cards."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "fail",
+      "failed_items": [
+        "Required component missing: timeline"
+      ],
+      "repair_actions": [
+        "missing_required_component"
+      ],
+      "confidence_score": 0.75,
+      "remediation_suggestions": [
+        "Add a non-empty timeline section for the live_event page."
+      ]
+    }
+  ],
+  "last_updated": "2026-05-17T04:56:36.049586Z"
+}

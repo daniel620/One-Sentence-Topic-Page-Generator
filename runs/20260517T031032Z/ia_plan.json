@@ -1,0 +1,16 @@
+{
+  "final_event_type": "sports_tournament",
+  "event_status": "upcoming",
+  "page_thesis": "This page provides comprehensive pre-event information for the 2026 FIFA World Cup opening ceremony and match at Estadio Azteca on June 11, 2026, covering schedule, venues, ticket availability, and tournament structure for fans planning to attend or watch.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "entity_list",
+    "action_list",
+    "uncertainty_box",
+    "source_list"
+  ],
+  "layout_style": "timeline_first",
+  "confidence_summary": "Strong official FIFA sources confirm opening ceremony at Estadio Azteca. Key unknowns: opening match teams, exact kickoff time, and complete ticket pricing remain unannounced."
+}

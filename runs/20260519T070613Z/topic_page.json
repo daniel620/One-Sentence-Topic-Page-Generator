@@ -1,0 +1,284 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "2026 FIFA World Cup Opens June 11 at Estadio Azteca",
+  "deck": "The first 48-team World Cup kicks off in Mexico City, spanning three host nations across North America.",
+  "summary": "The 2026 FIFA World Cup will open on June 11, 2026, at Estadio Azteca in Mexico City with Mexico facing South Africa at 8pm UK time. This 23rd edition marks a historic expansion to 48 teams and will be the first World Cup co-hosted by three nations: the United States, Canada, and Mexico. The tournament will feature 103 matches across 16 venues over 37 days, with 32 teams advancing to the knockout rounds.",
+  "urgency_label": "Opening June 11, 2026",
+  "as_of_label": null,
+  "key_facts": [
+    {
+      "label": "Opening Match",
+      "value": "Mexico vs South Africa, June 11, 8pm UK time",
+      "hint": null,
+      "claim_id": "src_03967_002"
+    },
+    {
+      "label": "Tournament Format",
+      "value": "48 teams competing",
+      "hint": null,
+      "claim_id": "src_38742_003"
+    },
+    {
+      "label": "Host Nations",
+      "value": "16 venues across USA, Canada, and Mexico",
+      "hint": null,
+      "claim_id": "src_90722_001"
+    },
+    {
+      "label": "Total Matches",
+      "value": "103 matches over 37 days",
+      "hint": null,
+      "claim_id": "src_03967_005"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Organizing body for the 2026 World Cup"
+    },
+    {
+      "name": "Estadio Azteca",
+      "role": "Opening match venue in Mexico City"
+    },
+    {
+      "name": "Mexico",
+      "role": "Co-host nation and opening match participant"
+    },
+    {
+      "name": "South Africa",
+      "role": "Opening match opponent"
+    },
+    {
+      "name": "United States",
+      "role": "Co-host nation"
+    },
+    {
+      "name": "Canada",
+      "role": "Co-host nation"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "June 11, 2026",
+      "title": "Opening Match: Mexico vs South Africa",
+      "detail": "Tournament begins at Estadio Azteca, Mexico City, with kick-off at 8pm UK time"
+    },
+    {
+      "date_label": "Group Stage",
+      "title": "48 Teams Compete",
+      "detail": "All qualified teams play group stage matches across 16 venues"
+    },
+    {
+      "date_label": "Knockout Rounds",
+      "title": "32 Teams Advance",
+      "detail": "Top teams from group stage progress to elimination rounds"
+    },
+    {
+      "date_label": "July 2026",
+      "title": "World Cup Final",
+      "detail": "Tournament concludes after 103 matches over 37 days"
+    }
+  ],
+  "layout_style": "hero_focus",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament at a Glance",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Edition",
+          "value": "23rd FIFA World Cup",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_38742_002"
+        },
+        {
+          "label": "Participating Teams",
+          "value": "48 teams",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_38742_003"
+        },
+        {
+          "label": "Total Venues",
+          "value": "16 stadiums across three countries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90722_001"
+        },
+        {
+          "label": "Total Matches",
+          "value": "103 matches",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_03967_005"
+        },
+        {
+          "label": "Knockout Round Teams",
+          "value": "32 teams advance from group stage",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_36540_006"
+        },
+        {
+          "label": "Qualification Status",
+          "value": "All 48 teams now qualified",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_36540_004"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key Tournament Milestones",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Opening Match",
+          "value": "Mexico vs South Africa at Estadio Azteca, Mexico City",
+          "detail": "Kick-off 8pm UK time on June 11, 2026",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_03967_002"
+        },
+        {
+          "label": "Group Stage Completion",
+          "value": "32 teams advance to knockout rounds",
+          "detail": "Following completion of group stage matches",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_36540_006"
+        },
+        {
+          "label": "Tournament Conclusion",
+          "value": "Final match after 103 total matches",
+          "detail": "37-day tournament culminates with the World Cup final",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_03967_005"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Key Venues",
+      "summary": "The tournament will be played at 16 venues across North America, representing the most geographically diverse World Cup in history.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Estadio Azteca",
+          "value": "Mexico City, Mexico - Opening match venue",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Toronto Stadium",
+          "value": "Toronto, Ontario, Canada",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_38742_005"
+        },
+        {
+          "label": "Total Host Venues",
+          "value": "16 stadiums across Canada, Mexico, and United States",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90722_001"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "How to Follow the World Cup",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "View Full Schedule",
+          "value": "See all 103 matches with kick-off times and venue details",
+          "detail": null,
+          "link_label": "Match Schedule",
+          "link_url": "https://www.skysports.com/football/news/11095/13481245/world-cup-2026-fixture-schedule-and-uk-kick-off-times-day-by-day-breakdown-of-all-104-matches-including-england-scotland",
+          "claim_id": null
+        },
+        {
+          "label": "Explore Venues",
+          "value": "Discover all 16 host stadiums across North America",
+          "detail": null,
+          "link_label": "Official Venues",
+          "link_url": "https://fifaworldcup26.suites.fifa.com/venues/",
+          "claim_id": null
+        },
+        {
+          "label": "Tournament Format",
+          "value": "Learn about the new 48-team format and structure",
+          "detail": null,
+          "link_label": "FIFA Format Guide",
+          "link_url": "https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer",
+          "claim_id": null
+        },
+        {
+          "label": "Opening Match Details",
+          "value": "Read about Estadio Azteca hosting the opening ceremony",
+          "detail": null,
+          "link_label": "Opening Match Info",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Contradiction on teams measurement: 48 teams vs 32 teams"
+      ],
+      "repair_actions": [
+        "conflicting_claim"
+      ],
+      "confidence_score": 0.75,
+      "remediation_suggestions": [
+        "Add an uncertainty box or remove the conflicting claim from sections."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-19T07:03:52.453944Z"
+}

@@ -1,0 +1,15 @@
+{
+  "final_event_type": "sports_tournament",
+  "event_status": "upcoming",
+  "page_thesis": "Wimbledon 2026 begins June 29 at the All England Club. This page provides confirmed tournament dates, schedule structure, seeding information, ticketing pathways, and defending champions to help fans plan attendance and follow the championship.",
+  "required_components": [
+    "key_facts",
+    "stat_grid",
+    "timeline",
+    "entity_list",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "timeline_first",
+  "confidence_summary": "High confidence on June 29 start date from official Wimbledon source. Most other sources are commercial vendors. Draw and entry list not yet available but structure well-established."
+}

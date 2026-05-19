@@ -1,0 +1,206 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "low",
+  "headline": "2026 FIFA World Cup Opens June 11 at Estadio Azteca",
+  "deck": "Historic 48-team tournament begins in Mexico City, expanding across three North American host nations for the first time.",
+  "summary": "The 2026 FIFA World Cup kicks off on June 11, 2026, at Estadio Azteca in Mexico City, marking the beginning of the first expanded 48-team tournament. The United States, Mexico, and Canada will jointly host matches across 16 cities throughout North America. With qualification rounds nearing completion and the final draw conducted, the tournament represents a historic milestone in World Cup history, starting in just 25 days.",
+  "urgency_label": "Starts in 25 days",
+  "as_of_label": "As of May 17, 2026",
+  "key_facts": [],
+  "key_entities": [
+    {
+      "name": "FIFA",
+      "role": "Tournament organizer"
+    },
+    {
+      "name": "Estadio Azteca",
+      "role": "Opening match venue"
+    },
+    {
+      "name": "United States, Mexico, Canada",
+      "role": "Joint host nations"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "June 11, 2026",
+      "title": "Opening Match",
+      "detail": "Tournament begins at Estadio Azteca in Mexico City"
+    },
+    {
+      "date_label": "June–July 2026",
+      "title": "Group Stage",
+      "detail": "48 teams compete across 16 host cities in three countries"
+    },
+    {
+      "date_label": "July 2026",
+      "title": "Final Match",
+      "detail": "Tournament concludes with championship match"
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament Overview",
+      "summary": "Key facts about the expanded 2026 FIFA World Cup format and hosting arrangement.",
+      "columns": 2,
+      "items": [
+        {
+          "label": "Tournament Format",
+          "value": "Expanded 48-team format featuring increased participation",
+          "detail": "The tournament expands from the traditional 32-team structure to accommodate more nations.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Host Configuration",
+          "value": "First tri-national World Cup across North America",
+          "detail": "United States, Mexico, and Canada jointly host matches throughout the continent.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Host Cities",
+          "value": "16 cities selected across three countries",
+          "detail": "Venues span major metropolitan areas in the United States, Mexico, and Canada.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Opening Venue",
+          "value": "Estadio Azteca in Mexico City",
+          "detail": "The historic stadium hosts the tournament's opening match on June 11, 2026.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Key Organizations & Venues",
+      "summary": "Primary entities involved in organizing and hosting the 2026 World Cup.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "FIFA",
+          "value": "International governing body organizing the tournament",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Estadio Azteca",
+          "value": "Mexico City stadium hosting the opening match",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        },
+        {
+          "label": "Host Nations",
+          "value": "United States, Mexico, and Canada sharing hosting duties",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "How to Follow the Tournament",
+      "summary": "Resources for viewing schedules, qualification results, and broadcast information.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Match Schedule",
+          "value": "View complete fixture list and stadium assignments",
+          "detail": null,
+          "link_label": "See FIFA schedule",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "claim_id": null
+        },
+        {
+          "label": "Qualification Updates",
+          "value": "Track which teams have secured their spots in the tournament",
+          "detail": null,
+          "link_label": "Qualification details",
+          "link_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification",
+          "claim_id": null
+        },
+        {
+          "label": "Broadcasting Information",
+          "value": "Find out where to watch matches in your region",
+          "detail": null,
+          "link_label": "Viewing options",
+          "link_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_broadcasting_rights",
+          "claim_id": null
+        },
+        {
+          "label": "Venue Information",
+          "value": "Explore host cities and stadium details",
+          "detail": null,
+          "link_label": "Host cities guide",
+          "link_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Section 0 item 0: numeric fact 'Tournament Format Expanded 48-team format featuring increased participation The tournament expands from the traditional 32-team structure to accommodate more nations.' has no claim_id",
+        "Section 0 item 1: traceable fact 'Host Configuration First tri-national World Cup across North America United States, Mexico, and Canada jointly host matches throughout the continent.' has no claim_id",
+        "Section 0 item 2: numeric fact 'Host Cities 16 cities selected across three countries Venues span major metropolitan areas in the United States, Mexico, and Canada.' has no claim_id",
+        "Section 0 item 3: numeric fact 'Opening Venue Estadio Azteca in Mexico City The historic stadium hosts the tournament's opening match on June 11, 2026.' has no claim_id"
+      ],
+      "repair_actions": [
+        "missing_claim_id"
+      ],
+      "confidence_score": 0.6,
+      "remediation_suggestions": [
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.3499999999999996,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "fail",
+      "failed_items": [
+        "Required component missing: timeline"
+      ],
+      "repair_actions": [
+        "missing_required_component"
+      ],
+      "confidence_score": 0.75,
+      "remediation_suggestions": [
+        "Add a non-empty timeline section for the sports_tournament page."
+      ]
+    }
+  ],
+  "last_updated": "2026-05-17T04:20:30.477281Z"
+}

@@ -1,0 +1,270 @@
+{
+  "event_type": "live_event",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "Bulgaria Wins Eurovision 2026 in Vienna Amid Israel Boycott Controversy",
+  "deck": "Dara's \"Bangaranga\" scored 516 points to claim Bulgaria's first victory as five nations withdrew over Israel's participation.",
+  "summary": "Bulgaria won the Eurovision Song Contest 2026 on May 16, 2026, at Vienna's Wiener Stadthalle, with Dara performing \"Bangaranga\" and scoring 516 points. The contest's 70th anniversary was overshadowed by a boycott from Iceland, Ireland, the Netherlands, Slovenia, and Spain over the European Broadcasting Union's decision to allow Israel to compete. The controversy stems from Israel's military offensive in Gaza that began in October 2023.",
+  "urgency_label": "Final results",
+  "as_of_label": "As of May 16, 2026",
+  "key_facts": [
+    {
+      "label": "Winner",
+      "value": "Bulgaria – 'Bangaranga' by Dara",
+      "hint": null,
+      "claim_id": "src_90788_000"
+    },
+    {
+      "label": "Final Score",
+      "value": "516 points",
+      "hint": null,
+      "claim_id": "src_90788_001"
+    },
+    {
+      "label": "Venue",
+      "value": "Wiener Stadthalle, Vienna, Austria",
+      "hint": null,
+      "claim_id": "src_90788_003"
+    },
+    {
+      "label": "Boycott",
+      "value": "5 countries withdrew over Israel participation",
+      "hint": null,
+      "claim_id": "src_90788_007"
+    },
+    {
+      "label": "Anniversary",
+      "value": "70th edition of the contest",
+      "hint": null,
+      "claim_id": "src_80237_003"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "Bulgaria",
+      "role": "Eurovision 2026 winner"
+    },
+    {
+      "name": "Dara",
+      "role": "Winning artist performing 'Bangaranga'"
+    },
+    {
+      "name": "Wiener Stadthalle",
+      "role": "Host venue in Vienna, Austria"
+    },
+    {
+      "name": "European Broadcasting Union",
+      "role": "Contest organizer"
+    },
+    {
+      "name": "Israel",
+      "role": "Contested participant"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "October 2023",
+      "title": "Israel launches military offensive in Gaza",
+      "detail": "The military operation that later sparked Eurovision participation controversy."
+    },
+    {
+      "date_label": "May 2025",
+      "title": "Austria wins Eurovision 2025 in Basel",
+      "detail": "JJ's victory with 'Wasted Love' grants Austria hosting rights for 2026."
+    },
+    {
+      "date_label": "Early 2026",
+      "title": "Five countries announce boycott",
+      "detail": "Iceland, Ireland, the Netherlands, Slovenia, and Spain withdraw over Israel's participation."
+    },
+    {
+      "date_label": "May 16, 2026",
+      "title": "Eurovision 2026 Grand Final",
+      "detail": "Bulgaria wins with 516 points at Wiener Stadthalle, Vienna."
+    }
+  ],
+  "layout_style": "dashboard",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Final Results",
+      "summary": "Bulgaria claimed its first-ever Eurovision victory with a commanding performance.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Winner",
+          "value": "Bulgaria with 'Bangaranga' by Dara",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90788_000"
+        },
+        {
+          "label": "Total Points",
+          "value": "516 points",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90788_001"
+        },
+        {
+          "label": "Grand Final Date",
+          "value": "May 16, 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90788_002"
+        },
+        {
+          "label": "Venue",
+          "value": "Wiener Stadthalle, Vienna, Austria",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90788_003"
+        }
+      ]
+    },
+    {
+      "component_type": "uncertainty_box",
+      "title": "Israel Participation Controversy",
+      "summary": "The contest's 70th anniversary was marred by political tension over Israel's inclusion.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Boycotting Nations",
+          "value": "Iceland, Ireland, the Netherlands, Slovenia, and Spain withdrew from the contest",
+          "detail": "The boycott was in protest of Israel being allowed to participate.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_90788_007"
+        },
+        {
+          "label": "Background",
+          "value": "Israel's military offensive in Gaza began in October 2023",
+          "detail": "The ongoing military operation sparked fierce debate about Israel's Eurovision eligibility.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_80237_005"
+        },
+        {
+          "label": "Anniversary Impact",
+          "value": "Eurovision's 70th anniversary overshadowed by controversy",
+          "detail": "What should have been a celebration was dominated by political divisions.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_80237_003"
+        }
+      ]
+    },
+    {
+      "component_type": "live_tracker",
+      "title": "Contest Snapshot",
+      "summary": "Key figures from the 2026 edition.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Semi-Final 1 Participants",
+          "value": "15 countries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_72902_004"
+        },
+        {
+          "label": "Previous Winner",
+          "value": "Austria (2025) with JJ's 'Wasted Love'",
+          "detail": "Austria's 2025 victory in Basel secured Vienna as the 2026 host city.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_39040_007"
+        },
+        {
+          "label": "Broadcast Platform",
+          "value": "Live on YouTube and national broadcasters",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_39040_003"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Watch & Read More",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official Scorecard",
+          "value": "View the complete voting breakdown and jury/televote split for all finalists",
+          "detail": null,
+          "link_label": "Download PDF",
+          "link_url": "https://pix.eurovisionworld.com/grafik/2026/scorecard-eurovision-2026-final.pdf?v=6",
+          "claim_id": null
+        },
+        {
+          "label": "Full Results",
+          "value": "Detailed results, participant bios, and performance videos from all competing nations",
+          "detail": null,
+          "link_label": "Visit EurovisionWorld",
+          "link_url": "https://eurovisionworld.com/eurovision/2026",
+          "claim_id": null
+        },
+        {
+          "label": "Grand Final Coverage",
+          "value": "Read in-depth analysis of the grand final performances and voting drama",
+          "detail": null,
+          "link_label": "EurovisionWorld Article",
+          "link_url": "https://eurovisionworld.com/esc/eurovision-2026-all-about-the-grand-final",
+          "claim_id": null
+        },
+        {
+          "label": "Boycott Background",
+          "value": "BBC coverage of the Israel participation controversy and boycott decisions",
+          "detail": null,
+          "link_label": "Read BBC Article",
+          "link_url": "https://www.bbc.co.uk/news/articles/cqxp4959nwro",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "fail",
+      "failed_items": [
+        "Required component missing: timeline"
+      ],
+      "repair_actions": [
+        "missing_required_component"
+      ],
+      "confidence_score": 0.75,
+      "remediation_suggestions": [
+        "Add a non-empty timeline section for the live_event page."
+      ]
+    }
+  ],
+  "last_updated": "2026-05-17T03:09:59.827796Z"
+}

@@ -1,0 +1,122 @@
+{
+  "event_type": "tech_launch",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "Apple WWDC 2026: What to Expect in June",
+  "deck": "Apple's annual developer conference is set for June, with software reveals anticipated but details still under wraps.",
+  "summary": "Apple's Worldwide Developers Conference (WWDC) 2026 is expected to take place in June, following the company's traditional annual schedule. While the exact dates and agenda have not been officially announced, the event typically showcases new versions of iOS, macOS, and other operating system updates. Developers and tech enthusiasts await official confirmation from Apple regarding keynote timing and featured announcements.",
+  "urgency_label": "Awaiting official announcement",
+  "as_of_label": null,
+  "key_facts": [],
+  "key_entities": [
+    {
+      "name": "Apple",
+      "role": "Host and presenter of WWDC 2026"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "June 2026",
+      "title": "WWDC 2026 expected timeframe",
+      "detail": "Conference typically held in early June based on historical patterns"
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Conference Overview",
+      "summary": "Key details about WWDC 2026 remain to be officially announced by Apple.",
+      "columns": 2,
+      "items": [
+        {
+          "label": "Event Status",
+          "value": "Official dates and agenda not yet announced",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "comparison_table",
+      "title": "Expected Announcements",
+      "summary": "Apple typically uses WWDC to preview software updates, though specific details for 2026 have not been confirmed.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Software Previews",
+          "value": "Details pending official Apple announcement",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Stay Updated",
+      "summary": "Follow official Apple channels for WWDC 2026 announcements and registration details.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Check Apple's developer site",
+          "value": "Visit developer.apple.com for official WWDC announcements when available",
+          "detail": null,
+          "link_label": "Apple Developer",
+          "link_url": "https://developer.apple.com/",
+          "claim_id": null
+        },
+        {
+          "label": "Monitor Apple newsroom",
+          "value": "Subscribe to Apple's press releases for event confirmations",
+          "detail": null,
+          "link_label": "Apple Newsroom",
+          "link_url": "https://www.apple.com/newsroom/",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "fail",
+      "failed_items": [
+        "Section 0 item 0: traceable fact 'Event Status Official dates and agenda not yet announced' has no claim_id",
+        "Section 1 item 0: traceable fact 'Software Previews Details pending official Apple announcement' has no claim_id"
+      ],
+      "repair_actions": [
+        "missing_claim_id"
+      ],
+      "confidence_score": 0.7,
+      "remediation_suggestions": [
+        "Add a claim_id from the claim cards.",
+        "Add a claim_id from the claim cards."
+      ]
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T06:03:41.907894Z"
+}

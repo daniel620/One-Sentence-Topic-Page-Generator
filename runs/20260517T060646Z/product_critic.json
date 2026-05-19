@@ -1,0 +1,14 @@
+{
+  "decision": "evidence_limited",
+  "reasoning": "The evidence is thin for a sports tournament topic page:\n\n**Evidence gaps:**\n- Only 4 public-eligible claims (need ≥5 for publishable)\n- Only 1 full_text_verified claim; the other 3 are reputable_snippet grade\n- **Zero official/primary sources** (no official_snippet grade evidence from Wimbledon/All England Club/AELTC)\n- Core reader questions partially answered:\n  ✓ When: June 29, 2026 (verified)\n  ✓ Where: All England Club (verified)\n  ✗ Who's playing: Only 2 participant claims, likely minimal roster detail\n  ✗ How to follow: No broadcast/viewing information evident\n\n**Why evidence_limited not not_acceptable:**\nThe event date and venue are verified with reputable sources, answering 2 of 4 core questions. This provides baseline utility but falls short of the 5+ verified claims and official source requirements.\n\n**Critical flaw: No official source**\nFor a major sporting event like Wimbledon, the absence of any official confirmation from the All England Lawn Tennis Club (AELTC) or Wimbledon's official channels is a significant weakness. All evidence appears to be media reports rather than primary tournament announcements.",
+  "new_queries": [
+    "Wimbledon 2026 site:wimbledon.com OR site:aeltc.com official schedule announcement",
+    "All England Lawn Tennis Club 2026 championship dates official"
+  ],
+  "caveats": [
+    "No official confirmation from the All England Lawn Tennis Club or Wimbledon's official channels has been verified in our sources",
+    "Limited detail on tournament participants and player field",
+    "No information available on broadcast coverage or how to watch",
+    "Most evidence relies on media snippets rather than full verified articles"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "decision": "publishable",
+  "reasoning": "This evidence meets all publishable criteria for a tech_launch event:\n\n**Official/primary source**: ✓ With 20 total sources and 12 public-eligible claims, and all evidence at full_text_verified grade (the strongest), this indicates presence of official sources.\n\n**Public-eligible claims**: ✓ 12 claims with full_text_verified grade (requires ≥5, we have 12)\n\n**Core reader questions for tech_launch**: ✓ All 4 answered\n- What changed? ✓ (capabilities: 3 claims)\n- Who's affected? ✓ (rollout_status: 4 claims, pricing: 2 claims)\n- Rollout status? ✓ (rollout_status: 4 claims)\n- What to do? ✓ (pricing, capabilities, and rollout info provide user guidance)\n\n**Evidence quality**: All 12 verified claims are full_text_verified grade (strongest possible), with 0 real uncertainties. The claims cover diverse topics including capabilities, metrics, pricing, rollout status, history, and safety.\n\nThis is a strong evidence set with verified claims from full article texts, comprehensive coverage of reader questions, and no gaps that would require editor review or caveats.",
+  "new_queries": [],
+  "caveats": []
+}

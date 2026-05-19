@@ -1,0 +1,21 @@
+{
+  "preliminary_event_type": "sports_tournament",
+  "freshness_need": "Daily updates until June 11, then live sub-hour during tournament",
+  "search_intents": [
+    "site:fifa.com 2026 World Cup opening match June 11 Estadio Azteca",
+    "2026 FIFA World Cup qualified teams groups draw",
+    "2026 World Cup broadcast rights how to watch official channels"
+  ],
+  "required_source_types": [
+    "official",
+    "reputable_media",
+    "primary_data"
+  ],
+  "unknowns": [
+    "Which two teams will play in the opening match at Estadio Azteca on June 11",
+    "Complete match schedule and group stage fixtures for the tournament",
+    "Whether the opening ceremony details and timing have been officially announced",
+    "Total number of participating teams and final tournament format details",
+    "Other host stadiums and cities across Mexico, USA, and Canada with confirmed fixtures"
+  ]
+}

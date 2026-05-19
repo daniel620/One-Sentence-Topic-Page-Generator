@@ -1,0 +1,23 @@
+/* Alert theme — for disaster pages. Amber + cream, urgent but not alarmist. */
+
+:root {
+  --page-bg: #fff8eb;
+  --surface: #ffffff;
+  --surface-muted: #fdeed1;
+  --ink-strong: #2a1d05;
+  --ink: #3c2c10;
+  --ink-muted: #715b35;
+  --rule: #f3e0bd;
+  --rule-strong: #e7cf99;
+  --accent: #c4500c;
+  --accent-strong: #9c3d05;
+  --accent-soft: #ffe5d0;
+  --accent-border: #f3c598;
+  --warning: #b97400;
+  --warning-soft: #fff0cf;
+  --danger: #a8313f;
+  --danger-soft: #fbe1e4;
+  --font-display: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

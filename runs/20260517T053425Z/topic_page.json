@@ -1,0 +1,244 @@
+{
+  "event_type": "live_event",
+  "status": "concluded",
+  "confidence": "medium",
+  "headline": "Bulgaria Wins Eurovision 2026 With \"Bangaranga\" in Vienna",
+  "deck": "Dara's performance secured Bulgaria's first-ever victory in the most unpredictable grand final in recent years.",
+  "summary": "Bulgaria won the Eurovision Song Contest 2026 in Vienna on May 16, 2026, with Dara performing \"Bangaranga.\" The grand final brought together 25 countries at Wiener Stadthalle, while five nations boycotted due to Israel's participation. Israel finished as runner-up for the second consecutive year.",
+  "urgency_label": "Final Results",
+  "as_of_label": "Concluded May 16, 2026",
+  "key_facts": [
+    {
+      "label": "Winner",
+      "value": "Bulgaria - Dara - \"Bangaranga\"",
+      "hint": null,
+      "claim_id": "src_83818_000"
+    },
+    {
+      "label": "Semi-final 2 Score",
+      "value": "278 points",
+      "hint": null,
+      "claim_id": "src_83818_001"
+    },
+    {
+      "label": "Venue",
+      "value": "Wiener Stadthalle, Vienna, Austria",
+      "hint": null,
+      "claim_id": "src_83818_003"
+    },
+    {
+      "label": "Countries in Final",
+      "value": "25 countries",
+      "hint": null,
+      "claim_id": "src_91408_002"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "Dara",
+      "role": "Eurovision 2026 winner, represented Bulgaria"
+    },
+    {
+      "name": "Bulgaria",
+      "role": "Winning country, first Eurovision victory"
+    },
+    {
+      "name": "Wiener Stadthalle",
+      "role": "Host venue in Vienna, Austria"
+    },
+    {
+      "name": "Israel",
+      "role": "Runner-up for second consecutive year"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "May 14, 2026",
+      "title": "Semi-final 2",
+      "detail": "Bulgaria won Semi-final 2 with 278 points, securing qualification to the grand final at Wiener Stadthalle."
+    },
+    {
+      "date_label": "May 16, 2026",
+      "title": "Grand Final Concluded",
+      "detail": "Bulgaria's Dara won Eurovision 2026 with \"Bangaranga\" in a contest featuring 25 countries."
+    }
+  ],
+  "layout_style": "dashboard",
+  "sections": [
+    {
+      "component_type": "timeline",
+      "title": "Eurovision 2026 Schedule",
+      "summary": "Key dates from the semifinal through the grand final in Vienna.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Semi-final 2 - May 14, 2026",
+          "value": "Bulgaria scored 278 points, winning Semi-final 2 at Wiener Stadthalle.",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_001"
+        },
+        {
+          "label": "Grand Final - May 16, 2026",
+          "value": "25 countries competed in the final, with Bulgaria emerging victorious.",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_91408_002"
+        }
+      ]
+    },
+    {
+      "component_type": "live_tracker",
+      "title": "Final Results & Key Statistics",
+      "summary": "Bulgaria's historic first win and notable records from the 2026 contest.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Winner",
+          "value": "Bulgaria (Dara - \"Bangaranga\")",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_000"
+        },
+        {
+          "label": "Bulgaria Semi-final 2 Score",
+          "value": "278 points",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_001"
+        },
+        {
+          "label": "Israel Placement",
+          "value": "Runner-up for second consecutive year",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_99105_005"
+        },
+        {
+          "label": "Countries in Grand Final",
+          "value": "25 participating countries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_91408_002"
+        }
+      ]
+    },
+    {
+      "component_type": "stat_grid",
+      "title": "Contest Highlights",
+      "summary": "Notable moments and controversies from Eurovision 2026.",
+      "columns": 2,
+      "items": [
+        {
+          "label": "Venue",
+          "value": "Wiener Stadthalle, Vienna, Austria",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_003"
+        },
+        {
+          "label": "Semi-final 2 Date",
+          "value": "May 14, 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_002"
+        },
+        {
+          "label": "Boycotting Nations",
+          "value": "Iceland, Ireland, Netherlands, Slovenia, Spain boycotted due to Israel's participation",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_007"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Explore More",
+      "summary": "Official results, voting breakdowns, and complete performance coverage.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Semi-final 2 Full Results",
+          "value": "View complete Semi-final 2 standings, voting, and qualifier list.",
+          "detail": null,
+          "link_label": "See results",
+          "link_url": "https://eurovisionworld.com/eurovision/2026/semi-final-2",
+          "claim_id": null
+        },
+        {
+          "label": "Complete Coverage",
+          "value": "Read comprehensive analysis of performances and final voting patterns.",
+          "detail": null,
+          "link_label": "Read coverage",
+          "link_url": "https://apnews.com/article/eurovision-song-contest-2026-best-performances-d30fecb01ea8200f07f78d21a9d453b8",
+          "claim_id": null
+        },
+        {
+          "label": "Eurovision 2026 Overview",
+          "value": "Explore the full contest overview, participants, and background.",
+          "detail": null,
+          "link_label": "View overview",
+          "link_url": "https://eurovisionworld.com/eurovision/2026",
+          "claim_id": null
+        }
+      ]
+    },
+    {
+      "component_type": "uncertainty_box",
+      "title": "Controversy & Context",
+      "summary": "Five countries boycotted the 2026 contest over Israel's participation.",
+      "columns": 1,
+      "items": [
+        {
+          "label": "Boycott",
+          "value": "Iceland, Ireland, the Netherlands, Slovenia and Spain boycotted Eurovision 2026 because Israel was allowed to participate.",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_83818_007"
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T05:32:38.925925Z"
+}

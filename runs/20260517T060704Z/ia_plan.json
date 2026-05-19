@@ -1,0 +1,16 @@
+{
+  "final_event_type": "tech_launch",
+  "event_status": "upcoming",
+  "page_thesis": "This page addresses the false claim that Tesla has released Q2 2026 earnings with 45% margin improvement. Q2 2026 has not concluded (today is May 17, 2026), so these results cannot exist. All evidence points to Q1 2026 earnings already released in April 2026.",
+  "required_components": [
+    "uncertainty_box",
+    "key_facts",
+    "timeline",
+    "stat_grid",
+    "comparison_table",
+    "action_list",
+    "source_list"
+  ],
+  "layout_style": "hero_focus",
+  "confidence_summary": "High confidence Q2 2026 earnings NOT released. All reputable sources report Q1 2026 results from April. The claim contradicts the calendar—Q2 ends June 30, 2026."
+}

@@ -1,0 +1,11 @@
+{
+  "decision": "draft_only",
+  "reasoning": "The evidence is far too thin to build any usable page:\n\n**Critical failures:**\n1. **Zero public-eligible claims** (0 of required minimum 3) - this is a hard stop for any public-facing page\n2. **Zero verified evidence sentences** - no claims have been substantiated with full-text evidence\n3. **No claim topics captured** - the evidence collection has failed to identify any substantive claims about the tournament\n4. **15 sources exist but produced nothing actionable** - suggests severe extraction or quality issues\n\n**Event-type requirements (sports_tournament) completely unmet:**\n- When is it? ❌ (no verified claims)\n- Where is it? ❌ (no verified claims)\n- Who's playing? ❌ (no verified claims)\n- How do I follow it? ❌ (no verified claims)\n\n**Why not re_search?** The presence of 15 sources (6 public claim sources, 5 supporting context sources) suggests the search itself found relevant material, but the extraction/verification pipeline completely failed. This indicates a system issue rather than a search gap. Even with better queries, the current pipeline would likely fail to extract usable claims.\n\n**Quantitative thresholds:**\n- Public-eligible claims: 0 < 3 minimum → draft_only\n- Verified claims: 0% vs. 50% minimum → draft_only\n- Core questions answered: 0 of 4 → draft_only\n\nThis cannot proceed to any public product without fundamental re-processing of sources.",
+  "new_queries": [],
+  "caveats": [
+    "Zero public-eligible claims extracted from 15 sources",
+    "No verified evidence sentences available",
+    "Cannot answer any core reader questions for a sports tournament",
+    "Evidence collection or extraction pipeline appears broken"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "decision": "not_acceptable",
+  "reasoning": "This disaster event fails all critical thresholds:\n- **0 public-eligible claims** (requirement: ≥5 for publishable, ≥2 minimum)\n- **0 verified evidence sentences** (no evidence_sentence backing)\n- **No evidence grades** (no official_snippet, reputable_snippet, or full_text_verified)\n- **0 core disaster questions answered** (where impacted? status? what should people do?)\n\nWith 6 rejected sources, 12 debug-only sources, and only 2 needs_review sources that produced no public claims, there is no trustworthy evidence to build any page. A 7.2 magnitude earthquake near Tokyo would be a major disaster requiring official sources (Japan Meteorological Agency, Tokyo government, national emergency services) to verify basic facts like epicenter location, casualties, damage assessment, and public safety guidance.\n\nThis falls under **not_acceptable** criteria: <2 public-eligible claims AND zero claims with evidence_sentence AND claims don't answer ANY core reader question.",
+  "new_queries": [
+    "Japan Meteorological Agency earthquake Tokyo May 14 2026 7.2 magnitude",
+    "Tokyo government earthquake response May 2026 damage assessment emergency"
+  ],
+  "caveats": [
+    "Zero verified claims from any source - cannot confirm earthquake occurrence, magnitude, location, or impact",
+    "No official sources from Japan Meteorological Agency, Tokyo government, or Japanese emergency services",
+    "All 20 sources either rejected (6), debug-only (12), or needs_review without producing public claims (2)",
+    "Cannot answer any core disaster questions: affected areas unknown, damage status unknown, no public safety guidance available"
+  ]
+}

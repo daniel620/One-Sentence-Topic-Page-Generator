@@ -1,0 +1,582 @@
+{
+  "event_hypothesis": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+  "sources": [
+    {
+      "source_id": "src_89678",
+      "url": "https://www.eurovision.com/stories/dara-wins-the-eurovision-song-contest-2026-for-bulgaria/",
+      "title": "DARA wins the Eurovision Song Contest 2026 for Bulgaria",
+      "publisher": "Eurovision (official)",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.7692307692307693,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official Eurovision site announcing the winner. Primary source for the result."
+    },
+    {
+      "source_id": "src_70260",
+      "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026",
+      "title": "Eurovision Song Contest 2026",
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "source_type": "primary_data",
+      "authority_score": 0.95,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Wikipedia main article on Eurovision 2026. Reliable for verified facts and basic event data."
+    },
+    {
+      "source_id": "src_01678",
+      "url": "https://en.wikipedia.org/wiki/Controversies_of_the_Eurovision_Song_Contest",
+      "title": "Controversies of the Eurovision Song Contest - Wikipedia",
+      "publisher": "Wikipedia",
+      "published_at": null,
+      "source_type": "primary_data",
+      "authority_score": 0.95,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (Wikipedia article on controversies provides background context but not primary s)"
+    },
+    {
+      "source_id": "src_00305",
+      "url": "https://www.eurovision.com/eurovision-song-contest/vienna-2026/",
+      "title": "Vienna 2026 - Eurovision",
+      "publisher": "Eurovision (official)",
+      "published_at": null,
+      "source_type": "official",
+      "authority_score": 1.0,
+      "freshness_score": 0.5,
+      "relevance_score": 0.38461538461538464,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Official Eurovision site page for Vienna 2026. Primary source for event details."
+    },
+    {
+      "source_id": "src_02461",
+      "url": "https://apnews.com/live/eurovision-song-contest-2026-vienna",
+      "title": "Bulgaria's Dara is Eurovision 2026's winner with 'Bangaranga'",
+      "publisher": "Associated Press",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: Associated Press coverage of the winner. Reputable international news agency reporting the result directly."
+    },
+    {
+      "source_id": "src_36695",
+      "url": "https://www.bbc.co.uk/news/videos/cj3pznr0zr4o",
+      "title": "Lights, camera, Bangaranga: Key moments from Eurovision - BBC News",
+      "publisher": "BBC",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.46153846153846156,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "public_claim_source",
+      "curation_reason": "AI: BBC News video coverage of key moments. Major reputable broadcaster directly covering the event."
+    },
+    {
+      "source_id": "src_91498",
+      "url": "https://eurovisionworld.com/eurovision/2026",
+      "title": "Eurovision 2026 Results: Voting & Points",
+      "publisher": "EurovisionWorld",
+      "published_at": null,
+      "source_type": "reputable_media",
+      "authority_score": 0.8,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3076923076923077,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "supporting_context",
+      "curation_reason": "disagreement: AI=supporting_context, det=public_claim_source → supporting_context (EurovisionWorld is a specialist fan site. Useful for detailed results but not pr)"
+    },
+    {
+      "source_id": "src_56600",
+      "url": "https://www.youtube.com/watch?v=eNf9JluCLSw",
+      "title": "Israel Faces Controversy at Eurovision Song Contest Finals",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube video, user-generated content platform. Useful for understanding sentime)"
+    },
+    {
+      "source_id": "src_51588",
+      "url": "https://www.youtube.com/watch?v=Ru1c6g9kJdk",
+      "title": "'This is Unbelievable' - Bulgaria's Dara Wins Eurovision 2026 | Press Conference Highlights | AA1Z",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube video of press conference. Social media platform, not a citable news sou)"
+    },
+    {
+      "source_id": "src_76638",
+      "url": "https://www.youtube.com/watch?v=v3eihKSxvGI",
+      "title": "Eurovision: A song contest in turmoil | The Global Story",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube video discussing turmoil. Social platform content, not suitable for publ)"
+    },
+    {
+      "source_id": "src_05544",
+      "url": "https://www.youtube.com/watch?v=4oEynPk9t5M",
+      "title": "Israel Face \"Stop The Gonocide\" Chants And Boos During Eurovision Performance | Jeremy Vine",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube video from Jeremy Vine show. Social platform, useful for context but not)"
+    },
+    {
+      "source_id": "src_79236",
+      "url": "https://www.youtube.com/watch?v=EltgrumKJfk",
+      "title": "DARA - Bangaranga (LIVE) | Grand Final | Winner of Eurovision 2026",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube performance video. Social platform content, not a news source for factua)"
+    },
+    {
+      "source_id": "src_82128",
+      "url": "https://www.youtube.com/watch?v=mNeheVj8g_Y",
+      "title": "Eurovision 2026: Full Results (Semi-Finals & Grand Final) - YouTube",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube results compilation. User-generated content, not suitable for public cit)"
+    },
+    {
+      "source_id": "src_25326",
+      "url": "https://www.radiotimes.com/tv/entertainment/eurovision-2026-results-scoreboard/",
+      "title": "Eurovision 2026 results: Full scoreboard and points | Radio Times",
+      "publisher": "Radiotimes",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.9230769230769231,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Radio Times coverage of results. Entertainment publication, useful but not prima)"
+    },
+    {
+      "source_id": "src_00741",
+      "url": "https://streamscharts.com/news/eurovision-song-contest-2026-second-semifinal-draws-385k-peak-viewers",
+      "title": "Eurovision 2026 Semifinal 2: 385K Peak Viewers & Results | Streams Charts",
+      "publisher": "Streamscharts",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.8461538461538461,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Streams Charts viewership data. Specialist analytics site, useful for statistics)"
+    },
+    {
+      "source_id": "src_82362",
+      "url": "https://www.youtube.com/watch?v=Gt22qDXnR_Q",
+      "title": "Eurovision 2026 Grand Final LIVE: Winner & Results Reactions",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3076923076923077,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube live reactions video. Social platform content, not suitable for factual )"
+    },
+    {
+      "source_id": "src_92952",
+      "url": "https://www.youtube.com/watch?v=3DjH4n6XoG8",
+      "title": "Public Vote - The Televote Results of Eurovision 2026 | Grand Final | #UnitedByMusic ​​🇦🇹",
+      "publisher": "YouTube",
+      "published_at": null,
+      "source_type": "social",
+      "authority_score": 0.5,
+      "freshness_score": 0.5,
+      "relevance_score": 0.3076923076923077,
+      "bias_or_limitation": null,
+      "ai_source_role": "debug_only",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=debug_only, det=background_only → debug_only (YouTube televote results video. Social platform, may be official content but hos)"
+    },
+    {
+      "source_id": "src_92837",
+      "url": "https://escinsight.com/2026/05/17/16-facts-and-stats-from-the-2026-eurovision-song-contest/",
+      "title": "ESC Insight | 16 Facts and Stats From The 2026 Eurovision Song Contest",
+      "publisher": "Escinsight",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6923076923076923,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (ESC Insight statistics article. Specialist Eurovision blog, useful for analysis )"
+    },
+    {
+      "source_id": "src_40543",
+      "url": "https://www.the-independent.com/arts-entertainment/eurovision/israel-eurovision-2026-noam-bettan-controversy-b2977797.html",
+      "title": "Why Israel’s participation in Eurovision 2026 is so controversial | The Independent",
+      "publisher": "The-Independent",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.6153846153846154,
+      "bias_or_limitation": null,
+      "ai_source_role": "public_claim_source",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=public_claim_source, det=debug_only → debug_only (The Independent coverage of Israel controversy. Established UK newspaper providi)"
+    },
+    {
+      "source_id": "src_57548",
+      "url": "https://eurovisionfun.com/en/2026/05/eurovision-2026-tv-ratings-record-highs-historic-lows-and-millions-tuning-in-across-europe-and-beyond/",
+      "title": "Eurovision 2026 TV Ratings: Record Highs, Historic Lows and Millions Tuning In Across Europe and Beyond - Eurovision News | Music | Fun",
+      "publisher": "Eurovisionfun",
+      "published_at": null,
+      "source_type": "unknown",
+      "authority_score": 0.3,
+      "freshness_score": 0.5,
+      "relevance_score": 0.5384615384615384,
+      "bias_or_limitation": null,
+      "ai_source_role": "supporting_context",
+      "final_source_role": "debug_only",
+      "curation_reason": "disagreement: AI=supporting_context, det=debug_only → debug_only (Eurovisionfun TV ratings article. Specialist Eurovision fan site, useful data bu)"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "src_89678_000",
+      "text": "DARA won the Eurovision Song Contest 2026 for Bulgaria with the song Bangaranga",
+      "claim_type": "entity",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_89678",
+        "src_00305",
+        "src_02461"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "DARA has won the 70th Eurovision Song Contest for Bulgaria",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "DARA",
+      "entity_role": "Eurovision Song Contest 2026 winner representing Bulgaria"
+    },
+    {
+      "claim_id": "src_89678_001",
+      "text": "Bulgaria won the Eurovision Song Contest 2026 with a total of 516 points",
+      "claim_type": "metric",
+      "claim_topic": "metrics",
+      "source_ids": [
+        "src_89678",
+        "src_00305",
+        "src_02461"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "stat_grid"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Bulgaria won the Contest with a points tally of 516.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "516",
+      "unit": "points",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "Bulgaria won the Contest with a points tally of 516."
+    },
+    {
+      "claim_id": "src_89678_007",
+      "text": "This is Bulgaria's first-ever Eurovision Song Contest victory",
+      "claim_type": "status",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_89678",
+        "src_02461"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "In a monumental Eurovision result at the 70th Contest, we saw Bulgaria score its first-ever victory.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "First Eurovision win for Bulgaria",
+      "observed_at": null,
+      "source_evidence": "In a monumental Eurovision result at the 70th Contest, we saw Bulgaria score its first-ever victory."
+    },
+    {
+      "claim_id": "src_70260_000",
+      "text": "Eurovision Song Contest 2026 is being held in Vienna.",
+      "claim_type": "location",
+      "claim_topic": "venue",
+      "source_ids": [
+        "src_70260",
+        "src_02461",
+        "src_36695"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+      "public_claim_eligible": false,
+      "evidence_grade": "reputable_snippet",
+      "location": "Vienna"
+    },
+    {
+      "claim_id": "src_70260_001",
+      "text": "Eurovision Song Contest 2026 takes place from May 12 to May 16.",
+      "claim_type": "schedule",
+      "claim_topic": "event_schedule",
+      "source_ids": [
+        "src_70260",
+        "src_36695"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "timeline",
+        "live_tracker"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Eurovision 2026 is being held in Vienna from May 12 to May 16.",
+      "public_claim_eligible": false,
+      "evidence_grade": "reputable_snippet",
+      "event_datetime": "2026-05-12T00:00:00Z",
+      "timezone": null,
+      "event_name": "Eurovision Song Contest 2026"
+    },
+    {
+      "claim_id": "src_00305_001",
+      "text": "The jury vote returned to the Semi-Finals at 50% weighting for Vienna 2026.",
+      "claim_type": "status",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_00305"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "For Vienna 2026, a selection of new rules was implemented for the Contest, including the return of a 50% jury vote to the Semi-Finals.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "50% jury vote returned to Semi-Finals",
+      "observed_at": null,
+      "source_evidence": "For Vienna 2026, a selection of new rules was implemented for the Contest, including the return of a 50% jury vote to the Semi-Finals."
+    },
+    {
+      "claim_id": "src_00305_002",
+      "text": "The number of jurors was increased from five to seven.",
+      "claim_type": "metric",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_00305",
+        "src_00741",
+        "src_57548"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "stat_grid",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "In addition to this, the number of jurors was increased from five to seven, and it was stated that at least two of these jurors must be aged between 18 and 25, reflecting the appeal of the Contest to younger audiences.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "7",
+      "unit": "jurors",
+      "direction": "increase",
+      "base_value_if_delta": "5",
+      "evidence_snippet": "the number of jurors was increased from five to seven"
+    },
+    {
+      "claim_id": "src_00305_003",
+      "text": "35 broadcasters participated in Eurovision 2026.",
+      "claim_type": "metric",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_00305",
+        "src_02461"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "stat_grid",
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "35 broadcasters participated, with five (Iceland, Ireland, Netherlands, Slovenia and Spain) opting not to take part, and three returning to the competition; Moldova for the first time since 2024, Romania for the first time since 2023 and Bulgaria for the first time since 2022.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "value": "35",
+      "unit": "broadcasters",
+      "direction": null,
+      "base_value_if_delta": null,
+      "evidence_snippet": "35 broadcasters participated"
+    },
+    {
+      "claim_id": "src_02461_005",
+      "text": "Five countries boycotted Eurovision 2026: Spain, Ireland, the Netherlands, Slovenia and Iceland",
+      "claim_type": "status",
+      "claim_topic": "controversy",
+      "source_ids": [
+        "src_02461"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Missing from this year's spectacle were five countries — Spain, Ireland, the Netherlands, Slovenia and Iceland, high-profile absentees who boycotted to protest Israel's inclusion in the contest following the war in Gaza.",
+      "public_claim_eligible": false,
+      "evidence_grade": "full_text_verified",
+      "status": "boycotted",
+      "observed_at": null,
+      "source_evidence": "five countries — Spain, Ireland, the Netherlands, Slovenia and Iceland, high-profile absentees who boycotted"
+    },
+    {
+      "claim_id": "src_36695_002",
+      "text": "Bulgaria won Eurovision 2026.",
+      "claim_type": "status",
+      "claim_topic": "participants",
+      "source_ids": [
+        "src_36695"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts",
+        "entity_list"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "Eurovision 2026 has come to a close, with Bulgaria crowned winner and Israel in second place after a nail-biting public vote.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "status": "winner",
+      "observed_at": null,
+      "source_evidence": "Bulgaria crowned winner"
+    },
+    {
+      "claim_id": "src_36695_005",
+      "text": "Ukraine's entry made history for holding the contest's longest ever note.",
+      "claim_type": "entity",
+      "claim_topic": "history",
+      "source_ids": [
+        "src_36695"
+      ],
+      "confidence": "medium",
+      "freshness": "fresh",
+      "component_targets": [
+        "key_facts"
+      ],
+      "validation_status": "pending",
+      "evidence_sentence": "The UK finished last after receiving no points in the public vote, and history was made by Ukraine's entry for holding the contest's longest ever note.",
+      "public_claim_eligible": true,
+      "evidence_grade": "full_text_verified",
+      "entity_name": "Ukraine",
+      "entity_role": "contestant holding record for longest note"
+    },
+    {
+      "claim_id": "date_7823",
+      "text": "May 20",
+      "claim_type": "date",
+      "claim_topic": "other",
+      "source_ids": [
+        "src_91498",
+        "src_25326",
+        "src_00741"
+      ],
+      "confidence": "high",
+      "freshness": "fresh",
+      "component_targets": [],
+      "validation_status": "pending",
+      "evidence_sentence": "",
+      "public_claim_eligible": false,
+      "evidence_grade": "weak_snippet",
+      "date_value": "2026-05-20T00:00:00Z"
+    }
+  ],
+  "contradictions": [],
+  "unresolved_questions": [],
+  "last_updated": "2026-05-19T07:00:28.954668Z"
+}

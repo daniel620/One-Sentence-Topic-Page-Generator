@@ -1,0 +1,25 @@
+{
+  "preliminary_event_type": "disaster",
+  "freshness_need": "immediate, sub-hour to daily updates for 72+ hours",
+  "search_intents": [
+    "Tokyo earthquake May 14 2026",
+    "7.2 magnitude earthquake Tokyo casualties",
+    "Japan earthquake damage assessment May 2026",
+    "Tokyo earthquake aftershocks forecast",
+    "Japan Meteorological Agency earthquake statement May 14",
+    "Tokyo infrastructure damage earthquake May 2026"
+  ],
+  "required_source_types": [
+    "official",
+    "primary_data",
+    "reputable_media",
+    "local_media"
+  ],
+  "unknowns": [
+    "Confirmed death toll and injury count",
+    "Extent of structural damage and infrastructure failure",
+    "Tsunami warning status and coastal impact",
+    "Ongoing aftershock risk and evacuation status",
+    "Economic impact estimate and recovery timeline"
+  ]
+}

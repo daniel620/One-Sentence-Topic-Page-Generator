@@ -1,0 +1,24 @@
+/* Editorial theme — light cream + serif headlines.
+   Used for: tech_launch, upcoming/concluded cultural_event. */
+
+:root {
+  --page-bg: #f6f3ec;
+  --surface: #fffdf7;
+  --surface-muted: #f1ede4;
+  --ink-strong: #1a1a18;
+  --ink: #2a2925;
+  --ink-muted: #6c6960;
+  --rule: #e5e1d6;
+  --rule-strong: #d5cfbe;
+  --accent: #c84a1a;
+  --accent-strong: #a93a13;
+  --accent-soft: #fbeadf;
+  --accent-border: #f1c7a9;
+  --warning: #b97400;
+  --warning-soft: #fbf1d8;
+  --danger: #a8313f;
+  --danger-soft: #f9e1e3;
+  --font-display: "Source Serif 4", "Charter", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

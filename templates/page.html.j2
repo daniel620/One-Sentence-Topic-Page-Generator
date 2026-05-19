@@ -1,0 +1,122 @@
+{# Top-level shell. Picks a theme + hero variant from `recipe`, then renders
+   pinned-top sections, body sections, and a sources footer. #}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.headline }}</title>
+  {% if page.deck %}<meta name="description" content="{{ page.deck }}">{% endif %}
+  <meta property="og:title" content="{{ page.headline }}">
+  {% if page.deck %}<meta property="og:description" content="{{ page.deck }}">{% endif %}
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.headline }}">
+  {% if page.deck %}<meta name="twitter:description" content="{{ page.deck }}">{% endif %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>📄</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=IBM+Plex+Mono:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
+  <style>
+{% include "themes/" ~ recipe.theme ~ ".css" %}
+{% include "themes/_base.css" %}
+  </style>
+</head>
+<body class="theme-{{ recipe.theme }} variant-{{ recipe.hero_variant }} event-{{ page.event_type.value }} status-{{ page.status.value }}">
+  <main class="page-shell">
+
+    {# Hero — variant selected by recipe #}
+    {% set hero_template = "heroes/" ~ recipe.hero_variant ~ ".html.j2" %}
+    {% include hero_template %}
+
+    {# Key facts strip directly under the hero — 3-5 at-a-glance items #}
+    {% if key_facts %}
+    <section class="key-facts" aria-label="At a glance">
+      {% for fact in key_facts %}
+      <div class="key-fact">
+        <div class="label">{{ fact.label }}</div>
+        <div class="value">{{ fact.value }}</div>
+        {% if fact.hint %}<div class="hint">{{ fact.hint }}</div>{% endif %}
+        {% if is_debug and fact.claim_id %}
+        <div class="cite">claim_id={{ fact.claim_id }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {# Confidence editor's-note — only renders when actually warranted #}
+    {% if confidence_banner %}
+      {% set section = confidence_banner %}
+      {% include "components/confidence_banner.html.j2" %}
+    {% endif %}
+
+    {# Pinned-top sections (e.g. live tracker for live events) #}
+    {% if pinned_sections %}
+    {% for section in pinned_sections %}
+      {% set template_name = component_template_by_type.get(section.component_type) %}
+      {% if template_name %}{% include template_name %}{% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {# Uncertainty box if contradictions exist #}
+    {% if uncertainty_sections %}
+    {% for section in uncertainty_sections %}
+      {% include "components/uncertainty_box.html.j2" %}
+    {% endfor %}
+    {% endif %}
+
+    {# Body sections in recipe order #}
+    {% for section in body_sections %}
+      {% set template_name = component_template_by_type.get(section.component_type) %}
+      {% if template_name %}{% include template_name %}{% endif %}
+    {% endfor %}
+
+    {# Sources footer — clean editorial list, not a debug dump #}
+    {% if sources_for_footer %}
+    <section class="sources-footer" aria-label="Sources">
+      <h2>Sources</h2>
+      <ul class="sources-list">
+        {% for source in sources_for_footer %}
+        <li>
+          {% if source.url %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>{% else %}<span>{{ source.title }}</span>{% endif %}
+          <div class="meta">
+            <span class="pub{% if source.is_official %} official{% endif %}">{{ source.publisher or source.publisher_short }}</span>
+            {% if source.published_at %} · <span>{{ source.published_at }}</span>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <footer class="page-footer">
+      <span>Generated {{ generated_at }}</span>
+      {% if is_public %}
+      <span>One-sentence topic page · auto-generated, human-reviewable</span>
+      {% endif %}
+      {% if is_debug %}
+      <span>Render mode: debug</span>
+      {% endif %}
+    </footer>
+
+    {% if is_debug %}
+    <section class="debug-panel">
+      <h3>Debug — pipeline trace</h3>
+      <pre>event_type: {{ page.event_type.value }}
+status: {{ page.status.value }}
+confidence: {{ page.confidence.value }}
+recipe: {{ recipe.event_type.value }} / {{ recipe.hero_variant }} / {{ recipe.theme }}
+section order: {{ recipe.section_order | map(attribute="value") | join(", ") }}
+QA failed gates: {{ qa_summary.failed_gates | join(", ") or "(none)" }}
+QA repair actions: {{ qa_summary.repair_actions | join(", ") or "(none)" }}
+QA average score: {{ "%.2f" | format(qa_summary.average_score) }}
+sources: {{ sources_for_footer | length }} ({{ source_roles_summary }})
+claims: {{ (claim_lookup_by_id or {}) | length }} ({{ public_claims_count }} public-eligible)
+contradictions: {% if contradictions_debug %}{% for c in contradictions_debug %}
+  #{{ loop.index0 }}: {{ c.resolution }} — {{ c.topic }} | A={{ c.claim_a }} B={{ c.claim_b }}{% endfor %}{% else %}(none){% endif %}</pre>
+    </section>
+    {% endif %}
+  </main>
+</body>
+</html>

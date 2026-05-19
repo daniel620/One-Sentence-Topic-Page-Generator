@@ -1,0 +1,204 @@
+{
+  "event_type": "sports_tournament",
+  "status": "upcoming",
+  "confidence": "medium",
+  "headline": "Wimbledon 2026 Returns June 29 at All England Club",
+  "deck": "The Championships kick off the grass-court season's pinnacle with draws set for singles, doubles, and mixed play.",
+  "summary": "The 2026 Wimbledon Championships will take place from 29 June to 12 July 2026 at the All England Club. The tournament features 128 singles, 64 doubles, and 32 mixed doubles entries played on grass courts. Defending champion Jannik Sinner of Italy will return to defend his 2025 title in the men's singles draw.",
+  "urgency_label": "June 29 – July 12",
+  "as_of_label": null,
+  "key_facts": [
+    {
+      "label": "Tournament Dates",
+      "value": "29 June to 12 July 2026",
+      "hint": null,
+      "claim_id": "src_10568_001"
+    },
+    {
+      "label": "Surface",
+      "value": "Grass courts",
+      "hint": null,
+      "claim_id": "src_10568_005"
+    },
+    {
+      "label": "Draw Size",
+      "value": "128 singles / 64 doubles / 32 mixed doubles",
+      "hint": null,
+      "claim_id": "src_10568_007"
+    },
+    {
+      "label": "Defending Men's Champion",
+      "value": "Jannik Sinner (Italy)",
+      "hint": null,
+      "claim_id": "src_10568_003"
+    }
+  ],
+  "key_entities": [
+    {
+      "name": "All England Lawn Tennis and Croquet Club",
+      "role": "Host venue"
+    },
+    {
+      "name": "Jannik Sinner",
+      "role": "Defending men's singles champion (2025)"
+    }
+  ],
+  "timeline": [
+    {
+      "date_label": "29 June 2026",
+      "title": "Championships Begin",
+      "detail": "Opening rounds commence across all draws at the All England Club."
+    },
+    {
+      "date_label": "12 July 2026",
+      "title": "Championships Conclude",
+      "detail": "Finals day featuring championship matches across all events."
+    }
+  ],
+  "layout_style": "timeline_first",
+  "sections": [
+    {
+      "component_type": "stat_grid",
+      "title": "Tournament Structure",
+      "summary": null,
+      "columns": 2,
+      "items": [
+        {
+          "label": "Tournament Dates",
+          "value": "29 June to 12 July 2026",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_001"
+        },
+        {
+          "label": "Playing Surface",
+          "value": "Grass courts",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_005"
+        },
+        {
+          "label": "Singles Draw",
+          "value": "128 entries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_007"
+        },
+        {
+          "label": "Doubles Draw",
+          "value": "64 entries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_007"
+        },
+        {
+          "label": "Mixed Doubles Draw",
+          "value": "32 entries",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_007"
+        }
+      ]
+    },
+    {
+      "component_type": "timeline",
+      "title": "Key Dates",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Championships Begin",
+          "value": "29 June 2026",
+          "detail": "Opening rounds across singles, doubles, and mixed doubles.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_001"
+        },
+        {
+          "label": "Championships Conclude",
+          "value": "12 July 2026",
+          "detail": "Finals day featuring championship matches across all events.",
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_001"
+        }
+      ]
+    },
+    {
+      "component_type": "entity_list",
+      "title": "Defending Champions",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Men's Singles (2025)",
+          "value": "Jannik Sinner of Italy",
+          "detail": null,
+          "link_label": null,
+          "link_url": null,
+          "claim_id": "src_10568_003"
+        }
+      ]
+    },
+    {
+      "component_type": "action_list",
+      "title": "Plan Your Visit",
+      "summary": null,
+      "columns": 1,
+      "items": [
+        {
+          "label": "Official Championship Information",
+          "value": "View tournament dates and ticketing details on the official Wimbledon website.",
+          "detail": null,
+          "link_label": "Visit Wimbledon.com",
+          "link_url": "https://www.wimbledon.com/en_GB/the_championships/dates",
+          "claim_id": null
+        },
+        {
+          "label": "Follow Live Scores",
+          "value": "Track match results and brackets during the tournament.",
+          "detail": null,
+          "link_label": "ESPN Wimbledon Coverage",
+          "link_url": "https://www.espn.com/tennis/wimbledon/bracket",
+          "claim_id": null
+        }
+      ]
+    }
+  ],
+  "qa_results": [
+    {
+      "gate_name": "factuality",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    },
+    {
+      "gate_name": "freshness",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [
+        "weak_source"
+      ],
+      "confidence_score": 0.19999999999999946,
+      "remediation_suggestions": [
+        "Prefer stronger sources or annotate the limitation of weaker ones."
+      ]
+    },
+    {
+      "gate_name": "event_fit",
+      "status": "pass",
+      "failed_items": [],
+      "repair_actions": [],
+      "confidence_score": 1.0,
+      "remediation_suggestions": []
+    }
+  ],
+  "last_updated": "2026-05-17T06:04:47.170187Z"
+}

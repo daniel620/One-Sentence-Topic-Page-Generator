@@ -1,0 +1,14 @@
+{
+  "decision": "not_acceptable",
+  "reasoning": "This page fails all critical thresholds for publication:\n\n1. **Zero public-eligible claims** (0/5 minimum required) - All 20 sources are marked as background_only, debug_only, or reject. No claims can be published.\n\n2. **Zero verified evidence sentences** - No full_text_verified or snippet-grade evidence exists.\n\n3. **No core reader questions answered** - For a tech_launch event type, readers need: what changed? who's affected? rollout status? what to do? With 0 public claims, none of these are answered.\n\n4. **No official source** - For an Apple product announcement, we need apple.com or official Apple press releases. No official/primary sources are present.\n\n5. **Temporal issue** - The event sentence claims an announcement on June 8, 2026, but today is May 17, 2026 - this is a future event that hasn't occurred yet, which explains why no legitimate evidence exists.\n\nThis appears to be either speculative content or a data error. The event hasn't happened and cannot be covered as fact.",
+  "new_queries": [
+    "Apple WWDC 2026 announcement official site:apple.com",
+    "iPhone 18 Pro Apple press release site:apple.com"
+  ],
+  "caveats": [
+    "Zero public-eligible claims available - all sources rejected or marked for internal use only",
+    "Event date (June 8, 2026) is in the future relative to today (May 17, 2026) - no legitimate evidence can exist for an announcement that hasn't occurred",
+    "No official Apple sources found to verify product announcement",
+    "Cannot answer any core reader questions about product changes, affected users, or availability"
+  ]
+}

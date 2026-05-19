@@ -129,6 +129,37 @@ pytest tests/               # 95 tests
 python scripts/verify.py    # Smoke-test all fixtures in public + debug modes
 ```
 
+## Evaluation-driven iteration
+
+Since this is an open-ended generation task with no ground truth, we built an
+**evaluation skill** (`.claude/skills/topic-page-evaluator/`) that acts as a
+source-of-truth judge. It combines three layers:
+
+1. **Deterministic scripts** — structural HTML checks, public/debug boundary, prompt centralization, test coverage, deliverable completeness, event-type coverage
+2. **Internet fact-checking** — extract claims from generated pages, verify against Wikipedia / official sources / news media, flag unsupported numbers
+3. **EvidenceGraph cross-check** — the most reliable layer: compare every numeric claim on the page against the claim cards extracted from real sources
+
+The skill caught concrete issues that unit tests couldn't:
+
+| Iteration | What the eval found | Fix |
+|-----------|--------------------|-----|
+| 1 | World Cup page says "37 days" — actually 39 | QA fidelity gate wired in |
+| 1 | OpenAI page has "52.5%" not backed by any claim card | Value-text cross-reference added |
+| 2 | UAE OPEC classified as `live_event` — no fit | Added `economic_event` type |
+| 2 | 0 custom-chosen examples, missing disaster type | Generated Ebola + UAE OPEC pages |
+| 3 | Page Critic hit max_tokens on every attempt | Raised from 500 to 2000 |
+| 3 | DESIGN.md inconsistent with code (5 evidence grades, stale file names) | Line-by-line audit + rewrite |
+| 4 | README architecture diagram 2 versions behind | Updated to actual pipeline |
+
+Run it yourself:
+
+```bash
+python .claude/skills/topic-page-evaluator/scripts/evaluate_html.py --output-dir output/
+python .claude/skills/topic-page-evaluator/scripts/evaluate_code.py --project-root .
+python .claude/skills/topic-page-evaluator/scripts/evaluate_design.py --design-path DESIGN.md
+python .claude/skills/topic-page-evaluator/scripts/evaluate_deliverables.py --project-root .
+```
+
 ## Environment variables
 
 Set in `.env` (gitignored). `.env.example` lists the names only.

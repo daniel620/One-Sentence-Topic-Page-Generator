@@ -28,14 +28,14 @@ pip install -r requirements.txt
 # Full editorial workflow — search, extract, grade, compose, critique, render
 python scripts/run_editorial.py "Your one-sentence event here."
 
-# Render from saved fixtures (no API keys needed)
+# Quick render from saved fixtures (no API keys needed)
 python scripts/generate.py --use-fixtures "<sentence>"
 
 # Debug mode — exposes claim IDs, QA trace, AI curation metadata
 python scripts/generate.py --use-fixtures --debug "<sentence>"
 
 # Inspect a run's artifacts
-ls runs/<timestamp>/  # hypothesis, evidence_graph, product_critic, page_critic, HTML, etc.
+ls runs/<timestamp>/  # hypothesis, evidence_graph, evidence_gate, page_gate, HTML, etc.
 ```
 
 ## Pre-built examples
@@ -54,59 +54,79 @@ Open any file directly in a browser — no server needed.
 
 ```
 one sentence
-   ├─► Stage 1A (LLM) — classify event, generate search queries
    │
-   ├─► Stage 2 (mixed) — SEARCH → EXTRACT → GRADE
+   ├─► classify (LLM) — event type + search queries
+   │     6 types: tech_launch, sports_tournament, cultural_event,
+   │     live_event, disaster, economic_event
+   │
+   ├─► research (mixed) — SEARCH → EXTRACT → GRADE → CURATE
    │     ├─ Tavily search → 20 candidate URLs
-   │     ├─ Dual-path extraction: trafilatura + Tavily Extract fallback
-   │     ├─ AI source curator (LLM) — classify each source's role
+   │     ├─ Dual-path extraction: trafilatura (primary) + Tavily Extract (fallback)
+   │     ├─ AI source curator (LLM) — role per source
    │     ├─ AI claim extractor (LLM, per-source, parallel) — typed claims
-   │     ├─ Evidence grading — full_text_verified / official_snippet /
-   │     │   reputable_snippet / weak_snippet
-   │     └─ AI contradiction reviewer (LLM)
+   │     ├─ Evidence grading — full_text_verified | official_snippet |
+   │     │   reputable_snippet | multi_sourced | weak_snippet
+   │     ├─ AI contradiction reviewer (LLM)
+   │     └─ Dynamic official-source discovery fallback
    │
-   ├─► Product Critic (LLM) — evaluate evidence sufficiency
-   │     publishable | editor_review | evidence_limited | not_acceptable | re_search
+   ├─► Evidence Gate (LLM) — evidence sufficiency check
+   │     publishable | editor_review | evidence_limited |
+   │     not_acceptable | re_search (loops to research, ≤3 rounds)
    │
-   ├─► Stage 1B (LLM) — plan information architecture
-   ├─► Stage 3 (LLM) — compose page from claim cards
-   ├─► QA gates (deterministic) — factuality, freshness, event-fit
-   ├─► Page Critic (LLM) — evaluate final reader-facing quality
-   └─► Renderer (deterministic) — Jinja2 → standalone HTML
+   ├─► plan (LLM) — information architecture from evidence
+   ├─► compose (LLM) — TopicPageData from claim cards
+   │     Full mode (strong evidence) or degraded mode (thin evidence)
+   │
+   ├─► QA + repair (deterministic)
+   │     Factuality, freshness, event-fit, fidelity gates
+   │     Repair: strips unsupported claims, conflicting sides, empty sections
+   │     Bounded resynthesis (≤2 rounds)
+   │
+   ├─► Page Gate (LLM) — final acceptance from structured summary
+   │
+   └─► render (deterministic) — Jinja2 → standalone HTML
+         Public mode (editorial) or debug mode (full trace)
 ```
 
 ## Project layout
 
 ```
 generator/
-  schemas.py          # Pydantic data contract
-  prompts.py          # all LLM prompts (AI curation, critics, composers)
-  orchestrator.py     # EditorialRun — stateful workflow, artifact persistence
-  ai_curation.py      # AI source curator, claim extractor, contradiction reviewer
-  stage1_understand.py# Stage 1A (hypothesis) + Stage 1B (IA planning)
-  stage2_research.py  # Search → Extract → Grade — the evidence layer
-  stage3_synthesize.py# Grounded page composer
-  qa_gates.py         # Factuality, freshness, event-fit gates
+  schemas.py          # Pydantic data contract (6 event types, 5 evidence grades)
+  prompts.py          # All LLM prompts — classify, curate, plan, compose, critics
+  orchestrator.py     # EditorialRun — stateful 6-phase workflow, artifact persistence
+  classify.py         # Stage 1: event type + search query generation
+  research.py         # Stage 2: Tavily search → extract → grade → curate
+  curate.py           # AI source curator + AI claim extractor + AI contradiction reviewer
+  critic.py           # Evidence Gate + Page Gate
+  plan.py             # Stage 3: evidence-aware information architecture
+  compose.py          # Stage 4: claim-card-grounded page composition
+  quality.py          # QA gates: factuality, freshness, event-fit, fidelity
+  repair.py           # Deterministic repair: strip unsupported claims, conflicting sides
+  verify_facts.py     # Cross-reference page values against claim card values
+  contradictions.py   # Contradiction detection and pre-filtering
   page_layout.py      # (event_type, status) → PageRecipe table
-  renderer.py         # pure function: TopicPageData → HTML
-  utils.py            # trafilatura extraction, source scoring, publisher DB
-templates/            # Jinja2 — themes, heroes, components
+  render.py           # Pure function: TopicPageData → HTML (public or debug)
+  utils.py            # trafilatura extraction, source scoring, KNOWN_PUBLISHERS
+templates/            # Jinja2 — 4 themes, 4 hero variants, 10 components
 scripts/
   run_editorial.py    # Full editorial workflow entry point
-  generate.py         # Render from fixtures (no API), with --debug mode
-  clean_fixtures.py   # Post-hoc source filter + QA recalc
-  probe_generalization.py  # Test classification on diverse inputs
-  verify.py           # Smoke-test all fixtures in both modes
-runs/                 # Timestamped artifact directories per run
-output/               # Committed pre-built HTML examples
+  generate.py         # Render saved fixtures (no API keys needed)
+  verify.py           # Smoke-test all fixtures in public + debug modes
+tests/
+  test_schemas.py, test_qa_gates.py, test_renderer.py,
+  test_orchestrator.py, test_repair.py, test_research.py,
+  test_event_type_requirements.py, test_registry.py
+  fixtures/           # 3 saved EvidenceGraph + TopicPageData bundles
+runs/                 # Timestamped artifact directories per EditorialRun
+output/               # 5 committed pre-built HTML examples
 ```
 
 ## Testing
 
 ```bash
-pytest tests/               # 96 tests
-python scripts/verify.py    # Smoke-test fixtures in public + debug modes
-python scripts/probe_generalization.py  # Test classification on 5 diverse inputs
+pytest tests/               # 95 tests
+python scripts/verify.py    # Smoke-test all fixtures in public + debug modes
 ```
 
 ## Environment variables
@@ -114,6 +134,6 @@ python scripts/probe_generalization.py  # Test classification on 5 diverse input
 Set in `.env` (gitignored). `.env.example` lists the names only.
 
 ```
-ANTHROPIC_API_KEY    # All LLM calls (Stages 1-3, AI curation, critics)
+ANTHROPIC_API_KEY    # All LLM calls (classify, curate, plan, compose, critics)
 TAVILY_API_KEY       # Search + Extract (Tavily search and content extraction)
 ```

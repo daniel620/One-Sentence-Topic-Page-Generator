@@ -9,3 +9,4 @@ venv/
 *.debug.html
 
 scripts/claude-deepseek.sh
+.github/skills/

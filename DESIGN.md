@@ -498,6 +498,36 @@ by event type, no alert when the official-source discovery fallback fires,
 no way to compare two runs of the same sentence side by side. These are the
 tools that would let someone operate this system in production.
 
+### 6. Reorganize the codebase by concern
+
+The current flat `generator/` directory with 17 files was the right call for
+prototyping — zero friction to create a new module and wire it in. But it now
+obscures the architecture. `quality.py`, `repair.py`, `verify_facts.py`, and
+`contradictions.py` are really one QA subsystem. `research.py` and `curate.py`
+are one evidence pipeline. `utils.py` is a junk drawer.
+
+The right shape is probably package-by-concern, five packages mirroring the
+pipeline phases:
+
+```
+generator/
+  schemas.py, prompts.py          # cross-cutting: data contract + LLM surface
+  understanding/                  # classify.py, plan.py — figure out the event
+  evidence/                       # research.py, curate.py, extraction, publishers — get the facts
+  composition/                    # compose.py — write the page
+  quality/                        # gates, repair, fidelity, contradictions — verify
+  rendering/                      # render.py, page_layout.py, themes, heroes — present
+```
+
+This isn't just aesthetic. The current structure makes it hard to see which
+modules are allowed to import which others. Packages enforce the dependency
+direction: `evidence → schemas`, `composition → evidence`, `quality → schemas`.
+The rendering package should import nothing from the pipeline — it's a pure
+function of `TopicPageData`.
+
+This is deferred because while refactoring is mechanically straightforward,
+doing it without E2E safety tests (see #5) risks breaking the pipeline subtly.
+
 ### What I wouldn't spend time on
 
 - **More themes or hero variants.** Four themes × four heroes already covers
